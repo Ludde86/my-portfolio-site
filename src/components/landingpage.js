@@ -10,6 +10,10 @@ const Landing = () => {
 					<img src={myAvatar2} alt="profile" className="avatar-img" />
 					<div className="banner-text">
 						<h1>Full Stack Web Developer</h1>
+
+						<hr />
+
+						<p>Java | JavaScript | React | HTML/CSS</p>
 					</div>
 				</Cell>
 			</Grid>
