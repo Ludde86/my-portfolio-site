@@ -17,13 +17,22 @@ const Contact = () => {
 					<div className="contact-list">
 						<List>
 							<ListItem>
-								<ListItemContent icon="person">Bryan Cranston</ListItemContent>
+								<ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+									<i className="fa fa-phone-square" aria-hidden="true" />
+									0704608611
+								</ListItemContent>
 							</ListItem>
 							<ListItem>
-								<ListItemContent icon="person">Aaron Paul</ListItemContent>
+								<ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+									<i className="fa fa-envelope-square" aria-hidden="true" />
+									ludvig@mail.com
+								</ListItemContent>
 							</ListItem>
 							<ListItem>
-								<ListItemContent icon="person">Bob Odenkirk</ListItemContent>
+								<ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
+									<i className="fa fa-linkedin-square" aria-hidden="true" />
+									linkedIn
+								</ListItemContent>
 							</ListItem>
 						</List>
 					</div>
