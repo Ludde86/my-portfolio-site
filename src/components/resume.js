@@ -3,6 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 import myAvatar from '../img/myAvatar4.png';
 import Education from './education';
 import Experience from './experience';
+import Skills from './skills';
 
 const Resume = () => {
 	return (
@@ -69,6 +70,7 @@ const Resume = () => {
 					/>
 					<hr style={{ borderTop: '3px solid #e22947' }} />
 					<h2>Skills</h2>
+					<Skills />
 				</Cell>
 			</Grid>
 		</div>
