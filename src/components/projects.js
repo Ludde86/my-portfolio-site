@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tabs, Tab, Grid, Cell } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 
 const Projects = () => {
 	const [ activeTab, setActiveTab ] = useState(0);
@@ -26,8 +26,72 @@ const Projects = () => {
 				);
 			case 3:
 				return (
-					<div>
-						<h1>This is React</h1>
+					<div className="projects-grid">
+						<Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
+							<CardTitle
+								style={{
+									color: '#fff',
+									height: '176px',
+									background: 'url("/react-hook.png") center / cover'
+								}}
+							>
+								React Project #1
+							</CardTitle>
+							<CardText>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque
+								lacus eleifend lacinia...
+							</CardText>
+							<CardActions border>
+								<Button colored>Github</Button>
+							</CardActions>
+							<CardMenu style={{ color: '#fff' }}>
+								<IconButton name="share" />
+							</CardMenu>
+						</Card>
+
+						<Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
+							<CardTitle
+								style={{
+									color: '#fff',
+									height: '176px',
+									background: 'url("/react-hook.png") center / cover'
+								}}
+							>
+								React Project #2
+							</CardTitle>
+							<CardText>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque
+								lacus eleifend lacinia...
+							</CardText>
+							<CardActions border>
+								<Button colored>Github</Button>
+							</CardActions>
+							<CardMenu style={{ color: '#fff' }}>
+								<IconButton name="share" />
+							</CardMenu>
+						</Card>
+
+						<Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
+							<CardTitle
+								style={{
+									color: '#fff',
+									height: '176px',
+									background: 'url("/react-hook.png") center / cover'
+								}}
+							>
+								React Project #3
+							</CardTitle>
+							<CardText>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque
+								lacus eleifend lacinia...
+							</CardText>
+							<CardActions border>
+								<Button colored>Github</Button>
+							</CardActions>
+							<CardMenu style={{ color: '#fff' }}>
+								<IconButton name="share" />
+							</CardMenu>
+						</Card>
 					</div>
 				);
 			default:
@@ -43,13 +107,12 @@ const Projects = () => {
 				<Tab>JavaScript</Tab>
 				<Tab>React</Tab>
 			</Tabs>
-			<section className="projects-grid">
-				<Grid className="projects-grid">
-					<Cell col={12}>
-						<div className="content">{toggleCategories()}</div>
-					</Cell>
-				</Grid>
-			</section>
+
+			<Grid>
+				<Cell col={12}>
+					<div className="content">{toggleCategories()}</div>
+				</Cell>
+			</Grid>
 		</div>
 	);
 };
