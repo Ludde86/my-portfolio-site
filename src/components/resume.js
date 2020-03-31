@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Cell } from 'react-mdl';
 import myAvatar from '../img/myAvatar4.png';
 import Education from './education';
+import Experience from './experience';
 
 const Resume = () => {
 	return (
@@ -27,7 +28,7 @@ const Resume = () => {
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 				</Cell>
 				<Cell className="resume-right-col" col={8}>
-					<h2>Education</h2>
+					<h2>Utbildning</h2>
 					<Education
 						startYear={2018}
 						endYear={2020}
@@ -47,7 +48,27 @@ const Resume = () => {
 						schoolDescription={'Ekonomi'}
 					/>
 					<hr style={{ borderTop: '3px solid #e22947' }} />
-					<h2>Experience</h2>
+					<h2>Arbetslivserfarenhet</h2>
+					<Experience
+						startYear={2010}
+						endYear={'Nuvarande'}
+						jobName={'ICA Maxi Haninge'}
+						jobPosition={'Butiksbiträde'}
+						jobDescription={
+							'Största fokus på ICA Maxi Haninge är att ge kunderna den bästa	servicen. 2017 blev jag	nominerad till årets medarbetare, där jag hamnade på en	prestigefull andra plats, av ca. 250 anställda.	Min	tid	spenderades	på mejeriavdelningen, där det är ett högt tryck	på kunder med många	frågor.	Högt tempo mixat med krav på god service har varit viktigt, vilket har gjort mig väldigt stresstålig och lyhörd.'
+						}
+					/>
+					<Experience
+						startYear={2006}
+						endYear={2008}
+						jobName={'ICA Supermarket Västerhaninge'}
+						jobPosition={'Butiksbiträde'}
+						jobDescription={
+							'Året efter	studenten tog jag en grundkurs i Sociologi,	och	samtidigt började att arbeta kvällar i kassan på ICA där jag bland annat lärde mig att hantera kunder och att alltid ge	en bra service.	Jag	var	en mycket uppskattad kollega.'
+						}
+					/>
+					<hr style={{ borderTop: '3px solid #e22947' }} />
+					<h2>Skills</h2>
 				</Cell>
 			</Grid>
 		</div>
