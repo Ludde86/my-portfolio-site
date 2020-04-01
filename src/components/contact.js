@@ -9,7 +9,9 @@ const Contact = () => {
 				<Cell col={6}>
 					<h2>Ludvig Björn</h2>
 					<img src={myAvatar} alt="myAvatar2" style={{ height: '250px', borderRadius: '5%' }} />
-					<p style={{ width: '75%', margin: 'auto', paddingTop: '1em' }}>Hej hej hej</p>
+					<p style={{ width: '75%', margin: 'auto', paddingTop: '1em' }}>
+						Har ni frågor, eller är intresserade kontakta gärna mig.
+					</p>
 				</Cell>
 				<Cell col={6}>
 					<h2>Contact Me</h2>
@@ -25,13 +27,13 @@ const Contact = () => {
 							<ListItem>
 								<ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
 									<i className="fa fa-envelope-square" aria-hidden="true" />
-									ludvig@mail.com
+									bslbjorn@gmail.com
 								</ListItemContent>
 							</ListItem>
 							<ListItem>
 								<ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }}>
 									<i className="fa fa-linkedin-square" aria-hidden="true" />
-									linkedIn
+									Ludvig Björn
 								</ListItemContent>
 							</ListItem>
 						</List>

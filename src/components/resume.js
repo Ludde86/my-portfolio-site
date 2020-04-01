@@ -19,6 +19,8 @@ const Resume = () => {
 					<p>
 						Studerar just nu till Javautvecklare på IT-Högskolan i Stockholm, och arbetar varannan helg på
 						Ica Maxi i Haninge.
+						<br />
+						När jag inte sitter med programmering, leker jag gärna med mina två, oftast, underbara barn!
 					</p>
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 					<h5>Address</h5>
@@ -72,10 +74,10 @@ const Resume = () => {
 						}
 					/>
 					<hr style={{ borderTop: '3px solid #e22947' }} />
-					<Skills skill="Kundservice   " progress={90} />
-					<Skills skill="Ordning & reda" progress={80} />
-					<Skills skill="Tempo         " progress={95} />
-					<Skills skill="Trevlig       " progress={100} />
+					<Skills skill="Kundservice   " progress={93} />
+					<Skills skill="Ordning & reda" progress={91} />
+					<Skills skill="Tempo         " progress={97} />
+					<Skills skill="Arbetsmoral   " progress={100} />
 				</Cell>
 			</Grid>
 		</div>
