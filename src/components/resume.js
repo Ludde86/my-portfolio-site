@@ -11,21 +11,24 @@ const Resume = () => {
 			<Grid>
 				<Cell col={4}>
 					<div style={{ textAlign: 'center' }}>
-						<img src={myAvatar} alt="avatar" style={{ height: '200px' }} />
+						<img src={myAvatar} alt="avatar" style={{ height: '400px' }} />
 					</div>
-					<h2 style={{ paddingTop: '2em' }}>Ludvig Björn</h2>
-					<h4 style={{ color: 'grey' }}>Bla bla</h4>
+					<h2 style={{ paddingTop: '1em' }}>Ludvig Björn</h2>
+					<h4 style={{ color: 'grey' }}>Kort om mig:</h4>
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-					<p>blablablablablablabla</p>
+					<p>
+						Studerar just nu till Javautvecklare på IT-Högskolan i Stockholm, och arbetar varannan helg på
+						Ica Maxi i Haninge.
+					</p>
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 					<h5>Address</h5>
-					<p>blablablabla</p>
+					<p>Klöverhagen 25, Vendelsö</p>
 					<h5>Phone</h5>
-					<p>35345345345</p>
+					<p>0704608611</p>
 					<h5>Email</h5>
-					<p>sdfdsfds@mail.com</p>
+					<p>bslbjorn@gmail.com</p>
 					<h5>Web</h5>
-					<p>website.com</p>
+					<p>https://www.linkedin.com/in/ludvig-bj%C3%B6rn-4b582417b/</p>
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 				</Cell>
 				<Cell className="resume-right-col" col={8}>
@@ -69,10 +72,10 @@ const Resume = () => {
 						}
 					/>
 					<hr style={{ borderTop: '3px solid #e22947' }} />
-					<Skills skill="Java" progress={44} />
-					<Skills skill="Spring" progress={14} />
-					<Skills skill="JavaScript" progress={54} />
-					<Skills skill="React" progress={64} />
+					<Skills skill="Kundservice   " progress={90} />
+					<Skills skill="Ordning & reda" progress={80} />
+					<Skills skill="Tempo         " progress={95} />
+					<Skills skill="Trevlig       " progress={100} />
 				</Cell>
 			</Grid>
 		</div>

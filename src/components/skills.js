@@ -6,7 +6,10 @@ const Skills = (props) => {
 		<Grid>
 			<Cell col={12}>
 				<div style={{ display: 'flex' }}>
-					{props.skill} <ProgressBar style={{ margin: 'auto', width: '75%' }} progress={props.progress} />
+					<div className="skill">{props.skill}</div>
+					<div className="progress">
+						<ProgressBar style={{ margin: 'auto', width: '75%' }} progress={props.progress} />
+					</div>
 				</div>
 			</Cell>
 		</Grid>
