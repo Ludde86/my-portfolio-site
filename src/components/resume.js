@@ -75,7 +75,7 @@ const Resume = () => {
 					/>
 					<hr style={{ borderTop: '3px solid #e22947' }} />
 					<Skills skill="Kundservice   " progress={93} />
-					<Skills skill="Ordning & reda" progress={91} />
+					<Skills skill="Ordning & reda" progress={93} />
 					<Skills skill="Tempo         " progress={97} />
 					<Skills skill="Arbetsmoral   " progress={100} />
 				</Cell>
