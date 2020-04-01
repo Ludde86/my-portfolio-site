@@ -29,8 +29,8 @@ const Resume = () => {
 					<p>0704608611</p>
 					<h5>Email</h5>
 					<p>bslbjorn@gmail.com</p>
-					<h5>Web</h5>
-					<p>https://www.linkedin.com/in/ludvig-bj%C3%B6rn-4b582417b/</p>
+					{/* <h5>Web</h5>
+					<p>https://www.google.com</p> */}
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 				</Cell>
 				<Cell className="resume-right-col" col={8}>
