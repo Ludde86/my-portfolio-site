@@ -9,20 +9,24 @@ const Landing = () => {
 				<Cell col={12}>
 					<img src={myAvatar2} alt="profile" className="avatar-img" />
 					<div className="banner-text">
-						<h1>hej hej</h1>
+						<h1>Student: Javautvecklare</h1>
 
 						<hr />
 
-						<p>Java | JavaScript | React | HTML/CSS</p>
+						<p>Java | Spring | JavaScript | React | HTML/CSS</p>
 
 						{/* LinkedIn */}
 						<div className="social-links">
-							<a href="http://google.com" target="_blank" rel="noopener noreferrer">
+							<a
+								href="https://www.linkedin.com/in/ludvig-bj%C3%B6rn-4b582417b/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<i className="fa fa-linkedin-square" aria-hidden="true" />
 							</a>
 
 							{/* Github */}
-							<a href="http://google.com" target="_blank" rel="noopener noreferrer">
+							<a href="https://github.com/Ludde86" target="_blank" rel="noopener noreferrer">
 								<i className="fa fa-github-square" aria-hidden="true" />
 							</a>
 						</div>
