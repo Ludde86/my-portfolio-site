@@ -8,13 +8,23 @@ function App() {
 	return (
 		<div className="demo-big-content">
 			<Layout>
-				<Header className="header-color" title="< Menu" scroll>
+				<Header className="header-color" title="< Menu" scroll style={{ color: 'black' }}>
 					<Navigation>
-						<Link to="/">Home</Link>
-						<Link to="/resume">Resumé</Link>
-						<Link to="/projects">Projects</Link>
-						<Link to="/about">About Me</Link>
-						<Link to="/contact">Contact</Link>
+						<Link to="/" style={{ color: 'black' }}>
+							Home
+						</Link>
+						<Link to="/resume" style={{ color: 'black' }}>
+							Resumé
+						</Link>
+						<Link to="/projects" style={{ color: 'black' }}>
+							Projects
+						</Link>
+						<Link to="/about" style={{ color: 'black' }}>
+							About Me
+						</Link>
+						<Link to="/contact" style={{ color: 'black' }}>
+							Contact
+						</Link>
 					</Navigation>
 				</Header>
 				<Drawer title="Menu">
