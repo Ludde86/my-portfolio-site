@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
-import myAvatar2 from '../img/myAvatar3.png';
+import myAvatar2 from '../img/MyAvatar5.jpg';
 
 const Landing = () => {
 	return (
