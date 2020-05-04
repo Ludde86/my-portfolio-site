@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-import myAvatar from '../img/myAvatar2.png';
+import myAvatar from '../img/MyAvatar5.jpg';
 
 const Contact = () => {
 	return (

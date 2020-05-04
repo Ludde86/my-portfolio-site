@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 	return (
 		<Layout>
-			<Header className="header-color" title="< Menu" scroll>
+			<Header className="header-color" title="Menu" scroll>
 				<Navigation>
 					<Link to="/">Home</Link>
 					<Link to="/resume">Resumé</Link>
