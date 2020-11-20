@@ -3,6 +3,14 @@ import React from 'react';
 const About = () => {
 	return (
 		<div className="about-content">
+			<h5>Sekretesspolicy för Create Your List: </h5>
+
+			<p>Denna app behandlar ej några känsliga användaruppgifter och data.</p>
+			<p>
+				Du skapar ett anonymt konto med endast ett användarnamn och lösenord. Helt utan personuppgifter,
+				kontaktuppgifter och dylikt.
+			</p>
+
 			<h5>Kort om mig: </h5>
 			<p>
 				Jag är en student som under rådande omständigheter sitter hemma och nöter, i princip måndag till fredag,
