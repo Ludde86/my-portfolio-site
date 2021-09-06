@@ -10,22 +10,27 @@ const Resume = () => {
 		<div>
 			<Grid>
 				<Cell col={4}>
-					<div style={{ textAlign: 'center' }}>
+					{/* <div style={{ textAlign: 'center' }}>
 						<img src={myAvatar} alt="avatar" style={{ height: '400px' }} />
-					</div>
-					<h2 style={{ paddingTop: '1em' }}>Ludvig Björn</h2>
+					</div> */}
+
+					<h3 style={{ fontWeight: 'bold' }}>Ludvig Björn</h3>
 					<h4 style={{ color: 'grey' }}>Kort om mig:</h4>
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 					<p>
-						Studerar just nu till Javautvecklare på IT-Högskolan i Stockholm, och arbetar varannan helg på
-						Ica Maxi i Haninge.
-						<br />
-						När jag inte sitter med programmering, leker jag gärna med mina två, oftast, underbara barn!
+						Hej! Jag är Ludvig, 35 år, som bor tillsamans med fru och två barn i Vendelsö, ca 2 mil söder om
+						Stockholm.
 					</p>
+					<p>Studerar till Javautvecklare på IT-Högskolan i Liljeholmen.</p>
+					<p>
+						Programmerar vid sidan utav studierna i JavaScript/React/Ract Native där hemsidor och appar
+						utvecklas.
+					</p>
+					<p>Övriga intressen är fotboll och eventuellt något strategispel.</p>
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
-					<h5>Address</h5>
+					<h5>Adress</h5>
 					<p>Klöverhagen 25, Vendelsö</p>
-					<h5>Phone</h5>
+					<h5>Mobil</h5>
 					<p>0704608611</p>
 					<h5>Email</h5>
 					<p>bslbjorn@gmail.com</p>
@@ -38,7 +43,7 @@ const Resume = () => {
 					<Education
 						startYear={2018}
 						endYear={2020}
-						schoolName={'IT-Högskolan Stockholm'}
+						schoolName={'IT-Högskolan Liljeholmen'}
 						schoolDescription={'Javautvecklare'}
 					/>
 					<Education
@@ -61,7 +66,7 @@ const Resume = () => {
 						jobName={'ICA Maxi Haninge'}
 						jobPosition={'Butiksbiträde'}
 						jobDescription={
-							'Största fokus på ICA Maxi Haninge är att ge kunderna den bästa	servicen. 2017 blev jag	nominerad till årets medarbetare, där jag hamnade på en	prestigefull andra plats, av ca. 250 anställda.	Min	tid	spenderades	på mejeriavdelningen, där det är ett högt tryck	på kunder med många	frågor.	Högt tempo mixat med krav på god service har varit viktigt, vilket har gjort mig väldigt stresstålig och lyhörd.'
+							'Största fokus på ICA Maxi Haninge är att ge kunderna den bästa	servicen. 2017 blev jag	nominerad till årets medarbetare, där jag hamnade på en	prestigefull andra plats, av ca. 250 anställda.	Min	tid	spenderades	på mejeriavdelningen, där det är ett högt tryck	med kunder med många	frågor.	Högt tempo mixat med krav på god service har varit viktigt, vilket har gjort mig väldigt stresstålig och lyhörd.'
 						}
 					/>
 					<Experience
