@@ -18,9 +18,15 @@
 	font-weight: bold;
 }
 
+.link-text:hover {
+	background: #333;
+	color: #fafafa;
+	border-radius: 2px;
+}
+
 .navbar-border {
 	width: 280px;
-	border-bottom: 4px solid #333;
+	border-bottom: 3px solid #333;
 	display: flex;
 	align-self: flex-end;
 	margin-right: 50px;

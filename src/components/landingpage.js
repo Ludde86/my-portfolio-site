@@ -36,10 +36,12 @@ const Landing = () => {
 							</a>
 							<text className="info-text">Ludvig Björn</text>
 						</div>
+						<div className="skills-container">
+							<p className="skills-text">
+								React | React Native | JavaScript | HTML | CSS | Java | Spring
+							</p>
+						</div>
 					</div>
-				</div>
-				<div className="skills-container">
-					<p className="skills-text">React | React Native | JavaScript | HTML | CSS | Java | Spring</p>
 				</div>
 			</div>
 		</div>
