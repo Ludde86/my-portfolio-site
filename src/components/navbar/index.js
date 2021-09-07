@@ -9,11 +9,21 @@ const Navbar = () => {
 		<Layout>
 			<Header className="header-color" title="Menu" scroll>
 				<Navigation>
-					<Link to="/">Home</Link>
-					<Link to="/resume">Resumé</Link>
-					<Link to="/projects">Projects</Link>
-					<Link to="/about">About Me</Link>
-					<Link to="/contact">Contact</Link>
+					<Link className="link" to="/">
+						Home
+					</Link>
+					<Link className="link" to="/resume">
+						Resumé
+					</Link>
+					<Link className="link" to="/projects">
+						Projects
+					</Link>
+					<Link className="link" to="/about">
+						About Me
+					</Link>
+					<Link className="link" to="/contact">
+						Contact
+					</Link>
 				</Navigation>
 			</Header>
 			<Drawer title="Menu">

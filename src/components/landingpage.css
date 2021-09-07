@@ -1,0 +1,27 @@
+.avatar {
+	border-radius: 5px;
+	max-height: 200px;
+	max-width: 200px;
+}
+
+.landing-container {
+	background: #fafafa;
+}
+
+.contact-info {
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+}
+
+.img-container {
+	border: 1px solid black;
+}
+
+.info-container {
+	border: 1px solid black;
+}
+
+.info {
+	font-size: 25px;
+}
