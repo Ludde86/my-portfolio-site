@@ -1,7 +1,27 @@
-.header-color {
+.app-container {
 	background: white;
+	display: flex;
+	flex-direction: column;
 }
 
-.link {
+.navbar-container {
+	display: flex;
+	justify-content: right;
+	padding-right: 64px;
+	padding-top: 12px;
+}
+
+.link-text {
 	color: #333;
+	margin-right: 32px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.navbar-border {
+	width: 280px;
+	border-bottom: 4px solid #333;
+	display: flex;
+	align-self: flex-end;
+	margin-right: 50px;
 }

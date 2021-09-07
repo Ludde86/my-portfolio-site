@@ -6,40 +6,46 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
-		<Layout>
-			<Header className="header-color" title="Menu" scroll>
+		<div className="app-container">
+			<Navigation className="navbar-container">
+				<Link to="/">
+					<text className="link-text">Hem</text>
+				</Link>
+				<Link className="link" to="/resume">
+					<text className="link-text">CV</text>
+				</Link>
+				<Link className="link" to="/projects">
+					<text className="link-text">Projekt</text>
+				</Link>
+				{/*
+				<Link className="link" to="/about">
+					<text className="link-text">Om Mig</text>
+				</Link>
+				<Link className="link" to="/contact">
+					<text className="link-text">Kontakta Mig</text>
+				</Link>
+				*/}
+			</Navigation>
+			<div className="navbar-border" />
+
+			{/*
+			<Drawer className="header-color" title="Menu">
 				<Navigation>
-					<Link className="link" to="/">
+					<Link className="link-text" to="/">
 						Home
 					</Link>
-					<Link className="link" to="/resume">
-						Resumé
-					</Link>
-					<Link className="link" to="/projects">
-						Projects
-					</Link>
-					<Link className="link" to="/about">
-						About Me
-					</Link>
-					<Link className="link" to="/contact">
-						Contact
-					</Link>
-				</Navigation>
-			</Header>
-			<Drawer title="Menu">
-				<Navigation>
-					<Link to="/">Home</Link>
 					<Link to="/resume">Resumé</Link>
 					<Link to="/projects">Projects</Link>
 					<Link to="/about">About Me</Link>
 					<Link to="/contact">Contact</Link>
 				</Navigation>
 			</Drawer>
-			<Content>
-				<div className="page-content" />
+			*/}
+
+			<div>
 				<Main />
-			</Content>
-		</Layout>
+			</div>
+		</div>
 	);
 };
 

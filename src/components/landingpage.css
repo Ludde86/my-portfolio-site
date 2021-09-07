@@ -1,5 +1,5 @@
 .avatar {
-	border-radius: 5px;
+	border-radius: 2px;
 	max-height: 200px;
 	max-width: 200px;
 }
@@ -9,19 +9,38 @@
 }
 
 .contact-info {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	display: flex;
 	align-items: center;
 }
 
 .img-container {
-	border: 1px solid black;
+	margin-left: 32px;
 }
 
 .info-container {
-	border: 1px solid black;
+	padding: 32px;
 }
 
 .info {
-	font-size: 25px;
+	font-size: 32px;
+	margin: 16px;
+}
+
+.info-text {
+	font-weight: bold;
+	margin-left: 12px;
+	color: #333;
+}
+
+.skills-container {
+	display: flex;
+	justify-content: center;
+	margin: 12px;
+}
+
+.skills-text {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
 }
