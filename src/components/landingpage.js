@@ -1,9 +1,7 @@
 import React from 'react';
-import { Grid, Cell } from 'react-mdl';
-import './landingpage.css';
-import myAvatar2 from '../img/avatar-medium-gray2-lighter.png';
 import About from './aboutme';
 import Contact from './contact';
+import './landingpage.css';
 
 const Landing = () => {
 	return (

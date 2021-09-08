@@ -1,6 +1,5 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
-import myAvatar from '../img/myAvatar4.png';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
