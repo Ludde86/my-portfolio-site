@@ -19,6 +19,13 @@ const Projects = () => {
 							>
 								ToDo web application
 							</CardTitle>
+							<h5>Sekretesspolicy för Create Your List: </h5>
+
+							<p>Denna app behandlar ej några känsliga användaruppgifter och data.</p>
+							<p>
+								Du skapar ett anonymt konto med endast ett användarnamn och lösenord. Helt utan
+								personuppgifter, kontaktuppgifter och dylikt.
+							</p>
 							<CardText>https://klovisattgora.herokuapp.com/login</CardText>
 							<CardText>https://klovisattgora.herokuapp.com/login</CardText>
 							<CardActions border>

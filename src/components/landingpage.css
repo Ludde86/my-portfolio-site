@@ -1,66 +1,10 @@
-.avatar {
-	border-radius: 8px;
-	max-height: 200px;
-	max-width: 200px;
-}
-
 .landing-container {
 	background: #fafafa;
 	margin-top: 32px;
 }
 
-.contact-info {
-	/* border: 1px solid black; */
-	display: flex;
-	/* align-items: center; */
-	flex-wrap: wrap;
-}
-
-.img-container {
-	margin-left: 32px;
-}
-
-.info-container {
-	padding-top: 12px;
-}
-
-.info {
-	font-size: 22px;
-	margin-left: 32px;
-	margin-bottom: 16px;
-}
-
-.info-text {
-	font-weight: bold;
-	margin-left: 12px;
-	color: #333;
-}
-
-.skills-container {
-	display: flex;
-	justify-content: center;
-	margin-left: 32px;
-}
-
-.skills-text {
-	font-size: 18px;
-	font-weight: bold;
-	color: #333;
-}
-
-.about-me {
-	padding: 32px;
-}
-
-.about-text {
-	font-size: 16px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-		sans-serif;
-}
-
-.greeting-text {
-	font-size: 16px;
-	font-weight: bold;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-		sans-serif;
+.avatar {
+	border-radius: 8px;
+	max-height: 200px;
+	max-width: 200px;
 }
