@@ -8,24 +8,6 @@ const Projects = () => {
 		switch (activeTab) {
 			case 0:
 				return (
-					<div>
-						<h1>This is Java</h1>
-					</div>
-				);
-			case 1:
-				return (
-					<div>
-						<h1>This is Spring</h1>
-					</div>
-				);
-			case 2:
-				return (
-					<div>
-						<h1>This is JavaScript</h1>
-					</div>
-				);
-			case 3:
-				return (
 					<div className="projects-grid">
 						<Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
 							<CardTitle
@@ -35,12 +17,17 @@ const Projects = () => {
 									background: 'url("/react-hook.png") center / cover'
 								}}
 							>
-								React Project #1
+								ToDo web application
 							</CardTitle>
-							<CardText>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque
-								lacus eleifend lacinia...
-							</CardText>
+							<h5>Sekretesspolicy för Create Your List: </h5>
+
+							<p>Denna app behandlar ej några känsliga användaruppgifter och data.</p>
+							<p>
+								Du skapar ett anonymt konto med endast ett användarnamn och lösenord. Helt utan
+								personuppgifter, kontaktuppgifter och dylikt.
+							</p>
+							<CardText>https://klovisattgora.herokuapp.com/login</CardText>
+							<CardText>https://klovisattgora.herokuapp.com/login</CardText>
 							<CardActions border>
 								<Button colored>Github</Button>
 							</CardActions>
@@ -94,6 +81,30 @@ const Projects = () => {
 						</Card>
 					</div>
 				);
+			case 1:
+				return (
+					<div>
+						<h1>This is React Native</h1>
+					</div>
+				);
+			case 2:
+				return (
+					<div>
+						<h1>This is JavaScript</h1>
+					</div>
+				);
+			case 3:
+				return (
+					<div>
+						<h1>This is Java</h1>
+					</div>
+				);
+			case 4:
+				return (
+					<div>
+						<h1>This is Spring</h1>
+					</div>
+				);
 			default:
 				return 'No Tab';
 		}
@@ -102,10 +113,11 @@ const Projects = () => {
 	return (
 		<div className="category-tabs">
 			<Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
+				<Tab>React</Tab>
+				<Tab>React Native</Tab>
+				<Tab>JavaScript</Tab>
 				<Tab>Java</Tab>
 				<Tab>Spring</Tab>
-				<Tab>JavaScript</Tab>
-				<Tab>React</Tab>
 			</Tabs>
 
 			<Grid>

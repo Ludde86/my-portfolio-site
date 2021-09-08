@@ -1,0 +1,38 @@
+.contact-info {
+	/* border: 1px solid black; */
+	display: flex;
+	/* align-items: center; */
+	flex-wrap: wrap;
+}
+
+.img-container {
+	margin-left: 32px;
+}
+
+.info-container {
+	padding-top: 12px;
+}
+
+.info {
+	font-size: 22px;
+	margin-left: 32px;
+	margin-bottom: 16px;
+}
+
+.info-text {
+	font-weight: bold;
+	margin-left: 12px;
+	color: #333;
+}
+
+.skills-container {
+	display: flex;
+	justify-content: center;
+	margin-left: 32px;
+}
+
+.skills-text {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
