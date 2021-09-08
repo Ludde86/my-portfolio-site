@@ -43,14 +43,15 @@ const Landing = () => {
 				</div>
 
 				<div className="about-me">
+					<p className="about-text">35 år, bor med fru och två barn i Vendelsö.</p>
 					<p className="about-text">
 						Min karriär som utvecklare startade 2017 då jag genomförde två distanskurser, Programmering
 						Grund- och Fortsättningskurs i Java. Året därpå antog jag en tvåårig yh-utbildning som
 						Javautvecklare på IT-Högskolan i Liljeholmen.
 					</p>
 					<p className="about-text">
-						Vid sidan utav studierna har jag ägnat mig åt JavaScript och React/React Native, där jag skapat
-						ett flertal hemsidor och ett par appar.
+						Vid sidan utav studierna har jag ägnat mig åt JavaScript och React/React Native, där jag
+						utvecklat både hemsidor och mobilaplikationer.
 					</p>
 					<p className="about-text">
 						Mitt senaste projekt är en app utvecklat med React Native, en parkeringstjänst (likt easypark)
