@@ -1,0 +1,16 @@
+.resume-container {
+	background: #fafafa;
+	margin-top: 32px;
+}
+
+.avatar-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.avatar {
+	width: 160px;
+	border-radius: 100px;
+}

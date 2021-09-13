@@ -3,22 +3,24 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
+import myAvatar from '../img/avatar-small-resume.png';
+import './resume.css';
 
 const Resume = () => {
 	return (
-		<div>
+		<div className="resume-container">
 			<Grid>
 				<Cell col={4}>
-					{/* <div style={{ textAlign: 'center' }}>
-						<img src={myAvatar} alt="avatar" style={{ height: '400px' }} />
-					</div> */}
+					<div className="avatar-container">
+						<img src={myAvatar} alt="avatar" className="avatar" />
+						<h3 style={{ fontWeight: 'bold' }}>Ludvig Björn</h3>
+					</div>
 
-					<h3 style={{ fontWeight: 'bold' }}>Ludvig Björn</h3>
 					<h4 style={{ color: 'grey' }}>Kort om mig:</h4>
 					<hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
 					<p>
-						Hej! Jag är Ludvig, 35 år, som bor tillsamans med fru och två barn i Vendelsö, ca 2 mil söder om
-						Stockholm.
+						Mitt namn är Ludvig, 35 år, bor i Vendelsö ca 2 mil söder om Stockholm tillsamans med fru och
+						två barn.
 					</p>
 					<p>Studerar till Javautvecklare på IT-Högskolan i Liljeholmen.</p>
 					<p>

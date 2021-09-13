@@ -11,7 +11,7 @@ const About = () => {
 				IT-Högskolan i Liljeholmen.
 			</p>
 			<p className="about-text">
-				Vid sidan utav studierna har jag ägnat mig åt JavaScript och React/React Native, där jag utvecklat både
+				Vid sidan utav studierna ägnar jag mig åt JavaScript och React/React Native, där jag utvecklar både
 				hemsidor och mobilaplikationer.
 			</p>
 			<p className="about-text">
