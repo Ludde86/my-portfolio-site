@@ -1,20 +1,20 @@
 import React from 'react';
-import { Grid, Cell } from 'react-mdl';
+import './experience.css';
 
 const Experience = (props) => {
 	return (
-		<Grid>
-			<Cell col={4}>
-				<p>
+		<div className="experience-content">
+			<div className="experience-item">
+				<text className="experience-year">
 					{props.startYear} - {props.endYear}
-				</p>
-			</Cell>
-			<Cell col={8}>
-				<h4 style={{ marginTop: '0px' }}>{props.jobName}</h4>
+				</text>
+				<h4 className="job-title">{props.jobName}</h4>
+			</div>
+			<div>
 				<h5>{props.jobPosition}</h5>
-				<p>{props.jobDescription}</p>
-			</Cell>
-		</Grid>
+				<text className="experience-description">{props.jobDescription}</text>
+			</div>
+		</div>
 	);
 };
 

@@ -1,0 +1,24 @@
+.experience-content {
+	margin-bottom: 32px;
+}
+
+.experience-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.experience-year {
+	font-size: 16px;
+}
+
+.job-title {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.experience-description {
+	text-align: end;
+	color: #777;
+	font-weight: bold;
+}

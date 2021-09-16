@@ -1,19 +1,20 @@
 import React from 'react';
-import { Grid, Cell } from 'react-mdl';
+import './education.css';
 
 const Education = (props) => {
 	return (
-		<Grid>
-			<Cell col={4}>
-				<p>
+		<div className="education-content">
+			<div className="education-item">
+				<text className="education-year">
 					{props.startYear} - {props.endYear}
-				</p>
-			</Cell>
-			<Cell col={8}>
-				<h4 style={{ marginTop: '0px' }}>{props.schoolName}</h4>
-				<p>{props.schoolDescription}</p>
-			</Cell>
-		</Grid>
+				</text>
+				<text className="education-title">{props.schoolName}</text>
+			</div>
+
+			<div className="education-description">
+				<text>{props.schoolDescription}</text>
+			</div>
+		</div>
 	);
 };
 
