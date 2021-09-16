@@ -1,31 +1,30 @@
 .contact-info {
-	/* border: 1px solid black; */
 	display: flex;
-	/* align-items: center; */
 	flex-wrap: wrap;
 	padding-top: 32px;
 }
 
 .img-container {
 	margin-left: 32px;
-	display: flex;
-	align-items: center;
 }
 
 .contact-avatar {
-	border-radius: 4px;
-	max-height: 200px;
-	max-width: 200px;
+	border-radius: 2px;
+	max-height: 160px;
+	max-width: 160px;
+	box-shadow: 6px 5px 8px #333;
 }
 
 .info-container {
-	padding-top: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .info {
-	font-size: 22px;
-	/* margin-left: 32px; */
-	margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+	font-size: 26px;
 }
 
 .info-text {
