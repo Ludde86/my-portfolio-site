@@ -22,6 +22,9 @@ const About = () => {
 			<p className="about-text">Tveka inte på att höra av dig om du har frågor eller funderingar.</p>
 
 			<p className="greeting-text">Med vänliga hälsningar, Ludvig Björn</p>
+			<div className="skills-container">
+				<p className="skills-text">React | React Native | JavaScript | HTML | CSS | Java</p>
+			</div>
 		</div>
 	);
 };

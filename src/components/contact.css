@@ -8,6 +8,8 @@
 
 .img-container {
 	margin-left: 32px;
+	display: flex;
+	align-items: center;
 }
 
 .contact-avatar {
@@ -22,24 +24,12 @@
 
 .info {
 	font-size: 22px;
-	margin-left: 32px;
+	/* margin-left: 32px; */
 	margin-bottom: 16px;
 }
 
 .info-text {
 	font-weight: bold;
 	margin-left: 12px;
-	color: #333;
-}
-
-.skills-container {
-	display: flex;
-	justify-content: center;
-	margin-left: 32px;
-}
-
-.skills-text {
-	font-size: 18px;
-	font-weight: bold;
 	color: #333;
 }

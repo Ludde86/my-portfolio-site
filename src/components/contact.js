@@ -22,19 +22,22 @@ const Contact = () => {
 						href="https://www.linkedin.com/in/ludvig-bj%C3%B6rn-4b582417b/"
 						target="_blank"
 						rel="noopener noreferrer"
+						style={{ textDecoration: 'none' }}
 					>
 						<i className="fa fa-linkedin-square" aria-hidden="true" style={{ color: '#333' }} />
+						<text className="info-text">ludvigbjorn</text>
 					</a>
-					<text className="info-text">Ludvig Björn</text>
 				</div>
 				<div className="info">
-					<a href="https://github.com/Ludde86" target="_blank" rel="noopener noreferrer">
+					<a
+						href="https://github.com/Ludde86"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ textDecoration: 'none' }}
+					>
 						<i className="fa fa-github-square" aria-hidden="true" style={{ color: '#333' }} />
+						<text className="info-text">Ludde86</text>
 					</a>
-					<text className="info-text">Ludvig Björn</text>
-				</div>
-				<div className="skills-container">
-					<p className="skills-text">React | React Native | JavaScript | HTML | CSS | Java</p>
 				</div>
 			</div>
 		</div>
