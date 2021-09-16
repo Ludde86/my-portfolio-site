@@ -7,26 +7,22 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 	return (
 		<div className="app-container">
-			<Navigation className="navbar-container">
-				<Link to="/">
-					<text className="link-text">Hem</text>
-				</Link>
-				<Link className="link" to="/resume">
-					<text className="link-text">CV</text>
-				</Link>
-				<Link className="link" to="/projects">
-					<text className="link-text">Projekt</text>
-				</Link>
-				{/*
-				<Link className="link" to="/about">
-					<text className="link-text">Om Mig</text>
-				</Link>
-				<Link className="link" to="/contact">
-					<text className="link-text">Kontakta Mig</text>
-				</Link>
-				*/}
-			</Navigation>
-			<div className="navbar-border" />
+			<div className="fixed-navbar">
+				<div className="navbar-container">
+					<div className="links-container">
+						<Link className="link" to="/">
+							<text className="link-text">Hem</text>
+						</Link>
+						<Link className="link" to="/resume">
+							<text className="link-text">CV</text>
+						</Link>
+						<Link className="link" to="/projects">
+							<text className="link-text">Projekt</text>
+						</Link>
+					</div>
+					<div className="navbar-border" />
+				</div>
+			</div>
 
 			{/*
 			<Drawer className="header-color" title="Menu">
