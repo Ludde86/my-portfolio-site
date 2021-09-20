@@ -29,7 +29,7 @@ const About = () => {
 				<p className="about-text">
 					Jag är 35år och tvåbarnsfar som bor tillsammans med min fru i Vendelsö, ca 2mil söder om Stockholm.
 					Jag skulle beskriva mig själv som glad, driven och envis. Grottar ofta in mig i sådant som jag
-					finner intressant. Exempelt på sådant kan vara allt ifrån rymden till börsen och nationalekonomi.
+					finner intressant. Exempelt på sådant kan vara allt ifrån rymden till nationalekonomi.
 				</p>
 
 				<p className="about-text">
