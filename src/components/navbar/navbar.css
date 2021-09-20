@@ -4,15 +4,28 @@
 	flex-direction: column;
 }
 
+.fixed-navbar {
+	position: fixed;
+	top: 0px;
+	background: white;
+	width: 100%;
+}
+
 .navbar-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: right;
 	padding-right: 64px;
 	padding-top: 12px;
-	/* position: fixed; */
-	/* top: 10px; */
 }
-
+.links-container {
+	display: flex;
+	justify-content: right;
+}
+.link {
+	text-decoration: none;
+	padding-bottom: 6px;
+}
 .link-text {
 	color: #333;
 	margin-right: 32px;
@@ -27,9 +40,8 @@
 }
 
 .navbar-border {
-	width: 280px;
+	width: 260px;
 	border-bottom: 3px solid #333;
 	display: flex;
 	align-self: flex-end;
-	margin-right: 50px;
 }

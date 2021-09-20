@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './projects.css';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
 
 const Projects = () => {
 	const [ activeTab, setActiveTab ] = useState(0);
@@ -153,6 +153,10 @@ const Projects = () => {
 										Enkelt att lägga till, ta bort och ändra listorna, samma sak med dess
 										information.
 									</p>
+									<p>
+										Plattformen som används på denna mobilapplikation för att lagra data är
+										Firebase.
+									</p>
 									<h5>Sekretesspolicy för Create Your List: </h5>
 
 									<p>Denna app behandlar ej några känsliga användaruppgifter eller data.</p>
@@ -201,7 +205,7 @@ const Projects = () => {
 	};
 
 	return (
-		<div className="category-tabs">
+		<div style={{ marginTop: 42 }}>
 			<Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
 				<Tab style={{ fontWeight: 'bold' }}>React</Tab>
 				<Tab style={{ fontWeight: 'bold' }}>React Native</Tab>
