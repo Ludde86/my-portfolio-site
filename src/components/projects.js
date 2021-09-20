@@ -153,6 +153,10 @@ const Projects = () => {
 										Enkelt att lägga till, ta bort och ändra listorna, samma sak med dess
 										information.
 									</p>
+									<p>
+										Plattformen som används på denna mobilapplikation för att lagra data är
+										Firebase.
+									</p>
 									<h5>Sekretesspolicy för Create Your List: </h5>
 
 									<p>Denna app behandlar ej några känsliga användaruppgifter eller data.</p>

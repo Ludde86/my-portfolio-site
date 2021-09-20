@@ -29,7 +29,7 @@ const Resume = () => {
 					<div className="info-content">
 						<text className="info-label">Adress:</text>
 						<text className="info-text" style={{ textAlign: 'end' }}>
-							Klöverhagen 25 Vendelsö
+							Klöverhagen 25, Vendelsö
 						</text>
 					</div>
 					<div className="info-content">
