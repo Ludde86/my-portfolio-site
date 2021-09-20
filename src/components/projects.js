@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './projects.css';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
 
 const Projects = () => {
 	const [ activeTab, setActiveTab ] = useState(0);
@@ -201,7 +201,7 @@ const Projects = () => {
 	};
 
 	return (
-		<div className="category-tabs">
+		<div style={{ marginTop: 42 }}>
 			<Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
 				<Tab style={{ fontWeight: 'bold' }}>React</Tab>
 				<Tab style={{ fontWeight: 'bold' }}>React Native</Tab>

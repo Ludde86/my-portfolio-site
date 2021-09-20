@@ -5,9 +5,7 @@ const About = () => {
 	return (
 		<div>
 			<div className="about-me">
-				<p className="about-title">Hur jag blev en programmerare:</p>
-
-				<p className="about-text">Intresse för datorer har alltid funnits hos mig</p>
+				<p className="about-title">Hur jag blev programmerare:</p>
 
 				<p className="about-text">
 					Min karriär som utvecklare startade 2017 då jag genomförde två distanskurser, Programmering Grund-
@@ -15,12 +13,12 @@ const About = () => {
 					IT-Högskolan i Liljeholmen.
 				</p>
 				<p className="about-text">
-					Vid sidan utav studierna ägnar jag mig åt JavaScript och React/React Native, där jag utvecklar både
-					hemsidor och mobilaplikationer.
+					Vid sidan utav studierna ägnade jag mig åt JavaScript och React/React Native, där jag utvecklade
+					både hemsidor och mobilapplikationer.
 				</p>
 				<p className="about-text">
 					I mitt senaste projekt har jag konverterat en webbaserad parkeringstjänst (likt easypark) till en
-					mobilverision (mobilapplikation) i React Native. Webbtjänsten, som drivs utav en egenföretagare, har
+					mobilversion (mobilapplikation) i React Native. Webbtjänsten, som drivs utav en egenföretagare, har
 					aktiva kunder och är inriktad till företag/föreningar.
 				</p>
 
@@ -35,8 +33,9 @@ const About = () => {
 				</p>
 
 				<p className="about-text">
-					När tid ges ser jag gärna en fotbollsmatch eller laddar mitt senaste lir i något strategispel som
-					tex Civ. Det slutar ofta med att jag öppnar upp ett av mina projekt som jag har nya tankar med.
+					När tid ges ser jag gärna en fotbollsmatch eller laddar mitt senaste game i något strategispel som
+					tex Civ. Det slutar ofta med att jag öppnar upp ett utav mina projekt då jag har nya tankar att
+					arbeta med.
 				</p>
 
 				<p className="about-text">
