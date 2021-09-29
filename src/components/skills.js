@@ -1,16 +1,15 @@
 import React from 'react';
 import { Grid, Cell, ProgressBar } from 'react-mdl';
+import './skills.css';
 
 const Skills = (props) => {
 	return (
 		<Grid>
 			<Cell col={12}>
-				<div style={{ display: 'flex' }}>
-					<div style={{ minWidth: '20%' }}>
-						<text>{props.skill}</text>
-					</div>
+				<div style={{ display: 'flex', width: '100%' }}>
+					<text className="skill-text">{props.skill}</text>
 
-					<ProgressBar style={{ margin: 'auto', width: '80%' }} progress={props.progress} />
+					<ProgressBar style={{ margin: 'auto', width: '100%' }} progress={props.progress} />
 				</div>
 			</Cell>
 		</Grid>
