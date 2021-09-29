@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import myAvatar from '../img/avatar-small.png';
+import myAvatar from '../img/avatar-contact-small.png';
 
 const Contact = () => {
 	return (
