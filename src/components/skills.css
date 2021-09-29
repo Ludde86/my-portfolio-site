@@ -1,0 +1,15 @@
+.skill-item {
+	/* background: red; */
+	/* display: flex;
+	align-items: center; */
+	/* flex-wrap: wrap; */
+}
+.skill-text {
+	min-width: 160px;
+	color: #333;
+	font-weight: bold;
+}
+.progress-bar {
+	border: 1px solid black;
+	width: 40%;
+}

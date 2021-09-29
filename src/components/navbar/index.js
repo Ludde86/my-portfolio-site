@@ -1,8 +1,7 @@
 import React from 'react';
-import './navbar.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from '../main';
 import { Link } from 'react-router-dom';
+import Main from '../main';
+import './navbar.css';
 
 const Navbar = () => {
 	return (
