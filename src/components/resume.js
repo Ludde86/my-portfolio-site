@@ -44,6 +44,10 @@ const Resume = () => {
 						<text className="info-label">Email:</text>
 						<text className="info-text">bslbjorn@gmail.com</text>
 					</div>
+					<div className="info-content">
+						<text className="info-label">Hemsida:</text>
+						<text className="info-text">ludvigbjorn.com</text>
+					</div>
 				</div>
 			</div>
 
@@ -92,11 +96,29 @@ const Resume = () => {
 					}
 				/>
 				<hr style={{ borderTop: '4px solid #333 ' }} />
-				<Skills skill="Java" progress={40} />
-				<Skills skill="JavaScript" progress={40} />
-				<Skills skill="React" progress={65} />
-				<Skills skill="React Native" progress={65} />
-				<Skills skill="CSS" progress={70} />
+				<h4 className="experience-title">Kompetens</h4>
+				<div className="skills-resume-container">
+					<text className="skills-text">Java</text>
+					<text className="skills-text">JavaScript</text>
+					<text className="skills-text">React</text>
+					<text className="skills-text">React Native</text>
+					<text className="skills-text">React Context</text>
+					<text className="skills-text">Redux</text>
+					<text className="skills-text">HTML</text>
+					<text className="skills-text">CSS</text>
+					<text className="skills-text">Flexbox</text>
+					<text className="skills-text">MySQL</text>
+					<text className="skills-text">Firebase</text>
+					<text className="skills-text">MongoDB</text>
+					<text className="skills-text">REST</text>
+				</div>
+				{/*
+					<Skills skill="Java" progress={40} />
+					<Skills skill="JavaScript" progress={40} />
+					<Skills skill="React" progress={65} />
+					<Skills skill="React Native" progress={65} />
+					<Skills skill="CSS" progress={70} />
+				*/}
 			</div>
 		</div>
 	);

@@ -1,0 +1,23 @@
+.dictionary-container {
+	margin-top: 64px;
+}
+
+.dictionary-item {
+	margin: 32px;
+	padding: 12px;
+}
+
+.title {
+	display: flex;
+}
+
+.label {
+	color: #999;
+	font-weight: bold;
+	margin-right: 12px;
+}
+
+.text {
+	color: #333;
+	font-weight: bold;
+}
