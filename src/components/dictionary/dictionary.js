@@ -6,17 +6,6 @@ const Dictionary = () => {
 	return (
 		<div className="dictionary-container">
 			<Dictionaryitem
-				name="Interface"
-				nameSwe="Gränssnitt"
-				shortening="-"
-				type="-"
-				description="Ett gränssnitt används mellan olika applikationer och andra objekt genom att interagera och utbyta information mellan dessa. 
-					Syftet med gränssnitt är att separera dess information från själva programkoden så att dess information istället nås genom anrop via det specifika gränssnittet."
-				note="-"
-				year="-"
-			/>
-
-			<Dictionaryitem
 				name="Application Programming Interface"
 				nameSwe="Applikationsprogrammeringsgränssnitt"
 				shortening="API"
@@ -28,7 +17,51 @@ const Dictionary = () => {
 			/>
 
 			<Dictionaryitem
+				name="Declare"
+				nameSwe="Argument"
+				shortening="-"
+				type="-"
+				description="För att använda en variabel måste man först berätta att varibeln finns och vad den ska heta (namnen på saker i program kallas även identifierare). 
+				Det kallas för att man deklarerar den. "
+				note="-"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Declare"
+				nameSwe="Parameter"
+				shortening="-"
+				type="-"
+				description="För att använda en variabel måste man först berätta att varibeln finns och vad den ska heta (namnen på saker i program kallas även identifierare). 
+				Det kallas för att man deklarerar den. "
+				note="-"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Declare"
+				nameSwe="Deklarera"
+				shortening="-"
+				type="-"
+				description="För att använda en variabel måste man först berätta att varibeln finns och vad den ska heta (namnen på saker i program kallas även identifierare). 
+				Det kallas för att man deklarerar den. "
+				note="-"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Initiate"
+				nameSwe="Initiera"
+				shortening=""
+				type="-"
+				description="Man kan tilldela en variabel ett värde redan när man deklarerar den. Då kallas det att man initierar den.  "
+				note="-"
+				year="-"
+			/>
+
+			<Dictionaryitem
 				name="Document Object Model"
+				nameSwe="-"
 				shortening="DOM"
 				type="API"
 				description="DOM är ett gränssnitt som i minnet konverterar ett XML eller HTMLdokument i en såkallad
@@ -38,6 +71,62 @@ const Dictionary = () => {
 				note="En enkelt förklaring vad Document Object Model står för: Document = filen vi arbetar med, Object
 				= elementen i filen, Model = struktur"
 				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Interface"
+				nameSwe="Gränssnitt"
+				shortening="-"
+				type="-"
+				description="Ett gränssnitt används mellan olika applikationer och andra objekt genom att interagera och utbyta information mellan dessa. 
+					Syftet med gränssnitt är att separera dess information från själva programkoden så att dess information istället nås genom anrop via det specifika gränssnittet."
+				note="-"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="JavaScript"
+				nameSwe="-"
+				shortening="JS"
+				type="Programmeringsspråk"
+				description="JavaScript utvecklades från början för att göra webbläsarna mer dynamiska genom HTML-kod, stylesheet och eventdrivna funktioner som ger användaren en trevligare upplevelse på webbsidorna.
+					2015 kom en stor uppdatering av JavaScript som ledde till ett mer klassbaserat/objektorienterad stöd"
+				note="-"
+				year="1995"
+				docs="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+			/>
+
+			<Dictionaryitem
+				name="Function Anonymous"
+				nameSwe="-"
+				shortening="-"
+				type="-"
+				description="En namnlös funktion som kan användas som ett argument i en annan funktion för att köra den direkt utan att behöva deklarera den."
+				note="-"
+				year="-"
+				docs=""
+			/>
+
+			<Dictionaryitem
+				name="Function Expression"
+				nameSwe="-"
+				shortening="-"
+				type="-"
+				description="En funktion som har definerats i en variabel, dvs att variabeln har funktionens värde."
+				note="Denna typ av funktion går ej att anropa innan den är definerad då den är odefinerad."
+				year="-"
+				docs=""
+			/>
+
+			<Dictionaryitem
+				name="Function Statement/Declaration"
+				nameSwe="-"
+				shortening="-"
+				type="-"
+				description="En funktion vars syfte är att utföra en instruktion."
+				note="Denna typ av funktion går att anropa innan den är deklarerad."
+				year="-"
+				docs=""
 			/>
 
 			<Dictionaryitem
@@ -56,6 +145,7 @@ const Dictionary = () => {
 
 			<Dictionaryitem
 				name="Node.js"
+				nameSwe="-"
 				shortening="Node"
 				type="körning"
 				description="Node.js utför JavaScript-kod"
@@ -64,11 +154,22 @@ const Dictionary = () => {
 			/>
 
 			<Dictionaryitem
-				name="Programmeringsspråk"
+				name="Programming Language"
+				nameSwe="Programmeringsspråk"
 				shortening="-"
 				type="-"
 				description="Ett programmeringsspråk är ett språk som ger instruktioner till vad en dator ska göra"
 				note="Programmeringsspråk kallas även för programspråk"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Prototype-based"
+				nameSwe="-"
+				shortening="-"
+				type="-"
+				description="Ett skapat objekt användas/refereras genom en prototyp"
+				note="-"
 				year="-"
 			/>
 

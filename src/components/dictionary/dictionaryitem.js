@@ -1,7 +1,7 @@
 import React from 'react';
 import './dictionaryitem.css';
 
-const Dictionaryitem = ({ name, nameSwe, shortening, type, year, description, note }) => {
+const Dictionaryitem = ({ name, nameSwe, shortening, type, year, description, note, docs }) => {
 	return (
 		<div className="dictionary-container">
 			<div className="dictionary-item">
@@ -24,6 +24,17 @@ const Dictionaryitem = ({ name, nameSwe, shortening, type, year, description, no
 				<div className="title">
 					<text className="label">Publicering: </text>
 					<text className="text">{year}</text>
+				</div>
+				<div className="title">
+					<text className="label">Dokumentation: </text>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+						rel="noopener noreferrer"
+						target="_blank"
+						className="text"
+					>
+						{docs}
+					</a>
 				</div>
 				<br />
 				<div className="title">
