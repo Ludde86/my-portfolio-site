@@ -1,11 +1,6 @@
 .dictionary-item {
-	margin: 32px;
-	padding: 12px;
-}
-
-.title {
-	display: flex;
-	flex-wrap: wrap;
+	padding: 6px 32px;
+	/* border: 1px solid black; */
 }
 
 .label {
@@ -13,6 +8,11 @@
 	font-weight: bold;
 	margin-right: 12px;
 	min-width: 120px;
+}
+
+.title {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .text {

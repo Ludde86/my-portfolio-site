@@ -17,23 +17,21 @@ const Dictionary = () => {
 			/>
 
 			<Dictionaryitem
-				name="Declare"
-				nameSwe="Argument"
+				name="Argument"
+				nameSwe="-"
 				shortening="-"
 				type="-"
-				description="För att använda en variabel måste man först berätta att varibeln finns och vad den ska heta (namnen på saker i program kallas även identifierare). 
-				Det kallas för att man deklarerar den. "
+				description="Data som en funktion tar emot."
 				note="-"
 				year="-"
 			/>
 
 			<Dictionaryitem
-				name="Declare"
-				nameSwe="Parameter"
+				name="Compile Time"
+				nameSwe="Kompilering"
 				shortening="-"
-				type="-"
-				description="För att använda en variabel måste man först berätta att varibeln finns och vad den ska heta (namnen på saker i program kallas även identifierare). 
-				Det kallas för att man deklarerar den. "
+				type="Execution"
+				description="Körning som översätter källkoden till maskinkod där kompileraren styr hur programmet ska köras, kontrollerar syntaxen och så att typningen av koden stämmer."
 				note="-"
 				year="-"
 			/>
@@ -50,16 +48,6 @@ const Dictionary = () => {
 			/>
 
 			<Dictionaryitem
-				name="Initiate"
-				nameSwe="Initiera"
-				shortening=""
-				type="-"
-				description="Man kan tilldela en variabel ett värde redan när man deklarerar den. Då kallas det att man initierar den.  "
-				note="-"
-				year="-"
-			/>
-
-			<Dictionaryitem
 				name="Document Object Model"
 				nameSwe="-"
 				shortening="DOM"
@@ -70,6 +58,16 @@ const Dictionary = () => {
 					element i dokumentet genom denna struktur, via dess funktioner."
 				note="En enkelt förklaring vad Document Object Model står för: Document = filen vi arbetar med, Object
 				= elementen i filen, Model = struktur"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Initiate"
+				nameSwe="Initiera"
+				shortening=""
+				type="-"
+				description="Man kan tilldela en variabel ett värde redan när man deklarerar den. Då kallas det att man initierar den.  "
+				note="-"
 				year="-"
 			/>
 
@@ -154,6 +152,16 @@ const Dictionary = () => {
 			/>
 
 			<Dictionaryitem
+				name="Parameter"
+				nameSwe="-"
+				shortening="-"
+				type="-"
+				description="Data som skickas till en anropad funktion."
+				note="-"
+				year="-"
+			/>
+
+			<Dictionaryitem
 				name="Programming Language"
 				nameSwe="Programmeringsspråk"
 				shortening="-"
@@ -184,6 +192,37 @@ const Dictionary = () => {
 				POST – skapa data,
 				PUT – uppdatera data,
 				DELETE – ta bort data"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Runtime"
+				nameSwe="Körtid"
+				shortening="-"
+				type="Execution"
+				description="Exekvering som kör källkoden efter Kompileringen."
+				note="-"
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Static typed language"
+				nameSwe="Statisk typningsspråk"
+				shortening="-"
+				type="Classification"
+				description="I ett statisk typningsspråk kan man inte tilldela en variabel en ny typ efter att den är deklarerad. Om man försäker initiera ett nytt värde till en variabel med 
+				en annan typ kommer ett felmeddelande att visas."
+				note="Typningskontrollen sker här när programmer kompilerats, innan körtiden."
+				year="-"
+			/>
+
+			<Dictionaryitem
+				name="Dynamic typed language"
+				nameSwe="Dynamisk typningsspråk"
+				shortening="-"
+				type="Classification"
+				description=""
+				note="Typningskontrollen sker här efter att programmet har kompilerats."
 				year="-"
 			/>
 		</div>
