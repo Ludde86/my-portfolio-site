@@ -1,0 +1,23 @@
+.dictionary-item {
+	padding: 6px 32px;
+	/* border: 1px solid black; */
+}
+
+.label {
+	color: #999;
+	font-weight: bold;
+	margin-right: 12px;
+	min-width: 120px;
+}
+
+.title {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text {
+	color: #333;
+	font-weight: bold;
+	max-width: 75%;
+	min-width: 75%;
+}
