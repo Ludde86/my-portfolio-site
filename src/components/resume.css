@@ -65,7 +65,7 @@
 .skills-resume-container {
 	/* border: 1px solid black; */
 	display: flex;
-	justify-content: start;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
 	margin-bottom: 32px;
