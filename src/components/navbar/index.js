@@ -18,9 +18,11 @@ const Navbar = () => {
 						<Link className="link" to="/projects">
 							<text className="link-text">Projekt</text>
 						</Link>
-						<Link className="link" to="/dictionary">
+						{/*
+							<Link className="link" to="/dictionary">
 							<text className="link-text">Ordlista</text>
-						</Link>
+							</Link>
+						*/}
 					</div>
 					<div className="navbar-border" />
 				</div>

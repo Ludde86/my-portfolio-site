@@ -1,7 +1,6 @@
 import React from 'react';
 import Education from './education';
 import Experience from './experience';
-import Skills from './skills';
 import myAvatar from '../img/avatar-small-resume.png';
 import './resume.css';
 
@@ -78,12 +77,39 @@ const Resume = () => {
 
 				<h4 className="experience-title">Arbetslivserfarenhet</h4>
 				<Experience
+					startYear={2021}
+					endYear={'Pågående'}
+					jobName={'Parkera.nu'}
+					jobPosition={'Applikationsutvecklare (sidoverksamhet)'}
+					jobDescription={
+						'Parkera.nu är en webbaserad parkeringstjänst riktad mot små och mellanstora företag. Som ett sidoprojekt utvecklar jag mobilapplikationer till företagets olika tjänster eftersom dessa endast var webbaserade från början. Applikationerna är utvecklade i ReactJS. Företaget är ett enmansbolag vilket innebär att jag har god kontakt med produktägaren. Jag gjorde även mitt examensarbete på företaget, och nu hjälper jag till med att vidareutveckla applikationerna.'
+					}
+				/>
+				<Experience
+					startYear={2019}
+					endYear={2019}
+					jobName={'Sweet Systems'}
+					jobPosition={'Praktik/LIA'}
+					jobDescription={
+						'Tillbringade två månader i detta företag som utvecklar och digitaliserar automatiserade kundprocesser. Jag ingick i deras grupp som produktutvecklare och arbetade utifrån deras UX designer för att forma tjänstens användargränsnitt. Arbetade även en del med deras testare för att åtgärda eventuella buggar. Fick även delta i företagets egna utbildningar och dagliga verksamhet.'
+					}
+				/>
+				<Experience
+					startYear={2018}
+					endYear={2018}
+					jobName={'Leader Island'}
+					jobPosition={'Praktik/LIA'}
+					jobDescription={
+						'Leader Island är ett socialt nätverk som driver och utvecklar en app, skrivet i JavaScript och dess bibliotek ReactJs, där syftet är att engagera medarbetare i att ta del av information och aktivt bidra till ett positivt företagsklimat. Jag var här under en tvåmånadersperiod och fick ta del av hur företaget arbetade både internt och mot kund. Mitt primära arbete var att uppdatera gammal kod till nya modernare komponenter och att utveckla användargränsnittet i framförallt felmeddelanden och dylikt. Min tid här var otroligt lärorikt då det var första gången jag fick arbeta med ReactJS i ett riktigt projekt.'
+					}
+				/>
+				<Experience
 					startYear={2010}
 					endYear={2020}
 					jobName={'ICA Maxi Haninge'}
 					jobPosition={'Butiksbiträde'}
 					jobDescription={
-						'Största fokus på ICA Maxi Haninge är att ge kunderna den bästa	servicen. 2017 blev jag	nominerad till årets medarbetare, där jag hamnade på en	prestigefull andra plats, av ca. 250 anställda.	Min	tid	spenderades	på mejeriavdelningen, där det är ett högt tryck	med kunder med många	frågor.	Högt tempo mixat med krav på god service har varit viktigt, vilket har gjort mig väldigt stresstålig och lyhörd.'
+						'Största fokus på ICA Maxi Haninge är att ge kunderna den bästa	servicen. 2017 blev jag	nominerad till årets medarbetare, där jag hamnade på en	prestigefull andra plats, av ca. 250 anställda.	Min	tid	spenderades	på mejeriavdelningen, där det är ett högt tryck	med kunder med många frågor. Högt tempo mixat med krav på god service har varit viktigt, vilket har gjort mig väldigt stresstålig och lyhörd.'
 					}
 				/>
 				<Experience
