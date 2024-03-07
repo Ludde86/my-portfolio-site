@@ -1,0 +1,11 @@
+.brands_title {
+    text-align: center;
+    color: #333;
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.brands_logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
