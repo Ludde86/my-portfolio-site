@@ -26,10 +26,14 @@
 .link {
 	text-decoration: none;
 	padding-bottom: 6px;
+	border-bottom: 3px solid #333;
+	width: 120px;
+	text-align: center;
 }
 .link-text {
+	
 	color: #333;
-	margin-right: 32px;
+	/* margin: 12px; */
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -41,8 +45,6 @@
 }
 
 .navbar-border {
-	width: 260px;
-	border-bottom: 3px solid #333;
 	display: flex;
 	align-self: flex-end;
 }

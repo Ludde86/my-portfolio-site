@@ -1,0 +1,9 @@
+.my-button {
+    background-color: lightgray;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 12px 0;
+    margin-right: 12px;
+    border-radius: 10px;
+}

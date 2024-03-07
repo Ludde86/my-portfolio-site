@@ -30,6 +30,17 @@ const Contact = () => {
 				</div>
 				<div className="info">
 					<a
+						href="https://www.facebook.com/ludvig.bjorn"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ textDecoration: 'none' }}
+					>
+						<i className="fa fa-facebook-square" aria-hidden="true" style={{ color: '#333' }} />
+						<text className="info-text">Ludvig Björn via Messenger</text>
+					</a>
+				</div>
+				<div className="info">
+					<a
 						href="https://github.com/Ludde86"
 						target="_blank"
 						rel="noopener noreferrer"

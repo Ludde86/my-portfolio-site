@@ -1,0 +1,26 @@
+.home-container {
+    height: 120vh;
+    min-width: 100%;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 2px solid black; */
+    /* padding-top: 100px; */
+}
+
+#home-1 {
+    background-image: url('../naprapatrehab_img/DSC06345.jpeg');
+}
+
+#home-2 {
+    background-image: url('../naprapatrehab_img/DSC06368.jpeg');
+}
+
+#home-3 {
+    background-image: url('../naprapatrehab_img/DSC06469.jpeg'); 
+}
+
+#home-4 {
+    background-image: url('../naprapatrehab_img/DSC06497.jpeg');
+}
+

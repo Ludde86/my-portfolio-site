@@ -6,6 +6,9 @@
 
 .img-container {
 	margin-left: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .contact-avatar {
@@ -13,6 +16,7 @@
 	max-height: 160px;
 	max-width: 160px;
 	box-shadow: 4px 4px 12px #bbb;
+	
 }
 
 .info-container {

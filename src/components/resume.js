@@ -77,12 +77,21 @@ const Resume = () => {
 
 				<h4 className="experience-title">Arbetslivserfarenhet</h4>
 				<Experience
+					startYear={2022}
+					endYear={'Pågående'}
+					jobName={'Olika butiker'}
+					jobPosition={'E-handel'}
+					jobDescription={
+						'Sedan slutet av 2022 sysslar jag även med e-handel där jag testar produkter, bygger upp hemsidor/butiker, hanterar lager, ordrar och kundtjänst. Jag skapar annonser och hanterar annonskontot via meta/facebook där jag följer statistik för att testa, optimera och utveckla annonserna. Den senaste butiken har sålt över 1000 produkter och omsatt över 250,000kr sedan september 2023, endast här i Sverige.'
+					}
+				/>
+				<Experience
 					startYear={2021}
 					endYear={'Pågående'}
 					jobName={'Parkera.nu'}
-					jobPosition={'Applikationsutvecklare (sidoverksamhet)'}
+					jobPosition={'Applikationsutvecklare'}
 					jobDescription={
-						'Parkera.nu är en webbaserad parkeringstjänst riktad mot små och mellanstora företag. Som ett sidoprojekt utvecklar jag mobilapplikationer till företagets olika tjänster eftersom dessa endast var webbaserade från början. Applikationerna är utvecklade i ReactJS. Företaget är ett enmansbolag vilket innebär att jag har god kontakt med produktägaren. Jag gjorde även mitt examensarbete på företaget, och nu hjälper jag till med att vidareutveckla applikationerna.'
+						'Parkera.nu är en webbaserad parkeringstjänst riktad mot små och mellanstora företag där jag utvecklar mobilapplikationer till företagets olika tjänster eftersom dessa endast var webbaserade från början. Applikationerna är utvecklade i ReactJS/React-native. Företaget är ett enmansbolag vilket innebär att jag har god kontakt med produktägaren. Jag gjorde även mitt examensarbete på företaget och hjälper nu till med att vidareutveckla applikationerna.'
 					}
 				/>
 				<Experience
@@ -137,6 +146,8 @@ const Resume = () => {
 					<text className="skills-text">Firebase</text>
 					<text className="skills-text">MongoDB</text>
 					<text className="skills-text">REST</text>
+					<text className="skills-text">Shopify</text>
+					<text className="skills-text">Business manager (meta/facebook)</text>
 				</div>
 				{/*
 					<Skills skill="Java" progress={40} />
