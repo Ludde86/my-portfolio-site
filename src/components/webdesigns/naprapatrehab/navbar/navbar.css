@@ -1,0 +1,25 @@
+
+
+.navbar {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.2);
+}
+
+.ul_container {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    min-width: 75%;
+    /* border: 1px solid white; */
+}
+
+.link-item {
+    max-width: 10%;
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}

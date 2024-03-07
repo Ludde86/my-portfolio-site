@@ -1,130 +1,19 @@
 import React, { useState } from 'react';
 import './projects.css';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
+import Challenge1 from './challengesCSS/challenge1/Challenge1';
+import Webdesign1 from "./webdesigns/webdesign1/webdesign1";
+import Naprapatrehab from './webdesigns/naprapatrehab/Naprapatrehab';
 
 const Projects = () => {
-	const [ activeTab, setActiveTab ] = useState(0);
+	const [activeTab, setActiveTab] = useState(0);
 
 	const toggleCategories = () => {
 		switch (activeTab) {
 			case 0:
 				return (
 					<div className="projects-container">
-						<Card shadow={5} className="card-container">
-							<CardTitle
-								style={{
-									color: '#fff',
-									minHeight: '126px',
-									background: 'url("/todo-image.png") center / cover',
-									margin: 12,
-									borderRadius: 6
-								}}
-							/>
-
-							<CardText className="card-text">
-								<h5>Todo List - Webbapplikation</h5>
-								<p>
-									Mitt startprojekt för att fördjupa mig i både webbutveckling och i att lagra/hämta
-									data via en databas.
-								</p>
-								<p>
-									Tanken är att vidareutveckla denna sida så att jag sedan kan koppla ihop denna med
-									en liknande mobilapp som jag har skapat. Man kommer då att i både webbtjänsten och i
-									appen att i realtid kunna se den information som läggs till eller uppdateras.
-								</p>
-								<p>Plattformen som används på denna webbsida för att hosta och lagra data är Heroku.</p>
-							</CardText>
-
-							<CardActions border>
-								<Button colored>
-									<a
-										href="https://klovisattgora.herokuapp.com"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="project-link"
-									>
-										klovisattgora.herokuapp.com
-									</a>
-								</Button>
-							</CardActions>
-							{/*
-							<CardMenu style={{ color: '#fff' }}>
-								<IconButton name="share" />
-								</CardMenu>
-							*/}
-						</Card>
-
-						<Card shadow={5} className="card-container">
-							<CardTitle
-								style={{
-									color: '#fff',
-									minHeight: '126px',
-									background: 'url("/dymt-image.png") center / cover',
-									margin: 12,
-									borderRadius: 12
-								}}
-							/>
-
-							<CardText className="card-text">
-								<h5>Videos - Webbapplikation </h5>
-								<p>
-									En webbsida där jag själv väljer vilka klipp ifrån youtube som skall visas, genom
-									klippets url.
-								</p>
-								<p>
-									Här är syftet att locka hit andra användare som via denna sida endast ser de klipp
-									som tex. jag har skapat. Tanken med denna sida är även att om det i framtiden skapas
-									trafik hit, skall reklam kunna generera intäkter.
-								</p>
-								<p>Detta är just nu en "leksida/testsida" för mig.</p>
-								<p>Plattformen som används på denna webbsida för att hosta är Firebase.</p>
-							</CardText>
-							<CardActions border>
-								<Button colored>
-									<a
-										href="https://didyoumissthisvideos.com/"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="project-link"
-									>
-										didyoumissthisvideos.com
-									</a>
-								</Button>
-							</CardActions>
-						</Card>
-
-						<Card shadow={5} className="card-container">
-							<CardTitle
-								style={{
-									color: '#fff',
-									minHeight: '126px',
-									background: 'url("/hemsida-image.png") center / cover',
-									margin: 12,
-									borderRadius: 12
-								}}
-							/>
-							<CardText className="card-text">
-								<h5>Min Hemsida </h5>
-								<p>
-									Syftet här är att kunna visa upp de kunskaper jag besitter och de projekt jag
-									arbetar/arbetat med.
-								</p>
-								<p>Här kommer även all annan information om mig att läggas ut.</p>
-								<p>Plattformen som används på denna webbsida för att hosta är Netifly.</p>
-							</CardText>
-							<CardActions border>
-								<Button colored>
-									<a
-										href="https://ludvigbjorn.com/"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="project-link"
-									>
-										ludvigbjorn.com
-									</a>
-								</Button>
-							</CardActions>
-						</Card>
+						<Naprapatrehab />
 					</div>
 				);
 			case 1:
@@ -184,13 +73,14 @@ const Projects = () => {
 			case 2:
 				return (
 					<div>
-						<h1>This is JavaScript</h1>
+						<Webdesign1 />
 					</div>
 				);
 			case 3:
 				return (
 					<div>
-						<h1>This is Java</h1>
+						<h1>This is Css</h1>
+						<Challenge1 />
 					</div>
 				);
 			case 4:
@@ -205,10 +95,14 @@ const Projects = () => {
 	};
 
 	return (
-		<div style={{ marginTop: 42 }}>
-			<Tabs activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
-				<Tab style={{ fontWeight: 'bold' }}>React</Tab>
+		<div>
+			<Tabs style={{ paddingTop: 46 }} activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
+				<Tab style={{ fontWeight: 'bold' }}>Webbdesign</Tab>
 				<Tab style={{ fontWeight: 'bold' }}>React Native</Tab>
+				<Tab style={{ fontWeight: 'bold' }}>React</Tab>
+				{/*
+				<Tab style={{ fontWeight: 'bold' }}>CSS</Tab>
+			*/}
 				{/*
 					<Tab>JavaScript</Tab>
 					<Tab>Java</Tab>
@@ -216,11 +110,11 @@ const Projects = () => {
 				*/}
 			</Tabs>
 
-			<Grid>
-				<Cell col={12}>
-					<div className="content">{toggleCategories()}</div>
-				</Cell>
-			</Grid>
+
+
+			<div className="content">{toggleCategories()}</div>
+
+
 		</div>
 	);
 };

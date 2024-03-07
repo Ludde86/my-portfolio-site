@@ -1,0 +1,39 @@
+.user-card {
+    /* border: 1px solid black; */
+    background: #ffe;
+    border-radius: 6px;
+    box-shadow: 3px 2px 2px #aaa;
+    padding: 12px;
+}
+
+.user-card_username {
+    display: flex;
+}
+
+.status-offline {
+    color: red;
+}
+
+.status-online {
+    color: green;
+}
+
+.user-card_username p {
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user-card img {
+    border-radius: 50%;
+}
+
+.user-card_button {
+    margin-left: 12px;
+    border-radius: 16px;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}

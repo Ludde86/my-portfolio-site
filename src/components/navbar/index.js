@@ -9,15 +9,17 @@ const Navbar = () => {
 			<div className="fixed-navbar">
 				<div className="navbar-container">
 					<div className="links-container">
-						<Link className="link" to="/">
-							<text className="link-text">Hem</text>
+						<Link className="link link-text" to="/">
+							Hem
 						</Link>
-						<Link className="link" to="/resume">
-							<text className="link-text">CV</text>
+						<Link className="link link-text" to="/resume">
+							CV
 						</Link>
-						<Link className="link" to="/projects">
-							<text className="link-text">Projekt</text>
+
+						<Link className="link link-text" to="/projects">
+							Design
 						</Link>
+
 						{/*
 							<Link className="link" to="/dictionary">
 							<text className="link-text">Ordlista</text>

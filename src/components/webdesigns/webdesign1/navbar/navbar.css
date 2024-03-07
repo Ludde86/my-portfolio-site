@@ -1,0 +1,11 @@
+.web-container_ul {
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.web-container_li {
+   cursor: pointer;
+}
