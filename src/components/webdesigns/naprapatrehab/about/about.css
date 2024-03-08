@@ -1,0 +1,25 @@
+.about_container {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.about_container-title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-style: italic;
+}
+
+.about_container-description {
+    /* border: 1px solid black; */
+    display: flex;
+
+    padding: 12px;
+    text-align: center;
+}
+
+.about_container-description_text {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    box-shadow: 1px 1px 2px #333;
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+}

@@ -6,6 +6,10 @@
     border-radius: 6px;
     cursor: pointer;
     opacity: 0.8;
-
+    border: none;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button-whihte:hover {
+    opacity: 1;
 }

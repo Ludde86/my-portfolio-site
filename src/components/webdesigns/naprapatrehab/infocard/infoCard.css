@@ -3,10 +3,12 @@
     width: 50%;
     position: relative;
     left: 50px;
-    top: 60vh;
+    top: 75vh;
     color: #fff;
     text-shadow: 1px 1px 2.5px #333;
-    
+    box-shadow: 2px 2px 2px #00000054;
+    background: #33333331;
+    padding: 12px;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
