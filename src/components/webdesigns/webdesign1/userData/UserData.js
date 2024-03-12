@@ -106,7 +106,7 @@ export default function ListUser() {
 
             <input
                 type="text"
-                placeholder="Search by username"
+                placeholder="Sortera efter bokstav..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
             />

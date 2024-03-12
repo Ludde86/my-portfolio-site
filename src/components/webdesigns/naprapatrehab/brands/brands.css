@@ -1,3 +1,8 @@
+.brands_container {
+    padding: 5%;
+    margin-top: 64px;
+}
+
 .brands_title {
     text-align: center;
     color: #333;
@@ -8,4 +13,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.brands_logos img {
+    margin: 12px;
+    padding: 12px;
 }

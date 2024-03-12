@@ -1,25 +1,132 @@
 .about_container {
     /* border: 1px solid black; */
     text-align: center;
+    background: #fff;
+    padding: 5%;
+    padding-bottom: 5%;
 }
 
 .about_container-title {
+    margin-bottom: -64px;
+    text-align: center;
+    color: #333;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    font-style: italic;
 }
 
 .about_container-description {
     /* border: 1px solid black; */
     display: flex;
-
+    flex-wrap: wrap;
     padding: 12px;
     text-align: center;
 }
 
 .about_container-description_text {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    box-shadow: 1px 1px 2px #333;
+    /* box-shadow: 1px 1px 10px orange; */
     margin: 24px;
     padding: 24px;
-    border-radius: 12px;
+    border-radius: 2px;
+    color: #333;
+    font-size: 32;
+    /* text-shadow: 2px 2px 6px orange; */
 }
+
+#about_container-description_text-title {
+    text-align: start;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.about_container-description_text p {
+    font-size: 18px;
+}
+
+.about_container-images {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-bottom: 44px;
+}
+
+.about_container-images_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 100px;
+    margin: 64px;
+    /* box-shadow: 0px 0px 12px white; */
+}
+
+.about_container-images_card-text {
+    /* border: 1px solid white; */
+    margin-bottom: -24px;
+    margin-right: -48px;
+    /* background: #00000062; */
+
+    text-shadow: 1px 1px 2.5px #333;
+    box-shadow: 2px 2px 2px #0000008a;
+    background: #3333339a;
+    padding: 6px 12px;
+    border-radius: 25px;
+    
+}
+
+.about_container-images_card p {
+    
+    font-size: 24px;
+    margin-bottom: 0px;
+    
+}
+
+.about_container-images img {
+    border-radius: 25px;
+    margin: 12px;
+
+}
+
+.about_container-images p {
+    color: #fff;
+    text-shadow: 3px 3px 4px #333;
+}
+
+
+
+#about1 {
+    background-image: url('../naprapatrehab_img/Susanne Porträtt 1.jpeg');
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#about2 {
+    background-image: url('../naprapatrehab_img/Line Porträtt 1.jpeg');
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#about3 {
+    background-image: url('../naprapatrehab_img/Sofie Porträtt 2.jpeg');
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    #about_container-description_text-title {
+        text-align: center;
+    }
+
+    .about_container-description_text {
+        padding: 0;
+    }
+
+    .about_container-images_card {
+        margin-top: 64px;
+    }
+  }

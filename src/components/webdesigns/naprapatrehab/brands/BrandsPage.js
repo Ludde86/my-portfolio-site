@@ -7,7 +7,7 @@ import logga4 from '../naprapatrehab_img/logga länna sport.jpg'
 
 const BrandsPage = () => {
     return (
-        <div>
+        <div className='brands_container'>
             <h3 className='brands_title'>
                 Företag och föreningar vi sammarbetar med idag:
             </h3>
