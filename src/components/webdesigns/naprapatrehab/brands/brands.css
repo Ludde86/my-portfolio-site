@@ -1,5 +1,5 @@
 .brands_container {
-    padding: 5%;
+    /* padding: 5%; */
     margin-top: 64px;
 }
 
@@ -7,16 +7,44 @@
     text-align: center;
     color: #333;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    margin-top: 82px;
+    margin-bottom: 64px;
 }
 
 .brands_logos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.brands_logos-logo-container {
+    box-shadow: 2px 2px 4px #ddd;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
 }
 
 .brands_logos img {
     margin: 12px;
     padding: 12px;
+    /* border: 1px solid black; */
+    /* border-radius: 100%; */
+    width: 200px;
+    transform: scale(0.5);
+    max-width: 100%;
+    height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .brands_title {
+        font-size: 22px;
+        margin-left: 64px;
+        margin-right: 64px;
+        font-weight: 700;
+    }
+  }

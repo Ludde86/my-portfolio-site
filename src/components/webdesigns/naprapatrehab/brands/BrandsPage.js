@@ -12,10 +12,18 @@ const BrandsPage = () => {
                 Företag och föreningar vi sammarbetar med idag:
             </h3>
             <div className='brands_logos'>
-                <img src={logga1} alt="polfarsk logga" />
-                <img src={logga2} alt="polfarsk logga" />
-                <img src={logga3} alt="polfarsk logga" />
-                <img src={logga4} alt="polfarsk logga" />
+                <div className='brands_logos-logo-container'>
+                    <img src={logga1} alt="polfarsk logga" />
+                </div>
+                <div className='brands_logos-logo-container'>
+                    <img src={logga2} alt="polfarsk logga" />
+                </div>
+                <div className='brands_logos-logo-container'>
+                    <img src={logga3} alt="polfarsk logga" />
+                </div>
+                <div className='brands_logos-logo-container'>
+                    <img src={logga4} alt="polfarsk logga" />
+                </div>
             </div>
         </div>
     )
