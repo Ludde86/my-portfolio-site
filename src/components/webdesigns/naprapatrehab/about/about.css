@@ -12,6 +12,7 @@
 
 .about_container-title {
     /* margin-bottom: -64px; */
+    font-style: italic;
     text-align: center;
     color: #333;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
@@ -53,7 +54,7 @@
     flex-direction: column;
     justify-content: space-around;
     /* flex-wrap: wrap; */
-    margin-top: 64px;
+    padding-top: 64px;
     margin-bottom: 44px;
 }
 

@@ -10,7 +10,7 @@ const AboutPage = () => {
 
 
             <div className='about_container-images'>
-                <h3 className='about_container-title'>Några ord om oss:</h3>
+                <h1 className='about_container-title'>Några ord om oss:</h1>
                 <div className='about_container-card'>
                     <div id='about1' className='about_container-images_card'>
                         <div className='about_container-images_card-title_container'>

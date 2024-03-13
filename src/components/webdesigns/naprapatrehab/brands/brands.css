@@ -1,13 +1,33 @@
 .brands_container {
     /* padding: 5%; */
-    margin-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 124px;
+    background: #fff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fff, orange);
+    background: linear-gradient(to left, #fff, orange); 
+}
+
+.brands_container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
 }
 
 .brands_title {
     text-align: center;
+    /* font-style: italic; */
     color: #333;
-    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 82px;
+    
+}
+
+.line-break {
+    border: 2px solid #333;
+    width: 90%;
+    margin-left: auto; 
+    margin-right: 0;
     margin-bottom: 64px;
 }
 
@@ -19,10 +39,11 @@
 }
 
 .brands_logos-logo-container {
-    box-shadow: 2px 2px 4px #ddd;
+    background: #fff;
+    box-shadow: 2px 2px 4px #333;
     border-radius: 100px;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
