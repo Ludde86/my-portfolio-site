@@ -7,25 +7,51 @@ import about3 from '../naprapatrehab_img/Sofie Porträtt 2.jpeg'
 const AboutPage = () => {
     return (
         <div className='about_container'>
-            <h3 className='about_container-title'>Några ord om oss:</h3>
+
 
             <div className='about_container-images'>
-                <div id='about1' className='about_container-images_card'>
-                    <div className='about_container-images_card-text'>
-                        <p>Susanne Nyström</p>
-                        <p>Leg. Naprapat</p>
+                <h3 className='about_container-title'>Några ord om oss:</h3>
+                <div className='about_container-card'>
+                    <div id='about1' className='about_container-images_card'>
+                        <div className='about_container-images_card-title_container'>
+                            <p className='about_container-card_title'>Susanne Nyström</p>
+                            <p className='about_container-card_title'>Leg. Naprapat</p>
+                        </div>
+
+                    </div>
+                    <div className='about_container-images_card-description_container'>
+                        <p>Jag är en glad, positiv och engagerad naprapat. Mitt intresse för naprapati växte fram under min tid som aktiv elitgymnast då jag deltog i både mindre och större tävlingar som SM och NM. Idag tränar jag crossfit, löpning och en hel del hemmaträning.  Jag har arbetat med dansare på Kungliga Svenska Baletthögskolan och har även tränat små blivande gymnaster i Vendelsö Gymnastikförening och Dalarö Sportklubb. Efter att jag avslutat min utbildning har jag utökat min kompetens med akupunktur (Dry needling) och jag är certifierad MammaMagetränare.</p>
+                        <p>Mitt företag DS Nyström AB (tidigare S.O.Skärgårdsnaprapaten) har jag har drivit sen år 2008  då jag fortfarande gick och utbildade mig till naprapat på Naprapathögskolan i Stockholm.  Min verksamhet började med att jag åkte ut på företag för att behandla personal och idag har jag startat Naprapat & Rehabcenter Haninge AB tillsammans med mina kollegor Sofie Andersson och Line Jonasson. Drömmen är att få vara en del av ett center där flera kompetenser samlats under samma tak för att kunna hjälpa dig som patient på bästa möjliga sätt.</p>
                     </div>
                 </div>
-                <div id='about2' className='about_container-images_card'>
-                    <div className='about_container-images_card-text'>
-                        <p>Line Jonasson</p>
-                        <p>Leg. Naprapat</p>
+                <div className='about_container-card'>
+
+                    <div className='about_container-images_card-description_container'>
+                        <p>Line Jonasson, legitimerad naprapat och har jobbat inom hälsa, träning och rehabilitering sedan 2001.</p>
+                        <p>Jag brinner för mitt yrke och den känslan som infinner sig när en patient går ifrån en behandling med mindre smärta. Jag tycker att arbetet som terapeut blir roligare för varje år som går och jag väljer att kontinuerligt fortbilda mig inom olika behandlingsformer och träning för att du som patient ska kunna få den bästa hjälpen och vägledningen med just dina besvär.</p>
+                        <p>Jag har idrottat hela mitt liv med framför allt simning i Södertörnssimsällskap både som simmare och tränare. Har även sysslat med gymnastik och lite friidrott. Idag så är jag utbildad både inom pilates, yoga och soma move/mind och har tidigare hållt i  klasser på Iform friskvårdscenter i Haninge under många år.  Mitt intresse för att hjälpa människor startade framför allt efter en film jag såg när jag var barn som heter Fallet Henry med Harrison Ford. Har sedan dess velat hjälpa människor med smärta och tillbaka till full funktion. Den filmen ligger mig fortfarande varmt om hjärtat.</p>
+                    </div>
+                    <div id='about2' className='about_container-images_card'>
+                        <div className='about_container-images_card-title_container'>
+                            <p className='about_container-card_title'>Line Jonasson</p>
+                            <p className='about_container-card_title'>Leg. Naprapat</p>
+                        </div>
                     </div>
                 </div>
-                <div id='about3' className='about_container-images_card'>
-                    <div className='about_container-images_card-text'>
-                        <p>Sofie Schmidt</p>
-                        <p>Leg. Naprapat</p>
+                <div className='about_container-card'>
+                    <div id='about3' className='about_container-images_card'>
+                        <div className='about_container-images_card-title_container'>
+                            <p className='about_container-card_title'>Sofie Schmidt</p>
+                            <p className='about_container-card_title'>Leg. Naprapat</p>
+                        </div>
+                    </div>
+                    <div className='about_container-images_card-description_container'>
+                        <p>Jag är en person som tycker om att hjälpa andra. Oavsett om det handlat om att lyssna eller agera för att få någon att må bra, så har jag alltid brunnit för det. Detta tillsammans med mitt stora intresse för idrott och träning samt min kärlek till att få arbeta med händerna och vara kreativ var anledningen till att jag, efter några härliga år med jobb och resande efter studenten, år 2009 sökte mig till Naprapathögskolan i Stockholm.</p>
+                        <p>Jag har som sagt alltid haft ett stort intresse för idrott och fritidsaktiviter, vilket  var en av anledningarna till att jag började studera till naprapat. Att träna och röra på sig, oavsett om det handlat tävling, match eller för att må bra, så har det alltid varit en stor del av mitt liv.</p>
+                        <p>Jag har varit aktiv inom många sporter och idrotter, så som gymnastik, dans, ridning och innebandy. Det som dock alltid varit min största passion och där jag har mest erfarenhet både som spelare och ledare är inom fotboll.
+
+                            Numera ägnar jag mig mest åt blandad träning och aktiviteter som styrketräning, klättring, cykling, löpning, längsskidor, rullskidor och golf.</p>
+                        <p>Sedan examen från naprapathögskolan har jag startat och drivit min verksamhet, först som konsult på Ryggkliniken i Stockholm, där jag också gjorde min leg. praktik efter utbildningen. Därefter i början av 2014, så var det dags att komma igång och starta upp verksamheten här ute i Haninge, där jag är uppväxt och bor än idag.</p>
                     </div>
                 </div>
             </div>

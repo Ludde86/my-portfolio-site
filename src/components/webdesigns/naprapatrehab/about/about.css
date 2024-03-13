@@ -4,10 +4,14 @@
     background: #fff;
     padding: 5%;
     padding-bottom: 5%;
+
+    background: #D1913C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fff, orange);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fff, orange); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .about_container-title {
-    margin-bottom: -64px;
+    /* margin-bottom: -64px; */
     text-align: center;
     color: #333;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
@@ -34,7 +38,7 @@
 
 #about_container-description_text-title {
     text-align: start;
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
     font-weight: 700;
 }
@@ -46,10 +50,20 @@
 .about_container-images {
     /* border: 1px solid white; */
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-top: 64px;
     margin-bottom: 44px;
+}
+
+.about_container-card {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 .about_container-images_card {
@@ -57,31 +71,36 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    min-width: 200px;
     border-radius: 100px;
     margin: 64px;
+    /* border: 1px solid black; */
     /* box-shadow: 0px 0px 12px white; */
+    
 }
 
-.about_container-images_card-text {
-    /* border: 1px solid white; */
-    margin-bottom: -24px;
-    margin-right: -48px;
-    /* background: #00000062; */
+.about_container-images_card-title_container {
+    text-shadow: 2px 2px 2px #000;
+    /* border: 1px solid black; */
+    background: #00000062;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 
-    text-shadow: 1px 1px 2.5px #333;
-    box-shadow: 2px 2px 2px #0000008a;
-    background: #3333339a;
     padding: 6px 12px;
-    border-radius: 25px;
-    
+    border-radius: 100px;
+    margin-right: -32px;
+    margin-bottom: -12px;
 }
 
-.about_container-images_card p {
-    
-    font-size: 24px;
-    margin-bottom: 0px;
-    
+.about_container-card_title {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
 }
+
+
 
 .about_container-images img {
     border-radius: 25px;
@@ -89,37 +108,50 @@
 
 }
 
-.about_container-images p {
-    color: #fff;
-    text-shadow: 3px 3px 4px #333;
-}
-
 
 
 #about1 {
-    background-image: url('../naprapatrehab_img/Susanne Porträtt 1.jpeg');
+    background-image: url('../naprapatrehab_img/Susanne 2.jpg');
     background-size: 100%;
     width: 200px;
     height: 200px;
 }
 
 #about2 {
-    background-image: url('../naprapatrehab_img/Line Porträtt 1.jpeg');
+    background-image: url('../naprapatrehab_img/Line 1.jpg');
     background-size: 100%;
     width: 200px;
     height: 200px;
 }
 
 #about3 {
-    background-image: url('../naprapatrehab_img/Sofie Porträtt 2.jpeg');
+    background-image: url('../naprapatrehab_img/sofie 5.jpg');
     background-size: 100%;
     width: 200px;
     height: 200px;
 }
 
 @media only screen and (max-width: 600px) {
+
+    .about_container {
+        padding: 0;
+    }
+
+    .about_container-card {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
     #about_container-description_text-title {
-        text-align: center;
+        text-align: start;
+    }
+
+    .about_container-images_card-description_container {
+        padding: 36px;
     }
 
     .about_container-description_text {
@@ -128,5 +160,18 @@
 
     .about_container-images_card {
         margin-top: 64px;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: flex-end;
+        align-items: flex-end; 
+    }
+
+    .about_container-title {
+        font-size: 22px;
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-top: 64px;
+        font-weight: 700;
+        
     }
   }

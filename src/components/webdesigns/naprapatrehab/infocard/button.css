@@ -1,13 +1,19 @@
 .button-whihte {
-    background: #fff;
+    background: orange;
     color: #333;
     font-size: 20px;
-    padding: 8px;
-    border-radius: 6px;
+   
     cursor: pointer;
     opacity: 0.8;
     border: none;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background: #00000062;
+
+    color: orange;
+    padding: 6px 12px;
+    border-radius: 25px;
+    border: 1px solid black;
 }
 
 .button-whihte:hover {

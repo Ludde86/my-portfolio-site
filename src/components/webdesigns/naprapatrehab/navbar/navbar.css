@@ -13,16 +13,24 @@
 
 .ul_container {
     list-style: none;
-    color: #fff;
+    color: orange;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     min-width: 75%;
+    font-weight: 500;
+    text-shadow: 1px 1px 6px black;
     /* border: 1px solid white; */
 }
 
 .link-item {
     max-width: 10%;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.link-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 760px) {
