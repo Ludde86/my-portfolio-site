@@ -3,7 +3,7 @@
     width: 50%;
     position: relative;
     left: 50px;
-    top: 75vh;
+    top: 40%;
     color: #fff;
     text-shadow: 1px 1px 2.5px #333;
     box-shadow: 2px 2px 2px #00000054;
@@ -25,3 +25,31 @@
 .infocard-container_subtitle {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
+
+@media only screen and (max-width: 600px) {
+    .infocard-container {
+        width: 90%;
+        height: 35vh;
+        position: unset;
+       
+        /* top: 20%; */
+        overflow: hidden;
+        min-width: 200px;
+        margin-bottom: 8px;
+    }
+    
+    .infocard-container_title {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    .infocard-container_desciption {
+        line-height: 16px;
+    }
+
+    .infocard-container_subtitle {
+        font-size: 16px;
+        line-height: 6px;
+    }
+  }

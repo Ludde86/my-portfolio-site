@@ -1,25 +1,178 @@
 .about_container {
     /* border: 1px solid black; */
     text-align: center;
+    background: #fff;
+    padding: 5%;
+    padding-bottom: 5%;
+
+    background: #D1913C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fff, orange);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fff, orange); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .about_container-title {
-    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    /* margin-bottom: -64px; */
     font-style: italic;
+    text-align: center;
+    color: #333;
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
 .about_container-description {
     /* border: 1px solid black; */
     display: flex;
-
+    flex-wrap: wrap;
     padding: 12px;
     text-align: center;
 }
 
 .about_container-description_text {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    box-shadow: 1px 1px 2px #333;
+    /* box-shadow: 1px 1px 10px orange; */
     margin: 24px;
     padding: 24px;
-    border-radius: 12px;
+    border-radius: 2px;
+    color: #333;
+    font-size: 32;
+    /* text-shadow: 2px 2px 6px orange; */
 }
+
+#about_container-description_text-title {
+    text-align: start;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.about_container-description_text p {
+    font-size: 18px;
+}
+
+.about_container-images {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    padding-top: 64px;
+    margin-bottom: 44px;
+}
+
+.about_container-card {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.about_container-images_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 200px;
+    border-radius: 100px;
+    margin: 64px;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 0px 12px white; */
+    
+}
+
+.about_container-images_card-title_container {
+    text-shadow: 2px 2px 2px #000;
+    /* border: 1px solid black; */
+    background: #00000062;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 6px 12px;
+    border-radius: 100px;
+    margin-right: -32px;
+    margin-bottom: -12px;
+}
+
+.about_container-card_title {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+.about_container-images img {
+    border-radius: 25px;
+    margin: 12px;
+
+}
+
+
+
+#about1 {
+    background-image: url('../naprapatrehab_img/Susanne 2.jpg');
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#about2 {
+    background-image: url('../naprapatrehab_img/Line 1.jpg');
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+#about3 {
+    background-image: url('../naprapatrehab_img/sofie 5.jpg');
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .about_container {
+        padding: 0;
+    }
+
+    .about_container-card {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #about_container-description_text-title {
+        text-align: start;
+    }
+
+    .about_container-images_card-description_container {
+        padding: 36px;
+    }
+
+    .about_container-description_text {
+        padding: 0;
+    }
+
+    .about_container-images_card {
+        margin-top: 64px;
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: flex-end;
+        align-items: flex-end; 
+    }
+
+    .about_container-title {
+        font-size: 22px;
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-top: 64px;
+        font-weight: 700;
+        
+    }
+  }

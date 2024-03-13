@@ -1,9 +1,12 @@
 .home-container {
-    height: 120vh;
+    background: #fff;
+
+    min-height: 50vh;
+    height: 100vh;
     min-width: 100%;
    
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     /* border: 2px solid black; */
     /* padding-top: 100px; */
 }
@@ -25,12 +28,24 @@
 #home-4 {
     background-image: url('../naprapatrehab_img/cre8you-certifierad-mammamage-tranare.jpeg');
     background-size: 25%; 
-    background-position: right 5% bottom 50%;
+    background-position: right 5% bottom 10%;
 }
 
 #home-5 {
     background-image: url('../naprapatrehab_img/cre8you-certifierad-mammamage-tranare.jpeg');
     background-size: 25%; 
-    background-position: right 5% bottom 50%;
+    background-position: right 5% bottom 10%;
 }
+
+@media only screen and (max-width: 600px) {
+    .home-container {
+        height: 60vh;
+        /* background-color: lightblue; */
+        padding: auto 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+  }
 
