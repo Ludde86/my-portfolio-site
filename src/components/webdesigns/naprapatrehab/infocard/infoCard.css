@@ -40,6 +40,8 @@
     
     .infocard-container_title {
         font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 12px;
     }
 
     .infocard-container_desciption {
@@ -47,6 +49,7 @@
     }
 
     .infocard-container_subtitle {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 6px;
     }
   }

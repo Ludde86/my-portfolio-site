@@ -5,6 +5,9 @@ import about2 from '../naprapatrehab_img/Line Porträtt 1.jpeg'
 import about3 from '../naprapatrehab_img/Sofie Porträtt 2.jpeg'
 
 const AboutPage = () => {
+
+    const mediaQueryCondition = window.matchMedia('( max-width: 600px )').matches;
+
     return (
         <div className='about_container'>
 
@@ -24,20 +27,43 @@ const AboutPage = () => {
                         <p>Mitt företag DS Nyström AB (tidigare S.O.Skärgårdsnaprapaten) har jag har drivit sen år 2008  då jag fortfarande gick och utbildade mig till naprapat på Naprapathögskolan i Stockholm.  Min verksamhet började med att jag åkte ut på företag för att behandla personal och idag har jag startat Naprapat & Rehabcenter Haninge AB tillsammans med mina kollegor Sofie Andersson och Line Jonasson. Drömmen är att få vara en del av ett center där flera kompetenser samlats under samma tak för att kunna hjälpa dig som patient på bästa möjliga sätt.</p>
                     </div>
                 </div>
-                <div className='about_container-card'>
 
-                    <div className='about_container-images_card-description_container'>
-                        <p>Line Jonasson, legitimerad naprapat och har jobbat inom hälsa, träning och rehabilitering sedan 2001.</p>
-                        <p>Jag brinner för mitt yrke och den känslan som infinner sig när en patient går ifrån en behandling med mindre smärta. Jag tycker att arbetet som terapeut blir roligare för varje år som går och jag väljer att kontinuerligt fortbilda mig inom olika behandlingsformer och träning för att du som patient ska kunna få den bästa hjälpen och vägledningen med just dina besvär.</p>
-                        <p>Jag har idrottat hela mitt liv med framför allt simning i Södertörnssimsällskap både som simmare och tränare. Har även sysslat med gymnastik och lite friidrott. Idag så är jag utbildad både inom pilates, yoga och soma move/mind och har tidigare hållt i  klasser på Iform friskvårdscenter i Haninge under många år.  Mitt intresse för att hjälpa människor startade framför allt efter en film jag såg när jag var barn som heter Fallet Henry med Harrison Ford. Har sedan dess velat hjälpa människor med smärta och tillbaka till full funktion. Den filmen ligger mig fortfarande varmt om hjärtat.</p>
-                    </div>
-                    <div id='about2' className='about_container-images_card'>
-                        <div className='about_container-images_card-title_container'>
-                            <p className='about_container-card_title'>Line Jonasson</p>
-                            <p className='about_container-card_title'>Leg. Naprapat</p>
+                {mediaQueryCondition ?
+
+                    <div className='about_container-card'>
+
+                        <div id='about2' className='about_container-images_card'>
+                            <div className='about_container-images_card-title_container'>
+                                <p className='about_container-card_title'>Line Jonasson</p>
+                                <p className='about_container-card_title'>Leg. Naprapat</p>
+                            </div>
+                        </div>
+                        <div className='about_container-images_card-description_container'>
+                            <p>Line Jonasson, legitimerad naprapat och har jobbat inom hälsa, träning och rehabilitering sedan 2001.</p>
+                            <p>Jag brinner för mitt yrke och den känslan som infinner sig när en patient går ifrån en behandling med mindre smärta. Jag tycker att arbetet som terapeut blir roligare för varje år som går och jag väljer att kontinuerligt fortbilda mig inom olika behandlingsformer och träning för att du som patient ska kunna få den bästa hjälpen och vägledningen med just dina besvär.</p>
+                            <p>Jag har idrottat hela mitt liv med framför allt simning i Södertörnssimsällskap både som simmare och tränare. Har även sysslat med gymnastik och lite friidrott. Idag så är jag utbildad både inom pilates, yoga och soma move/mind och har tidigare hållt i  klasser på Iform friskvårdscenter i Haninge under många år.  Mitt intresse för att hjälpa människor startade framför allt efter en film jag såg när jag var barn som heter Fallet Henry med Harrison Ford. Har sedan dess velat hjälpa människor med smärta och tillbaka till full funktion. Den filmen ligger mig fortfarande varmt om hjärtat.</p>
                         </div>
                     </div>
-                </div>
+
+                    :
+
+                    <div className='about_container-card'>
+                        <div className='about_container-images_card-description_container'>
+                            <p>Line Jonasson, legitimerad naprapat och har jobbat inom hälsa, träning och rehabilitering sedan 2001.</p>
+                            <p>Jag brinner för mitt yrke och den känslan som infinner sig när en patient går ifrån en behandling med mindre smärta. Jag tycker att arbetet som terapeut blir roligare för varje år som går och jag väljer att kontinuerligt fortbilda mig inom olika behandlingsformer och träning för att du som patient ska kunna få den bästa hjälpen och vägledningen med just dina besvär.</p>
+                            <p>Jag har idrottat hela mitt liv med framför allt simning i Södertörnssimsällskap både som simmare och tränare. Har även sysslat med gymnastik och lite friidrott. Idag så är jag utbildad både inom pilates, yoga och soma move/mind och har tidigare hållt i  klasser på Iform friskvårdscenter i Haninge under många år.  Mitt intresse för att hjälpa människor startade framför allt efter en film jag såg när jag var barn som heter Fallet Henry med Harrison Ford. Har sedan dess velat hjälpa människor med smärta och tillbaka till full funktion. Den filmen ligger mig fortfarande varmt om hjärtat.</p>
+                        </div>
+                        <div id='about2' className='about_container-images_card'>
+                            <div className='about_container-images_card-title_container'>
+                                <p className='about_container-card_title'>Line Jonasson</p>
+                                <p className='about_container-card_title'>Leg. Naprapat</p>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+
                 <div className='about_container-card'>
                     <div id='about3' className='about_container-images_card'>
                         <div className='about_container-images_card-title_container'>
