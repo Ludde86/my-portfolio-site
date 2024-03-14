@@ -7,12 +7,21 @@
     background: linear-gradient(to left, #fff, orange); 
 }
 
+.brands_reach-out_container-title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.brands_reach-out_container-subtitle {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
 .brands_reach-out_container {
     /* box-shadow: inset 1px 1px 6px #333;
     border-radius: 25px;
     background: #fff; */
     padding: 5%;
     margin: 5%;
+    
 }
 
 .brands_reach-out_container-card {

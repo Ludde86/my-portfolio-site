@@ -21,11 +21,15 @@ const Navbar = () => {
             </div>
             <ul className='ul_container'>
 
-                <a className='link-item' href='#om-oss'>Om oss</a>
                 <a className='link-item' href='#tjanster'>Tjänster</a>
+                <a className='link-item' href='#om-oss'>Om oss</a>
+                {/*
                 <a className='link-item' href='#aktuellt'>Aktuellt</a>
+                */}
                 <a className='link-item' href='#foretag'>Företag</a>
+                {/*
                 <a className='link-item' href='#hitta-hit'>Hitta hit</a>
+                */}
                 <a className='link-item' href='#boka-tid'>BOKA TID</a>
 
             </ul>

@@ -4,7 +4,7 @@ import logo from '../naprapatrehab_img/logga-2.png'
 
 const HomePage = () => {
     return (
-        <div className='home-container'>
+        <div id="napra" className='home-container'>
             <img className='home-container_img' src={logo} alt="logo" width={'100%'} />
             <div className='home-title_container'>
                 <p className='home-title_continer_title'>Naprapatbehandling</p>
