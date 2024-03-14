@@ -1,0 +1,31 @@
+.operation {
+	width: 30vw;
+	height: 280px;
+	/* box-shadow: 2px 2px 2px #555; */
+	margin: 1rem;
+	padding: 2rem;
+	/* opacity: 0.9; */
+	color: #fff;
+	/* border-radius: 12px; */
+}
+
+.landing__title {
+	font-weight: 900;
+}
+
+.operation:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+}
+
+.operation p {
+	padding: 1rem 0;
+	font-weight: 500;
+}
+
+.border {
+	width: 90%;
+	height: 2px;
+	background: #fff;
+	/* margin-bottom: 1rem; */
+}
