@@ -9,7 +9,7 @@ const AboutPage = () => {
     const mediaQueryCondition = window.matchMedia('( max-width: 600px )').matches;
 
     return (
-        <div className='about_container'>
+        <div id="om-oss" className='about_container'>
 
 
             <div className='about_container-images'>

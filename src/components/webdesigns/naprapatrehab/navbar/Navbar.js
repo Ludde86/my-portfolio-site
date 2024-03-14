@@ -20,9 +20,14 @@ const Navbar = () => {
                 <img src={logo} alt='logo' width={100} />
             </div>
             <ul className='ul_container'>
-                {links.map((link, index) =>
-                    <li key={index} className='link-item'>{link}</li>
-                )}
+
+                <a className='link-item' href='#om-oss'>Om oss</a>
+                <a className='link-item' href='#tjanster'>Tjänster</a>
+                <a className='link-item' href='#aktuellt'>Aktuellt</a>
+                <a className='link-item' href='#foretag'>Företag</a>
+                <a className='link-item' href='#hitta-hit'>Hitta hit</a>
+                <a className='link-item' href='#boka-tid'>BOKA TID</a>
+
             </ul>
         </div>
     )

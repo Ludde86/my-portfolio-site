@@ -1,0 +1,51 @@
+.services-container {
+    background: #fff;
+
+    min-height: 50vh;
+    height: 100vh;
+    min-width: 100%;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 2px solid black; */
+    /* padding-top: 100px; */
+}
+
+#services-1 {
+    background-image: url('../naprapatrehab_img/DSC06345.jpeg');
+    
+}
+
+#services-2 {
+    background-image: url('../naprapatrehab_img/DSC06368.jpeg');
+}
+
+#services-3 {
+    background-image: url('../naprapatrehab_img/DSC06469.jpeg');
+   
+}
+
+#services-4 {
+    background-image: url('../naprapatrehab_img/cre8you-certifierad-mammamage-tranare.jpeg');
+    background-size: 25%; 
+    background-position: right 5% bottom 10%;
+}
+
+#services-5 {
+    background-image: url('../naprapatrehab_img/cre8you-certifierad-mammamage-tranare.jpeg');
+    background-size: 25%; 
+    background-position: right 5% bottom 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .services-container {
+        height: 60vh;
+        /* background-color: lightblue; */
+        padding: auto 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+  }
+

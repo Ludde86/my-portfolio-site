@@ -1,11 +1,16 @@
 import React from 'react'
 import './homePage.css'
-import InfoCard from '../infocard/InfoCard'
+import logo from '../naprapatrehab_img/logga-2.png'
 
-const HomePage = ({ id, title, subtitle, desc }) => {
+const HomePage = () => {
     return (
-        <div id={id} className='home-container'>
-            <InfoCard id={id} title={title} subtitle={subtitle} desc={desc} />
+        <div className='home-container'>
+            <img className='home-container_img' src={logo} alt="logo" width={'100%'} />
+            <div className='home-title_container'>
+                <p className='home-title_continer_title'>Naprapatbehandling</p>
+                <p className='home-title_continer_title'>Massage</p>
+                <p className='home-title_continer_title'>MammaMageträning</p>
+            </div>
         </div>
     )
 }
