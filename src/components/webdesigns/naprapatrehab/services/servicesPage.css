@@ -9,6 +9,7 @@
     background-size: cover;
     /* border: 2px solid black; */
     /* padding-top: 100px; */
+    box-shadow: inset 1px 1px 10vh #333;
 }
 
 #services-1 {

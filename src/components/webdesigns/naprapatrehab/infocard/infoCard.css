@@ -1,29 +1,46 @@
 .infocard-container {
     /* border: 1px solid black; */
-    width: 50%;
+    width: 60%;
+    height: 35vh;
     position: relative;
     left: 50px;
-    top: 40%;
+    top: 50%;
     color: #fff;
     text-shadow: 1px 1px 2.5px #333;
     box-shadow: 2px 2px 2px #00000054;
     background: #33333331;
     padding: 12px;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .infocard-container_title {
     padding: 0;
     margin: 0;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 3rem;
 }
 
 .infocard-container_desciption {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 1.5rem;
+    /* margin-top: 60px; */
 }
 
 .infocard-container_subtitle {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 2rem;
+}
+
+.subtitle_button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,6 +63,7 @@
 
     .infocard-container_desciption {
         line-height: 16px;
+        font-size: 15px;
     }
 
     .infocard-container_subtitle {
