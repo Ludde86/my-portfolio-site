@@ -1,4 +1,4 @@
-.button-whihte {
+.button-orange {
     /* background: orange; */
     font-size: 22px;
     
@@ -15,6 +15,6 @@
     /* border: 1px solid black; */
 }
 
-.button-whihte:hover {
+.button-orange:hover {
     opacity: 1;
 }
