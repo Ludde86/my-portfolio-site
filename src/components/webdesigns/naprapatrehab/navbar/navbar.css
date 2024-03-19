@@ -43,18 +43,19 @@
 
     .navbar {
         position: absolute;
-        height: 15vh;
+        min-height: 32px;
+        padding-bottom: 48px;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .ul_container {
         min-width: 90%;
-        /* margin: 0px; */
+        margin-top: 12px;
         padding: 0px;
         /* border: 1px solid white; */
     }
@@ -62,6 +63,10 @@
     .link-item {
        max-width: 100%;
        
+    }
+
+    .navbar_logo {
+        visibility: hidden;
     }
 
   }

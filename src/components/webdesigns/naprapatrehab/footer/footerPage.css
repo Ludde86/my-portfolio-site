@@ -8,7 +8,7 @@
     background-image: url('../naprapatrehab_img/footer.png');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 240px;
+    min-height: 420px;
     max-height: 360px;
     min-width: 240px;
     max-width: 100%;
@@ -16,8 +16,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    /* border: 1px solid red; */
 
 }
 

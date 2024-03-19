@@ -1,5 +1,5 @@
 import React from 'react'
-import './footer.css'
+import './footerPage.css'
 
 const FooterPage = () => {
     return (
@@ -54,7 +54,6 @@ const FooterPage = () => {
                         <p>susanne@naprapatrehab.com</p>
                         <p>sofie@naprapatrehab.com</p>
                         <p>line@naprapatrehab.com</p>
-
                     </div>
 
                 </div>
