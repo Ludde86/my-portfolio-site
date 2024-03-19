@@ -1,7 +1,7 @@
 .brands_container {
     /* padding: 5%; */
-    padding-top: 64px;
-    padding-bottom: 124px;
+    padding: 5%;
+    padding-bottom: 5%;
     background: #fff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #fff, orange);
     background: linear-gradient(to left, #fff, orange); 
@@ -9,6 +9,7 @@
 
 .brands_reach-out_container-title {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    
 }
 
 .brands_reach-out_container-subtitle {
@@ -20,7 +21,7 @@
     border-radius: 25px;
     background: #fff; */
     padding: 5%;
-    margin: 5%;
+    /* margin: 5%; */
     
 }
 
@@ -49,7 +50,6 @@
     padding: 12px;
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 82px;
-    
 }
 
 .line-break {
