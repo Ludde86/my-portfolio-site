@@ -3,7 +3,7 @@ import './button.css'
 
 const Button = () => {
     return (
-        <button className='button-whihte'>Boka tid</button>
+        <input className='button-orange' type="button" value="Boka tid" onClick={() => window.open('https://www.bokadirekt.se/places/naprapat-rehabcenter-haninge-10747')} />
     )
 }
 

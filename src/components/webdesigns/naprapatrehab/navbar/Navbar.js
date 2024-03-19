@@ -30,7 +30,7 @@ const Navbar = () => {
                 {/*
                 <a className='link-item' href='#hitta-hit'>Hitta hit</a>
                 */}
-                <a className='link-item' href='#boka-tid'>BOKA TID</a>
+                <a className='link-item' href='https://www.bokadirekt.se/places/naprapat-rehabcenter-haninge-10747' target='_blank' rel="noreferrer">BOKA TID</a>
 
             </ul>
         </div>
