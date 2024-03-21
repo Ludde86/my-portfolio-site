@@ -63,3 +63,33 @@
     box-shadow: 0px 0px 6px #ccc;
 }
 
+@media only screen and (max-width: 800px) {
+    .navbar_napra2-container {
+        background: #fff;
+        /* border: 1px solid red; */
+        box-shadow: 1px 1px 2px #aaa;
+        position: relative;
+        top: 0px;
+        left: 0;
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar_napra2-container_links-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .navbar_napra2-container_links-container_link {
+        font-size: 16px;
+        padding: 6px;
+        font-weight: 700;
+        transition: color 0.5s;
+    }
+  }
+

@@ -43,24 +43,24 @@ const HomeNapra2 = () => {
                     <p className='about-container_text'>Hos oss kan du betala med swish, kort, presentkort. </p>
                     <p className='about-container_text'>Vi är även anslutna till friskvårdsportalerna Wellnet, Actiway och Min Friskvård (friskvårdskuponger) samt försäkringsbolagsförmedlare: Falck Healthcare (DKV hälsa, SEB), Nordic Netcare (IF) och SOS International.</p>
                 </div>
-                <Carousel className='carousel-container'>
-                    <div className='carousel-container_img'>
+                <Carousel className='home_napra2-container_carousel-container_carousel'>
+                    <div className='home_napra2-container_carousel-container_carousel_img'>
                         <img src={car1} alt='1' />
                         {/*
                         <p className="legend">Legend 1</p>
                         */}
 
                     </div>
-                    <div className='carousel-container_img'>
+                    <div className='home_napra2-container_carousel-container_carousel_img'>
                         <img src={car2} alt='2' />
                     </div>
-                    <div className='carousel-container_img'>
+                    <div className='home_napra2-container_carousel-container_carousel_img'>
                         <img src={car3} alt='3' />
                     </div>
-                    <div className='carousel-container_img'>
+                    <div className='home_napra2-container_carousel-container_carousel_img'>
                         <img src={car4} alt='4' />
                     </div>
-                    <div className='carousel-container_img'>
+                    <div className='home_napra2-container_carousel-container_carousel_img'>
                         <img src={car5} alt='5' />
                     </div>
                 </Carousel>

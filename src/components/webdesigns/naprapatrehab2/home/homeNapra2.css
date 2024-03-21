@@ -11,7 +11,7 @@
     background-image: url('../assets/img/DSC06345.jpeg');
     background-repeat: no-repeat;
     background-position: 64px bottom;
-    background-size: contain;
+    background-size: 100%;
 }
 
 .home_napra2-container_first-page_text-container {
@@ -86,6 +86,16 @@
     margin-left: -64px;
 }
 
+.home_napra2-container_carousel-container_carousel {
+    width: 50%;
+    
+}
+
+.home_napra2-container_carousel-container_carousel_img {
+   
+    max-height: 360px;
+}
+
 .about-container {
     padding-right: 10%;
 }
@@ -93,3 +103,65 @@
 .about-container_text {
     font-size: 22px;
 }
+
+@media only screen and (max-width: 800px) {
+    .home_napra2-container {
+        padding: 6px;
+    }
+
+    .home_napra2-container_first-page {
+        height: 80vh;
+        background-image: url('../assets/img/DSC06345.jpeg');
+        background-repeat: no-repeat;
+        background-position: 64px top;
+        background-size: 100%;
+    }
+
+    .home_napra2-container_first-page_text-container {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        padding-top: 6px;
+        padding-bottom: 2px;
+        padding-right: 6px;
+        padding-left: 6px;
+        /* padding-right: 15%; */
+    }
+
+    .home_napra2-container_first-page_text-container_title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .home_napra2-container_first-page_text-container_text {
+        font-size: 18px;
+        /* font-weight: 700; */
+        line-height: 12px;
+    }
+
+    .booking {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 26px;
+    }
+
+    .home_napra2-container_carousel-container {
+        /* border: 1px solid black; */
+        background: #fb97026c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 12px;
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .about-container {
+        padding-right: 0px;
+    }
+  }
