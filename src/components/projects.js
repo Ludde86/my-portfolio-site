@@ -5,6 +5,7 @@ import Challenge1 from './challengesCSS/challenge1/Challenge1';
 import Webdesign1 from "./webdesigns/webdesign1/webdesign1";
 import Naprapatrehab from './webdesigns/naprapatrehab/Naprapatrehab';
 import Htproject from './webdesigns/htproject/Htproject';
+import NaprapatRehab2 from './webdesigns/naprapatrehab2/NaprapatRehab2';
 
 const Projects = () => {
 	const [activeTab, setActiveTab] = useState(0);
@@ -14,10 +15,16 @@ const Projects = () => {
 			case 0:
 				return (
 					<div className="projects-container">
-						<Naprapatrehab />
+						<NaprapatRehab2 />
 					</div>
 				);
 			case 1:
+				return (
+					<div className="projects-container">
+						<Naprapatrehab />
+					</div>
+				);
+			case 2:
 				return (
 
 					<div className="projects-container">
@@ -25,7 +32,7 @@ const Projects = () => {
 					</div>
 
 				);
-			case 2:
+			case 3:
 				return (
 					<div className="projects-container">
 						<Card shadow={5} className="card-container">
@@ -77,20 +84,20 @@ const Projects = () => {
 						</Card>
 					</div>
 				);
-			case 3:
+			case 4:
 				return (
 					<div>
 						<Webdesign1 />
 					</div>
 				);
-			case 4:
+			case 5:
 				return (
 					<div>
 						<h1>This is Css</h1>
 						<Challenge1 />
 					</div>
 				);
-			case 5:
+			case 6:
 				return (
 					<div>
 						<h1>This is Spring</h1>
@@ -104,7 +111,8 @@ const Projects = () => {
 	return (
 		<div>
 			<Tabs style={{ paddingTop: 46 }} activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
-				<Tab style={{ fontWeight: 'bold' }}>Naprapatrehab</Tab>
+				<Tab style={{ fontWeight: 'bold' }}>Napra2</Tab>
+				<Tab style={{ fontWeight: 'bold' }}>Napra1</Tab>
 				<Tab style={{ fontWeight: 'bold' }}>HTProject</Tab>
 				<Tab style={{ fontWeight: 'bold' }}>React Native</Tab>
 				<Tab style={{ fontWeight: 'bold' }}>React</Tab>

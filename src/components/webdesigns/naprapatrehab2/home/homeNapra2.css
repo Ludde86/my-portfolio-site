@@ -1,0 +1,95 @@
+.home_napra2-container {
+    
+    /* border: 1px solid black; */
+    width: 100%;
+    
+    padding: 64px;
+}
+
+.home_napra2-container_first-page {
+    height: 80vh;
+    background-image: url('../assets/img/DSC06345.jpeg');
+    background-repeat: no-repeat;
+    background-position: 64px bottom;
+    background-size: contain;
+}
+
+.home_napra2-container_first-page_text-container {
+    background: rgba(255, 166, 0, 0.849);  /* fallback for old browsers */
+    background: #fb9702e8 ;
+    /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
+    background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
+    position: absolute;
+    right: 64px;
+    bottom: 0px;
+    width: 60%;
+    padding-top: 64px;
+    padding-bottom: 22px;
+    padding-right: 64px;
+    padding-left: 64px;
+    /* padding-right: 15%; */
+}
+
+.home_napra2-container_first-page_text-container_title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.home_napra2-container_first-page_text-container_text {
+    color: #fff;
+    font-size: 32px;
+    /* font-weight: 700; */
+    line-height: 36px;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
+}
+
+#booking-button {
+    background: transparent;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: 2px solid white;
+    transition: 0.5s;
+    text-decoration: none;
+    margin-bottom: 16px;
+    text-shadow: none;
+}
+
+#booking-button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background: white;
+    color: #fb9702e8;
+}
+
+.home_napra2-container_carousel-container {
+    /* border: 1px solid black; */
+    background: #fb97026c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 64px;
+    padding: 64px;
+    margin-left: -64px;
+}
+
+.about-container {
+    padding-right: 10%;
+}
+
+.about-container_text {
+    font-size: 22px;
+}
