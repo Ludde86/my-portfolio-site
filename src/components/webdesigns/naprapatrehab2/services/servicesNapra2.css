@@ -1,19 +1,24 @@
 .services_napra2-container {
     
     /* border: 1px solid black; */
-    width: 100%;
+    max-width: 100%;
     
     padding: 64px;
+    border: 1px solid black;
 }
 
 .services_napra2-container_first-page {
     height: 80vh;
+    max-width: 100%;
+
+    
     
     background-repeat: no-repeat;
     background-position: 64px bottom;
     background-size: cover;
     width: 920px;
     margin-bottom: 96px;
+    
 }
 
 #services_napra2-container_first-page1 {
@@ -34,7 +39,6 @@
 .services_napra2-container_first-page_text-container {
     background: rgba(255, 166, 0, 0.849);  /* fallback for old browsers */
     background: #fb9702e8 ;
-    
     /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
     background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
     position: relative;
@@ -65,31 +69,78 @@
     text-shadow: 1px 1px 1px #000;
 }
 
-.booking {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 26px;
-    
-    /* border: 1px solid black; */
-    /* border: 1px solid black; */
-}
+@media only screen and (max-width: 1720px) {
+   
+    .services_napra2-container_first-page_text-container {
+        position: relative;
+        left: 40%;
+        top: 50%;
+    }
 
-#booking-button {
-    background: transparent;
-    color: white;
-    padding: 8px 24px;
-    border-radius: 4px;
-    border: 2px solid white;
-    transition: 0.5s;
-    text-decoration: none;
-    margin-bottom: 16px;
-    text-shadow: none;
-}
+  }
 
-#booking-button:hover {
-    cursor: pointer;
-    border: 2px solid white;
-    background: white;
-    color: #fb9702e8;
-}
+  @media only screen and (max-width: 1560px) {
+   
+    .services_napra2-container_first-page_text-container {
+        position: relative;
+        left: 30%;
+        top: 50%;
+    }
+
+  }
+
+@media only screen and (max-width: 1280px) {
+   
+    .services_napra2-container_first-page_text-container {
+        position: relative;
+        left: 0%;
+        top: 50%;
+    }
+
+    .services_napra2-container_first-page_text-container_title {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .services_napra2-container_first-page_text-container_text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+  }
+
+@media only screen and (max-width: 500px) {
+    .services_napra2-container {
+        padding: 24px;
+    }
+
+    .services_napra2-container_first-page {
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        width: 320px;
+        margin-bottom: 0px;
+    }
+
+    .services_napra2-container_first-page_text-container {
+        background: rgba(255, 166, 0, 0.849);  /* fallback for old browsers */
+        background: #fb9702e8 ;
+        position: relative;
+        left: 0px;
+        top: 20%;
+        padding: 24px;
+    }
+
+    .services_napra2-container_first-page_text-container_title {
+        font-size: 16px;
+        text-align: center;
+        line-height: 26px;
+    }
+
+    .services_napra2-container_first-page_text-container_text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+  }
