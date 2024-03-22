@@ -1,7 +1,95 @@
 .services_napra2-container {
-    background: blue;
-    border: 1px solid black;
+    
+    /* border: 1px solid black; */
     width: 100%;
-    height: 100vh;
+    
     padding: 64px;
+}
+
+.services_napra2-container_first-page {
+    height: 80vh;
+    
+    background-repeat: no-repeat;
+    background-position: 64px bottom;
+    background-size: cover;
+    width: 920px;
+    margin-bottom: 96px;
+}
+
+#services_napra2-container_first-page1 {
+    background-image: url('../assets/img/DSC06469.jpeg');
+  
+}
+
+#services_napra2-container_first-page2 {
+    background-image: url('../assets/img/DSC06565.jpeg');
+
+}
+
+#services_napra2-container_first-page3 {
+    background-image: url('../assets/img/DSC06362.jpeg');
+    
+}
+
+.services_napra2-container_first-page_text-container {
+    background: rgba(255, 166, 0, 0.849);  /* fallback for old browsers */
+    background: #fb9702e8 ;
+    
+    /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
+    background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
+    position: relative;
+    left: 80%;
+    top: 50%;
+    /* width: 60%; */
+    padding-top: 64px;
+    padding-bottom: 22px;
+    padding-right: 64px;
+    padding-left: 64px;
+    /* padding-right: 15%; */
+}
+
+.services_napra2-container_first-page_text-container_title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.services_napra2-container_first-page_text-container_text {
+    color: #fff;
+    font-size: 22px;
+    /* font-weight: 700; */
+    line-height: 26px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
+}
+
+#booking-button {
+    background: transparent;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: 2px solid white;
+    transition: 0.5s;
+    text-decoration: none;
+    margin-bottom: 16px;
+    text-shadow: none;
+}
+
+#booking-button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background: white;
+    color: #fb9702e8;
 }

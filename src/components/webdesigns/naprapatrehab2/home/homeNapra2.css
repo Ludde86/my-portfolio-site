@@ -11,7 +11,7 @@
     background-image: url('../assets/img/DSC06345.jpeg');
     background-repeat: no-repeat;
     background-position: 64px bottom;
-    background-size: 100%;
+    background-size: contain;
 }
 
 .home_napra2-container_first-page_text-container {
@@ -87,7 +87,7 @@
 }
 
 .home_napra2-container_carousel-container_carousel {
-    width: 50%;
+    width: 500px;
     
 }
 
