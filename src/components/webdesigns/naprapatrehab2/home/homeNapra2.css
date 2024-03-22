@@ -104,7 +104,7 @@
     font-size: 22px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1020px) {
     .home_napra2-container {
         padding: 6px;
     }
@@ -149,7 +149,6 @@
     }
 
     .home_napra2-container_carousel-container {
-        /* border: 1px solid black; */
         background: #fb97026c;
         display: flex;
         flex-direction: column;
@@ -164,4 +163,13 @@
     .about-container {
         padding-right: 0px;
     }
+  }
+
+  @media only screen and (max-width: 680px) {
+
+    .home_napra2-container_carousel-container_carousel {
+        width: 360px;
+    }
+    
+
   }
