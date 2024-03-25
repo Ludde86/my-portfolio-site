@@ -1,0 +1,133 @@
+.brands-napra2-container {
+    /* padding: 5%; */
+    margin-top: 64px;
+    margin-right: 64px;
+    margin-bottom: 64px;
+    margin-left: 0px;
+    background: #fcf3e7;
+}
+
+.brands-napra2-container_title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    
+}
+
+.brands-napra2_reach-out-container_title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.brands-napra2_reach-out-container_subtitle {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.brands-napra2_reach-out-container {
+    /* box-shadow: inset 1px 1px 6px #333;
+    border-radius: 25px;
+    background: #fff; */
+    padding: 5%;
+    /* margin: 5%; */
+    
+}
+
+.brands-napra2_reach-out-container_card {
+    /* box-shadow: inset 1px 1px 6px #333; */
+    /* box-shadow: 4px 4px 6px #999; */
+    /* border-radius: 12px; */
+    padding: 6px 12px;
+    /* margin: 5%; */
+    /* background: #ffffff54; */
+    margin-bottom: 24px;
+}
+
+.brands-napra2_reach-out-container_card p {
+    font-size: 20px;
+}
+
+.brands-napra2_reach-out-container_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.brands-napra2_title {
+    text-align: center;
+    /* font-style: italic; */
+    color: #333;
+    background: #ffffff54;
+    padding: 12px;
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 82px;
+}
+
+.line-break {
+    border: 2px solid #333;
+    width: 90%;
+    margin-left: auto; 
+    margin-right: 0;
+    margin-bottom: 64px;
+}
+
+.brands-napra2_logos {
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 64px;
+}
+
+.brands-napra2_logos_logo-container {
+    background: #fff;
+    /* box-shadow: 4px 4px 16px #aaa; */
+    border-radius: 100px;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.brands-napra2_logos img {
+    margin: 12px;
+    padding: 12px;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .brands-napra2_title {
+        font-size: 22px;
+        margin-left: 64px;
+        margin-right: 64px;
+        font-weight: 700;
+    }
+
+    .brands-napra2_reach-out_container-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .brands-napra2_reach-out_container-subtitle {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+   
+
+    .brands-napra2_logos-logo-container {
+        background: #fff;
+        /* box-shadow: 2px 2px 4px #333; */
+        border-radius: 100px;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px;
+    }
+  }
