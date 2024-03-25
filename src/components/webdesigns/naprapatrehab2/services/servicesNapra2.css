@@ -11,7 +11,7 @@
 
 .services_napra2-container_first-page {
    display: flex;
-   background: #eee;
+   background: #fcf3e7;
    margin-top: 64px;
    /* margin-left: 64px; */
    margin-right: 64px;
@@ -50,26 +50,67 @@
     background-position: bottom;
 }
 
+#services_napra2-container_first-page4 {
+    background-image: url('../assets/img/cre8you-certifierad-mammamage-tranare.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 .services_napra2-container_first-page_text-container {
     padding: 64px;
 }
 
+.services_napra2-container_first-page_text-container_title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .services_napra2-container_first-page_text-container_title {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    color: #F7A015;
+    /* color: #F7A015; */
+    color: #333;
     margin: 0;
+}
+
+.services_napra2-container_first-page_text-container_price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7A015;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.services_napra2-container_first-page_text-container_price {
+    color: #fff;
+    
+    
+    /* text-align: center; */
+    margin: 0px auto;
+    font-size: 30px;
 }
 
 .services_napra2-container_first-page_text-container_subtitle {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    color: #F7A015;
+    /* color: #F7A015; */
+    color: #333;
     font-size: 26px;
     margin-top: 0px;
 }
 
 .services_napra2-container_first-page_text-container_text {
     font-size: 24px;
-    color: #F7A015;
+    /* color: #F7A015; */
+    color: #333;
+}
+
+.services_napra2-container_first-page_brands-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 64px;
 }
 
 @media only screen and (max-width: 1720px) {

@@ -69,7 +69,7 @@
     font-size: 32px;
     /* font-weight: 700; */
     line-height: 36px;
-    text-shadow: 0px 0px 2px #000;
+    /* text-shadow: 0px 0px 2px #000; */
 }
 
 .home_napra2-container_carousel-container_carousel {
@@ -86,7 +86,7 @@
     /* border: 1px solid black; */
     /* background: #fb97026c; */
     /* background: #fde0b3; */
-    background: #eee;
+    background: #fcf3e7;
 
     
     /* background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
@@ -107,13 +107,13 @@
 }
 
 .about-container_title {
-    color: #F7A015;
+    color: #333;
     /* text-shadow: 2px 2px 4px #bbb; */
 }
 
 .about-container_text {
     font-size: 24px;
-    color: #F7A015;
+    color: #333;
     /* text-shadow: 1px 1px 1px #000; */
 }
 
