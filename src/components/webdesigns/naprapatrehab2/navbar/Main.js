@@ -7,6 +7,7 @@ import BrandsNapra2 from '../brands/BrandsNapra2';
 
 const Main = () => (
     <Switch>
+        <Route exact path="/projects" component={HomeNapra2} />
         <Route exact path="/projects/home" component={HomeNapra2} />
         <Route path="/projects/services" component={ServicesNapra2} />
         <Route path="/projects/about" component={AboutNapra2} />

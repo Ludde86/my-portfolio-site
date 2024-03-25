@@ -14,11 +14,15 @@
     background-size: contain;
 }
 
+.home_napra2-container_first-page_text-container_title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+    color: #fff;
+    /* text-shadow: 1px 1px 1px #000; */
+}
+
 .home_napra2-container_first-page_text-container {
-    background: rgba(255, 166, 0, 0.849);  /* fallback for old browsers */
     background: #fb9702e8 ;
-    /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
-    background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
     position: absolute;
     right: 64px;
     bottom: 0px;
@@ -28,21 +32,6 @@
     padding-right: 64px;
     padding-left: 64px;
     /* padding-right: 15%; */
-}
-
-.home_napra2-container_first-page_text-container_title {
-    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-}
-
-.home_napra2-container_first-page_text-container_text {
-    color: #fff;
-    font-size: 32px;
-    /* font-weight: 700; */
-    line-height: 36px;
-    text-shadow: 0px 0px 2px #000;
 }
 
 .booking {
@@ -74,16 +63,13 @@
     color: #fb9702e8;
 }
 
-.home_napra2-container_carousel-container {
-    /* border: 1px solid black; */
-    background: #fb97026c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    margin-top: 64px;
-    padding: 64px;
-    margin-left: -64px;
+.home_napra2-container_first-page_text-container_text {
+    color: #fff;
+    
+    font-size: 32px;
+    /* font-weight: 700; */
+    line-height: 36px;
+    text-shadow: 0px 0px 2px #000;
 }
 
 .home_napra2-container_carousel-container_carousel {
@@ -96,12 +82,39 @@
     max-height: 360px;
 }
 
+.home_napra2-container_carousel-container {
+    /* border: 1px solid black; */
+    /* background: #fb97026c; */
+    /* background: #fde0b3; */
+    background: #eee;
+
+    
+    /* background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    background: linear-gradient(to right, #fcc169, #ffffff); */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 64px;
+    padding: 64px;
+    margin-left: -64px;
+}
+
 .about-container {
     padding-right: 10%;
 }
 
+.about-container_title {
+    color: #F7A015;
+    /* text-shadow: 2px 2px 4px #bbb; */
+}
+
 .about-container_text {
-    font-size: 22px;
+    font-size: 24px;
+    color: #F7A015;
+    /* text-shadow: 1px 1px 1px #000; */
 }
 
 @media only screen and (max-width: 1020px) {
@@ -149,7 +162,7 @@
     }
 
     .home_napra2-container_carousel-container {
-        background: #fb97026c;
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -167,8 +180,46 @@
 
   @media only screen and (max-width: 680px) {
 
+    .home_napra2-container_first-page_text-container {
+        
+        /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
+        background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        padding: 6px;
+        margin: 26px;
+        /* padding-right: 15%; */
+    }
+
     .home_napra2-container_carousel-container_carousel {
         width: 360px;
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .home_napra2-container_first-page_text-container {
+        background: rgba(255, 166, 0, 0.849);  /* fallback for old browsers */
+        background: #fb9702e8 ;
+        /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
+        background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
+        position: relative;
+        right: 0px;
+        top: 120px;
+        bottom: 0px;
+        left: 0px;
+        width: 95%;
+        padding: 6px;
+        margin: 6px;
+        /* padding-right: 15%; */
+    }
+
+    .home_napra2-container_carousel-container_carousel {
+        width: 280px;
     }
     
 

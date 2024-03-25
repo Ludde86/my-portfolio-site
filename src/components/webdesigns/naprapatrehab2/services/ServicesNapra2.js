@@ -1,14 +1,23 @@
 import React from 'react'
 import './servicesNapra2.css'
+import service1 from '../assets/img/DSC06469.jpeg'
+import service2 from '../assets/img/DSC06565.jpeg'
+import service3 from '../assets/img/DSC06362.jpeg'
 
 const ServicesNapra2 = () => {
     return (
         <div className='services_napra2-container'>
 
-            <div id='services_napra2-container_first-page1' className='services_napra2-container_first-page'>
+            <div className='services_napra2-container_first-page'>
+                <div id='services_napra2-container_first-page1' className='services_napra2-container_first-page_img-container'>
+
+                </div>
                 <div className='services_napra2-container_first-page_text-container'>
                     <h2 className='services_napra2-container_first-page_text-container_title'>
-                        Naprapatbehandling nybesök/återbesök 30-40 min
+                        Naprapatbehandling nybesök/återbesök
+                    </h2>
+                    <h2 className='services_napra2-container_first-page_text-container_subtitle'>
+                        30-40 min
                     </h2>
 
                     <p className='services_napra2-container_first-page_text-container_text'>
@@ -27,10 +36,15 @@ const ServicesNapra2 = () => {
                 </div>
             </div>
 
-            <div id='services_napra2-container_first-page2' className='services_napra2-container_first-page'>
+            <div className='services_napra2-container_first-page'>
+                <div id='services_napra2-container_first-page2' className='services_napra2-container_first-page_img-container'>
+                </div>
                 <div className='services_napra2-container_first-page_text-container'>
                     <h2 className='services_napra2-container_first-page_text-container_title'>
-                        Naprapatbehandling pensionär/student 30-40 min
+                        Naprapatbehandling pensionär/student
+                    </h2>
+                    <h2 className='services_napra2-container_first-page_text-container_subtitle'>
+                        30-40 min
                     </h2>
 
                     <p className='services_napra2-container_first-page_text-container_text'>
@@ -43,9 +57,11 @@ const ServicesNapra2 = () => {
                 </div>
             </div>
 
-            <div id='services_napra2-container_first-page3' className='services_napra2-container_first-page'>
+            <div className='services_napra2-container_first-page'>
+                <div id='services_napra2-container_first-page3' className='services_napra2-container_first-page_img-container'>
+                </div>
                 <div className='services_napra2-container_first-page_text-container'>
-                    <h2 className='services_napra2-container_first-page_text-container_title'>
+                    <h2 className='services_napra2-container_first-page_text-container_subtitle'>
                         Massage 30 min
                     </h2>
 
