@@ -2,7 +2,10 @@
     /* border: 1px solid black; */
     text-align: center;
     background: #fcf3e7;
-   margin: 64px;
+    margin-top: 64px;
+    margin-right: 64px;
+    margin-bottom: 64px;
+    margin-left: 0px;
 }
 
 .about-napra2-container_title {

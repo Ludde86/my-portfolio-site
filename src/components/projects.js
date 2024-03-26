@@ -110,12 +110,12 @@ const Projects = () => {
 
 	return (
 		<div>
-			<Tabs style={{ paddingTop: 46 }} activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
-				<Tab style={{ fontWeight: 'bold' }}>Napra2</Tab>
-				<Tab style={{ fontWeight: 'bold' }}>Napra1</Tab>
-				<Tab style={{ fontWeight: 'bold' }}>HTProject</Tab>
-				<Tab style={{ fontWeight: 'bold' }}>React Native</Tab>
-				<Tab style={{ fontWeight: 'bold' }}>React</Tab>
+			<Tabs className='projects_navbar-container' activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
+				<Tab><p className='projects_navbar-container-link'>Napra2</p></Tab>
+				<Tab><p className='projects_navbar-container-link'>Napra1</p></Tab>
+				<Tab><p className='projects_navbar-container-link'>HTProject</p></Tab>
+				<Tab><p className='projects_navbar-container-link'>React Native</p></Tab>
+				<Tab><p className='projects_navbar-container-link'>React</p></Tab>
 				{/*
 				<Tab style={{ fontWeight: 'bold' }}>CSS</Tab>
 			*/}
