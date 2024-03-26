@@ -17,18 +17,20 @@ const HomeNapra2 = () => {
                         Välkomna till Naprapat & Rehabcenter i Haninge!
                     </h2>
                     <div className='booking'>
-                        <p className='home_napra2-container_first-page_text-container_text'>
-                            Naprapati
-                        </p>
-                        <p className='home_napra2-container_first-page_text-container_text'>
-                            Massage
-                        </p>
-                        <p className='home_napra2-container_first-page_text-container_text'>
-                            Friskvård
-                        </p>
-                        <p className='home_napra2-container_first-page_text-container_text'>
-                            Rehab
-                        </p>
+                        <div className='booking-desc'>
+                            <p className='home_napra2-container_first-page_text-container_text'>
+                                Naprapati
+                            </p>
+                            <p className='home_napra2-container_first-page_text-container_text'>
+                                Massage
+                            </p>
+                            <p className='home_napra2-container_first-page_text-container_text'>
+                                Friskvård
+                            </p>
+                            <p className='home_napra2-container_first-page_text-container_text'>
+                                Rehab
+                            </p>
+                        </div>
                         <a id="booking-button" className='home_napra2-container_first-page_text-container_text' href='https://www.bokadirekt.se/places/naprapat-rehabcenter-haninge-10747' target='_blank' rel="noreferrer">
                             Boka Direkt
                         </a>

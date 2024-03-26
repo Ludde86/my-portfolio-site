@@ -16,7 +16,7 @@
 
 .home_napra2-container_first-page_text-container_title {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-
+    font-size: 3vw;
     color: #fff;
     /* text-shadow: 1px 1px 1px #000; */
 }
@@ -44,6 +44,13 @@
     /* border: 1px solid black; */
 }
 
+.booking-desc {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 #booking-button {
     background: transparent;
     color: white;
@@ -66,7 +73,7 @@
 .home_napra2-container_first-page_text-container_text {
     color: #fff;
     
-    font-size: 32px;
+    font-size: 2vw;
     /* font-weight: 700; */
     line-height: 36px;
     /* text-shadow: 0px 0px 2px #000; */
@@ -83,15 +90,7 @@
 }
 
 .home_napra2-container_carousel-container {
-    /* border: 1px solid black; */
-    /* background: #fb97026c; */
-    /* background: #fde0b3; */
     background: #fcf3e7;
-
-    
-    /* background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
-    background: linear-gradient(to right, #fcc169, #ffffff); */
-
 
     display: flex;
     justify-content: center;
@@ -107,17 +106,18 @@
 }
 
 .about-container_title {
+    font-size: 6vw;
     color: #333;
     /* text-shadow: 2px 2px 4px #bbb; */
 }
 
 .about-container_text {
-    font-size: 24px;
+    font-size: 4vw;
     color: #333;
     /* text-shadow: 1px 1px 1px #000; */
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1080px) {
     .home_napra2-container {
         padding: 6px;
     }
@@ -130,35 +130,12 @@
         background-size: 100%;
     }
 
-    .home_napra2-container_first-page_text-container {
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-        width: 100%;
-        padding-top: 6px;
-        padding-bottom: 2px;
-        padding-right: 6px;
-        padding-left: 6px;
-        /* padding-right: 15%; */
-    }
-
-    .home_napra2-container_first-page_text-container_title {
-        font-size: 26px;
-        text-align: center;
-    }
-
-    .home_napra2-container_first-page_text-container_text {
-        font-size: 18px;
-        /* font-weight: 700; */
-        line-height: 12px;
-    }
-
     .booking {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding-top: 26px;
+        /* padding-top: 26px; */
     }
 
     .home_napra2-container_carousel-container {
@@ -178,20 +155,29 @@
     }
   }
 
-  @media only screen and (max-width: 680px) {
-
+  @media only screen and (max-width: 800px) {
+    
     .home_napra2-container_first-page_text-container {
-        
-        /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
-        background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
+        padding: 12px 24px;
+        width: 90%;
+        height: 40%;
+
         position: absolute;
         right: 0px;
+        left: 0px;
         bottom: 0px;
-        width: 100%;
-        padding: 6px;
-        margin: 26px;
-        /* padding-right: 15%; */
+
+        margin: 12px;
     }
+
+    .home_napra2-container_first-page {
+        height: 60vh;
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+
+    
 
     .home_napra2-container_carousel-container_carousel {
         width: 360px;
@@ -202,21 +188,7 @@
 
   @media only screen and (max-width: 500px) {
 
-    .home_napra2-container_first-page_text-container {
-        background: rgba(255, 166, 0, 0.849);  /* fallback for old browsers */
-        background: #fb9702e8 ;
-        /* background: -webkit-linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));
-        background: linear-gradient(to left, #fff, rgba(255, 166, 0, 0.849));  */
-        position: relative;
-        right: 0px;
-        top: 120px;
-        bottom: 0px;
-        left: 0px;
-        width: 95%;
-        padding: 6px;
-        margin: 6px;
-        /* padding-right: 15%; */
-    }
+    
 
     .home_napra2-container_carousel-container_carousel {
         width: 280px;
