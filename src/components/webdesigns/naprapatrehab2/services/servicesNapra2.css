@@ -118,6 +118,22 @@
     margin-bottom: 64px;
 }
 
+@media only screen and (min-width: 1280px) {
+    .services_napra2-container_first-page_text-container_title {
+        font-size: 42px;
+    }
+    .services_napra2-container_first-page_text-container_price {
+        font-size: 32px;
+    }
+    .services_napra2-container_first-page_text-container_subtitle {
+        font-size: 32px;
+    }
+    
+    .services_napra2-container_first-page_text-container_text {
+        font-size: 26px;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     .services_napra2-container_first-page {
         display: flex;
@@ -155,4 +171,19 @@
         max-width: 120px;
     }
 }
-   
+
+@media only screen and (max-width: 500px) {
+    .services_napra2-container_first-page_text-container_title {
+        font-size: 28px;
+    }
+    .services_napra2-container_first-page_text-container_price {
+        font-size: 20px;
+    }
+    .services_napra2-container_first-page_text-container_subtitle {
+        font-size: 20px;
+    }
+    
+    .services_napra2-container_first-page_text-container_text {
+        font-size: 18px;
+    }
+}

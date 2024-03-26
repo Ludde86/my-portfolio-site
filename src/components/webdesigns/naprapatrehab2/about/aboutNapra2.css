@@ -8,16 +8,6 @@
     margin-left: 0px;
 }
 
-.about-napra2-container_title {
-    /* margin-bottom: -64px; */
-    font-style: italic;
-    text-align: center;
-    color: #333;
-    background: #ffffff54;
-    padding: 12px;
-    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-}
-
 .about-napra2-container_description {
     /* border: 1px solid black; */
     display: flex;
@@ -28,13 +18,11 @@
 
 .about-napra2-container_description-text {
     font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    /* box-shadow: 1px 1px 10px orange; */
     margin: 24px;
     padding: 24px;
     border-radius: 2px;
     color: #333;
     font-size: 32px;
-    /* text-shadow: 2px 2px 6px orange; */
 }
 
 .about-napra2-container_description-text_title {
@@ -61,12 +49,9 @@
 }
 
 .about-napra2-container_card {
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .about-napra2-container_images-card {
@@ -108,7 +93,7 @@
 }
 
 .about-napra2-container_images-card_description-container p {
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .about-napra2-container_images img {
@@ -146,8 +131,7 @@
         padding: 0;
     }
 
-    .about_container-card {
-        /* border: 1px solid black; */
+    .about-napra2-container_card {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -159,7 +143,7 @@
         text-align: start;
     }
 
-    .about_container-images_card-description_container {
+    .about-napra2-container_images-card_description-container {
         padding: 36px;
     }
 
@@ -167,20 +151,22 @@
         padding: 0;
     }
 
-    .about_container-images_card {
-        margin-top: 64px;
-        display: flex;
-        /* flex-direction: row; */
-        justify-content: flex-end;
-        align-items: flex-end; 
+    .about-napra2-container_images-card {
+        transform: scale(0.8);
+        margin: 0px;
     }
 
-    .about_container-title {
-        font-size: 22px;
-        margin-left: 64px;
-        margin-right: 64px;
-        margin-top: 64px;
-        font-weight: 700;
-        
+    .about-napra2-container_description-text {
+        padding: 0px;
     }
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .about-napra2-container_images-card_description-container p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+
   }

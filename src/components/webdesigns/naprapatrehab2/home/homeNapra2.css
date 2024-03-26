@@ -117,6 +117,15 @@
     /* text-shadow: 1px 1px 1px #000; */
 }
 
+@media only screen and (min-width: 1280px) {
+    .about-container_title {
+        font-size: 32px;
+    }
+    .about-container_text {
+        font-size: 26px;
+    }
+}
+
 @media only screen and (max-width: 1080px) {
     .home_napra2-container {
         padding: 6px;
@@ -188,7 +197,16 @@
 
   @media only screen and (max-width: 500px) {
 
-    
+    .home_napra2-container_first-page_text-container_title {
+        font-size: 26px;
+        margin-top: 12px;
+        line-height: 26px;
+    }
+
+    .home_napra2-container_first-page_text-container_text {
+        margin: 6px;
+        font-size: 16px;
+    }
 
     .home_napra2-container_carousel-container_carousel {
         width: 280px;
