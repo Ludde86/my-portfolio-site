@@ -11,7 +11,7 @@ const AboutNapra2 = () => {
 
             <div className='about-napra2-container_images'>
                 <div className='about-napra2-container_card'>
-                    <div id='about1' className='about-napra2-container_images-card'>
+                    <div id='napra2-about1' className='about-napra2-container_images-card'>
                         <div className='about-napra2-container_images-card_title-container'>
                             <p className='about-napra2-container_card-title'>Susanne Nyström</p>
                             <p className='about-napra2-container_card-title'>Leg. Naprapat</p>
@@ -28,7 +28,7 @@ const AboutNapra2 = () => {
 
                     <div className='about-napra2-container_card'>
 
-                        <div id='about2' className='about-napra2-container_images-card'>
+                        <div id='napra2-about2' className='about-napra2-container_images-card'>
                             <div className='about-napra2-container_images-card_title-container'>
                                 <p className='about-napra2-container_card-title'>Line Jonasson</p>
                                 <p className='about-napra2-container_card-title'>Leg. Naprapat</p>
@@ -49,7 +49,7 @@ const AboutNapra2 = () => {
                             <p>Jag brinner för mitt yrke och den känslan som infinner sig när en patient går ifrån en behandling med mindre smärta. Jag tycker att arbetet som terapeut blir roligare för varje år som går och jag väljer att kontinuerligt fortbilda mig inom olika behandlingsformer och träning för att du som patient ska kunna få den bästa hjälpen och vägledningen med just dina besvär.</p>
                             <p>Jag har idrottat hela mitt liv med framför allt simning i Södertörnssimsällskap både som simmare och tränare. Har även sysslat med gymnastik och lite friidrott. Idag så är jag utbildad både inom pilates, yoga och soma move/mind och har tidigare hållt i  klasser på Iform friskvårdscenter i Haninge under många år.  Mitt intresse för att hjälpa människor startade framför allt efter en film jag såg när jag var barn som heter Fallet Henry med Harrison Ford. Har sedan dess velat hjälpa människor med smärta och tillbaka till full funktion. Den filmen ligger mig fortfarande varmt om hjärtat.</p>
                         </div>
-                        <div id='about2' className='about-napra2-container_images-card'>
+                        <div id='napra2-about2' className='about-napra2-container_images-card'>
                             <div className='about-napra2-container_images-card_title-container'>
                                 <p className='about-napra2-container_card-title'>Line Jonasson</p>
                                 <p className='about-napra2-container_card-title'>Leg. Naprapat</p>
