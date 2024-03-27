@@ -106,27 +106,28 @@
 }
 
 .about-container_title {
-    font-size: 6vw;
+    font-size: 5vw;
     color: #333;
     /* text-shadow: 2px 2px 4px #bbb; */
 }
 
-.about-container_text {
-    font-size: 4vw;
+.home_napra2-container_text {
+    font-size: 1vw;
     color: #333;
     /* text-shadow: 1px 1px 1px #000; */
 }
 
 @media only screen and (min-width: 1280px) {
-    .about-container_title {
-        font-size: 32px;
-    }
-    .about-container_text {
-        font-size: 26px;
-    }
+    
 }
 
 @media only screen and (max-width: 1080px) {
+    .about-container_title {
+        font-size: 32px;
+    }
+    .home_napra2-container {
+        font-size: 26px;
+    }
     .home_napra2-container {
         padding: 6px;
     }
@@ -162,6 +163,14 @@
     .about-container {
         padding-right: 0px;
     }
+
+    .home_napra2-container_title {
+        font-size: 32px;
+    }
+    
+    .home_napra2-container_text {
+        font-size: 18px;
+    }
   }
 
   @media only screen and (max-width: 800px) {
@@ -182,6 +191,8 @@
     .home_napra2-container_first-page {
         height: 60vh;
     }
+
+    
   }
 
   @media only screen and (max-width: 680px) {
@@ -212,5 +223,10 @@
         width: 280px;
     }
     
+    
+
+    .home_napra2-container_title p {
+
+    }
 
   }

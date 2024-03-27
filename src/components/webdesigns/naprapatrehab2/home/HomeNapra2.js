@@ -38,12 +38,12 @@ const HomeNapra2 = () => {
                 </div>
             </div>
             <div className='home_napra2-container_carousel-container'>
-                <div className='about-container'>
-                    <h1 className='about-container_title'>Naprapat & Rehabcenter Haninge</h1>
-                    <p className='about-container_text'>Naprapatklinik i Haninge, 2 mil söder om Stockholm.</p>
-                    <p className='about-container_text'>Drivs och ägs idag av tre legitimerade naprapater Line Jonasson (0704540923), Sofie Schmidt (0702443473) och Susanne Nyström (0704530288).</p>
-                    <p className='about-container_text'>Hos oss kan du betala med swish, kort, presentkort. </p>
-                    <p className='about-container_text'>Vi är även anslutna till friskvårdsportalerna Wellnet, Actiway och Min Friskvård (friskvårdskuponger) samt försäkringsbolagsförmedlare: Falck Healthcare (DKV hälsa, SEB), Nordic Netcare (IF) och SOS International.</p>
+                <div className='home_napra2-container'>
+                    <h1 className='home_napra2-container_title'>Naprapat & Rehabcenter Haninge</h1>
+                    <p className='home_napra2-container_text'>Naprapatklinik i Haninge, 2 mil söder om Stockholm.</p>
+                    <p className='home_napra2-container_text'>Drivs och ägs idag av tre legitimerade naprapater Line Jonasson (0704540923), Sofie Schmidt (0702443473) och Susanne Nyström (0704530288).</p>
+                    <p className='home_napra2-container_text'>Hos oss kan du betala med swish, kort, presentkort. </p>
+                    <p className='home_napra2-container_text'>Vi är även anslutna till friskvårdsportalerna Wellnet, Actiway och Min Friskvård (friskvårdskuponger) samt försäkringsbolagsförmedlare: Falck Healthcare (DKV hälsa, SEB), Nordic Netcare (IF) och SOS International.</p>
                 </div>
                 <Carousel className='home_napra2-container_carousel-container_carousel'>
                     <div className='home_napra2-container_carousel-container_carousel_img'>

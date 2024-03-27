@@ -27,14 +27,14 @@
 
 .about-napra2-container_description-text_title {
     text-align: start;
-    font-size: 28px;
+    font-size: 22px;
     font-style: italic;
     font-weight: 700;
 }
 
 .about-napra2-container_description-text_subtitle {
     text-align: start;
-    font-size: 22px;
+    font-size: 18px;
     padding-bottom: 32px;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .about-napra2-container_images-card_description-container p {
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .about-napra2-container_images img {
