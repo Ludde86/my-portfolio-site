@@ -15,12 +15,11 @@ const HomePage = () => {
         <div id="napra" className='home-container'>
             <img className='home-container_img' src={logo} alt="logo" width={'100%'} />
 
+            {/* 
             <Carousel className='carousel-container'>
                 <div className='carousel-container_img'>
                     <img src={car1} alt='1' />
-                    {/*
-                     <p className="legend">Legend 1</p>
-                    */}
+                   
                 </div>
                 <div className='carousel-container_img'>
                     <img src={car2} alt='2' />
@@ -35,7 +34,7 @@ const HomePage = () => {
                     <img src={car5} alt='5' />
                 </div>
             </Carousel>
-
+            */}
 
             <div className='home-title_container'>
                 <p className='home-title_continer_title'>Naprapatbehandling</p>

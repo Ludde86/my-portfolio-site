@@ -1,0 +1,189 @@
+.services_napra2-container {
+    
+    /* border: 1px solid black; */
+    max-width: 100%;
+    /* margin: 64px; */
+    background: #fff;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.services_napra2-container_first-page {
+   display: flex;
+   background: #fcf3e7;
+   margin-top: 64px;
+   /* margin-left: 64px; */
+   margin-right: 64px;
+}
+
+.services_napra2-container_first-page_img-container {
+    margin: 64px;
+    max-width: 25vw;
+    min-width: 25vw;
+    max-height: 25vw;
+    min-height: 25vw;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.services_napra2-container_first-page_img-container_img {
+   /* width: 420px; */
+   /* height: 420px; */
+   
+}
+
+#services_napra2-container_first-page1 {
+    background-image: url('../assets/img/DSC06469.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#services_napra2-container_first-page2 {
+    background-image: url('../assets/img/DSC06565.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#services_napra2-container_first-page3 {
+    background-image: url('../assets/img/DSC06362.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#services_napra2-container_first-page4 {
+    background-image: url('../assets/img/cre8you-certifierad-mammamage-tranare.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.services_napra2-container_first-page_text-container {
+    padding: 64px;
+}
+
+.services_napra2-container_first-page_text-container_title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services_napra2-container_first-page_text-container_title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    /* color: #F7A015; */
+    color: #333;
+    margin: 0;
+    font-size: 5vw;
+}
+
+.services_napra2-container_first-page_text-container_price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7A015;
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    border-radius: 100%;
+}
+
+.services_napra2-container_first-page_text-container_price {
+    color: #fff;
+    
+    
+    /* text-align: center; */
+    margin: 0px auto;
+    font-size: 2vw;
+}
+
+.services_napra2-container_first-page_text-container_subtitle {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    /* color: #F7A015; */
+    color: #333;
+    font-size: 2.5vw;
+    margin-top: 0px;
+}
+
+.services_napra2-container_first-page_text-container_text {
+    font-size: 2vw;
+    /* color: #F7A015; */
+    color: #333;
+}
+
+.services_napra2-container_first-page_brands-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+@media only screen and (min-width: 1280px) {
+    .services_napra2-container_first-page_text-container_title {
+        font-size: 42px;
+    }
+    .services_napra2-container_first-page_text-container_price {
+        font-size: 32px;
+    }
+    .services_napra2-container_first-page_text-container_subtitle {
+        font-size: 32px;
+    }
+    
+    .services_napra2-container_first-page_text-container_text {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .services_napra2-container_first-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services_napra2-container_first-page_text-container_price-container {
+        max-width: 60px;
+        min-width: 60px;
+        max-height: 60px;
+        min-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .services_napra2-container_first-page_img-container {
+        margin: 24px;
+        
+    }
+
+    .services_napra2-container_first-page_text-container {
+        padding: 24px;
+    }
+    .services_napra2-container_first-page_text-container_title-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services_napra2-container_first-page_text-container_price-container {
+       margin-top: 12px;
+       margin-bottom: 12px;
+    }
+
+    .services_napra2-container_first-page_brands-container img {
+        max-width: 120px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .services_napra2-container_first-page_text-container_title {
+        font-size: 28px;
+    }
+    .services_napra2-container_first-page_text-container_price {
+        font-size: 20px;
+    }
+    .services_napra2-container_first-page_text-container_subtitle {
+        font-size: 20px;
+    }
+    
+    .services_napra2-container_first-page_text-container_text {
+        font-size: 18px;
+    }
+}

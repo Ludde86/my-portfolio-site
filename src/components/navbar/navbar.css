@@ -17,7 +17,7 @@
 	flex-direction: column;
 	justify-content: right;
 	padding-right: 64px;
-	/* padding-top: 12px; */
+	padding-top: 12px;
 }
 .links-container {
 	display: flex;
@@ -25,15 +25,17 @@
 }
 .link {
 	text-decoration: none;
-	padding-bottom: 6px;
+	padding: 12px;
 	border-bottom: 3px solid #333;
 	width: 120px;
 	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .link-text {
-	
 	color: #333;
-	/* margin: 12px; */
 	font-size: 18px;
 	font-weight: bold;
 }

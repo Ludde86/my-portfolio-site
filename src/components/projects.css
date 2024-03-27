@@ -12,7 +12,37 @@
 	height: 100%;
 }
 
+.projects_navbar-container {
+	margin-top: 64px;
+	/* overflow-x: scroll; */
+}
+
+.projects_navbar-container-link {
+	font-weight: 700;
+	margin-top: 12px;
+	color: #777;
+	font-size: 16px;
+}
+
 .project-link {
 	color: rgb(63, 81, 181);
 	text-decoration: none;
 }
+
+@media only screen and (max-width: 800px) {
+
+	.projects_navbar-container-link {
+		font-size: 10px;
+		
+	}
+
+  }
+
+  @media only screen and (max-width: 500px) {
+
+	.projects_navbar-container-link {
+		
+		margin: 0px;
+	}
+
+  }

@@ -1,0 +1,105 @@
+* {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.navbar_napra2-container {
+    background: #fff;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 2px #aaa;
+    position: relative;
+    top: 0px;
+    left: 0;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_napra2-container_img-container_img {
+    width: 20vw;
+    padding-top: 12px;
+    /* border: 1px solid black; */
+}
+
+.navbar_napra2-container_links-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.navbar_napra2-container_links-container_link {
+    color: rgb(146, 110, 42);
+    /* color: #777; */
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 6px 12px;
+    font-weight: 700;
+    transition: color 0.5s;
+}
+
+.navbar_napra2-container_links-container_link:hover {
+    color: orange;
+}
+
+ a.active {
+ color: orange;
+}
+
+.navbar_napra2-container_links-container_button {
+    background: rgb(179, 121, 14);
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 6px 12px;
+    opacity: 0.8;
+    transition: 0.5s;
+    border-radius: 100px;
+}
+
+.navbar_napra2-container_links-container_button:hover {
+    opacity: 1;
+    background: orange;
+    box-shadow: 0px 0px 6px #ccc;
+}
+
+@media only screen and (min-width: 1280px) {
+    .navbar_napra2-container_img-container_img {
+        width: 180px;
+    }
+    .navbar_napra2-container_links-container_link {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar_napra2-container {
+        background: #fff;
+        /* border: 1px solid red; */
+        box-shadow: 1px 1px 2px #aaa;
+        position: relative;
+        top: 0px;
+        left: 0;
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar_napra2-container_links-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .navbar_napra2-container_links-container_link {
+        /* font-size: 16px; */
+        padding: 6px;
+        font-weight: 700;
+        transition: color 0.5s;
+    }
+  }
+

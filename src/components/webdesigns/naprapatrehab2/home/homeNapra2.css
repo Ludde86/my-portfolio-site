@@ -1,0 +1,232 @@
+.home_napra2-container {
+    
+    /* border: 1px solid black; */
+    width: 100%;
+    
+    padding: 64px;
+}
+
+.home_napra2-container_first-page {
+    height: 80vh;
+    background-image: url('../assets/img/DSC06345.jpeg');
+    background-repeat: no-repeat;
+    background-position: 64px bottom;
+    background-size: contain;
+}
+
+.home_napra2-container_first-page_text-container_title {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 3vw;
+    color: #fff;
+    /* text-shadow: 1px 1px 1px #000; */
+}
+
+.home_napra2-container_first-page_text-container {
+    background: #fb9702e8 ;
+    position: absolute;
+    right: 64px;
+    bottom: 0px;
+    width: 60%;
+    padding-top: 64px;
+    padding-bottom: 22px;
+    padding-right: 64px;
+    padding-left: 64px;
+    /* padding-right: 15%; */
+}
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+    
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
+}
+
+.booking-desc {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#booking-button {
+    background: transparent;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: 2px solid white;
+    transition: 0.5s;
+    text-decoration: none;
+    margin-bottom: 16px;
+    text-shadow: none;
+}
+
+#booking-button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    background: white;
+    color: #fb9702e8;
+}
+
+.home_napra2-container_first-page_text-container_text {
+    color: #fff;
+    
+    font-size: 2vw;
+    /* font-weight: 700; */
+    line-height: 36px;
+    /* text-shadow: 0px 0px 2px #000; */
+}
+
+.home_napra2-container_carousel-container_carousel {
+    width: 500px;
+    
+}
+
+.home_napra2-container_carousel-container_carousel_img {
+   
+    max-height: 360px;
+}
+
+.home_napra2-container_carousel-container {
+    background: #fcf3e7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 64px;
+    padding: 64px;
+    margin-left: -64px;
+}
+
+.about-container {
+    padding-right: 10%;
+}
+
+.about-container_title {
+    font-size: 5vw;
+    color: #333;
+    /* text-shadow: 2px 2px 4px #bbb; */
+}
+
+.home_napra2-container_text {
+    font-size: 1vw;
+    color: #333;
+    /* text-shadow: 1px 1px 1px #000; */
+}
+
+@media only screen and (min-width: 1280px) {
+    
+}
+
+@media only screen and (max-width: 1080px) {
+    .about-container_title {
+        font-size: 32px;
+    }
+    .home_napra2-container {
+        font-size: 26px;
+    }
+    .home_napra2-container {
+        padding: 6px;
+    }
+
+    .home_napra2-container_first-page {
+        height: 80vh;
+        background-image: url('../assets/img/DSC06345.jpeg');
+        background-repeat: no-repeat;
+        background-position: 64px top;
+        background-size: 100%;
+    }
+
+    .booking {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-top: 26px; */
+    }
+
+    .home_napra2-container_carousel-container {
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 12px;
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .about-container {
+        padding-right: 0px;
+    }
+
+    .home_napra2-container_title {
+        font-size: 32px;
+    }
+    
+    .home_napra2-container_text {
+        font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    
+    .home_napra2-container_first-page_text-container {
+        padding: 12px 24px;
+        width: 90%;
+        height: 40%;
+
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+
+        margin: 12px;
+    }
+
+    .home_napra2-container_first-page {
+        height: 60vh;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 680px) {
+
+    
+
+    .home_napra2-container_carousel-container_carousel {
+        width: 360px;
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .home_napra2-container_first-page_text-container_title {
+        font-size: 26px;
+        margin-top: 12px;
+        line-height: 26px;
+    }
+
+    .home_napra2-container_first-page_text-container_text {
+        margin: 6px;
+        font-size: 16px;
+    }
+
+    .home_napra2-container_carousel-container_carousel {
+        width: 280px;
+    }
+    
+    
+
+    .home_napra2-container_title p {
+
+    }
+
+  }
