@@ -16,8 +16,8 @@ const HomeNapra2 = () => {
                     <h2 className='home_napra2-container_first-page_text-container_title'>
                         Välkomna till Naprapat & Rehabcenter i Haninge!
                     </h2>
-                    <div className='booking'>
-                        <div className='booking-desc'>
+                    <div className='home_napra2_booking'>
+                        <div className='home_napra2_booking-desc'>
                             <p className='home_napra2-container_first-page_text-container_text'>
                                 Naprapati
                             </p>

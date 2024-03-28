@@ -109,7 +109,7 @@ const Projects = () => {
 	};
 
 	return (
-		<div>
+		<div style={{ marginTop: -64 }}>
 			<Tabs className='projects_navbar-container' activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
 				<Tab><p className='projects_navbar-container-link'>Napra2</p></Tab>
 				<Tab><p className='projects_navbar-container-link'>Napra1</p></Tab>
