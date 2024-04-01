@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './projects.css';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
 import Challenge1 from './challengesCSS/challenge1/Challenge1';
 import Webdesign1 from "./webdesigns/webdesign1/webdesign1";
 import Naprapatrehab from './webdesigns/naprapatrehab/Naprapatrehab';
@@ -10,99 +9,20 @@ import NaprapatRehab2 from './webdesigns/naprapatrehab2/NaprapatRehab2';
 const Projects = () => {
 	const [activeTab, setActiveTab] = useState(0);
 
+	const links = ['Napra2', 'Napra1', 'HTProject', 'React', 'CSS']
+
 	const toggleCategories = () => {
 		switch (activeTab) {
 			case 0:
-				return (
-					<div className="projects-container">
-						<NaprapatRehab2 />
-					</div>
-				);
+				return <NaprapatRehab2 />
 			case 1:
-				return (
-					<div className="projects-container">
-						<Naprapatrehab />
-					</div>
-				);
+				return <Naprapatrehab />
 			case 2:
-				return (
-
-					<div className="projects-container">
-						<Htproject />
-					</div>
-
-				);
+				return <Htproject />
 			case 3:
-				return (
-					<div className="projects-container">
-						<Card shadow={5} className="card-container">
-							<CardTitle
-								style={{
-									color: '#fff',
-									height: '126px',
-									background: 'url("/createyourlist.png") center / cover',
-									margin: 12,
-									borderRadius: 12
-								}}
-							/>
-							<CardText className="card-text">
-								<h5>Create Your List - Mobilapp</h5>
-								<p>Min första mobilapp som ligger ute för alla androidanvändare på google play.</p>
-								<p>
-									En todo app där man kan skapa oändligt med listor, och fylla dessa med
-									information.
-								</p>
-								<p>Det går att anpassa dessa listor med vyer och färger som passar användaren.</p>
-								<p>
-									Enkelt att lägga till, ta bort och ändra listorna, samma sak med dess
-									information.
-								</p>
-								<p>
-									Plattformen som används på denna mobilapplikation för att lagra data är
-									Firebase.
-								</p>
-								<h5>Sekretesspolicy för Create Your List: </h5>
-
-								<p>Denna app behandlar ej några känsliga användaruppgifter eller data.</p>
-								<p>
-									Du skapar ett anonymt konto med endast ett användarnamn och lösenord. Helt utan
-									personuppgifter, kontaktuppgifter och dylikt.
-								</p>
-							</CardText>
-							<CardActions border>
-								<Button colored>
-									<a
-										href="https://play.google.com/store/apps/details?id=com.ludde86.createyourlist"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="project-link"
-									>
-										googleplay: ludde86.createyourlist
-									</a>
-								</Button>
-							</CardActions>
-						</Card>
-					</div>
-				);
+				return <Webdesign1 />
 			case 4:
-				return (
-					<div>
-						<Webdesign1 />
-					</div>
-				);
-			case 5:
-				return (
-					<div>
-						<h1>This is Css</h1>
-						<Challenge1 />
-					</div>
-				);
-			case 6:
-				return (
-					<div>
-						<h1>This is Spring</h1>
-					</div>
-				);
+				return <Challenge1 />
 			default:
 				return 'No Tab';
 		}
@@ -110,27 +30,28 @@ const Projects = () => {
 
 	return (
 		<div>
-			<Tabs className='projects_navbar-container' activeTab={activeTab} onChange={(tabId) => setActiveTab(tabId)} ripple>
-				<Tab><p className='projects_navbar-container-link'>Napra2</p></Tab>
-				<Tab><p className='projects_navbar-container-link'>Napra1</p></Tab>
-				<Tab><p className='projects_navbar-container-link'>HTProject</p></Tab>
-				<Tab><p className='projects_navbar-container-link'>React Native</p></Tab>
-				<Tab><p className='projects_navbar-container-link'>React</p></Tab>
-				{/*
-				<Tab style={{ fontWeight: 'bold' }}>CSS</Tab>
-			*/}
-				{/*
-					<Tab>JavaScript</Tab>
-					<Tab>Java</Tab>
-					<Tab>Spring</Tab>
-				*/}
-			</Tabs>
-
-
-
+			<header>
+				<nav >
+					{/* css in navbar.css */}
+					<div className='links-container'>
+						{links.map((item, index) =>
+							<p key={index} onClick={() => setActiveTab(index)} className='link'>{item}</p>
+						)}
+					</div>
+				</nav>
+				<div className='navbar_button-container2_design'>
+					<div className='navbar_button-container2 menu-button-2'>
+						<input type="checkbox" />
+						<span className='first-line'></span>
+						<span className='second-line'></span>
+						<span className='third-line'></span>
+					</div>
+					<div>
+						<span id="menu-button-text"><i className="fa fa-angle-double-left fa-lg menu-button-icon" aria-hidden="true" />DESIGN</span>
+					</div>
+				</div>
+			</header>
 			<div className="content">{toggleCategories()}</div>
-
-
 		</div>
 	);
 };

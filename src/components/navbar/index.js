@@ -6,29 +6,35 @@ import './navbar.css';
 const Navbar = () => {
 	return (
 		<div className="app-container">
-			<div className="fixed-navbar">
-				<div className="navbar-container">
+			<header>
+				<nav>
 					<div className="links-container">
-						<Link className="link link-text" to="/">
+						<a className="link" href="/">
 							Hem
-						</Link>
-						<Link className="link link-text" to="/resume">
+						</a>
+						<a className="link" href="/resume">
 							CV
-						</Link>
-
-						<Link className="link link-text" to="/projects">
-							Design
-						</Link>
-
-						{/*
-							<Link className="link" to="/dictionary">
-							<text className="link-text">Ordlista</text>
-							</Link>
-						*/}
+						</a>
 					</div>
-					<div className="navbar-border" />
+					<div className="links-container">
+						<a className="link" href="/projects">
+							Design
+						</a>
+					</div>
+					<div className='navbar_button-container search-button'>
+						<p>x</p>
+					</div>
+				</nav>
+
+				<div className='navbar_button-container menu-button'>
+					<input type="checkbox" />
+					<span className='first-line'></span>
+					<span className='second-line'></span>
+					<span className='third-line'></span>
 				</div>
-			</div>
+			</header>
+
+
 
 			{/*
 			<Drawer className="header-color" title="Menu">
