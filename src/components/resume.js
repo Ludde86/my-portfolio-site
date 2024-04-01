@@ -79,10 +79,10 @@ const Resume = () => {
 				<Experience
 					startYear={2022}
 					endYear={'Pågående'}
-					jobName={'Olika butiker'}
+					jobName={'Mi&Mo.se'}
 					jobPosition={'E-handel'}
 					jobDescription={
-						'Sedan slutet av 2022 sysslar jag även med e-handel där jag testar produkter, bygger upp hemsidor/butiker, hanterar lager, ordrar och kundtjänst. Jag skapar annonser och hanterar annonskontot via meta/facebook där jag följer statistik för att testa, optimera och utveckla annonserna. Den senaste butiken har sålt över 1000 produkter och omsatt över 250,000kr sedan september 2023, endast här i Sverige.'
+						'Sedan slutet av 2022 sysslar jag även med e-handel där jag testar produkter, bygger upp hemsidor/butiker, hanterar lager, ordrar och kundtjänst. Jag skapar annonser och hanterar annonskontot via meta/facebook där jag följer statistik för att testa, optimera och utveckla annonserna. Butiken har sålt över 1000 produkter och omsatt över 250,000kr sedan september 2023, endast här i Sverige.'
 					}
 				/>
 				<Experience
