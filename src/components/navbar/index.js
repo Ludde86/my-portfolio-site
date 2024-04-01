@@ -25,6 +25,7 @@ const Navbar = () => {
 						<p>x</p>
 					</div>
 				</nav>
+
 				<div className='navbar_button-container menu-button'>
 					<input type="checkbox" />
 					<span className='first-line'></span>
