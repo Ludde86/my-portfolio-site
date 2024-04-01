@@ -39,11 +39,16 @@ const Projects = () => {
 						)}
 					</div>
 				</nav>
-				<div className='navbar_button-container2 menu-button-2'>
-					<input type="checkbox" />
-					<span className='first-line'></span>
-					<span id="menu-button-text" className='second-line'>DESIGN</span>
-					<span className='third-line'></span>
+				<div className='navbar_button-container2_design'>
+					<div className='navbar_button-container2 menu-button-2'>
+						<input type="checkbox" />
+						<span className='first-line'></span>
+						<span className='second-line'></span>
+						<span className='third-line'></span>
+					</div>
+					<div>
+						<span id="menu-button-text"><i className="fa fa-angle-double-left fa-lg menu-button-icon" aria-hidden="true" />DESIGN</span>
+					</div>
 				</div>
 			</header>
 			<div className="content">{toggleCategories()}</div>
