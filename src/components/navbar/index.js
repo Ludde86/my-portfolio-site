@@ -50,7 +50,7 @@ const Navbar = () => {
 			</Drawer>
 			*/}
 
-			<div>
+			<div className='app-container'>
 				<Main />
 			</div>
 		</div>
