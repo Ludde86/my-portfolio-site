@@ -1,4 +1,34 @@
 .landing-container {
 	background: #fafafa;
 	margin-top: 32px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+@media only screen and (max-width: 1280px) {
+	.landing-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		/* background: tan; */
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.landing-container {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		/* width: 100%; */
+		/* background: tan; */
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.landing-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		/* width: 100%; */
+		/* background: tan; */
+	}
 }

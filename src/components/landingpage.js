@@ -5,10 +5,11 @@ import './landingpage.css';
 
 const Landing = () => {
 	return (
-		<div style={{ width: '100%', margin: 'auto' }}>
-			<div className="landing-container">
-				<Contact />
-				<About />
+		<div className="landing-container">
+			<Contact />
+			<About />
+			<div className="skills-container">
+				<text className="skills-text">React | React Native | JavaScript | HTML | CSS | Java</text>
 			</div>
 		</div>
 	);

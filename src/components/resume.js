@@ -20,7 +20,7 @@ const Resume = () => {
 				<hr style={{ borderTop: '4px solid #833fb2', width: '90%', paddingTop: '32px' }} />
 			*/}
 
-				<div className="info-container">
+				<div className="resume_info-container">
 					<div className="info-content">
 						<text className="info-label">Namn:</text>
 						<text className="info-text">Ludvig Björn</text>
