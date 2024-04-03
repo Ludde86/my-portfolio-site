@@ -61,7 +61,7 @@ const AboutNapra2 = () => {
 
 
                 <div className='about-napra2-container_card'>
-                    <div id='about3' className='about-napra2-container_images-card'>
+                    <div id='napra2-about3' className='about-napra2-container_images-card'>
                         <div className='about-napra2-container_images-card_title-container'>
                             <p className='about-napra2-container_card-title'>Sofie Schmidt</p>
                             <p className='about-napra2-container_card-title'>Leg. Naprapat</p>

@@ -6,7 +6,12 @@ const Contact = () => {
 	return (
 		<div className="contact-info">
 			<div className="img-container">
-				<img src={myAvatar} alt="profile" className="contact-avatar" />
+				{/*
+			<img src={myAvatar} alt="profile" className="contact-avatar" />
+		*/}
+				{/*
+		<div className="contact-avatar"></div>
+	*/}
 			</div>
 			<div className="info-container">
 				<div className="info">
