@@ -1,0 +1,33 @@
+.htk1-sidebar-container {
+    background: linear-gradient(to right, #4682b4, #00000000);
+    width: 5%;
+    transition: 1s;
+}
+
+.htk-sidebar-container_links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 75vh;
+    padding-left: 2rem;
+    /* border: 1px solid black; */
+
+   
+    min-height: 90vh;
+    transition: 1s;
+}
+
+#htk1-sidebar-button {
+    position: relative;
+    top: 1.8rem;
+    left: 1.8rem;
+
+    transition: 0.5s;
+}
+
+#htk1-sidebar-button:hover, .htk1-sidebar-container:hover  {
+    width: 7.5%;
+    top: 1.8rem;
+    left: 2.2rem;
+}
