@@ -1,0 +1,9 @@
+.haningetk1-container {
+    border: 2px solid black;
+    min-height: 100vh;
+
+    background-image: url('./assets/img/start.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}

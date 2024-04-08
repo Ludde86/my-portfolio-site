@@ -1,0 +1,66 @@
+.htk-navbar-container {
+    min-height: 10vh;
+    /* border: 2px solid black; */
+
+    /* background-image: url('../assets/img/start2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+
+    background: linear-gradient(to bottom, #000000c7, #00000000);
+}
+
+.htk-navbar-container_links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    
+}
+
+.htk-navbar-container_links-container_link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.htk-navbar-container_links-container_link {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 1.8rem;
+    transition: 0.5s;
+}
+
+.htk-navbar-container_links-container_link:hover {
+    color: #fff;
+}
+
+.htk-navbar-container_links-container_link_underline {
+    height: 2px;
+    width: 0%;
+    background: #ccc;
+    
+    transition: 0.3s;
+}
+
+.htk-navbar-container_links-container_link-container:hover .htk-navbar-container_links-container_link_underline {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+
+
+.htk-navbar-container_links-container_icon {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 2.2rem;
+}
