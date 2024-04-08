@@ -1,10 +1,10 @@
 import React from 'react'
 import './navbarhtk1.css'
 
-const NavbarHtk1 = ({ onSetOpenSidebar }) => {
+const NavbarHtk1 = ({ openSidebar }) => {
 
     return (
-        <div className='htk-navbar-container'>
+        <div className='htk-navbar-container' style={{ opacity: openSidebar && 0.1 }}>
 
 
 

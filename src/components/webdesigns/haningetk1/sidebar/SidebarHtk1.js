@@ -4,7 +4,7 @@ import './sidebarhtk1.css'
 const SidebarHtk1 = ({ openSidebar, onSetOpenSidebar }) => {
     return (
         <div className='htk1-sidebar-container' style={{
-            width: openSidebar && '50%'
+            width: openSidebar && '75%'
         }} onClick={() => onSetOpenSidebar()} >
 
 
