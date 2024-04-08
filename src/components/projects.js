@@ -5,23 +5,26 @@ import Webdesign1 from "./webdesigns/webdesign1/webdesign1";
 import Naprapatrehab from './webdesigns/naprapatrehab/Naprapatrehab';
 import Htproject from './webdesigns/htproject/Htproject';
 import NaprapatRehab2 from './webdesigns/naprapatrehab2/NaprapatRehab2';
+import Napra3 from './webdesigns/napra3/Napra3';
 
 const Projects = () => {
 	const [activeTab, setActiveTab] = useState(0);
 
-	const links = ['Napra2', 'Napra1', 'HTProject', 'React', 'CSS']
+	const links = ['Napra3', 'Napra2', 'Napra1', 'HTProject', 'React', 'CSS']
 
 	const toggleCategories = () => {
 		switch (activeTab) {
 			case 0:
-				return <NaprapatRehab2 />
+				return <Napra3 />
 			case 1:
-				return <Naprapatrehab />
+				return <NaprapatRehab2 />
 			case 2:
-				return <Htproject />
+				return <Naprapatrehab />
 			case 3:
-				return <Webdesign1 />
+				return <Htproject />
 			case 4:
+				return <Webdesign1 />
+			case 5:
 				return <Challenge1 />
 			default:
 				return 'No Tab';

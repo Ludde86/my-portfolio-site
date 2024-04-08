@@ -1,0 +1,29 @@
+.navbarNapra3-container {
+    max-height: 6vh;
+    border-bottom: 1px solid white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+}
+
+.napra3-logo-container {
+
+}
+
+.napra3-logo-container img {
+    width: 240px;
+}
+
+.napra3-links-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.napra3-links-container a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}

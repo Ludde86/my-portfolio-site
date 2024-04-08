@@ -1,0 +1,8 @@
+.napra3-container {
+    border: 2px solid black;
+    min-height: 100vh;
+
+    /* background: #fb9702e8; */
+    background: linear-gradient(to bottom right, #000 -20%, #fb9702e8 75%);;
+    
+}
