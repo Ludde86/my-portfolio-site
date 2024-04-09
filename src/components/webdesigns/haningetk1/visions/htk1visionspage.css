@@ -2,14 +2,23 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
+}
+
+.htk1-visions-container_desc {
+    margin: 2rem;
+    padding: 2rem;
+    /* border-radius: 1rem; */
+
+    min-width: 40vw;
+    max-width: 40vw;
 }
 
 .htk1-visions-container_card {
     background: linear-gradient(to right bottom, #00000000 , #4683b496  );
     margin: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: 4rem;
+    /* border-radius: 0.4rem; */
 
     min-width: 40vw;
     max-width: 40vw;
@@ -40,13 +49,22 @@
 
 @media only screen and (max-width: 800px) {
 
-    .htk1-visions-container_card {
-        margin: 1rem;
+    .htk1-visions-container_desc {
+        margin: 0rem;
         padding: 1.6rem;
-        border-radius: 2rem;
+        /* border-radius: 2rem; */
     
-        min-width: 90vw;
-        max-width: 90vw;
+        min-width: 80vw;
+        max-width: 80vw;
+    }
+
+    .htk1-visions-container_card {
+        margin: 0rem;
+        padding: 1.6rem;
+        border-radius: 1rem;
+    
+        min-width: 80vw;
+        max-width: 80vw;
         
     }
     

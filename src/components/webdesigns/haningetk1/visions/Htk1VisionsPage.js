@@ -5,15 +5,23 @@ const Htk1VisionsPage = () => {
     return (
         <div className='htk1-visions-container'>
 
+
+
             <div className='htk1-visions-container_visions-container'>
-                <div className='htk1-visions-container_card'>
+
+                <div className='htk1-about-container_desc-container_title-container'>
+                    <div className='htk1-about-container_desc-container_title-container_line'></div>
+                    <h3>Vision & Värdegrund</h3>
+                </div>
+
+                <div className='htk1-visions-container_desc'>
                     <p className='htk1-visions-container_card_title'>Vision</p>
                     <p className='htk1-visions-container_card_desc'>Haninge Tennisklubb ska vara den personliga tennisklubben där alla ska känna sig lika välkomna,
                         engagemang och delaktighet uppmuntras, individen ges möjlighet till utveckling och efter sin egen
                         ambitionsnivå uppnå sin högsta potential.</p>
                 </div>
 
-                <div className='htk1-visions-container_card'>
+                <div className='htk1-visions-container_desc'>
                     <p className='htk1-visions-container_card_title'>Mål</p>
                     <p className='htk1-visions-container_card_desc'>HTK ska bedriva breddtennis med Haninge kommun som huvudsakligt upptagningsområde.
                         Verksamheten ska i huvudsak omfatta:</p>
@@ -24,14 +32,14 @@ const Htk1VisionsPage = () => {
                     <p className='htk1-visions-container_card_desc'>- Trivselaktiviteter, evenemang</p>
                 </div>
 
-                <div className='htk1-visions-container_card'>
+                <div className='htk1-visions-container_desc'>
                     <p className='htk1-visions-container_card_title'>VÅR VÄRDEGRUND </p>
                     <p className='htk1-visions-container_card_desc'>Verksamheten ska byggas på värdeorden Glädje, Gemenskap och Utveckling.</p>
                     <p className='htk1-visions-container_card_desc'>Vi som representerar Haninge Tennisklubb, är alla föreningens ansikte utåt; oavsett om vi står på
                         banan, på kansliet, är förtroendevald, arbetar ideellt eller tävlar för klubben.</p>
                 </div>
 
-                <div className='htk1-visions-container_card'>
+                <div className='htk1-visions-container_desc'>
                     <p className='htk1-visions-container_card_title'>Glädje</p>
                     <p className='htk1-visions-container_card_desc'>Tennis är världens roligaste sport!
                         Ur glädjen till sporten föds det motivation och ett gott självbefinnande. Glädje smittar och skapar en
@@ -39,7 +47,7 @@ const Htk1VisionsPage = () => {
                         känner sig välkomna i klubben.</p>
                 </div>
 
-                <div className='htk1-visions-container_card'>
+                <div className='htk1-visions-container_desc'>
                     <p className='htk1-visions-container_card_title'>Gemenskap</p>
                     <p className='htk1-visions-container_card_desc'>Klubben ska vara inkluderande!
                         Alla som vill och kan ska kunna vara med utifrån sina förutsättningar. Vi bygger vår klubb på
@@ -48,7 +56,7 @@ const Htk1VisionsPage = () => {
                         klubbkänslan.</p>
                 </div>
 
-                <div className='htk1-visions-container_card'>
+                <div className='htk1-visions-container_desc'>
                     <p className='htk1-visions-container_card_title'>Utveckling</p>
                     <p className='htk1-visions-container_card_desc'>Alla ska känna att dom utvecklas i vår tennisklubb!
                         Oavsett ambitionsnivå och spelstyrka. Klubben ska aldrig slå sig till ro utan hela tiden sträva efter att
