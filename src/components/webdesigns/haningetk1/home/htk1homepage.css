@@ -1,4 +1,9 @@
 .htk1-home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
     background: #ffffffe7;
 
     position: absolute;
@@ -8,6 +13,7 @@
 
     box-shadow: 2px 2px 6px #555;
     width: 50vw;
+    min-height: 50vh;
 
     z-index: 2;
 
@@ -43,6 +49,21 @@
     opacity: 1;
 }
 
+.htk1-home-container_icon {
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.htk1-home-container_icon:hover {
+    opacity: 1;
+}
+
 @media only screen and (max-width: 800px) {
 
     .htk1-home-container {
@@ -50,23 +71,30 @@
         top: 52vh;
         right: 1rem;
         width: 90vw;
+        padding: 1rem;
     }
 
     .htk1-home-container h3 {
         font-size: 1.2rem;
         font-weight: 700;
         line-height: 1.2rem;
+        padding-top: 0.2rem;
     }
     
     .htk1-home-container p {
         font-size: 1rem;
-        padding-bottom: 2rem;
+        padding-bottom: 0.2rem;
         line-height: 1.2rem;
     }
     
     .htk1-home-container a {
         font-size: 1rem;
         padding: 1rem;
+    }
+
+    .htk1-home-container_icon {
+        top: 1rem;
+        right: 1rem;
     }
 
   }

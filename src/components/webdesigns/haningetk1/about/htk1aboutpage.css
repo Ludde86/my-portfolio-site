@@ -1,0 +1,38 @@
+.htk1-about-container {
+    /* border: 1px solid black; */
+    padding-bottom: 2rem;
+    box-shadow: 2px 2px 4px #555;
+    margin: 2rem;
+
+    border-radius: 1rem;
+}
+
+.htk1-about-container p {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .htk1-about-container {
+        box-shadow: none;
+        margin: 0rem;
+    
+        border-radius: 0rem;
+    }
+    
+    .htk1-about-container p {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 0;
+    
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+  }
