@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 12rem;
 }
 
 .htk1-visions-container_card {
-    background: linear-gradient(to right bottom, #00000000, #4682b4);
+    background: linear-gradient(to right bottom, #00000000 , #4683b496  );
     margin: 2rem;
     padding: 2rem;
     border-radius: 1rem;
@@ -40,7 +41,7 @@
 @media only screen and (max-width: 800px) {
 
     .htk1-visions-container_card {
-        margin: 1rem 2rem;
+        margin: 1rem;
         padding: 1.6rem;
         border-radius: 2rem;
     
@@ -58,6 +59,7 @@
     }
    
     .htk1-visions-container_principles-container li {
+        font-size: 1rem;
         line-height: 1rem;
         margin-left: 1rem;
     }

@@ -6,6 +6,10 @@ const Htk1AboutPage = () => {
         <div className='htk1-about-container'>
             <div className='htk1-about-container_logo-container'></div>
             <div className='htk1-about-container_desc-container'>
+                <div className='htk1-about-container_desc-container_title-container'>
+                    <div className='htk1-about-container_desc-container_title-container_line'></div>
+                    <h3>Haninge Tennisklubb</h3>
+                </div>
                 <p>Haninge TK är en ideell tennisklubb belägen intill Torvalla idrottsanläggning. Vi har två nymålade banor med Latex-Ite beläggning. Vi har träningsgrupper för både ungdomar och vuxna samt privatträningar. Läs mer under "Tennisskolan" där ni hittar telefonnummer till tränare och personer i juniorkommiten.</p>
                 <p>Vi har även ett gruppspel som är öppen för alla, läs mer under "Gruppspel".</p>
                 <p>Telefonnummer till kansliet och styrelsemedlemmar finns under "Kontakt".  I tennisshoppen kan ni köpa bollar, greplindor och enstaka racketar samt strängning. Information om hur du bokar strötider och priser finns under "Boka Bana" och "Kontrakt- och strötider". </p>

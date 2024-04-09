@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 6rem;
 }
 
 .htk1-about-container_logo-container {
@@ -17,8 +18,27 @@
 
 .htk1-about-container_desc-container {
     padding-bottom: 2rem;
-    box-shadow: 2px 2px 4px #555;
+    /* box-shadow: 2px 2px 4px #555; */
     margin: 2rem;
+}
+
+.htk1-about-container_desc-container_title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.htk1-about-container_desc-container_title-container_line {
+    height: 6px;
+    width: 10vw;
+    background: var(--color-htk);
+    margin-right: 2rem;
+}
+
+.htk1-about-container_desc-container_title-container h3 {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .htk1-about-container p {
@@ -44,7 +64,27 @@
 
     .htk1-about-container_logo-container {
         
+        margin-top: 6rem;
         margin-bottom: -2rem;
+    }
+
+    .htk1-about-container_desc-container_title-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .htk1-about-container_desc-container_title-container_line {
+        height: 6px;
+        width: 10vw;
+        background: var(--color-htk);
+        margin-right: 2rem;
+    }
+    
+    .htk1-about-container_desc-container_title-container h3 {
+        font-size: 1.6rem;
     }
     
     .htk1-about-container_desc-container p {
