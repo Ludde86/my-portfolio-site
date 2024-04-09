@@ -1,0 +1,103 @@
+.htk1-footer-container {
+    /* border: 1px solid black; */
+    /* background: #4682b4; */
+    background: #fff;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 4rem;
+
+    box-shadow: -2px -2px 6px #ccc;
+    margin-top: 2rem;
+}
+
+.htk1-footer-container_club-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 35vw;
+}
+.htk1-footer-container_member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 35vw;
+}
+.htk1-footer-container_club-info_title {
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.htk1-footer-container_club-info_subtitle-desc-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.htk1-footer-container_club-info_subtitle {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.htk1-footer-container_club-info_desc {
+    color: #333;
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .htk1-footer-container {
+        min-height: 50vh;
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        padding: 2rem 0.2rem;
+    }
+
+    .htk1-footer-container_club-info {
+        margin: 0;
+    }
+    .htk1-footer-container_member-info {
+        margin: 0;
+    }
+
+    .htk1-footer-container_club-info_title {
+        color: #333;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: underline;
+        margin: 0;
+        padding: 0;
+    }
+    .htk1-footer-container_club-info_subtitle-desc-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .htk1-footer-container_club-info_subtitle {
+        color: #333;
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: -0.2rem;
+        padding: 0;
+    }
+    .htk1-footer-container_club-info_desc {
+        color: #333;
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 0;
+        margin-top: -0.6rem;
+    }
+
+  }

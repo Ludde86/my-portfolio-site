@@ -8,7 +8,8 @@
     background: linear-gradient(to right, #4682b4, #00000000);
     margin: 2rem;
     padding: 2rem;
-    /* border-radius: 1rem; */
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px #eee;
 
     min-width: 40vw;
     max-width: 40vw;
