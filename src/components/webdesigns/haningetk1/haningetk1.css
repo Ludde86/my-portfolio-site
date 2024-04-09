@@ -1,5 +1,5 @@
 .haningetk1-container {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     min-height: 100vh;
 
     background-image: url('./assets/img/start1_notitle.jpg');
@@ -40,6 +40,19 @@
     text-shadow: 2px 2px 6px #333;
 
     text-align: start;
+}
+
+.htl1-logo {
+    position: absolute;
+    bottom: -6rem;
+    right: 2rem;
+
+    border-radius: 100%;
+    width: 8rem;
+    height: 7.2rem;
+    opacity: 0.8;
+    
+    
 }
 
 @media only screen and (max-width: 800px) {

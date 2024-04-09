@@ -25,7 +25,7 @@ const NavbarHtk1 = ({ openSidebar }) => {
 
                 <div className='htk-navbar-container_links-container_link-container'>
                     <a className='htk-navbar-container_links-container_link' href="/projects/">
-                        Kontakt
+                        Vision & värdegrund
                     </a>
                     <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>
@@ -39,7 +39,7 @@ const NavbarHtk1 = ({ openSidebar }) => {
 
                 <div className='htk-navbar-container_links-container_link-container'>
                     <a className='htk-navbar-container_links-container_link' href="/projects/">
-                        Vision & värdegrund
+                        Kontakt
                     </a>
                     <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>

@@ -1,7 +1,7 @@
 .htk1-sidebar-container {
     background: linear-gradient(to right, #4682b4, #00000000);
     width: 5%;
-    transition: 1s;
+    transition: 0.5s;
 
 }
 
@@ -16,7 +16,7 @@
 
    
     min-height: 86vh;
-    transition: 1s;
+    transition: 0.5s;
 
 }
 

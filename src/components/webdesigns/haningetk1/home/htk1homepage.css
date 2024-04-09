@@ -1,0 +1,30 @@
+.htk1-home-container {
+    background: #ffffffe7;
+
+    position: absolute;
+    top: 18rem;
+    right: 6rem;
+    padding: 2rem;
+
+    box-shadow: 2px 2px 6px #555;
+    width: 50vw;
+}
+
+.htk1-home-container h3 {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.htk1-home-container p {
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+}
+
+.htk1-home-container a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+
+    background: #4683b4da;
+    padding: 1rem;
+    border-radius: 1rem;
+}
