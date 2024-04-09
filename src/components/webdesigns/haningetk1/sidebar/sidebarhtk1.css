@@ -3,6 +3,14 @@
     width: 5%;
     transition: 0.5s;
 
+    z-index: 10;
+
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    /* margin-left: -2rem; */
+
+    cursor: pointer;
 }
 
 .htk-sidebar-container_links-container {
@@ -12,17 +20,21 @@
     align-items: flex-start;
     height: 75vh;
     padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     /* border: 1px solid black; */
 
    
-    min-height: 86vh;
+    min-height: 100vh;
     transition: 0.5s;
+
+    z-index: 10;
 
 }
 
 #htk1-sidebar-button {
     position: relative;
-    top: 1.8rem;
+    top: 10vh;
     left: 1.8rem;
 
     transition: 0.5s;
@@ -30,6 +42,6 @@
 
 #htk1-sidebar-button:hover, .htk1-sidebar-container:hover  {
     width: 7.5%;
-    top: 1.8rem;
-    left: 2.2rem;
+    /* top: 1.8rem;
+    left: 2.2rem; */
 }

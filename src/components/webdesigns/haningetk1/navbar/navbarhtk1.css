@@ -8,6 +8,8 @@
 
     background: linear-gradient(to bottom, #000000c7, #00000000);
     transition: 0.5s;
+
+    z-index: 10;
 }
 
 .htk-navbar-container_links-container {
@@ -65,10 +67,13 @@
     .htk-navbar-container_links-container_link {
         font-size: 1.4rem;
         margin-top: 1rem;
+        color: #fff;
+        /* background: #0000002c; */
+        /* padding: 0.2rem 0.4rem; */
     }
   }
 
-  @media only screen and (max-width: 920px) {
+@media only screen and (max-width: 920px) {
 
     .htk-navbar-container_links-container_link {
         font-size: 1.2rem;

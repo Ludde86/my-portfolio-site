@@ -16,13 +16,15 @@ const Haningetk1 = () => {
     return (
         <div className='haningetk1-container'>
             <NavbarHtk1 openSidebar={openSidebar} />
-            <Htk1HomePage />
+            <Htk1HomePage openSidebar={openSidebar} />
             <SidebarHtk1 openSidebar={openSidebar} onSetOpenSidebar={onSetOpenSidebar} />
             <div className='htk1-title-container' style={{ opacity: openSidebar && 0.1 }}>
                 <h3>Välkommen till</h3>
                 <h1>HANINGE TENNISKLUBB</h1>
             </div>
+            {/*
             <img className='htl1-logo' src={logo} alt='logo' />
+        */}
         </div>
     )
 }
