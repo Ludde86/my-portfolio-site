@@ -1,15 +1,14 @@
 .htk1-visions-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .htk1-visions-container_card {
-    /* border: 1px solid black; */
-    background: linear-gradient(to right, #4682b4, #00000000);
+    background: linear-gradient(to right bottom, #00000000, #4682b4);
     margin: 2rem;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 2px 2px 4px #eee;
 
     min-width: 40vw;
     max-width: 40vw;
@@ -17,24 +16,33 @@
 }
 
 .htk1-visions-container_card_title {
-    color: #fff;
+    color: var(--color-htk);
+    text-transform: uppercase;
     font-size: 2rem;
-    text-shadow: 1px 1px 4px #000;
+    font-weight: 700;
 }
 .htk1-visions-container_card_desc {
-    color: #fff;
+    color: #555;
     font-size: 1.4rem;
-    text-shadow: 1px 1px 4px #000;
+    font-weight: 700;
+}
+
+.htk1-visions-container_card_daily-visions-container {
+    margin-bottom: 2rem;
+}
+
+.htk1-visions-container_card_daily-visions-container li {
+    color: #555;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 800px) {
 
     .htk1-visions-container_card {
-        /* border: 1px solid black; */
-        background: linear-gradient(to right, #4682b4, #00000000);
-        margin: 0.4rem 2rem;
-        padding: 1rem;
-        /* border-radius: 1rem; */
+        margin: 1rem 2rem;
+        padding: 1.6rem;
+        border-radius: 2rem;
     
         min-width: 90vw;
         max-width: 90vw;
@@ -42,15 +50,15 @@
     }
     
     .htk1-visions-container_card_title {
-        color: #fff;
         font-size: 1.4rem;
-        text-shadow: 1px 1px 4px #000;
     }
     .htk1-visions-container_card_desc {
-        color: #fff;
         font-size: 1rem;
-        text-shadow: 1px 1px 4px #000;
         line-height: 1rem;
     }
    
+    .htk1-visions-container_principles-container li {
+        line-height: 1rem;
+        margin-left: 1rem;
+    }
   }

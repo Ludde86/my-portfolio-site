@@ -1,10 +1,24 @@
 .htk1-about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.htk1-about-container_logo-container {
+    min-width: 25vw;
+    min-height: 25vh;
+    background-image: url('../assets/img/htk-logga.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* padding: 2rem; */
     /* border: 1px solid black; */
+}
+
+.htk1-about-container_desc-container {
     padding-bottom: 2rem;
     box-shadow: 2px 2px 4px #555;
     margin: 2rem;
-
-    /* border-radius: 1rem; */
 }
 
 .htk1-about-container p {
@@ -19,13 +33,21 @@
 @media only screen and (max-width: 800px) {
 
     .htk1-about-container {
+
+        flex-direction: column;
+
         box-shadow: none;
         margin: 0rem;
     
         border-radius: 0rem;
     }
+
+    .htk1-about-container_logo-container {
+        
+        margin-bottom: -2rem;
+    }
     
-    .htk1-about-container p {
+    .htk1-about-container_desc-container p {
         padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
