@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './haningetk1.css'
 import Htk1AboutPage from './about/Htk1AboutPage'
 import Htk1LandingPage from './landing/Htk1LandingPage'
@@ -8,6 +8,14 @@ import Htk1FooterPage from './footer/Htk1FooterPage'
 const Haningetk1 = () => {
 
     const [openSidebar, setOpenSidebar] = useState(false);
+
+    const goToTop = () => {
+        window.scrollTo(0, 120);
+    };
+    useEffect(() => {
+        goToTop()
+    }, [])
+
 
     const onSetOpenSidebar = () => {
         setOpenSidebar(!openSidebar)
