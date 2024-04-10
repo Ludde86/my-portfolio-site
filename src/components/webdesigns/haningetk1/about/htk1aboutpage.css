@@ -1,0 +1,100 @@
+.htk1-about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem;
+}
+
+.htk1-about-container_logo-container {
+    min-width: 25vw;
+    min-height: 25vh;
+    background-image: url('../assets/img/htk-logga.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* padding: 2rem; */
+    /* border: 1px solid black; */
+}
+
+.htk1-about-container_desc-container {
+    padding-bottom: 2rem;
+    /* box-shadow: 2px 2px 4px #555; */
+    margin: 2rem;
+}
+
+.htk1-about-container_desc-container_title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.htk1-about-container_desc-container_title-container_line {
+    height: 6px;
+    width: 10vw;
+    background: var(--color-htk);
+    margin-right: 2rem;
+}
+
+.htk1-about-container_desc-container_title-container h3 {
+    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.htk1-about-container p {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .htk1-about-container {
+
+        flex-direction: column;
+
+        box-shadow: none;
+        margin: 0rem;
+    
+        border-radius: 0rem;
+    }
+
+    .htk1-about-container_logo-container {
+        
+        margin-top: 6rem;
+        margin-bottom: -2rem;
+    }
+
+    .htk1-about-container_desc-container_title-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    
+    .htk1-about-container_desc-container_title-container_line {
+        height: 6px;
+        width: 10vw;
+        background: var(--color-htk);
+        margin-right: 2rem;
+    }
+    
+    .htk1-about-container_desc-container_title-container h3 {
+        font-size: 1.6rem;
+    }
+    
+    .htk1-about-container_desc-container p {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 0;
+    
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+  }
