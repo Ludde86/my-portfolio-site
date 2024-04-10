@@ -45,3 +45,14 @@
     /* top: 1.8rem;
     left: 2.2rem; */
 }
+
+@media only screen and (max-width: 1020px) {
+
+    #htk1-sidebar-button {
+        position: relative;
+        top: 12vh;
+        left: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+  }

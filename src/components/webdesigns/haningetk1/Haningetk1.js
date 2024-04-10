@@ -9,11 +9,14 @@ const Haningetk1 = () => {
 
     const [openSidebar, setOpenSidebar] = useState(false);
 
-    const goToTop = () => {
-        window.scrollTo(0, 120);
-    };
+    const mediaQueryCondition = window.matchMedia('( max-width: 800px )').matches;
+
     useEffect(() => {
-        goToTop()
+        if (mediaQueryCondition) {
+            window.scrollTo(0, 50);
+        } else {
+            window.scrollTo(0, 120);
+        }
     }, [])
 
 

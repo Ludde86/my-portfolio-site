@@ -35,8 +35,8 @@ const Projects = () => {
 	};
 
 	return (
-		<div>
-			<header>
+		<div >
+			<header id='nav-projects'>
 				<nav >
 					{/* css in navbar.css */}
 					<div className='links-container'>

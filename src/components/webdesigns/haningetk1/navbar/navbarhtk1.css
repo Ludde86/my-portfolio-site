@@ -115,9 +115,14 @@
     .htk-navbar-container {
         padding-right: 0rem;
         background: none;
+
+        position: relative;
+        top: 0;
     }
 
     .htk-navbar-container_links-container {
+        
+
         background: linear-gradient(to right, #00000000, #000000a4);
         min-height: 10vh;
         display: flex;
@@ -125,9 +130,6 @@
         justify-content: space-between;
         align-items: flex-end;
         padding: 1rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        /* border: 2px solid black; */
 
         position: absolute;
         top: 0;
@@ -138,7 +140,7 @@
     .htk-navbar-container_links-container_link {
         font-size: 1.2rem;
         margin-top: 1rem;
-        
+        margin: auto;
     }
 
     #htk-navbar-container_links-container_link-container_button {

@@ -139,6 +139,14 @@ nav {
 
 @media screen and (max-width: 800px) {
 
+	#nav-projects {
+		position: absolute;
+		top: 0;
+		width: 50%;
+		
+		box-shadow: none;
+	}
+
 	nav {
 		position: absolute;
 		top: 50px;
@@ -157,6 +165,8 @@ nav {
 
 	header {
 		padding: 0;
+		height: 50px;
+		box-shadow: 2px 2px 6px #333;
 	}
 
 	.links-container {
