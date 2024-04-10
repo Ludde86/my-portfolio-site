@@ -117,7 +117,7 @@ const Htk1VisionsPage = () => {
                         <li>Att vi aktivt medverkar i möten och aktiviteter i klubben</li>
                         <li>Att klubben aldrig ska slå sig till ro utan hela tiden sträva efter att utveckla organisationen,
                             verksamheten och dess anläggning.</li>
-                        <li>Att Haninge Tennisklubb alltid ska ligga i framkant! (Som med den här webbsidan ;))</li>
+                        <li>Att Haninge Tennisklubb alltid ska ligga i framkant!</li>
                     </ul>
 
                 </div>
