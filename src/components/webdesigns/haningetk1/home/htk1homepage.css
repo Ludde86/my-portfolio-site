@@ -71,6 +71,16 @@
     bottom: 1rem;
 }
 
+@media only screen and (max-width: 1020px) {
+
+    .stadium-logo {
+        width: 6rem;
+        right: 1.4rem;
+        bottom: 0.6rem;
+    }
+
+  }
+
 @media only screen and (max-width: 800px) {
 
     .htk1-home-container {

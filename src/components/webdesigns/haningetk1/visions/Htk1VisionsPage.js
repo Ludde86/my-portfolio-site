@@ -3,7 +3,7 @@ import './htk1visionspage.css'
 
 const Htk1VisionsPage = () => {
     return (
-        <div className='htk1-visions-container'>
+        <div id='vision' className='htk1-visions-container'>
 
 
 

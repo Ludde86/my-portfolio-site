@@ -3,7 +3,7 @@ import './htk1aboutpage.css'
 
 const Htk1AboutPage = () => {
     return (
-        <div className='htk1-about-container'>
+        <div id='about' className='htk1-about-container'>
             <div className='htk1-about-container_logo-container'></div>
             <div className='htk1-about-container_desc-container'>
                 <div className='htk1-about-container_desc-container_title-container'>

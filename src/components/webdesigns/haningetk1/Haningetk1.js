@@ -14,7 +14,7 @@ const Haningetk1 = () => {
     }
 
     return (
-        <div>
+        <div id='home'>
             <Htk1LandingPage onSetOpenSidebar={onSetOpenSidebar} openSidebar={openSidebar} />
             <Htk1AboutPage />
             <Htk1VisionsPage />

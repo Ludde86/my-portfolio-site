@@ -47,11 +47,25 @@
     font-weight: 700;
 }
 
+@media only screen and (max-width: 840px) {
+
+    .htk1-visions-container_desc {
+        min-width: 80vw;
+        max-width: 80vw;
+    }
+
+    .htk1-visions-container_card {
+        min-width: 80vw;
+        max-width: 80vw;
+    }
+  }
+
 @media only screen and (max-width: 800px) {
 
     .htk1-visions-container_desc {
         margin: 0rem;
         padding: 1.6rem;
+        padding-bottom: 2rem;
         /* border-radius: 2rem; */
     
         min-width: 80vw;
@@ -74,6 +88,7 @@
     .htk1-visions-container_card_desc {
         font-size: 1rem;
         line-height: 1rem;
+        margin-bottom: 0.2rem;
     }
    
     .htk1-visions-container_principles-container li {

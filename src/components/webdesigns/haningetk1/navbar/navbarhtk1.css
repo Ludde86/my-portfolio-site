@@ -1,7 +1,7 @@
 .htk-navbar-container {
     min-height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
@@ -15,7 +15,10 @@
 .htk-navbar-container_links-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 75%;
+    
+    z-index: 2;
     
 }
 
@@ -62,6 +65,21 @@
     font-size: 2.2rem;
 }
 
+#htk-navbar-container_links-container_link-container_button {
+    background: #4683b481;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    box-shadow: 4px 4px 8px #333;
+
+    transition: 0.5s;
+}
+
+#htk-navbar-container_links-container_link-container_button:hover {
+    background: #4683b4c5;
+    box-shadow: 4px 4px 8px #000;
+}
+
+
 @media only screen and (max-width: 1280px) {
 
     .htk-navbar-container_links-container_link {
@@ -70,6 +88,17 @@
         color: #fff;
         /* background: #0000002c; */
         /* padding: 0.2rem 0.4rem; */
+    }
+  }
+
+  @media only screen and (max-width: 1020px) {
+
+    .htk-navbar-container_links-container {
+        width: 90%;
+    }
+
+    #htk-navbar-container_links-container_link-container_button {
+        padding: 0.4rem 1rem;
     }
   }
 
@@ -84,27 +113,39 @@
 @media only screen and (max-width: 800px) {
 
     .htk-navbar-container {
-        padding-right: .8rem;
+        padding-right: 0rem;
+        background: none;
     }
 
     .htk-navbar-container_links-container {
+        background: linear-gradient(to right, #00000000, #000000a4);
         min-height: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         /* border: 2px solid black; */
 
         position: absolute;
         top: 0;
-        right: 1rem;
+        right: 0;
+        height: 50vh;
     }
 
     .htk-navbar-container_links-container_link {
         font-size: 1.2rem;
         margin-top: 1rem;
+        
+    }
+
+    #htk-navbar-container_links-container_link-container_button {
+        background: none;
+        border-radius: none;
+        padding: 0rem;
+        box-shadow: none;
         text-decoration: underline;
     }
   }

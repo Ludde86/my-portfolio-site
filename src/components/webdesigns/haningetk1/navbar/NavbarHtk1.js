@@ -8,54 +8,54 @@ const NavbarHtk1 = ({ openSidebar }) => {
 
 
 
-            <div className='htk-navbar-container_links-container_link-container'>
-                <a className='htk-navbar-container_links-container_icon' to="/projects/home">
-                    <i className="fa fa-home" aria-hidden="true" style={{ color: '#fff' }} />
-                </a>
-                <div className='htk-navbar-container_links-container_link_underline'></div>
-            </div>
+            {/*
+        <div className='htk-navbar-container_links-container_link-container'>
+        <a className='htk-navbar-container_links-container_icon' to="/projects/home">
+        <i className="fa fa-home" aria-hidden="true" style={{ color: '#fff' }} />
+        </a>
+        <div className='htk-navbar-container_links-container_link_underline'></div>
+        </div>
+    */}
 
             <div className='htk-navbar-container_links-container'>
                 <div className='htk-navbar-container_links-container_link-container'>
                     <a className='htk-navbar-container_links-container_link' href="/projects/">
-                        Om klubben
+                        Tennisskolan
                     </a>
                     <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>
 
                 <div className='htk-navbar-container_links-container_link-container'>
                     <a className='htk-navbar-container_links-container_link' href="/projects/">
-                        Vision & värdegrund
+                        Tävling
                     </a>
                     <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>
 
                 <div className='htk-navbar-container_links-container_link-container'>
                     <a className='htk-navbar-container_links-container_link' href="/projects/">
-                        Medlemsskap
+                        Gruppspel
                     </a>
                     <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>
 
                 <div className='htk-navbar-container_links-container_link-container'>
                     <a className='htk-navbar-container_links-container_link' href="/projects/">
-                        Kontakt
+                        Kontrakt- och strötider
                     </a>
                     <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>
 
                 <div className='htk-navbar-container_links-container_link-container'>
-                    <a className='htk-navbar-container_links-container_link' href="/projects/">
-                        Hitta hit
+                    <a id='htk-navbar-container_links-container_link-container_button' className='htk-navbar-container_links-container_link' href="/projects/">
+                        Bli medlem
                     </a>
-                    <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>
 
                 <div className='htk-navbar-container_links-container_link-container'>
-                    <a className='htk-navbar-container_links-container_link' href='https://www.stadium.se/foreningar/2436683' target='_blank' rel="noreferrer">
-                        Shopen
+                    <a id='htk-navbar-container_links-container_link-container_button' className='htk-navbar-container_links-container_link' href='https://www.matchi.se/facilities/haningetk' target='_blank' rel="noreferrer">
+                        Boka bana
                     </a>
-                    <div className='htk-navbar-container_links-container_link_underline'></div>
                 </div>
             </div>
         </div>
