@@ -3,6 +3,7 @@
 :root {
 	--font-family: 'Manrope', sans-serif;
 	--color-theme: #008294;
+	--color-napra: #F5A114;
 	--color-htk: #3266CC;
 	scroll-behavior: smooth;
 }
@@ -20,6 +21,10 @@ body {
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body h1 {
+	font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
 
 

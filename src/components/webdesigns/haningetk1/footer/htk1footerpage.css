@@ -15,21 +15,21 @@
 .htk1-footer-container_info-container {
     display: flex;
     justify-content: space-evenly;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .htk1-footer-container_club-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     width: 35vw;
 }
 .htk1-footer-container_member-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     width: 35vw;
 }
 .htk1-footer-container_club-info_title {
@@ -76,7 +76,7 @@
     .htk1-footer-container_info-container {
         display: flex;
         justify-content: space-evenly;
-        align-items: start;
+        align-items: flex-start;
     }
 
     .htk1-footer-container_club-info {
