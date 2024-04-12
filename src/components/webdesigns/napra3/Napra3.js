@@ -4,6 +4,7 @@ import NavbarNapra3 from './navbar/NavbarNapra3'
 import Napra3LandingPage from './landing/Napra3LandingPage'
 import Napra3AboutPage from './about/Napra3AboutPage'
 import Napra3AboutUsPage from './aboutus/Napra3AboutUsPage'
+import Napra3FooterPage from './footer/Napra3FooterPage'
 
 const Napra3 = () => {
 
@@ -24,6 +25,7 @@ const Napra3 = () => {
             <Napra3LandingPage />
             <Napra3AboutPage />
             <Napra3AboutUsPage />
+            <Napra3FooterPage />
         </div>
     )
 }

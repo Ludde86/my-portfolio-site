@@ -49,4 +49,15 @@
     
         background: linear-gradient(to bottom, #00000093, #00000000);
     }
+
+    .napra3-links-container {
+        width: 100%;
+    }
+
+    .napra3-links-container a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--color-napra);
+    }
 }
