@@ -35,16 +35,18 @@ const Projects = () => {
 	};
 
 	return (
-		<div >
+		<div>
+
 			<header id='nav-projects'>
-				<nav >
+				<nav>
 					{/* css in navbar.css */}
-					<div className='links-container'>
+					<div className='links-container' >
 						{links.map((item, index) =>
 							<p key={index} onClick={() => setActiveTab(index)} className='link'>{item}</p>
 						)}
 					</div>
 				</nav>
+
 				<div className='navbar_button-container2_design'>
 					<div className='navbar_button-container2 menu-button-2'>
 						<input type="checkbox" />
@@ -53,7 +55,7 @@ const Projects = () => {
 						<span className='third-line'></span>
 					</div>
 					<div>
-						<span id="menu-button-text"><i className="fa fa-angle-double-left fa-lg menu-button-icon" aria-hidden="true" />DESIGN</span>
+						<span id="menu-button-text"><i className="fa fa-angle-double-left fa-lg menu-button-icon" aria-hidden="true" />DESIGNS</span>
 					</div>
 				</div>
 			</header>

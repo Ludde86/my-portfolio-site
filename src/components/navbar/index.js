@@ -18,7 +18,7 @@ const Navbar = () => {
 					</div>
 					<div className="links-container">
 						<a className="link" href="/projects">
-							Design
+							Designs
 						</a>
 					</div>
 					<div className='navbar_button-container search-button'>

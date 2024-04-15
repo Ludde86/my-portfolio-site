@@ -11,38 +11,38 @@ const About = () => {
 			<p className="about-text">
 				Jag är 36år och tvåbarnsfar som bor tillsammans med min fru i Vendelsö, ca 2mil söder om Stockholm.
 				Jag skulle beskriva mig själv som glad, driven och envis. Grottar ofta in mig i sådant som jag
-				finner intressant. När tid ges ser jag gärna en fotbollsmatch.
+				finner intressant.
 			</p>
 
 			<p className="about-text">
 				Jag har nu programmerat i ca fyra år, mestadels i JavaScript och i dess bibliotek React/React
-				Native, och jag ser mycket fram emot att hamna hos ett härligt och drivet gäng med humor, där jag
-				vet att jag kommer att kunna bidra och utvecklas.
+				Native. Jag lägger en hel del tid på att få applikationerna och webbsidorna levande med i princip enbart CSS, dels för att få en djupare inblick på hur saker jag skriver fungerar men även för att i detalj kunna få ett önskat resultat.
 			</p>
 
 			<p className="about-title">Vad jag gör just nu:</p>
 
 			<p className="about-text">
-				Utvecklar en app åt Parkera.nu som är en webbaserad parkeringstjänst. Här har jag tillsammans med
+				Jag utvecklar hemsidor, dels från grunden, men även genom att utveckla redan befintliga
+				hemsidor från trötta till mer pigga och moderna sidor. Kika gärna min portfolio på fliken <strong>DESIGNS</strong> uppe till höger. Jag vill både bistå och utvecklas så söker ständigt kontakt för samarbeten.
+			</p>
+
+			<p className="about-title">Vad jag har gjort:</p>
+
+			<p className="about-text">
+				Jag har utvecklat en app åt Parkera.nu som är en webbaserad parkeringstjänst. Här har jag tillsammans med
 				produktägaren hittat lösningar för att användarna enklare ska kunna bevaka och hantera sina
-				uppgifter och parkeringstillstånd. Appen är i sitt slutskede och ska snart publiceras till tjänstens
-				användare.
+				uppgifter och parkeringstillstånd. Appen är hyffsat stor med flertalet API-anrop både till och från appen.
 			</p>
 
 			<p className="about-text">
-				Jag utvecklar även hemsidor, dels från grunden, men även genom att utveckla redan befintliga
-				hemsidor till mer "moderna".
-			</p>
-
-			<p className="about-text">
-				Jag driver även butiker inom e-handel som jag har sysslat med i ungefär två års tid. Jag kan från
-				grunden bygga upp en nätbutik, skapa annonser, till att sälja produkter.
-			</p>
-
-			<p className="about-text">
-				Testar produkter, bygger upp hemsidor/butiker, hanterar lager, ordrar och kundtjänst inom e-handel.
-				Jag skapar annonser och hanterar annonskontot via meta/facebook där jag följer statistik för att
+				Jag har även utvecklat och drivit en del butiker inom e-handel. Jag kan från
+				grunden bygga upp en nätbutik, skapa annonser, till att sälja produkter. I detta ingår att testa produkter, bygga upp hemsidor/butiker, hantera lager, ordrar och kundtjänst.
+				Skapa annonser och hantera annonskontot via meta/facebook, följa statistik för att
 				testa, optimera och utveckla annonserna.
+			</p>
+
+			<p className="about-text">
+
 			</p>
 
 			<p className="about-title">Utvecklingsmiljö:</p>

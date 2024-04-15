@@ -14,9 +14,12 @@ const NavbarNapra3 = () => {
                 <img src={logo} alt='logo' />
             </div>
             <div className='napra3-links-container'>
-                {links.map((link, index) =>
-                    <a key={index} href='/' >{link}</a>
-                )}
+
+                <a href="#Hem">Hem</a>
+                <a href="#Om oss">Om oss</a>
+                <a href="#Tjänster">Tjänster</a>
+                <a href="#BOKA TID">BOKA TID</a>
+
             </div>
         </div>
     )
