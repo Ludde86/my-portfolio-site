@@ -5,7 +5,7 @@ const Napra3AboutUsPage = () => {
     return (
         <div className='napra3-aboutus-container'>
 
-            <div className='napra3-aboutus-container_img-container'>
+            <div id='Om oss' className='napra3-aboutus-container_img-container'>
                 <div className='napra3-aboutus-container_img-container_card_border'>
                     <div id='napra3-aboutus-container_img-container_card-1' className='napra3-aboutus-container_img-container_card'>
                         <p>Susanne Nyström Leg. Naprapat</p>

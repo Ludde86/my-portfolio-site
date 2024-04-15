@@ -8,8 +8,9 @@ import Napra3FooterPage from './footer/Napra3FooterPage'
 
 const Napra3 = () => {
 
+    /*
     const mediaQueryCondition = window.matchMedia('( max-width: 800px )').matches;
-
+    
     useEffect(() => {
         if (mediaQueryCondition) {
             window.scrollTo(0, 50);
@@ -17,9 +18,10 @@ const Napra3 = () => {
             window.scrollTo(0, 120);
         }
     }, [])
+    */
 
     return (
-        <div className='napra3-container'>
+        <div id='Hem' className='napra3-container'>
             <NavbarNapra3 />
 
             <Napra3LandingPage />

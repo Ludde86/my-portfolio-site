@@ -23,7 +23,7 @@ const About = () => {
 
 			<p className="about-text">
 				Jag utvecklar hemsidor, dels från grunden, men även genom att utveckla redan befintliga
-				hemsidor från trötta till mer pigga och moderna sidor. Kika gärna mitt portfolio på fliken <strong>DESIGNS</strong> uppe till höger. Jag vill både bistå och utvecklas så söker ständigt kontakt för samarbeten.
+				hemsidor från trötta till mer pigga och moderna sidor. Kika gärna min portfolio på fliken <strong>DESIGNS</strong> uppe till höger. Jag vill både bistå och utvecklas så söker ständigt kontakt för samarbeten.
 			</p>
 
 			<p className="about-title">Vad jag har gjort:</p>

@@ -9,6 +9,7 @@ const Haningetk1 = () => {
 
     const [openSidebar, setOpenSidebar] = useState(false);
 
+    /*
     const mediaQueryCondition = window.matchMedia('( max-width: 800px )').matches;
 
     useEffect(() => {
@@ -18,6 +19,7 @@ const Haningetk1 = () => {
             window.scrollTo(0, 120);
         }
     }, [])
+    */
 
 
     const onSetOpenSidebar = () => {

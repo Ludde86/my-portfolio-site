@@ -1,7 +1,7 @@
 .napra3-aboutus-container {
     padding: 6rem;
     
-    /* background: linear-gradient(to right top, #fff 25%, var(--color-napra)); */
+    background: linear-gradient(to right top, #fff 25%, var(--color-napra));
     border-top: 2px solid #999;
 }
 
@@ -89,7 +89,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 0rem;
+        padding-top: 2rem;
         gap: 2rem;
     }
 
