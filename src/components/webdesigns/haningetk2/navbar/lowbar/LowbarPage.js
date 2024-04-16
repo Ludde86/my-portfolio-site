@@ -14,7 +14,7 @@ const LowbarPage = () => {
 
 
             <div className='lowbar_container-link_container'>
-                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                <i hidden={activeTennisskola} class="fa fa-chevron-up" aria-hidden="true"></i>
                 <div onMouseEnter={() => setActiveTennisskola(true)}
                     onMouseLeave={() => setActiveTennisskola(false)} className={'lowbar_container-link ' + (activeTennisskola && 'lowbar_container-link-active')}>
                     <div>
@@ -33,7 +33,7 @@ const LowbarPage = () => {
             </div>
 
             <div className='lowbar_container-link_container'>
-                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                <i hidden={activeTävling} class="fa fa-chevron-up" aria-hidden="true"></i>
                 <div onMouseEnter={() => setActiveTävling(true)}
                     onMouseLeave={() => setActiveTävling(false)} className={'lowbar_container-link ' + (activeTävling && 'lowbar_container-link-active')}>
                     <div>
@@ -60,7 +60,7 @@ const LowbarPage = () => {
             </div>
 
             <div className='lowbar_container-link_container'>
-                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                <i hidden={activeKontrakt} class="fa fa-chevron-up" aria-hidden="true"></i>
                 <div onMouseEnter={() => setActiveKontrakt(true)}
                     onMouseLeave={() => setActiveKontrakt(false)} className={'lowbar_container-link ' + (activeKontrakt && 'lowbar_container-link-active')}>
                     <div>
