@@ -1,0 +1,25 @@
+.topbar_container {
+    border: 1px solid white;
+    min-height: 20vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.topbar_container-link {
+    background: #00000046;
+    color: #fff;
+    padding: 2rem 4rem;
+    min-width: 20rem;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.topbar_container-link:hover {
+    background: #00000098;
+}
