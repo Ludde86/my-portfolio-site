@@ -1,6 +1,6 @@
 .topbar_container {
-    border: 1px solid white;
     min-height: 20vh;
+    max-height: 20vh;
     width: 100%;
 
     display: flex;
@@ -11,15 +11,122 @@
 .topbar_container-link {
     background: #00000046;
     color: #fff;
-    padding: 2rem 4rem;
+    /* padding: 2rem 4rem; */
     min-width: 20rem;
     text-align: center;
     border-radius: 8px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: 0.5s;
+    height: 8vh;
+    transition: all 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 2rem; */
 }
 
 .topbar_container-link:hover {
     background: #00000098;
+}
+
+#navbar_container-empty {
+    background: transparent;
+    cursor: default;
+}
+
+.topbar_container-link_container-link_title {
+    font-weight: 700;
+}
+
+.topbar_container-link_container-link_subtitle {
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.topbar_container-link_container-link_subtitle:hover {
+    color: #fff;
+}
+
+@media only screen and (max-width: 1800px) {
+    .topbar_container-link {
+        min-width: 18rem;
+        font-size: 1.2rem;
+        height: 7vh;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .topbar_container-link {
+        min-width: 16rem;
+        font-size: 1.2rem;
+        height: 6vh;
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .topbar_container-link {
+        min-width: 14rem;
+        font-size: 1.2rem;
+        height: 5vh;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .topbar_container-link {
+        min-width: 12rem;
+        font-size: 1rem;
+        height: 4vh;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .topbar_container-link {
+        min-width: 10rem;
+        font-size: 0.8rem;
+        height: 4vh;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .topbar_container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .topbar_container-link {
+        min-width: 20rem;
+        font-size: 1.2rem;
+        height: 4vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .topbar_container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .topbar_container-link {
+        min-width: 14rem;
+        font-size: 1.2rem;
+        height: 4vh;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .topbar_container-link {
+        min-width: 12rem;
+        font-size: 1.2rem;
+        height: 3vh;
+    }
+
+    .topbar_container-link {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+    
 }

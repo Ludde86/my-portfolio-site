@@ -1,0 +1,50 @@
+
+.htk2_event_container {
+    /* border: 1px solid white; */
+    /* background: #ffffffc5; */
+    background: #ffffffbd;
+    box-shadow: 6px 6px 12px #555;
+    
+    padding: 2rem;
+
+    color: #000;
+    /* width: 50%; */
+    flex: 1;
+}
+
+.htk2_event_container h1 {
+ font-size: 2.8rem;
+}
+
+.htk2_event_container h3 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .htk2_event_container {
+       flex: 1;
+       max-height: 30vh;
+    }
+
+    .htk2_event_container h1 {
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 0.2rem;
+    }
+       
+       
+}
+
+@media only screen and (max-width: 460px) {
+
+    .htk2_event_container {
+        padding: 0.6rem;
+    }
+    .htk2_event_container h3 {
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0;
+    }
+}

@@ -2,11 +2,6 @@
     border: 1px solid white;
     min-height: 100vh;
     padding: 4rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #navbar_container-link {
@@ -19,3 +14,4 @@
     background: #3265ccbe;
     border: 1px solid #fff;
 }
+

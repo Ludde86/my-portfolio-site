@@ -1,6 +1,52 @@
-.haningeth2-container {
-    border: 2px solid black;
+.htk2_container {
+    /* border: 2px solid black; */
     min-height: 100vh;
-
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
     background-image: url('../haningetk1/assets/img/start1_notitle.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+.htk2_container-landing_container {
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+
+    /* background-color: antiquewhite; */
+    
+    /* flex-direction: column; */
+    /* max-height: 50vh; */
+    /* min-height: 80vh; */
+}
+
+@media only screen and (max-width: 920px) {
+    .htk2_container {
+        max-height: 200vh;
+    }
+    .htk2_container-landing_container {
+        margin: 2rem;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        /* max-height: 50vh; */
+        /* min-height: 80vh; */
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .htk2_container {
+        max-height: 200vh;
+    }
+}
+
