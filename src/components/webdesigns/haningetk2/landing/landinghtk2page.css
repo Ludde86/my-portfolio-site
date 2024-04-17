@@ -9,6 +9,16 @@
     border-radius: 4px;
     /* width: 50%; */
     flex: 2;
+
+    min-height: 50vh;
+    max-height: 50vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .htk2_landing_container h1 {

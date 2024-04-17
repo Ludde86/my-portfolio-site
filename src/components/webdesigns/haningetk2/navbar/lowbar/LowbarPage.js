@@ -2,7 +2,7 @@ import React from 'react'
 import './lowbarpage.css'
 import { useState } from 'react'
 
-const LowbarPage = () => {
+const LowbarPage = ({ setLink }) => {
 
     const [activeTennisskola, setActiveTennisskola] = useState(false)
     const [activeTävling, setActiveTävling] = useState(false)
@@ -26,9 +26,9 @@ const LowbarPage = () => {
                     </div>
                     {activeTennisskola &&
                         <>
-                            <span className='lowbar_container-link_container-link_subtitle'>T-skolan</span>
-                            <span className='lowbar_container-link_container-link_subtitle'>Prislista</span>
-                            <span className='lowbar_container-link_container-link_subtitle'>Tränarna</span>
+                            <span onClick={() => setLink("T-skolan")} className='lowbar_container-link_container-link_subtitle'>T-skolan</span>
+                            <span onClick={() => setLink("Prislista")} className='lowbar_container-link_container-link_subtitle'>Prislista</span>
+                            <span onClick={() => setLink("Tränarna")} className='lowbar_container-link_container-link_subtitle'>Tränarna</span>
                         </>
                     }
                 </div>
@@ -84,7 +84,7 @@ const LowbarPage = () => {
             </div>
 
             <div id='navbar_container-link' className='lowbar_container-link'>Bli medlem</div>
-            <div id='navbar_container-link' className='lowbar_container-link'>Boka bana</div>
+            <a href='https://www.matchi.se/facilities/haningetk' target='_blank' rel="noreferrer" id='navbar_container-link' className='lowbar_container-link'>Boka bana</a>
         </div>
     )
 }
