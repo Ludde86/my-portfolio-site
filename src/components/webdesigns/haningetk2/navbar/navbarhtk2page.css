@@ -1,0 +1,17 @@
+.htk2-navbar-container {
+    border: 1px solid white;
+    min-height: 100vh;
+    padding: 4rem;
+}
+
+#navbar_container-link {
+    background: #3265cc69;
+    border: 1px solid #ffffff48;
+    transition: all 0.5s;
+}
+
+#navbar_container-link:hover {
+    background: #3265ccbe;
+    border: 1px solid #fff;
+}
+
