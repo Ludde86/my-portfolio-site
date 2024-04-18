@@ -1,8 +1,11 @@
 import React from 'react'
 import './lowbarpage.css'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { Htk2Context } from '../../Haningetk2';
 
-const LowbarPage = ({ setLink }) => {
+const LowbarPage = () => {
+
+    const htk2 = useContext(Htk2Context);
 
     const [activeTennisskola, setActiveTennisskola] = useState(false)
     const [activeTävling, setActiveTävling] = useState(false)
@@ -26,9 +29,9 @@ const LowbarPage = ({ setLink }) => {
                     </div>
                     {activeTennisskola &&
                         <>
-                            <span onClick={() => setLink("T-skolan")} className='lowbar_container-link_container-link_subtitle'>T-skolan</span>
-                            <span onClick={() => setLink("Prislista")} className='lowbar_container-link_container-link_subtitle'>Prislista</span>
-                            <span onClick={() => setLink("Tränarna")} className='lowbar_container-link_container-link_subtitle'>Tränarna</span>
+                            <span onClick={() => htk2.setLink("T-skolan")} className='lowbar_container-link_container-link_subtitle'>T-skolan</span>
+                            <span onClick={() => htk2.setLink("Prislista")} className='lowbar_container-link_container-link_subtitle'>Prislista</span>
+                            <span onClick={() => htk2.setLink("Tränarna")} className='lowbar_container-link_container-link_subtitle'>Tränarna</span>
                         </>
                     }
                 </div>

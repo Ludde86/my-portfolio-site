@@ -1,16 +1,19 @@
 import React from 'react'
 import './tennisskolanhtk2page.css'
-import { useState } from 'react';
+import { useContext } from 'react';
+import { Htk2Context } from '../../Haningetk2';
 
-const TennisskolanHtk2Page = ({ link, setLink }) => {
+const TennisskolanHtk2Page = () => {
 
-    console.log('link @TennisskolanHtk2Page: ', link);
+    const htk2 = useContext(Htk2Context);
+
+    console.log('link @TennisskolanHtk2Page: ', htk2.link);
 
     return (
         <div className='htk2_tennisskolan_container'>
             <div>
 
-                {link === "T-skolan" &&
+                {htk2.link === "T-skolan" &&
                     <div>
                         <h1>T-skolan</h1>
                         <h3>Tennisskolan är öppen för både nybörjare och mer vana spelare av varierande åldrar - allt från minitennis till vuxengrupper.</h3>
@@ -18,7 +21,7 @@ const TennisskolanHtk2Page = ({ link, setLink }) => {
                     </div>
                 }
 
-                {link === "Prislista" &&
+                {htk2.link === "Prislista" &&
                     <div>
                         <h1>Prislista</h1>
                         <h3>Tennisskola</h3>
@@ -28,7 +31,7 @@ const TennisskolanHtk2Page = ({ link, setLink }) => {
                     </div>
                 }
 
-                {link === "Tränarna" &&
+                {htk2.link === "Tränarna" &&
                     <div>
                         <h1>Tränarna</h1>
                         <h3>Nenad Markovic</h3>
@@ -39,9 +42,9 @@ const TennisskolanHtk2Page = ({ link, setLink }) => {
                 }
             </div>
             <div className='htk2_tennisskolan-link_container'>
-                <span onClick={() => setLink("T-skolan")}>T-skolan</span>
-                <span onClick={() => setLink("Prislista")}>Prislista</span>
-                <span onClick={() => setLink("Tränarna")}>Tränarna</span>
+                <span onClick={() => htk2.setLink("T-skolan")}>T-skolan</span>
+                <span onClick={() => htk2.setLink("Prislista")}>Prislista</span>
+                <span onClick={() => htk2.setLink("Tränarna")}>Tränarna</span>
             </div>
         </div>
     )

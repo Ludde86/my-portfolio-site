@@ -286,3 +286,9 @@ nav {
 	}
 
 }
+
+@media screen and (max-width: 640px) {
+	#nav-projects {
+		min-width: 160px;
+	}
+}
