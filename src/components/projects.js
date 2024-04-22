@@ -11,7 +11,7 @@ import Haningetk2 from "./webdesigns/haningetk2/Haningetk2";
 import ChallengesJs from "./challengesJS/ChallengesJs";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(8);
+  const [activeTab, setActiveTab] = useState(1);
 
   const links = [
     "Haningetk2",
