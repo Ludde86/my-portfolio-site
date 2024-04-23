@@ -1,7 +1,7 @@
 .htk3-welcome_container {
   /* border: 1px solid black; */
 
-  flex: 6;
+  min-height: 50vh;
   width: 100%;
 
   background-image: url("../assets/img/img-2.jpg");
