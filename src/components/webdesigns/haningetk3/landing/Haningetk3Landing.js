@@ -12,7 +12,10 @@ const Haningetk3Landing = () => {
 
   return (
     <div className="htk3-landing_container">
-      <div className="htk3-landing_container-logo_container">LOGO</div>
+      <div className="htk3-landing_container-logo_container-wrapper">
+        <div className="htk3-landing_container-logo_container"></div>
+      </div>
+
       <div className="htk3-landing_container-event_container">
         <div className="htk3-landing_container-event_container-slider_container">
           <input

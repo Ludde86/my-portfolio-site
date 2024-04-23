@@ -7,7 +7,8 @@ const Haningetk3Footer = () => {
   return (
     <div className="htk3-footer_container">
       <div className="htk3-footer_container-contact_container-open">
-        <p>06.30-23.30 </p>
+        <h4>Öppettider</h4>
+        <p>06.30 - 23.30</p>
       </div>
       <div className="htk3-footer_container-contact_container">
         <div className="htk3-footer_container-contact_container-contact">

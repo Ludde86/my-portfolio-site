@@ -11,7 +11,9 @@ const Haningetk3Navbar = () => {
         <FiAlignJustify />
       </a>
       <a href="/">Om oss</a>
-      <a href="/">Boka bana</a>
+      <a id="htk3-navbar_container-blue" href="/">
+        Boka bana
+      </a>
     </div>
   );
 };
