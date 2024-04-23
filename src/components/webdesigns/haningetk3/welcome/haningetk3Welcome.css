@@ -1,7 +1,7 @@
 .htk3-welcome_container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
-  flex: 3;
+  flex: 6;
   width: 100%;
 
   background-image: url("../assets/img/img-2.jpg");
@@ -34,4 +34,37 @@
   color: #fff;
   position: relative;
   top: 15vh;
+}
+
+@media screen and (max-width: 1920px) {
+  .htk3-welcome_container-title_container {
+    top: 6vh;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .htk3-welcome_container-title_container {
+    top: 5vh;
+  }
+  .htk3-welcome_container-title_container h2 {
+    font-size: 1.8rem;
+  }
+
+  .htk3-welcome_container-title_container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .htk3-welcome_container-title_container {
+    top: 0vh;
+  }
+  .htk3-welcome_container-title_container h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .htk3-welcome_container-title_container h1 {
+    font-size: 1rem;
+  }
 }

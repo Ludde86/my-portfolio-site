@@ -19,8 +19,20 @@
   padding: 1rem;
 
   cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 #htk3-navbar_container-icon {
   font-size: 2.8rem;
+}
+
+@media screen and (max-width: 400px) {
+  .htk3-navbar_container {
+    width: 160%;
+    transform: scale(0.5);
+  }
 }
