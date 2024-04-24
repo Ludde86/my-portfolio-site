@@ -65,9 +65,24 @@
   }
 }
 
+@media screen and (max-width: 920px) {
+  .htk3-welcome_container-title_container {
+    top: 5vh;
+    left: 0vh;
+  }
+  .htk3-welcome_container-title_container h2 {
+    font-size: 1.4rem;
+  }
+
+  .htk3-welcome_container-title_container h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .htk3-welcome_container-title_container {
     top: 5vh;
+    left: 0vh;
   }
   .htk3-welcome_container-title_container h2 {
     font-size: 1.8rem;
@@ -81,13 +96,16 @@
 @media screen and (max-width: 420px) {
   .htk3-welcome_container-title_container {
     top: 0vh;
+    width: 90%;
   }
   .htk3-welcome_container-title_container h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 0;
+    letter-spacing: 0.4rem;
   }
 
   .htk3-welcome_container-title_container h1 {
-    font-size: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.8rem;
   }
 }
