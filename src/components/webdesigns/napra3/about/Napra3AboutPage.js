@@ -12,37 +12,64 @@ const Napra3AboutPage = () => {
   return (
     <div className="napra3-about-container">
       <div className="napra3-about-container_services-container">
-        <div
-          id="napra3-about-container_services-container_service-card-1"
-          className="napra3-about-container_services-container_service-card"
-        >
-          <div className="napra3-about-container_services-container_service-card_shade">
+        <div className="napra3-about-container_services-container_service-card-container">
+          <div
+            id="napra3-about-container_services-container_service-card-1"
+            className="napra3-about-container_services-container_service-card"
+          ></div>
+          <div className="napra3-about-container_services-container_service-card_desc-container">
             <h3>Naprapatbehandling</h3>
-            {/*
-                            <p>Naprapati är en manuell terapiform där du vid ett besök får diagnostisering, behandling och rehabilitering av smärttillstånd och funktionella besvär i skelett, muskler och leder.</p>
-                        */}
+            <p>
+              Naprapati är en manuell terapiform där du vid ett besök får
+              diagnostisering, behandling och rehabilitering av smärttillstånd
+              och funktionella besvär i skelett, muskler och leder.
+              Naprapatbehandlingen syftar till att återställa kroppens normala
+              rörlighet och funktion samt minska smärtan. För att uppnå detta
+              tillämpas olika behandlingsmetoder och tekniker som ex.
+              ledmanipulation och mobilisering, mjukdelsbehandling som massage,
+              stretching, men även TENS och dry needling.
+            </p>
           </div>
         </div>
-        <div
-          id="napra3-about-container_services-container_service-card-2"
-          className="napra3-about-container_services-container_service-card"
-        >
-          <div className="napra3-about-container_services-container_service-card_shade">
-            <h3>Massage </h3>
-            {/*
-                            <p>Denna tjänst är till för dig som inte söker för några specifika besvär utan önskar enklare mjukdelsbehandling i form av massage, triggerpunktsbehandling och stretch.</p>
-                        */}
+
+        <div className="napra3-about-container_services-container_service-card-container">
+          <div
+            id="napra3-about-container_services-container_service-card-2"
+            className="napra3-about-container_services-container_service-card"
+          ></div>
+          <div className="napra3-about-container_services-container_service-card_desc-container">
+            <h3>Massage</h3>
+            <p>
+              Denna tjänst är till för dig som inte söker för några specifika
+              besvär utan önskar enklare mjukdelsbehandling i form av massage,
+              triggerpunktsbehandling och stretch. Vi lägger lite extra fokus på
+              de områden i kroppen där du har mer muskulära spänningar.
+            </p>
           </div>
         </div>
-        <div
-          id="napra3-about-container_services-container_service-card-3"
-          className="napra3-about-container_services-container_service-card"
-        >
-          <div className="napra3-about-container_services-container_service-card_shade">
-            <h3>MammaMageträning </h3>
-            {/*
-                            <p>Som certifierad MammaMagetränare kan jag ge dig konsultationer kring magen, diasatser och dynfunktioner för att sedan tillsammans med dig hitta ett mer optimalt muskelengagemang.</p>
-                        */}
+
+        <div className="napra3-about-container_services-container_service-card-container">
+          <div
+            id="napra3-about-container_services-container_service-card-3"
+            className="napra3-about-container_services-container_service-card"
+          ></div>
+          <div className="napra3-about-container_services-container_service-card_desc-container">
+            <h3>MammaMageträning</h3>
+            <p>
+              Som certifierad MammaMagetränare kan jag ge dig konsultationer
+              kring magen, diasatser och dynfunktioner för att sedan tillsammans
+              med dig hitta ett mer optimalt muskelengagemang.
+            </p>
+            <p>
+              Första besöket innebär ofta mycket prat, inhämtning av information
+              (anamnes), inspektion och muskelfunktionstest av aktuell
+              muskulatur ofta djup bäckenmuskulatur och bålkontroll. Då kommer
+              vi att testa muskulaturen i olika positioner för att hitta en
+              eller flera positioner där du känner att du har kontroll och där
+              jag kan se att du kan rekrytera muskulaturen på ett bra sätt.
+              Därefter kommer du att få 1-3 hemövningar som du får med dig hem
+              att göra till nästa gång vi ses.
+            </p>
           </div>
         </div>
       </div>

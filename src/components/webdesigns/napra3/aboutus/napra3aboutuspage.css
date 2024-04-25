@@ -4,7 +4,7 @@
   /* background: linear-gradient(to right top, #fff 25%, var(--color-napra)); */
   /* border-top: 2px solid #999; */
 
-  background: linear-gradient(to bottom, #fff 16vh, #f5a314a4);
+  /* background: linear-gradient(to bottom, #fff 16vh, #f5a314a4); */
 }
 
 .napra3-aboutus-container h1 {
@@ -22,10 +22,10 @@
 
 .napra3-aboutus-container_img-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   /* margin-top: -12rem; */
-  gap: 6rem;
+  /* gap: 6rem; */
 
   /* padding: 10rem; */
 }

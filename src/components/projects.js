@@ -33,7 +33,6 @@ const Projects = () => {
         return <Haningetk3App />;
       case 1:
         return <Haningetk1 />;
-
       case 2:
         return <Haningetk2 />;
       case 3:
