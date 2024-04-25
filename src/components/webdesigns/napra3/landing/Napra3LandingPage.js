@@ -16,9 +16,17 @@ const Napra3LandingPage = () => {
         </p>
 
         <div className="napra3-landing-container_button-container">
-          <button>Boka Tid</button>
+          <button>
+            <a
+              href="https://www.bokadirekt.se/places/naprapat-rehabcenter-haninge-10747"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Boka Tid
+            </a>
+          </button>
           <button id="napra3-landing-container_button-container_services-button">
-            Våra Tjänster
+            <a href="#Tjänster">Våra Tjänster</a>
           </button>
         </div>
       </div>

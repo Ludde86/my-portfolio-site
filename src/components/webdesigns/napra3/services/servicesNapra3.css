@@ -1,0 +1,38 @@
+.napra3-services-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.napra3-services-container_service-container {
+  width: 80vw;
+}
+
+.napra3-services-container_service-container_title-container h4 {
+  font-size: 2.4rem;
+}
+
+.napra3-services-container_service-container_title-container p {
+  font-size: 1.6rem;
+}
+
+.napra3-services-container_service-container_desc-container p {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .napra3-services-container_service-container_title-container h4 {
+    font-size: 1.8rem;
+  }
+
+  .napra3-services-container_service-container_title-container p {
+    font-size: 1.2rem;
+  }
+
+  .napra3-services-container_service-container_desc-container p {
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+  }
+}
