@@ -12,7 +12,7 @@ import ChallengesJs from "./challengesJS/ChallengesJs";
 import Haningetk3App from "./webdesigns/haningetk3/Haningetk3App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(3);
 
   const links = [
     "Haningetk3",

@@ -1,31 +1,89 @@
 .napra3-landing-container {
-    min-height: 100vh;
-    max-height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.napra3-landing-container h1 {
-    font-family: 'League Spartan', 'sans-serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    color: #fff;
-    background: #0000003d;
-    padding: 2rem;
-    border-radius: 2rem;
+.napra3-landing-container_text-container {
+  /* border: 1px solid white; */
+  width: 50%;
+  padding: 1rem;
+}
 
-    position: absolute;
+.napra3-landing-container_text-container h1 {
+  color: #fff;
+
+  font-size: 6.4rem;
+  line-height: 5.6rem;
+
+  /* position: absolute;
     right: 5rem;
-    bottom: 5rem;
+    bottom: 5rem; */
+}
+
+.napra3-landing-container_text-container h4 {
+  color: var(--color-napra);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  /* font-size: 6.4rem;
+    line-height: 5.6rem; */
+
+  /* position: absolute;
+      right: 5rem;
+      bottom: 5rem; */
+}
+
+.napra3-landing-container_text-container p {
+  color: #fff;
+  font-size: 1.4rem;
+  /* font-size: 6.4rem;
+      line-height: 5.6rem; */
+
+  /* position: absolute;
+        right: 5rem;
+        bottom: 5rem; */
+}
+
+.napra3-landing-container_button-container {
+  /* border: 1px solid white; */
+  display: flex;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.napra3-landing-container_button-container button {
+  background: var(--color-napra);
+  opacity: 0.8;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+#napra3-landing-container_button-container_services-button {
+  background: transparent;
+  border: 2px solid var(--color-napra);
 }
 
 @media only screen and (max-width: 800px) {
+  .napra3-landing-container_text-container h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
 
-    .napra3-landing-container h1 {
-        font-size: 2rem;
-        padding: 1rem;
-        border-radius: 2rem;
-    
-        position: absolute;
+    /* position: absolute;
         right: 1rem;
         left: 1rem;
-        bottom: 5rem;
-    }
-
+        bottom: 5rem; */
+  }
 }

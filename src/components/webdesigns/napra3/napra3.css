@@ -1,9 +1,10 @@
 .napra3-container {
-    
-    min-height: 100vh;
-    max-height: 100vh;
-    background-image: url('../naprapatrehab/naprapatrehab_img/DSC06345.jpeg');
-    background-position: center;      
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-image: url("../naprapatrehab/naprapatrehab_img/DSC06345.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: inset -50vw 0px 100px #00000079;
 }
