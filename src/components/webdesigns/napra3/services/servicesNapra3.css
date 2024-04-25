@@ -38,8 +38,18 @@
     padding: 1rem;
   }
 
+  .napra3-services-container_desc-container {
+    padding: 1rem;
+  }
+
   .napra3-services-container_logo-container {
     flex-direction: column;
+  }
+
+  .napra3-services-container_logo-container img {
+    margin: 2rem;
+    flex-direction: column;
+    width: 25vw;
   }
 
   .napra3-services-container_service-container_title-container h4 {

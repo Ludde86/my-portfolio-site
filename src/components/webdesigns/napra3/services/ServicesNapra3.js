@@ -44,8 +44,8 @@ const ServicesNapra3 = () => {
       </div>
 
       <div className="napra3-services-container_logo-container">
-        <img src={logo1} alt="logo1" />
         <img src={logo2} alt="logo2" />
+        <img src={logo1} alt="logo1" />
       </div>
     </div>
   );

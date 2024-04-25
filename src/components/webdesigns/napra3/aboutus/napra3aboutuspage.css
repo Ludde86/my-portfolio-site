@@ -10,11 +10,11 @@
 .napra3-aboutus-container h1 {
   /* font-style: italic; */
   color: #333;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .napra3-aboutus-container p {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   color: #333;
   padding: 2rem;
   padding-bottom: 1rem;
@@ -76,14 +76,15 @@
     padding: 0rem;
   }
 
+  .napra3-aboutus-container_img-container_card_border {
+    margin: 0;
+    padding: 1rem;
+  }
   .napra3-aboutus-container_img-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0rem;
-    padding-top: 2rem;
-    gap: 2rem;
   }
 
   .napra3-aboutus-container_img-container_card {
@@ -95,7 +96,7 @@
     padding: 0;
 
     background: #fff;
-    border-radius: 0.6rem;
+    border-radius: 0.2rem;
     /* box-shadow: 0px 0px 4rem #000; */
   }
 

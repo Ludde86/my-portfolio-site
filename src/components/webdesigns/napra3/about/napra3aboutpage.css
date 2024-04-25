@@ -216,12 +216,6 @@
     border-radius: 0.2rem;
   }
 
-  .napra3-about-container_desc-container {
-    /* border: 1px solid black; */
-    width: 50vw;
-    padding: 0rem;
-  }
-
   .napra3-about-container_carousel-container {
     width: 300px;
     margin: 0rem;
@@ -230,7 +224,7 @@
   .napra3-about-container_desc-container {
     /* border: 1px solid black; */
     width: 80vw;
-    padding: 1rem;
+    padding: 0rem;
   }
 
   .napra3-about-container_desc-container_title {
@@ -242,6 +236,7 @@
 
   .napra3-about-container_desc-container_text {
     font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
