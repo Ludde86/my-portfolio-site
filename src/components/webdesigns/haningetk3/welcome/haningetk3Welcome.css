@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: inset -60vw 0px 100px #0000003d;
 
   display: flex;
   flex-direction: column;
@@ -16,47 +17,86 @@
 
 .htk3-welcome_container-section_container {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .htk3-welcome_container-title_container {
   /* border: 1px solid white; */
-  position: absolute;
-  bottom: -50vh;
-  right: 10vh;
-  left: 10vh;
-  /* width: 90%; */
-  padding: 4rem;
-  align-self: center;
+  width: 50%;
+  margin: 6rem;
+  padding-left: 12rem;
+  padding-bottom: 6rem;
 
   transition: 0.5s;
   /* background: #0000004b; */
 }
 
+.htk3-welcome_container-title_container h3 {
+  color: var(--color-htk);
+  margin-bottom: 2rem;
+}
+
+.htk3-welcome_container-title_container p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
 .htk3-welcome_container-title_container h1 {
   color: #fff;
-  font-family: "League Spartan", "sans-serif", "Lucida Sans",
-    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
-    Verdana, sans-serif;
   text-transform: uppercase;
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 1.2rem;
-  text-shadow: 2px 2px 6px #333;
-  text-align: center;
+  line-height: 6rem;
+  /* text-shadow: 2px 2px 6px #333; */
+  text-align: start;
 }
 
 .htk3-welcome_container-title_container h2 {
   color: #fff;
-  font-family: "League Spartan", "sans-serif", "Lucida Sans",
-    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
-    Verdana, sans-serif;
   font-size: 4.2rem;
   font-weight: 700;
   letter-spacing: 0.6rem;
-  text-shadow: 2px 2px 6px #333;
+  /* text-shadow: 2px 2px 6px #333; */
 
   text-align: start;
+}
+
+.htk3-welcome_container-title_container-button_container {
+  display: flex;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.htk3-welcome_container-title_container-button_container button {
+  background: var(--color-htk);
+  opacity: 0.8;
+  color: #fff;
+  padding: 1rem 4rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+#htk3-welcome_container-title_container-button_container-service-button {
+  background: transparent;
+  border: 2px solid var(--color-htk);
+}
+
+.htk3-welcome_container-title_container-button_container a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1920px) {

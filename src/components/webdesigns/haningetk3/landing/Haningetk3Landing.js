@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./haningetk3Landing.css";
+import img1 from "../assets/img/img-1.jpg";
+import img2 from "../assets/img/img-2.jpg";
+import img3 from "../assets/img/img-3.jpg";
+import img4 from "../assets/img/img-4.jpg";
+import ImageSlider from "./ImageSlider";
 
 const Haningetk3Landing = () => {
-  const [checked, setChecked] = useState("h1");
-
-  const isChecked = (value) => value === checked;
-
-  const onSelect = ({ target: { value } }) => {
-    setChecked(value);
-  };
+  const IMAGES = [img1, img2, img3, img4];
 
   return (
     <div className="htk3-landing_container">
@@ -18,7 +17,26 @@ const Haningetk3Landing = () => {
 
       <div className="htk3-landing_container-event_container">
         <div className="htk3-landing_container-event_container-slider_container">
-          <input
+          <ImageSlider imgUrls={IMAGES} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Haningetk3Landing;
+
+/* Image slider #1
+
+const [checked, setChecked] = useState("h1");
+
+  const isChecked = (value) => value === checked;
+
+  const onSelect = ({ target: { value } }) => {
+    setChecked(value);
+  };
+
+<input
             type="radio"
             name="slide"
             id="h1"
@@ -155,10 +173,4 @@ const Haningetk3Landing = () => {
               </div>
             </div>
           </label>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Haningetk3Landing;
+*/

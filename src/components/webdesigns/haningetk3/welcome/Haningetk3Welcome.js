@@ -8,8 +8,28 @@ const Haningetk3Welcome = () => {
       <Haningetk3Navbar />
       <div className="htk3-welcome_container-section_container">
         <div className="htk3-welcome_container-title_container">
-          <h2>Välkommen till</h2>
-          <h1>Haninge tennisklubb</h1>
+          <h3>Tennisskola Tävlingar Inomhusbanor Utomhusbanor </h3>
+
+          <div>
+            <h2>Välkommen till</h2>
+            <h1>Haninge tennisklubb</h1>
+          </div>
+
+          <p>
+            Vi har träningsgrupper för både ungdomar och vuxna samt
+            privatträningar. Vi har även ett gruppspel som är öppen för alla!
+          </p>
+
+          <div className="htk3-welcome_container-title_container-button_container">
+            <button>
+              <a href="/" target="_blank" rel="noreferrer">
+                Boka Bana
+              </a>
+            </button>
+            <button id="htk3-welcome_container-title_container-button_container-service-button">
+              <a href="/">Bli Medlem</a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
