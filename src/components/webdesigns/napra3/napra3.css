@@ -8,3 +8,9 @@
 
   box-shadow: inset -50vw 0px 100px #00000079;
 }
+
+@media screen and (max-width: 800px) {
+  .napra3-container {
+    box-shadow: inset 0px 100vw 90vh #00000079;
+  }
+}

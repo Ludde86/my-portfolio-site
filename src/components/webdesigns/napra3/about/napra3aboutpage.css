@@ -132,6 +132,7 @@
   font-family: "League Spartan", "sans-serif", "Lucida Sans",
     "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
   /* color: orange; */
+  color: var(--color-napra);
 }
 
 .napra3-about-container_desc-container_text {
@@ -223,20 +224,20 @@
 
   .napra3-about-container_desc-container {
     /* border: 1px solid black; */
-    width: 80vw;
-    padding: 0rem;
+    width: 100vw;
+    padding: 2rem;
   }
 
   .napra3-about-container_desc-container_title {
     font-family: "League Spartan", "sans-serif", "Lucida Sans",
       "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
     color: orange;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .napra3-about-container_desc-container_text {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
   }
 }
 
@@ -246,7 +247,6 @@ li.slide.selected {
   display: flex;
   justify-content: center;
   align-items: center;
-
   box-shadow: 0px 0px 16px #555;
   /* border: 2px solid #aaa; */
 }

@@ -5,7 +5,7 @@ import logo2 from "../assets/img/Epassi Logo.png";
 
 const ServicesNapra3 = () => {
   return (
-    <div id="Tjänster" className="napra3-services-container">
+    <div className="napra3-services-container">
       <div className="napra3-services-container_desc-container">
         <div className="napra3-services-container_service-container">
           <div className="napra3-services-container_service-container_title-container">
@@ -40,6 +40,18 @@ const ServicesNapra3 = () => {
             <h4>MammaMageträning Återbesök 550:-</h4>
             <p>Tid: 40min</p>
           </div>
+        </div>
+
+        <div className="napra3-landing-container_button-container">
+          <button>
+            <a
+              href="https://www.bokadirekt.se/places/naprapat-rehabcenter-haninge-10747"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mer info om våra Tjänster
+            </a>
+          </button>
         </div>
       </div>
 

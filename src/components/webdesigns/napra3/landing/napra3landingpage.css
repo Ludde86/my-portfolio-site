@@ -96,8 +96,9 @@
   }
   .napra3-landing-container_button-container {
     display: flex;
+    justify-content: center;
     gap: 1rem;
-    margin: 2rem;
+    margin-top: 2rem;
   }
   .napra3-landing-container_button-container button {
     padding: 1rem 2rem;
