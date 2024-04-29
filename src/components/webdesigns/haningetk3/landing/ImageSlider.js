@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./imageSlider.css";
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 
 const ImageSlider = ({ imgUrls }) => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -29,9 +29,14 @@ const ImageSlider = ({ imgUrls }) => {
     <div className="image_slider_container">
       <img
         className="image_slider_container-image"
-        src={imgUrls[imageIndex]}
+        src={imgUrls[imageIndex].img}
         alt=""
       />
+
+      {/*
+      <p className="image_slider_container-desc">{imgUrls[imageIndex].desc}</p>
+      */}
+
       <button
         className="image_slider_container-button"
         id="image_slider_container-button_left"
@@ -46,6 +51,25 @@ const ImageSlider = ({ imgUrls }) => {
       >
         <ArrowBigRight />
       </button>
+      <div className="image_slider_container-button_wrapper">
+        <div className="image_slider_container-button-dots_container">
+          {imgUrls.map((_, index) => (
+            <button key={index} onClick={() => setImageIndex(index)}>
+              {index === imageIndex ? (
+                <CircleDot
+                  className="image_slider_container-button-dots_container-button"
+                  size={20}
+                />
+              ) : (
+                <Circle
+                  className="image_slider_container-button-dots_container-button"
+                  size={20}
+                />
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

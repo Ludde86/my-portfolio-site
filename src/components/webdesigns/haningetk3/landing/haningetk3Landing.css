@@ -1,7 +1,7 @@
 .htk3-landing_container {
   /* border: 1px solid black; */
 
-  min-height: 75vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   background: #3265cc21;
@@ -19,27 +19,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  margin: 12rem;
+  padding-left: 4rem;
+  margin: 4rem;
   flex: 1;
-  min-width: 20vw;
-  max-width: 20vw;
-  min-height: 20vw;
-  max-height: 20vw;
+  /* min-width: 50vw;
+  max-width: 50vw;
+  min-height: 50vw;
+  max-height: 50vw; */
   /* height: 50vh; */
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 100rem;
   align-self: center;
 }
 
 .htk3-landing_container-logo_container {
-  background-image: url("../assets/img/logga1-medium.jpg");
+  background-image: url("../assets/img/logga-medium_nobg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 
   flex: 1;
-  height: 20vh;
+  height: 30vh;
 }
 .htk3-landing_container-event_container {
   flex: 2;
@@ -47,12 +47,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin-bottom: 16rem; */
 }
 
 .htk3-landing_container-event_container-slider_container {
-  max-width: 1200px;
+  max-width: 800px;
   width: 100%;
-  height: 500px;
+  height: 50vh;
   margin: 0 auto;
   padding-right: 6rem;
   padding-left: 6rem;
@@ -67,13 +68,12 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin: 6rem;
+    margin: 2rem;
     flex: 1;
-    min-width: 50vw;
-    max-width: 50vw;
-    min-height: 50vw;
-    max-height: 50vw;
-    background-color: #fff;
+    min-width: 75vw;
+    max-width: 75vw;
+    min-height: 75vw;
+    max-height: 75vw;
     border-radius: 100rem;
     align-self: center;
   }
@@ -97,6 +97,10 @@
   .htk3-landing_container-logo_container {
     min-height: 80vh;
     max-height: 80vh;
+  }
+
+  .htk3-landing_container-event_container-slider_container {
+    margin-bottom: 6rem;
   }
 }
 

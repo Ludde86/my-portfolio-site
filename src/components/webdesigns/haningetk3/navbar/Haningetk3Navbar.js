@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./haningetk3Navbar.css";
 import { FiAlignJustify } from "react-icons/fi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Haningetk3Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
@@ -20,7 +21,7 @@ const Haningetk3Navbar = () => {
           id="htk3-navbar_container-icon"
           onClick={() => setExpandNavbar(!expandNavbar)}
         >
-          <FiAlignJustify />
+          {expandNavbar ? <AiOutlineClose /> : <FiAlignJustify />}
         </div>
         <a href="/">Om oss</a>
         <a id="htk3-navbar_container-blue" href="/">

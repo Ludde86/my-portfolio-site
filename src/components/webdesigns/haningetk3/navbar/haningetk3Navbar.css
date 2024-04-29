@@ -51,9 +51,10 @@
   padding: 1rem 0rem;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  opacity: 0.8;
 
   &:hover {
-    transform: scale(1.1);
+    opacity: 1;
   }
 }
 
@@ -71,7 +72,7 @@
 
 #htk3-navbar_container-blue {
   background: #3265cc7c;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   padding: 0.8rem 2rem;
 }
 

@@ -4,10 +4,32 @@ import img1 from "../assets/img/img-1.jpg";
 import img2 from "../assets/img/img-2.jpg";
 import img3 from "../assets/img/img-3.jpg";
 import img4 from "../assets/img/img-4.jpg";
+import landing1 from "../assets/img/landing-1.jpg";
 import ImageSlider from "./ImageSlider";
 
 const Haningetk3Landing = () => {
-  const IMAGES = [img1, img2, img3, img4];
+  const IMAGES = [
+    {
+      img: landing1,
+      desc: "Haninge TK är en ideell tennisklubb belägen intill Torvalla idrottsanläggning. Vi har två banor med Latex-Ite beläggning i vår  tennishall  i Torvalla och två utebanor med grus  som ligger belägna i sågen, Haningevallens område. I  föreningen arbetar vi alla aktivt med vår vision och våra värdegrunder. Tennis är för alla, engagemang, glädje, Gemenskap och Utveckling förenar oss. Vi bedriver träningsgrupper för, Mini Tennis, barn och ungdomar och vuxna. Eller om de är privatträning som du eftersöker. Klubben har sitt egna gruppspel för nivå nybörjare till elitnivå och olika tävlingar/event under året. Som medlem hos oss får du förmånligt pris på strötider och får tillgång  att delta i våra tävlingar och gruppspel. Har du några frågor tveka inte att höra av dig till oss. Varmt välkommen till oss på Haninge Tennisklubb.",
+    },
+    {
+      img: img1,
+      desc: "Bild2",
+    },
+    {
+      img: img2,
+      desc: "Bild3",
+    },
+    {
+      img: img3,
+      desc: "Bild4",
+    },
+    {
+      img: img4,
+      desc: "Bild5",
+    },
+  ];
 
   return (
     <div className="htk3-landing_container">
