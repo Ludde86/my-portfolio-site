@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: inset -60vw 0px 100px #0000003d;
 
   display: flex;
   flex-direction: column;
@@ -16,47 +17,91 @@
 
 .htk3-welcome_container-section_container {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .htk3-welcome_container-title_container {
   /* border: 1px solid white; */
-  position: absolute;
-  bottom: -50vh;
-  right: 10vh;
-  left: 10vh;
-  /* width: 90%; */
-  padding: 4rem;
-  align-self: center;
+  width: 50%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 6rem;
+  padding-left: 12rem;
+  padding-bottom: 6rem;
 
   transition: 0.5s;
   /* background: #0000004b; */
 }
 
+.htk3-welcome_container-title_container h3 {
+  color: var(--color-htk);
+  margin-bottom: 2rem;
+}
+
+.htk3-welcome_container-title_container p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
 .htk3-welcome_container-title_container h1 {
   color: #fff;
-  font-family: "League Spartan", "sans-serif", "Lucida Sans",
-    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
-    Verdana, sans-serif;
   text-transform: uppercase;
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 1.2rem;
-  text-shadow: 2px 2px 6px #333;
-  text-align: center;
+  line-height: 6rem;
+  /* text-shadow: 2px 2px 6px #333; */
+  text-align: start;
 }
 
 .htk3-welcome_container-title_container h2 {
   color: #fff;
-  font-family: "League Spartan", "sans-serif", "Lucida Sans",
-    "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
-    Verdana, sans-serif;
   font-size: 4.2rem;
   font-weight: 700;
   letter-spacing: 0.6rem;
-  text-shadow: 2px 2px 6px #333;
+  /* text-shadow: 2px 2px 6px #333; */
 
   text-align: start;
+}
+
+.htk3-welcome_container-title_container-button_container {
+  display: flex;
+  gap: 10rem;
+  margin-top: 2rem;
+}
+
+.htk3-welcome_container-title_container-button_container button {
+  background: var(--color-htk);
+  opacity: 0.8;
+  color: #fff;
+  padding: 1rem 4rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+#htk3-welcome_container-title_container-button_container-service-button {
+  background: transparent;
+  border: 2px solid var(--color-htk);
+}
+
+.htk3-welcome_container-title_container-button_container a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1920px) {
@@ -65,11 +110,35 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1620px) {
   .htk3-welcome_container-title_container {
-    top: 5vh;
-    left: 0vh;
+    transform: scale(0.9);
+    padding-left: 10rem;
   }
+}
+
+@media screen and (max-width: 1520px) {
+  .htk3-welcome_container-title_container {
+    transform: scale(0.8);
+    padding-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .htk3-welcome_container-title_container {
+    transform: scale(0.7);
+    padding-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .htk3-welcome_container-title_container {
+    transform: scale(0.6);
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
   .htk3-welcome_container-title_container h2 {
     font-size: 1.4rem;
   }
@@ -80,9 +149,17 @@
 }
 
 @media screen and (max-width: 680px) {
+  .htk3-welcome_container-section_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .htk3-welcome_container-title_container {
-    top: 5vh;
-    left: 0vh;
+    padding: 0;
+    margin: 0;
+    transform: scale(0.8);
+    width: 100%;
   }
   .htk3-welcome_container-title_container h2 {
     font-size: 1.8rem;
@@ -91,21 +168,39 @@
   .htk3-welcome_container-title_container h1 {
     font-size: 2.2rem;
   }
+  .htk3-welcome_container-title_container-button_container {
+    gap: 4rem;
+  }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
+  .htk3-welcome_container {
+    box-shadow: inset 0px 90vh 20px #00000031;
+  }
   .htk3-welcome_container-title_container {
-    top: 0vh;
-    width: 90%;
+    transform: scale(0.9);
+  }
+  .htk3-welcome_container-title_container h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+    font-weight: 700;
   }
   .htk3-welcome_container-title_container h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 0;
     letter-spacing: 0.4rem;
   }
 
   .htk3-welcome_container-title_container h1 {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     letter-spacing: 0.8rem;
+    line-height: 2.6rem;
+  }
+  .htk3-welcome_container-title_container-button_container {
+    justify-content: space-evenly;
+  }
+  .htk3-welcome_container-title_container-button_container button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
   }
 }

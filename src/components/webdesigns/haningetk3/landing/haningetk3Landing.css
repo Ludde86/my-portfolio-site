@@ -1,27 +1,33 @@
 .htk3-landing_container {
   /* border: 1px solid black; */
 
-  min-height: 75vh;
+  min-height: 100vh;
   width: 100%;
-
   display: flex;
+  background: #3265cc21;
   /* background: #fff; */
 
-  margin-top: -20vh;
-}
-
-.htk3-landing_container * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin-top: -20vh; */
+  position: relative;
 }
 
 .htk3-landing_container-logo_container-wrapper {
-  padding: 8rem;
-  margin-top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4rem;
+  margin: 4rem;
   flex: 1;
-  min-width: 30%;
-  max-width: 30%;
+  /* min-width: 50vw;
+  max-width: 50vw;
+  min-height: 50vw;
+  max-height: 50vw; */
+  /* height: 50vh; */
+  /* background-color: #fff; */
+  border-radius: 100rem;
+  align-self: center;
+
+  z-index: 5;
 }
 
 .htk3-landing_container-logo_container {
@@ -31,17 +37,82 @@
   background-position: center;
 
   flex: 1;
-  height: 20vh;
+  height: 30vh;
 }
 .htk3-landing_container-event_container {
   flex: 2;
-
   display: flex;
   justify-content: center;
+  /* min-height: 100vh; */
   align-items: center;
+  /* margin-bottom: 16rem; */
 }
 
 .htk3-landing_container-event_container-slider_container {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 6rem;
+}
+.htk3-landing_container-blue_background {
+  background: #3265cc21;
+  height: 15vh;
+  width: 80%;
+
+  position: absolute;
+  bottom: 10vh;
+  right: 20%;
+}
+@media screen and (max-width: 1280px) {
+  .htk3-landing_container-event_container-slider_container {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .htk3-landing_container {
+    flex-direction: column;
+  }
+  .htk3-landing_container-logo_container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    flex: 1;
+    min-width: 75vw;
+    max-width: 75vw;
+    min-height: 75vw;
+    max-height: 75vw;
+    border-radius: 100rem;
+    align-self: center;
+  }
+
+  .htk3-landing_container-event_container-slider_container {
+    padding: 6rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .htk3-landing_container-event_container-slider_container {
+    padding: 2rem;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .htk3-landing_container {
+    min-height: 60vh;
+    width: 100%;
+  }
+
+  .htk3-landing_container-logo_container {
+    min-height: 80vh;
+    max-height: 80vh;
+  }
+}
+
+/* .htk3-landing_container-event_container-slider_container {
   height: 500px;
   display: flex;
   flex-wrap: nowrap;
@@ -49,12 +120,10 @@
 }
 .htk3-landing_container-event_container-slider_container-card {
   width: 80px;
-  /* border: 1px solid #777; */
   border-radius: 1rem;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
-  /* border-radius: 2rem; */
   margin: 0 10px;
   display: flex;
   align-items: flex-end;
@@ -66,7 +135,6 @@
   &:hover {
     box-shadow: 2px 8px 20px -5px rgba(0, 0, 0, 0.774);
   }
-  /* transform: scale(0.4); */
 }
 
 .htk3-landing_container-event_container-slider_container-card
@@ -198,68 +266,4 @@
     padding-bottom: 0rem;
     margin-top: 33vh;
   }
-}
-
-@media screen and (max-width: 1000px) {
-  .htk3-landing_container {
-    flex-direction: column;
-  }
-  .htk3-landing_container-logo_container-wrapper {
-    padding: 1rem;
-    margin: 1rem 0;
-    padding-bottom: 0rem;
-    /* margin-top: 4vh; */
-    min-width: 100%;
-    max-height: 10vh;
-  }
-  .htk3-landing_container-event_container-slider_container {
-    transform: scale(0.5);
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .htk3-landing_container-logo_container-wrapper {
-    padding: 4rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    margin-top: 33vh;
-  }
-  .htk3-landing_container-logo_container {
-    min-height: 20vh;
-  }
-  .htk3-landing_container-event_container {
-    /* min-width: 100%; */
-    max-height: 20vh;
-  }
-  .htk3-landing_container-event_container-slider_container {
-    transform: scale(0.4);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .htk3-landing_container {
-    min-height: 60vh;
-    width: 100%;
-  }
-  .htk3-landing_container-logo_container-wrapper {
-    padding: 6rem;
-    margin: 1rem 0;
-    padding-bottom: 0rem;
-    /* margin-top: 4vh; */
-    min-width: 100%;
-    max-height: 10vh;
-  }
-  .htk3-landing_container-logo_container {
-    min-height: 80vh;
-    max-height: 80vh;
-  }
-
-  .htk3-landing_container-event_container {
-    /* min-width: 100%; */
-    /* max-height: 80vh; */
-  }
-
-  .htk3-landing_container-event_container-slider_container {
-    transform: scale(0.3);
-  }
-}
+} */

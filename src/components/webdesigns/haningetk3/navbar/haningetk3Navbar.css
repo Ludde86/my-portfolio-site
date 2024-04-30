@@ -5,7 +5,7 @@
   max-height: 8vh;
 
   background: #0000004b;
-  border-radius: 100px;
+  border-radius: 1rem;
 
   width: 75%;
   margin: 2rem;
@@ -51,9 +51,24 @@
   padding: 1rem 0rem;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  opacity: 0.8;
 
   &:hover {
-    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.htk3-navbar_container span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem 0rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -71,7 +86,7 @@
 
 #htk3-navbar_container-blue {
   background: #3265cc7c;
-  border-radius: 2rem;
+  border-radius: 0.4rem;
   padding: 0.8rem 2rem;
 }
 
