@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./haningetk3Navbar.css";
 import { FiAlignJustify } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Htk3Context } from "../Haningetk3App";
 
 const Haningetk3Navbar = () => {
+  const htk3 = useContext(Htk3Context);
   const [expandNavbar, setExpandNavbar] = useState(false);
 
   return (
@@ -15,16 +17,21 @@ const Haningetk3Navbar = () => {
       }}
     >
       <div className="htk3-navbar_container-main">
-        <a href="/">Tennisskola</a>
-        <a href="/">Medlemsskap</a>
+        <a href="#Hem">Tennisskola</a>
+        <a href="#Hem">Medlemsskap</a>
         <div
           id="htk3-navbar_container-icon"
           onClick={() => setExpandNavbar(!expandNavbar)}
         >
           {expandNavbar ? <AiOutlineClose /> : <FiAlignJustify />}
         </div>
-        <a href="/">Om oss</a>
-        <a id="htk3-navbar_container-blue" href="/">
+        <a href="#Hem">Om oss</a>
+        <a
+          id="htk3-navbar_container-blue"
+          href="https://www.matchi.se/facilities/haningetk"
+          target="_blank"
+          rel="noreferrer"
+        >
           Boka bana
         </a>
       </div>
@@ -33,14 +40,14 @@ const Haningetk3Navbar = () => {
         className="htk3-navbar_container-sub"
         style={{ visibility: expandNavbar && "visible" }}
       >
-        <a href="/">Vision och värdegrunde</a>
-        <a href="/">Träna och spela hos oss</a>
-        <a href="/">Kontrakt- och strötider</a>
-        <a href="/">Tävlingar</a>
-        <a href="/">Gruppspel</a>
-        <a href="/">Styrelse</a>
-        <a href="/">Klubbens historia</a>
-        <a href="/">Kontakt</a>
+        <a href="#Hem">Vision och värdegrunde</a>
+        <a href="#Hem">Träna och spela hos oss</a>
+        <a href="#Hem">Kontrakt- och strötider</a>
+        <a href="#Hem">Tävlingar</a>
+        <a href="#Hem">Gruppspel</a>
+        <a href="#Hem">Styrelse</a>
+        <a href="#Hem">Klubbens historia</a>
+        <a href="#Hem">Kontakt</a>
       </div>
     </div>
   );

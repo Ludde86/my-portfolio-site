@@ -58,6 +58,20 @@
   }
 }
 
+.htk3-navbar_container span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 1rem 0rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 #htk3-navbar_container-icon {
   font-size: 2.8rem;
 

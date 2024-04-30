@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./haningetk3Landing.css";
 import img1 from "../assets/img/img-1.jpg";
-import img2 from "../assets/img/img-2.jpg";
+import img2 from "../assets/img/stadium-logo.png";
 import img3 from "../assets/img/img-3.jpg";
 import img4 from "../assets/img/img-4.jpg";
-import landing1 from "../assets/img/landing-1.jpg";
+import landing1 from "../assets/img/landing-2.jpg";
 import ImageSlider from "./ImageSlider";
 
 const Haningetk3Landing = () => {
@@ -14,15 +14,16 @@ const Haningetk3Landing = () => {
       desc: "Haninge TK är en ideell tennisklubb belägen intill Torvalla idrottsanläggning. Vi har två banor med Latex-Ite beläggning i vår  tennishall  i Torvalla och två utebanor med grus  som ligger belägna i sågen, Haningevallens område. I  föreningen arbetar vi alla aktivt med vår vision och våra värdegrunder. Tennis är för alla, engagemang, glädje, Gemenskap och Utveckling förenar oss. Vi bedriver träningsgrupper för, Mini Tennis, barn och ungdomar och vuxna. Eller om de är privatträning som du eftersöker. Klubben har sitt egna gruppspel för nivå nybörjare till elitnivå och olika tävlingar/event under året. Som medlem hos oss får du förmånligt pris på strötider och får tillgång  att delta i våra tävlingar och gruppspel. Har du några frågor tveka inte att höra av dig till oss. Varmt välkommen till oss på Haninge Tennisklubb.",
     },
     {
-      img: img1,
-      desc: "Bild2",
+      img: img3,
+      desc: "Välkommen att spela i vår tennisskola. Ålder spelar ingen roll - alla kan spela. Här hittar du all information från det att du anmäler intresse till det att du slår ditt första slag!",
+      button1: "Tennisskola",
     },
     {
       img: img2,
       desc: "Bild3",
     },
     {
-      img: img3,
+      img: img1,
       desc: "Bild4",
     },
     {
@@ -32,7 +33,7 @@ const Haningetk3Landing = () => {
   ];
 
   return (
-    <div className="htk3-landing_container">
+    <div id="Landing" className="htk3-landing_container">
       <div className="htk3-landing_container-logo_container-wrapper">
         <div className="htk3-landing_container-logo_container"></div>
       </div>
@@ -42,6 +43,7 @@ const Haningetk3Landing = () => {
           <ImageSlider imgUrls={IMAGES} />
         </div>
       </div>
+      <div className="htk3-landing_container-blue_background"></div>
     </div>
   );
 };

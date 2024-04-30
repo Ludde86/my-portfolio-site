@@ -26,12 +26,16 @@ const Haningetk3Welcome = () => {
 
           <div className="htk3-welcome_container-title_container-button_container">
             <button>
-              <a href="/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.matchi.se/facilities/haningetk"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Boka Bana
               </a>
             </button>
             <button id="htk3-welcome_container-title_container-button_container-service-button">
-              <a href="/">Bli Medlem</a>
+              <a href="#Hem">Bli Medlem</a>
             </button>
           </div>
         </div>

@@ -8,6 +8,10 @@
   align-items: center;
 
   background: var(--color-htk-3);
+
+  /* position: relative;
+  bottom: 0px; */
+  padding-bottom: 2rem;
 }
 
 .htk3-footer_container-contact_container {

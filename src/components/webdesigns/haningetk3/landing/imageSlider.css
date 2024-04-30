@@ -3,26 +3,58 @@
   height: 100%;
 
   position: relative;
+  z-index: 5;
 }
 .image_slider_container-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
   display: block;
-
-  /* border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem; */
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
+  box-shadow: 4px 2px 8px #000;
 }
 .image_slider_container-desc {
-  line-height: 1.2rem;
   text-align: center;
-  padding: 1rem;
-  background: var(--color-htk-2);
   color: #fff;
-  font-size: 1.2rem;
-  border-bottom-left-radius: 0.8rem;
-  border-bottom-right-radius: 0.8rem;
+  background: #0000002a;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  text-shadow: 0px 0px 4px #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+}
+.image_slider_container-desc-button {
+  all: unset;
+
+  position: absolute;
+  /* left: 0; */
+  right: 35%;
+  bottom: 25%;
+  padding: 1rem;
+  cursor: pointer;
+  width: 25%;
+  background: var(--color-htk-2);
+  opacity: 0.8;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 .image_slider_container-button {
   all: unset;
@@ -43,7 +75,7 @@
 /*all children in the container */
 .image_slider_container-button > * {
   stroke: #fff;
-  fill: #333;
+  /* fill: #333; */
 }
 
 #image_slider_container-button_left {
@@ -93,8 +125,19 @@
 }
 
 .image_slider_container-button-dots_container-button {
-  stroke: #fff;
-  fill: #000;
+  /* stroke: #fff; */
+  /* fill: #fff; */
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1280px) {
+  .image_slider_container-desc {
+    font-size: 1.2rem;
+    letter-spacing: 0.11rem;
+    line-height: 1.2rem;
+
+    padding-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -104,5 +147,22 @@
 
   .image_slider_container-button-dots_container {
     width: 90%;
+  }
+
+  .image_slider_container-desc {
+    text-align: center;
+
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 0.6rem;
+
+    padding: 1rem;
+    /* padding-top: 2rem; */
+  }
+  .image_slider_container-desc-button {
+    /* right: 20%; */
+    bottom: 20%;
+
+    transform: scale(0.6);
   }
 }
