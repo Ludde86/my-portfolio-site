@@ -1,13 +1,13 @@
-import React from 'react';
-import './landing.css';
-import logo from '../assets/Hedström & Taube Stämpel_RGB[1382].png';
-import { BiDownArrowAlt } from 'react-icons/bi';
+import React from "react";
+import "./landing.css";
+import logo from "../assets/Hedström & Taube Stämpel_RGB[1382].png";
+import { BiDownArrowAlt } from "react-icons/bi";
 
 const Landing = () => {
-	return (
-		<div className="landing">
-			<div className="landing__content">
-				{/*
+  return (
+    <div className="landing">
+      <div className="landing__content">
+        {/*
 			<div className="landing__about">
 			<p>
 			<span className="landing__title">Hedström & Taube</span> erbjuder alla typer av projektledning
@@ -21,38 +21,46 @@ const Landing = () => {
 			<p>Välkommen att kontakta oss och ta del av vår arbetslust och vårt engagemang.</p>
 			</div>
 		*/}
-				{/*
+        {/*
 		<div className="landing__logo">
 		<img src={logo} alt="logo" />
 		</div>
 	*/}
-			</div>
+      </div>
 
-			<div className="landing__content-buttons">
-				<a className="project-button" style={{ background: '#ea7f04' }}>
-					<span>Nyheter</span>
-					<div className="arrow">
-						<BiDownArrowAlt size={26} color="#fff" />
-					</div>
-				</a>
+      <div className="landing__content-buttons">
+        <a
+          className="project-button"
+          style={{ background: "#ea7f04" }}
+          href="#news"
+        >
+          <span>Nyheter</span>
+          <div className="project-button_arrow">
+            <BiDownArrowAlt size={26} color="#fff" />
+          </div>
+        </a>
 
-				<a className="project-button">
-					<span>OM OSS</span>
-					<div className="arrow">
-						<BiDownArrowAlt size={26} color="#fff" />
-					</div>
-				</a>
+        <a className="project-button" href="#about">
+          <span>OM OSS</span>
+          <div className="project-button_arrow">
+            <BiDownArrowAlt size={26} color="#fff" />
+          </div>
+        </a>
 
-				<a className="project-button" style={{ background: '#cf09ac' }} href="#projects">
-					<span>AKTUELLA</span>
-					<span>PROJEKT</span>
-					<div className="arrow">
-						<BiDownArrowAlt size={26} color="#fff" />
-					</div>
-				</a>
-			</div>
-		</div>
-	);
+        <a
+          className="project-button"
+          style={{ background: "#cf09ac" }}
+          href="#projects"
+        >
+          <span>AKTUELLA</span>
+          <span>PROJEKT</span>
+          <div className="project-button_arrow">
+            <BiDownArrowAlt size={26} color="#fff" />
+          </div>
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default Landing;
