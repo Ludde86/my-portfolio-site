@@ -12,7 +12,7 @@ import ChallengesJs from "./challengesJS/ChallengesJs";
 import Haningetk3App from "./webdesigns/haningetk3/Haningetk3App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(9);
+  const [activeTab, setActiveTab] = useState(0);
 
   const links = [
     "Haningetk3",
@@ -85,7 +85,7 @@ const Projects = () => {
                 className="fa fa-angle-double-left fa-lg menu-button-icon"
                 aria-hidden="true"
               />
-              DESIGNS
+              PROJEKT
             </span>
           </div>
         </div>
