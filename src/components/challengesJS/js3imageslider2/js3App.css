@@ -1,0 +1,362 @@
+.js3_container {
+  min-height: 100svh;
+}
+
+.js3_container header {
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  background: transparent;
+}
+
+.js3_container header nav a {
+  text-decoration: none;
+  color: #eee;
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.js3_container header nav a.active,
+.js3_container header nav a:hover {
+  background: #14ff72cb;
+  border-radius: 2px;
+}
+
+.js3_container-slider {
+  width: 100svw;
+  height: 100svh;
+  overflow: hidden;
+  position: relative;
+  margin-top: -50px;
+}
+
+.js3_container-slider .js3_container-list .js3_container-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+.js3_container-slider .js3_container-list .js3_container-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.js3_container-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 1140px;
+  max-width: 80%;
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0 5px 10px #0004;
+  transform: translateX(-50%);
+}
+
+.js3_container-content-title,
+.js3_container-content-type {
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.js3_container-content-type {
+  color: #14ff72cb;
+}
+
+.js3_container-content-description {
+  font-size: 14px;
+}
+
+.js3_container-content-button {
+  margin-top: 20px;
+}
+
+.js3_container-content-button button {
+  border: none;
+  background: #eee;
+  padding: 7px 15px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.4s;
+
+  &:hover {
+    background: #14ff72cb;
+    color: #eee;
+  }
+}
+
+.js3_container-thumbnail {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: max-content;
+  z-index: 100;
+}
+
+.js3_container-thumbnail .js3_container-item {
+  width: 150px;
+  height: 220px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.js3_container-thumbnail .js3_container-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.js3_container-icons {
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  z-index: 100;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.js3_container-icons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #14ff72cb;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.js3_container-icons button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.js3_container-slider .js3_container-list .js3_container-item:nth-child(1) {
+  z-index: 1;
+}
+
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-title,
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-type,
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-description,
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-button {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+  to {
+    transform: translateY(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-title {
+  animation-delay: 0.4s;
+}
+
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-type {
+  animation-delay: 0.6s;
+}
+
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-description {
+  animation-delay: 0.8s;
+}
+
+.js3_container-slider
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-button {
+  animation-delay: 1s;
+}
+
+/* debug slider animation */
+
+.js3_container-slider .js3_container-list .js3_container-item:nth-child(1) img {
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 30px;
+  animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage {
+  to {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+.js3_container-slider
+  .js3_container-thumbnail
+  .js3_container-item:nth-child(1) {
+  overflow: hidden;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-list
+  .js3_container-item
+  img {
+  z-index: 100;
+}
+
+@keyframes showThumbnail {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.js3_container-slider.js3_container-icons-next .js3_container-thumbnail {
+  animation: effectNext 0.5s linear 1 forwards;
+}
+
+@keyframes effectNext {
+  from {
+    transform: translateX(150px);
+  }
+}
+
+/* Animation for prev button click */
+
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-list
+  .js3_container-item:nth-child(2) {
+  z-index: 2;
+}
+
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-list
+  .js3_container-item:nth-child(2)
+  img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: outFrame 0.5s linear 1 forwards;
+}
+
+@keyframes outFrame {
+  to {
+    width: 150px;
+    height: 220px;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 20px;
+  }
+}
+
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-thumbnail
+  .js3_container-item:nth-child(1) {
+  overflow: hidden;
+  opacity: 0;
+  animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.js3_container-slider.js3_container-icons-next .js3_container-icons button,
+.js3_container-slider.js3_container-icons-prev .js3_container-icons button {
+  pointer-events: none;
+}
+
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-title,
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-type,
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-description,
+.js3_container-slider.js3_container-icons-prev
+  .js3_container-list
+  .js3_container-item:nth-child(1)
+  .js3_container-content
+  .js3_container-content-button {
+  animation: contentOut 0.5s 1s linear 1 forwards;
+}
+
+@keyframes contentOut {
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .js3_container-slider
+    .js3_container-list
+    .js3_container-item
+    .js3_container-content {
+    padding-right: 0;
+  }
+
+  .js3_container-slider
+    .js3_container-list
+    .js3_container-item
+    .js3_container-content
+    .js3_container-content-title {
+    font-size: 30px;
+  }
+}

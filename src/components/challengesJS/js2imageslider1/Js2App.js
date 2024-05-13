@@ -1,10 +1,10 @@
 import React from "react";
 import "./js2App.css";
 
-import img1 from "./img/round-drop.jpg";
-import img2 from "./img/bridge.jpg";
-import img3 from "./img/green-gekko.jpg";
-import img4 from "./img/nature-beginning.jpg";
+import img1 from "../../../img/round-drop.jpg";
+import img2 from "../../../img/bridge.jpg";
+import img3 from "../../../img/green-gekko.jpg";
+import img4 from "../../../img/nature-beginning.jpg";
 
 const js2App = () => {
   return (
