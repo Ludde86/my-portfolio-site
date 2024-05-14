@@ -1,0 +1,117 @@
+.js4_container {
+  min-height: 100svh;
+  max-height: 100svh;
+  max-width: 100%;
+  min-width: 100%;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  background: #004242;
+}
+
+.js4_container h3 {
+  position: absolute;
+  top: 10%;
+  color: #fff;
+}
+
+.js4_container-animation_next {
+  animation: js4-next 0.5s ease-in-out;
+}
+
+.js4_container-animation_prev {
+  animation: js4-prev 0.5s ease-in-out;
+}
+
+@keyframes js4-next {
+  0% {
+    transform: translateX(100%) scale(0.1);
+    filter: blur(50px);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes js4-prev {
+  0% {
+    transform: translateX(-100%) scale(0.1);
+    filter: blur(50px);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+    filter: blur(0px);
+  }
+}
+
+.js4_container-image {
+  min-height: 50svh;
+  max-height: 50svh;
+  min-width: 50%;
+  max-width: 50%;
+  object-fit: cover;
+  border-radius: 2rem;
+
+  box-shadow: 0 0 6px #000;
+}
+
+.js4_container-button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.js4_container-button_container p {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.js4_container-button_container button {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1rem;
+  background: #0000001c;
+
+  transition: 0.3s;
+  z-index: 10;
+
+  &:hover {
+    cursor: pointer;
+    padding: 1.2rem;
+    background: #0000003d;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .js4_container-image {
+    min-width: 90%;
+    max-width: 90%;
+    border-radius: 1rem;
+  }
+
+  .js4_container-button_container p {
+    font-size: 2rem;
+  }
+}

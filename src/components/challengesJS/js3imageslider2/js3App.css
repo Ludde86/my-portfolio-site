@@ -1,5 +1,6 @@
 .js3_container {
   min-height: 100svh;
+  max-width: 100svw;
 }
 
 .js3_container header {
@@ -342,6 +343,10 @@
     filter: blur(20px);
     opacity: 0;
   }
+}
+
+.js3_container-slider {
+  max-width: 100%;
 }
 
 @media screen and (max-width: 678px) {
