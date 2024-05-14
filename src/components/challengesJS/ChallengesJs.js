@@ -9,8 +9,10 @@ const ChallengesJs = () => {
   return (
     <div className="challenges_js_container">
       <Js1App />
+      {/*
       <Js2App />
       <Js3App />
+       */}
       <Js4App />
     </div>
   );

@@ -23,11 +23,12 @@ const Js4App = () => {
 
     setTimeout(() => {
       setAnimationNext(false);
-    }, "1000");
+    }, "500");
   }, []);
 
   const handleSetImage = (direction) => {
     if (direction === "next") {
+      setAnimationNext(false);
       if (image === imagesData.length - 1) {
         setImage(0);
       } else {
@@ -37,8 +38,9 @@ const Js4App = () => {
 
       setTimeout(() => {
         setAnimationNext(false);
-      }, "1000");
+      }, "500");
     } else {
+      setAnimationPrev(false);
       if (image === 0) {
         setImage(imagesData.length - 1);
       } else {
@@ -48,12 +50,13 @@ const Js4App = () => {
 
       setTimeout(() => {
         setAnimationPrev(false);
-      }, "1000");
+      }, "500");
     }
   };
 
   return (
     <div className="js4_container">
+      <h3>#2 - Image slider #1</h3>
       {animationNext ? (
         <img
           src={imagesData[image].url}
