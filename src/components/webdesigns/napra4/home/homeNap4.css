@@ -1,0 +1,40 @@
+.napra4_home {
+  /* min-height: 100svh; */
+  margin: 2rem;
+}
+
+.napra4_home-wrapper {
+  display: flex;
+  background: #fff;
+
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.napra4_home-hero {
+  background-image: url("../../naprapatrehab/naprapatrehab_img/DSC06345.jpeg");
+  background-position: center;
+  background-size: cover;
+  /* filter: grayscale(0.5); */
+  min-height: 50svh;
+}
+.napra4_home-desc {
+  color: #fff;
+  padding: 2rem;
+
+  background: #ffffff0c;
+  height: 100%;
+}
+
+.napra4_home-desc h6 {
+  color: #ffa500;
+}
+
+.napra4_home-desc h2,
+h1 {
+  text-shadow: 0 0 4px #000;
+}
+
+.napra4_home-desc p {
+  font-size: 1.1rem;
+}

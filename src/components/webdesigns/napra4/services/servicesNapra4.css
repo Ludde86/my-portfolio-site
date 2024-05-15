@@ -1,0 +1,38 @@
+.napra4_services {
+  margin: 2rem;
+}
+
+.napra4_services-service {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+}
+
+.napra4_services-service-title img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.napra4_services-service-title h5 {
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+}
+
+.napra4_services-service-title h6 {
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+}
+
+.napra4_services-service-desc {
+  padding: 0 2rem;
+}
+
+.napra4_services-service-desc p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}

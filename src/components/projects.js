@@ -10,9 +10,10 @@ import Haningetk1 from "./webdesigns/haningetk1/Haningetk1";
 import Haningetk2 from "./webdesigns/haningetk2/Haningetk2";
 import ChallengesJs from "./challengesJS/ChallengesJs";
 import Haningetk3App from "./webdesigns/haningetk3/Haningetk3App";
+import Napra4 from "./webdesigns/napra4/Napra4";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(10);
 
   const links = [
     "Haningetk3",
@@ -49,6 +50,8 @@ const Projects = () => {
         return <Challenge1 />;
       case 9:
         return <ChallengesJs />;
+      case 10:
+        return <Napra4 />;
       default:
         return "No Tab";
     }
