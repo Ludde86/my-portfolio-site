@@ -40,3 +40,9 @@
 
   transition: 0.3s;
 }
+
+@media screen and (max-width: 600px) {
+  .napra4_navbar-links a {
+    font-size: 0.6rem;
+  }
+}

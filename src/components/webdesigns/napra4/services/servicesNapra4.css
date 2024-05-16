@@ -1,13 +1,31 @@
 .napra4_services {
   margin: 2rem;
+  /* max-width: 1020px; */
+  display: flex;
+  gap: 2rem;
+
+  flex-wrap: wrap;
 }
 
 .napra4_services-service {
   background: #fff;
   padding: 2rem;
-  margin-bottom: 2rem;
+  /* margin: 2rem 0; */
 
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.napra4_services-service-title {
+  display: flex;
+
+  /* flex-wrap: wrap; */
+}
+
+.napra4_services-service-title div {
+  display: flex;
+  flex-direction: column;
 }
 
 .napra4_services-service-title img {
@@ -18,21 +36,42 @@
 
 .napra4_services-service-title h5 {
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
+  padding: 2rem;
 }
 
 .napra4_services-service-title h6 {
   margin: 0;
-  padding: 0;
-  padding-top: 1rem;
+  padding: 2rem;
 }
 
 .napra4_services-service-desc {
-  padding: 0 2rem;
+  padding: 2rem 0;
 }
 
 .napra4_services-service-desc p {
   font-size: 1.1rem;
   line-height: 1.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .napra4_services {
+    margin: 0;
+  }
+  .napra4_services-service-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .napra4_services-service-title img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .napra4_services-service-title h5 {
+    padding: 1rem 0;
+  }
+
+  .napra4_services-service-title h6 {
+    padding: 0;
+  }
 }

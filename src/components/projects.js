@@ -26,6 +26,7 @@ const Projects = () => {
     "React",
     "CSS",
     "JS",
+    "Napra4",
   ];
 
   const toggleCategories = () => {

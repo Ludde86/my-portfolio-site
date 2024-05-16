@@ -10,8 +10,10 @@ const ServicesNapra4 = () => {
       <div className="napra4_services-service">
         <div className="napra4_services-service-title">
           <img src={img1} alt="img1" />
-          <h5>Naprapatbehandling nybesök/återbesök </h5>
-          <h6>Tid: 30-40 min</h6>
+          <div>
+            <h5>Naprapatbehandling nybesök/återbesök </h5>
+            <h6>Tid: 30-40 min</h6>
+          </div>
         </div>
         <div className="napra4_services-service-desc">
           <p>
@@ -31,8 +33,10 @@ const ServicesNapra4 = () => {
       <div className="napra4_services-service">
         <div className="napra4_services-service-title">
           <img src={img2} alt="img2" />
-          <h5>Naprapatbehandling pensionär/student </h5>
-          <h6>Tid: 30-40 min</h6>
+          <div>
+            <h5>Naprapatbehandling pensionär/student </h5>
+            <h6>Tid: 30-40 min</h6>
+          </div>
         </div>
         <div className="napra4_services-service-desc">
           <p>
@@ -52,8 +56,10 @@ const ServicesNapra4 = () => {
       <div className="napra4_services-service">
         <div className="napra4_services-service-title">
           <img src={img3} alt="img3" />
-          <h5>Massage </h5>
-          <h6>Tid: 30 min</h6>
+          <div>
+            <h5>Massage </h5>
+            <h6>Tid: 30 min</h6>
+          </div>
         </div>
         <div className="napra4_services-service-desc">
           <p>

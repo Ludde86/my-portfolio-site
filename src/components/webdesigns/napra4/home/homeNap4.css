@@ -16,7 +16,8 @@
   background-position: center;
   background-size: cover;
   /* filter: grayscale(0.5); */
-  min-height: 50svh;
+  min-height: 80svh;
+  width: 100%;
 }
 .napra4_home-desc {
   color: #fff;
@@ -37,4 +38,28 @@ h1 {
 
 .napra4_home-desc p {
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .napra4_home {
+    margin: 0;
+  }
+
+  .napra4_home-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .napra4_home-desc h6 {
+    font-size: 1rem;
+  }
+
+  .napra4_home-desc h2 {
+    font-size: 2rem;
+  }
+
+  .napra4_home-desc h1 {
+    font-size: 2rem;
+  }
 }
