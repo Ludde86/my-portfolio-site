@@ -1,0 +1,41 @@
+.napra4_info {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  background: #fff;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.napra4_info-desc {
+  flex: 2;
+}
+
+.napra4_info-desc h1 {
+  color: orange;
+}
+
+.napra4_info-desc p {
+  font-size: 1.6rem;
+}
+
+.napra4_info-images {
+  flex: 1;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .napra4_info {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .napra4_info-desc h1 {
+    font-size: 2rem;
+  }
+
+  .napra4_info-desc p {
+    font-size: 1rem;
+  }
+}

@@ -56,7 +56,9 @@
 @media screen and (max-width: 600px) {
   .napra4_services {
     margin: 0;
+    gap: 0;
   }
+
   .napra4_services-service-title {
     display: flex;
     flex-direction: column;

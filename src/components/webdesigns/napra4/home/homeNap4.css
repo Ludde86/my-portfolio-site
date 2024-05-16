@@ -31,8 +31,11 @@
   color: #ffa500;
 }
 
-.napra4_home-desc h2,
-h1 {
+.napra4_home-desc h2 {
+  text-shadow: 0 0 4px #000;
+}
+
+.napra4_home-desc h1 {
   text-shadow: 0 0 4px #000;
 }
 
@@ -43,6 +46,7 @@ h1 {
 @media screen and (max-width: 600px) {
   .napra4_home {
     margin: 0;
+    margin-bottom: 2rem;
   }
 
   .napra4_home-desc {
