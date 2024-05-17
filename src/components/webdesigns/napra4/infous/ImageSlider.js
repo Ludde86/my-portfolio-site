@@ -58,16 +58,16 @@ const ImageSlider = () => {
               {index === imageIndex ? (
                 <Circle
                   className="napra4_slider-button-dots_container-button"
-                  size={20}
-                  fill="#fff"
-                  stroke="#fff"
+                  size={16}
+                  fill="#ffa500"
+                  stroke="#ffa500"
                 />
               ) : (
                 <Circle
                   className="napra4_slider-button-dots_container-button"
                   size={16}
-                  fill="#aaa"
-                  stroke="#aaa"
+                  fill="#333"
+                  stroke="#333"
                 />
               )}
             </button>

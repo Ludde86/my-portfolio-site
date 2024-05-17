@@ -9,6 +9,7 @@
 
   padding: 2rem;
   gap: 4rem;
+  border-radius: 2rem;
 }
 
 .napra4_home-hero {
@@ -18,6 +19,7 @@
   /* filter: grayscale(0.5); */
   min-height: 80svh;
   width: 100%;
+  border-radius: 2rem;
 }
 .napra4_home-desc {
   color: #fff;
