@@ -82,9 +82,37 @@
 
   .napra4_footer-content-phone div h5 {
     font-size: 0.6rem;
+    margin: 0;
+    padding: 0;
   }
 
   .napra4_footer-content-phone div h6 {
     font-size: 0.6rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .napra4_footer-content-address h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .napra4_footer-content-address h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .napra4_footer-content-mail h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .napra4_footer-content-mail h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .napra4_footer-content-address-social {
+    margin-top: 2rem;
   }
 }

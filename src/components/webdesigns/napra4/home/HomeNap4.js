@@ -16,6 +16,9 @@ const HomeNap4 = () => {
               bästa sätt finnas till för er som på något sätt kan tänkas behöva
               vår hjälp.
             </p>
+            <div className="napra4_home-desc-buttons">
+              <button>Boka tid</button>
+            </div>
           </div>
         </div>
       </div>

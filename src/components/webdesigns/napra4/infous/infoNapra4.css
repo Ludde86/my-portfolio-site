@@ -30,6 +30,9 @@
   .napra4_info {
     margin: 0;
     margin-top: 2rem;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .napra4_info-desc h1 {
@@ -38,5 +41,6 @@
 
   .napra4_info-desc p {
     font-size: 1rem;
+    line-height: 1.2rem;
   }
 }
