@@ -91,7 +91,7 @@
   }
 
   .napra4_home-hero {
-    max-height: 50svh;
+    min-height: 50svh;
     padding: 0;
   }
 
@@ -108,7 +108,7 @@
   }
 
   .napra4_home-desc h6 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .napra4_home-desc h2 {

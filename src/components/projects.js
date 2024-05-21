@@ -13,7 +13,7 @@ import Haningetk3App from "./webdesigns/haningetk3/Haningetk3App";
 import Napra4 from "./webdesigns/napra4/Napra4";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(10);
+  const [activeTab, setActiveTab] = useState(0);
 
   const links = [
     "Haningetk3",
