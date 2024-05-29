@@ -1,8 +1,15 @@
 .lil1_content1_container {
   min-height: 100svh;
+  background: #fff;
 }
 
 .lil1_content1_container-img {
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .lil1_content1_container {
+    grid-template-columns: 1fr;
+  }
 }

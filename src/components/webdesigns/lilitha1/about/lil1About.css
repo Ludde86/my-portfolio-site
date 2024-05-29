@@ -16,6 +16,8 @@
 }
 .lil1_about_container-title_container h3 {
   font-size: 2rem;
+
+  color: #b78727;
 }
 .lil1_about_container-desc_container {
   flex: 2;
@@ -28,8 +30,25 @@
 }
 
 .lil1_about_container-desc_container p {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
+  font-size: 2rem;
+  line-height: 2.2rem;
   letter-spacing: 0rem;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .lil1_about_container {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .lil1_about_container-desc_container {
+    padding: 0 2rem;
+  }
+
+  .lil1_about_container-desc_container p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    letter-spacing: 0rem;
+  }
 }

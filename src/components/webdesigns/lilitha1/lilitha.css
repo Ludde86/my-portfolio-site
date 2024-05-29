@@ -2,10 +2,6 @@
   min-height: 100svh;
 }
 
-.color_gold {
-  color: #b78727;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: auto 50%; /* 2 rows */

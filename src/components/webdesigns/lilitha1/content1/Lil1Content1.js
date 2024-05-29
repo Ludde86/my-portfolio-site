@@ -6,7 +6,7 @@ import img3 from "../assets/lil-yellow.jpeg";
 
 const Lil1Content1 = () => {
   return (
-    <div className="grid-container lil1_content1_container">
+    <div id="content-1" className="grid-container lil1_content1_container">
       <div className="grid-item ">
         <img src={img1} alt="img1" className="lil1_content1_container-img" />
       </div>
@@ -16,7 +16,7 @@ const Lil1Content1 = () => {
       <div className="grid-item">
         <img src={img3} alt="img3" className="lil1_content1_container-img" />
       </div>
-      <div className="grid-item">4</div>
+      <div className="grid-item"></div>
     </div>
   );
 };

@@ -4,17 +4,19 @@ import Lil1Navbar from "../navbar/Lil1Navbar";
 
 const Lil1Landing = () => {
   return (
-    <div className="lil1_landing_container grid-container">
+    <div id="landing" className="lil1_landing_container grid-container">
       <Lil1Navbar />
-      <div className="grid-item">1</div>
-      <div className="grid-item">2</div>
+      <div className="grid-item"></div>
+      <div className="grid-item"></div>
       <div className="lil1_landing_container-welcome_text grid-item">
-        <h1>Välkommen till</h1>
-        <h1 className="color_gold" style={{ fontSize: "3rem" }}>
+        <h1 className="lil1_landing_container-welcome_text-sub">
+          Välkommen till
+        </h1>
+        <h1 className="lil1_landing_container-welcome_text-main">
           Lilitha Hex Design
         </h1>
       </div>
-      <div className="grid-item">4</div>
+      <div className="grid-item"></div>
     </div>
   );
 };
