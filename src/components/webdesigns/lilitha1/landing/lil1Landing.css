@@ -1,0 +1,47 @@
+.lil1_landing_container {
+  min-height: 100svh;
+  max-height: 100svh;
+
+  background-image: url("../assets/landing-1-xxl.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 50%; /* 2 rows */
+  /* background-color: #2196f3; */
+  padding: 10px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  /* text-align: center; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lil1_landing_container-welcome_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding: 6rem;
+}
+
+.lil1_landing_container-welcome_text h1 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 2.2rem;
+}
