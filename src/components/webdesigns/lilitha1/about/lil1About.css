@@ -1,0 +1,35 @@
+.lil1_about_container {
+  min-height: 75svh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12rem;
+}
+
+.lil1_about_container-title_container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lil1_about_container-title_container h3 {
+  font-size: 2rem;
+}
+.lil1_about_container-desc_container {
+  flex: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 6rem;
+}
+
+.lil1_about_container-desc_container p {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  letter-spacing: 0rem;
+  text-align: center;
+}

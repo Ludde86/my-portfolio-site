@@ -1,0 +1,8 @@
+.lil1_content1_container {
+  min-height: 100svh;
+}
+
+.lil1_content1_container-img {
+  width: 100%;
+  object-fit: cover;
+}
