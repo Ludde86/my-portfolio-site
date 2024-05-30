@@ -1,0 +1,20 @@
+.lil1_footer_container {
+  min-height: 25svh;
+  background: #333;
+  color: #eee;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lil1_footer_container p {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .lil1_footer_container {
+    flex-direction: column;
+    min-height: 40svh;
+  }
+}
