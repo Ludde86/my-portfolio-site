@@ -75,10 +75,16 @@
   }
 
   #lil1_landing_container-image-1 {
-    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    width: 25%;
   }
   #lil1_landing_container-image-2 {
-    display: none;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 20%;
   }
   #lil1_landing_container-image-3 {
     display: none;
