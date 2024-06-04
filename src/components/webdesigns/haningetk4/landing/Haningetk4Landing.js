@@ -8,7 +8,7 @@ const Haningetk4Landing = () => {
         <h3>Välkommen till</h3>
         <h1>Haninge Tennisklubb</h1>
       </div>
-      <div className="htk4_landing-grid_content">2</div>
+      <div className="htk4_landing-grid_content"></div>
       <div className="htk4_landing-grid_content">
         <button className="haninge4_landing-button haninge4_landing-action_button">
           Boka bana

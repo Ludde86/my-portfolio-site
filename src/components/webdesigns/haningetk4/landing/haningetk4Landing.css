@@ -57,6 +57,10 @@
   }
 }
 
+.haninge4_landing img {
+  opacity: 0.5;
+}
+
 .haninge4_landing-button {
   all: unset;
   padding: 1.8rem 4rem;
