@@ -1,0 +1,71 @@
+.haninge4_landing {
+  min-height: 100svh;
+  max-height: 100svh;
+
+  background-image: url("../assets/landing-2.png");
+  background-position: center;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.htk4_landing-grid_content {
+  /* border: 1px solid white; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.haninge4_landing-welcome_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 6rem;
+  padding-top: 6rem;
+}
+
+.haninge4_landing-welcome_text h3 {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.haninge4_landing-welcome_text h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+
+  text-transform: uppercase;
+  color: #4682b4;
+}
+
+.haninge4_landing-button {
+  all: unset;
+  padding: 1.8rem 4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+
+  box-shadow: 0px 0px 6px #bbb;
+}
+
+.haninge4_landing-action_button {
+  background: #ddd;
+  opacity: 0.8;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.haninge4_landing-sub_button {
+  border: 2px solid #ddd;
+  transition: 0.3s;
+
+  &:hover {
+    background: #ddd;
+  }
+}

@@ -1,0 +1,20 @@
+.htk4_navbar {
+  background: linear-gradient(#00000091, #00000000);
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.htk4_navbar a {
+  padding: 2.8rem 0;
+  color: #ddd;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #fff;
+  }
+}

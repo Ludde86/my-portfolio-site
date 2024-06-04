@@ -12,9 +12,10 @@ import ChallengesJs from "./challengesJS/ChallengesJs";
 import Haningetk3App from "./webdesigns/haningetk3/Haningetk3App";
 import Napra4 from "./webdesigns/napra4/Napra4";
 import Lilitha1 from "./webdesigns/lilitha1/Lilitha1";
+import Haningetk4App from "./webdesigns/haningetk4/Haningetk4App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(11);
+  const [activeTab, setActiveTab] = useState(12);
 
   const links = [
     "Haningetk3",
@@ -29,6 +30,7 @@ const Projects = () => {
     "JS",
     "Napra4",
     "Lilitha1",
+    "HAningetk4",
   ];
 
   const toggleCategories = () => {
@@ -57,6 +59,8 @@ const Projects = () => {
         return <Napra4 />;
       case 11:
         return <Lilitha1 />;
+      case 12:
+        return <Haningetk4App />;
       default:
         return "No Tab";
     }
