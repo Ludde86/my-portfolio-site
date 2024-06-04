@@ -31,6 +31,10 @@
   color: #fff;
   font-size: 2rem;
   text-transform: uppercase;
+
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: fade-in 1s forwards;
 }
 
 .haninge4_landing-welcome_text h1 {
@@ -40,6 +44,17 @@
 
   text-transform: uppercase;
   color: #4682b4;
+
+  transform: translateX(100%);
+  opacity: 0;
+  animation: fade-in 1s forwards 0.75s;
+}
+
+@keyframes fade-in {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .haninge4_landing-button {
