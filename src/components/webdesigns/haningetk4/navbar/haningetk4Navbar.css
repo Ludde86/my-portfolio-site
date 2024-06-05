@@ -12,13 +12,13 @@
 
 .htk4_navbar a {
   padding: 2.8rem 0;
-  color: #ddd;
-  font-size: 1.4rem;
+  color: #fff;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: 0.3s;
 
   &:hover {
-    color: #fff;
+    color: #3266cc;
   }
 }
 
@@ -29,5 +29,12 @@
 
   &:hover {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .htk4_navbar a {
+    padding: 0;
+    font-size: 0.9rem;
   }
 }
