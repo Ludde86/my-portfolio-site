@@ -1,0 +1,37 @@
+.js3-container-slider {
+  width: 65svw;
+  height: 45svh;
+  border-radius: 1.8rem;
+  box-shadow: 0 2px 16px #0000009f;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  padding: 8rem 4rem;
+}
+
+.js3-container-slider img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  image-resolution: 1dpi snap;
+}
+.js3-container-slider h3 {
+  color: #fff;
+}
+.js3-container-slider p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: italic;
+}

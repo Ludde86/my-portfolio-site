@@ -59,6 +59,7 @@
   border-radius: 2rem;
 
   box-shadow: 0 0 6px #000;
+  image-resolution: 1dpi snap;
 }
 
 .js4_container-button_container {
