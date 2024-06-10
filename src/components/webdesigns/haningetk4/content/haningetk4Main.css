@@ -1,5 +1,7 @@
 .htk4-main {
   min-height: 100svh;
+  max-width: 100%;
+  overflow: hidden;
   background: var(--color-htk-4);
 
   display: grid;
@@ -12,16 +14,47 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+  max-width: 100%;
+
+  /* filter: blur(100px); */
+  /* transform: translateX(-100%); */
+  /* animation: slide-in-slide-out forwards;
+  animation-timeline: view(block auto); */
+}
+
+@keyframes slide-in-slide-out {
+  0% {
+    filter: blur(100px);
+    transform: translateX(-100%);
+  }
+  25% {
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  50% {
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  75% {
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  100% {
+    filter: blur(100px);
+    transform: translateX(100%);
+  }
 }
 
 .htk4-main-content img {
   width: 40%;
   height: 60svh;
   object-fit: cover;
+  image-rendering: optimizeSpeed;
 }
 
 .htk4-main-content-desc {
   width: 50%;
+  max-width: 100%;
   padding: 2rem 4rem;
 
   color: #fff;
@@ -66,4 +99,40 @@
 
 #htk4-main-content-section_3 {
   padding-bottom: 8rem;
+}
+
+@media screen and (max-width: 800px) {
+  .htk4-main-content {
+    flex-direction: column;
+    animation: none;
+    animation-timeline: unset;
+
+    animation-timeline: view(0);
+  }
+
+  .htk4-main-content-desc {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .htk4-main-content img {
+    width: 100%;
+    height: 60svh;
+    object-fit: cover;
+    padding: 2rem;
+    border-radius: 4rem;
+  }
+
+  #htk4-main-content-section_1 {
+    padding-top: 0;
+  }
+
+  #htk4-main-content-section_2 {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  #htk4-main-content-section_3 {
+    padding-bottom: 0;
+  }
 }

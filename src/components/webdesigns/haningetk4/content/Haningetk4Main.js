@@ -9,7 +9,7 @@ const Haningetk4Main = () => {
   return (
     <div className="htk4-main">
       <div id="htk4-main-content-section_1" className="htk4-main-content">
-        <img src={img3} alt="img1" />
+        <img src={img3} alt="img1" loading="lazy" />
         <div className="htk4-main-content-desc">
           <h1>Tennisskola</h1>
           <p>
@@ -41,11 +41,11 @@ const Haningetk4Main = () => {
           </p>
           <button>Läs mer</button>
         </div>
-        <img src={img2} alt="img1" />
+        <img src={img2} alt="img1" loading="lazy" />
       </div>
 
       <div id="htk4-main-content-section_3" className="htk4-main-content">
-        <img src={img1} alt="img1" />
+        <img src={img1} alt="img1" loading="lazy" />
         <div className="htk4-main-content-desc">
           <h1>Vision & Värdegrund</h1>
           <p>
