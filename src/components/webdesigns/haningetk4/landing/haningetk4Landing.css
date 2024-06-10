@@ -1,0 +1,176 @@
+.haninge4_landing {
+  min-height: 100svh;
+  max-height: 100svh;
+
+  background-image: url("../assets/landing-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  overflow: hidden;
+}
+
+.htk4_landing-grid_content {
+  /* border: 1px solid white; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.haninge4_landing-welcome_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 4rem;
+  border-radius: 2px;
+
+  /* background: #00000033; */
+}
+
+.haninge4_landing-welcome_text h3 {
+  color: #fff;
+  color: #04457a;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+.haninge4_landing-welcome_text h1 {
+  color: #04457a;
+  /* text-shadow: 2px 2px 2px #333; */
+  font-size: 4rem;
+  margin: 0;
+
+  text-transform: uppercase;
+
+  transform: translateX(100%);
+  opacity: 0;
+  animation: fade-in 1s forwards 0.75s;
+}
+
+@keyframes fade-in {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.haninge4_landing img {
+  opacity: 0.5;
+}
+
+.haninge4_landing-button {
+  all: unset;
+  padding: 1.8rem 4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+
+  box-shadow: 0px 0px 6px #bbb;
+}
+
+.haninge4_landing-action_button {
+  background: #ddd;
+  opacity: 0.8;
+  transition: 0.3s;
+
+  &:hover {
+    background: #04457a;
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+.haninge4_landing-sub_button {
+  border: 2px solid #ddd;
+  transition: 0.3s;
+
+  &:hover {
+    background: #ddd;
+  }
+}
+
+.haninge4_landing-vision_text {
+  position: relative;
+  right: 0;
+  left: 0;
+  /* background: tan; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 200%;
+  max-width: 200%;
+  margin-bottom: 2.5svh;
+}
+
+.haninge4_landing-vision_text p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 880px) {
+  .haninge4_landing-vision_text {
+    min-width: 150%;
+    max-width: 150%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .haninge4_landing {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .haninge4_landing-welcome_text h3 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .haninge4_landing-welcome_text h1 {
+    font-size: 2.8rem;
+  }
+
+  .haninge4_landing-button {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    box-shadow: none;
+  }
+
+  .haninge4_landing-sub_button {
+    border: 2px solid #ddd;
+    transition: 0.3s;
+    color: #ddd;
+
+    &:hover {
+      background: #ddd;
+      color: #000;
+    }
+  }
+
+  .haninge4_landing-vision_text {
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 2.5svh;
+    margin-bottom: 2.5svh;
+    padding: 0 2rem;
+  }
+
+  .haninge4_landing-vision_text p {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    margin: 0 1rem;
+  }
+}

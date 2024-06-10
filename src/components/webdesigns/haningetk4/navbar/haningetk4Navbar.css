@@ -1,0 +1,40 @@
+.htk4_navbar {
+  background: linear-gradient(#00000091, #00000000);
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  max-height: 10svh;
+}
+
+.htk4_navbar a {
+  padding: 2.8rem 0;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #3266cc;
+  }
+}
+
+.htk4_navbar img {
+  width: 5rem;
+  opacity: 0.8;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .htk4_navbar a {
+    padding: 0;
+    font-size: 0.9rem;
+  }
+}
