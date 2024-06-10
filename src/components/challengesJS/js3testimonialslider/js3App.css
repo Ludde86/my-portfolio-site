@@ -1,0 +1,9 @@
+.js3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100svh;
+  max-width: 100%;
+  overflow: hidden;
+}
