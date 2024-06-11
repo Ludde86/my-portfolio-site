@@ -1,0 +1,76 @@
+.app5_container {
+  min-height: 100svh;
+  max-height: 100svh;
+  background: #aaa;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app5_container h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.app5_container-age_calc_container {
+  background: #fff;
+  width: 80vw;
+  height: 50svh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px #aaa;
+}
+
+.app5_container-age_calc_container h1 {
+  margin: 0;
+}
+
+.app5_container-age_calc_container h3 {
+  margin: 0;
+}
+
+.app5_container-age_calc_container input {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: 1px solid #aaa;
+}
+
+.app5_container-age_calc_container button {
+  padding: 1rem 2rem;
+  border: none;
+  background: #1e90ff;
+  color: #fff;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  opacity: 0.8;
+
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.app5_container-age_calc_container h2 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .app5_container h1 {
+    font-size: 2rem;
+  }
+  .app5_container-age_calc_container h1 {
+    font-size: 2rem;
+  }
+
+  .app5_container-age_calc_container h3 {
+    font-size: 1.6rem;
+  }
+}
