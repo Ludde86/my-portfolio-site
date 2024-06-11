@@ -5,10 +5,12 @@ import Js2App from "./js2imageslider1/Js2App";
 import Js4App from "./js4imageslider3/Js4App";
 import Js3App from "./js3testimonialslider/Js3App";
 import Js4App2 from "./js4tipcalculator/Js4App2";
+import Js5App from "./js5agecalculator/Js5App";
 
 const ChallengesJs = () => {
   return (
     <div className="challenges_js_container">
+      <Js5App />
       <Js4App2 />
       {/*
       <Js2App />
