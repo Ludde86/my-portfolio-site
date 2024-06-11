@@ -1,0 +1,80 @@
+.app42-container {
+  min-height: 100svh;
+  width: 100%;
+  background: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app42-container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+
+.app42-container-tip_container {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px #00000098;
+
+  width: 50vw;
+  min-height: 50svh;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.app42-container-tip_container h1 {
+  text-align: center;
+}
+
+.app42-container-tip_container p {
+  font-size: 1.6rem;
+}
+
+.app42-container-tip_container_form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.app42-container-tip_container_form label {
+  font-size: 1.6rem;
+}
+
+.app42-container-tip_container_form input {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+
+  &::placeholder {
+    /* Most modern browsers support this now. */
+    color: #ddd;
+  }
+}
+
+.app42-container-tip_container button {
+  all: unset;
+  background: green;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .app42-container h1 {
+    font-size: 2rem;
+  }
+
+  .app42-container-tip_container {
+    width: 80vw;
+  }
+
+  .app42-container-tip_container h3 {
+    font-size: 2rem;
+  }
+}
