@@ -41,7 +41,7 @@ const sliderData = [
 const Js3App = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
 
-  console.log(sliderIndex);
+  // console.log(sliderIndex);
 
   useEffect(() => {
     //Implementing the setInterval method
@@ -51,7 +51,7 @@ const Js3App = () => {
       } else {
         setSliderIndex(sliderIndex + 1);
       }
-    }, 5000);
+    }, 50000);
 
     //Clearing the interval
     return () => clearInterval(interval);
@@ -59,6 +59,7 @@ const Js3App = () => {
 
   return (
     <div className="js3-container">
+      <h1>#3 - Testimonial Slider</h1>
       {sliderData.map((item, index) => {
         // console.log(index);
         if (index === sliderIndex) {
@@ -72,6 +73,7 @@ const Js3App = () => {
             />
           );
         }
+        return true;
       })}
     </div>
   );

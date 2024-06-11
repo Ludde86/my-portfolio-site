@@ -1,9 +1,21 @@
 .js3-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   min-height: 100svh;
   max-width: 100%;
   overflow: hidden;
+}
+
+.js3-container h1 {
+  font-size: 3rem;
+  margin-bottom: 12rem;
+}
+
+@media screen and (max-width: 600px) {
+  .js3-container h1 {
+    font-size: 2rem;
+  }
 }

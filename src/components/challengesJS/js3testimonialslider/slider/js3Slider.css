@@ -1,6 +1,7 @@
 .js3-container-slider {
   width: 65svw;
-  height: 45svh;
+  min-height: 45svh;
+  max-height: 100svh;
   border-radius: 1.8rem;
   box-shadow: 0 2px 16px #0000009f;
 
@@ -34,4 +35,24 @@
   color: #fff;
   font-size: 1.6rem;
   font-style: italic;
+}
+
+@media screen and (max-width: 1280px) {
+  .js3-container-slider h3 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .js3-container-slider {
+    width: 85svw;
+    border-radius: 4rem;
+    padding: 4rem 2rem;
+  }
+
+  .js3-container-slider img {
+    width: 100px;
+    height: 100px;
+  }
 }
