@@ -6,20 +6,14 @@ The objective of this project is to design a Pomodoro timer that features a coun
 */
 
 // Starta en timer på 25min
-// En knapp för att starta timern
-// En knapp för att pausa timern
+
 // En knapp för att nollställa timern
 
 const Js7App = () => {
   const [min, setMin] = useState(25);
   const [sec, setSec] = useState("00");
-  const [timer, setTimer] = useState(1);
 
   const interval = useRef();
-
-  // program to display time every 5 seconds
-
-  //   const timerId = setInterval(() => setSec(sec + 1), 1000);
 
   useEffect(() => {
     if (sec === 0) {
@@ -28,7 +22,12 @@ const Js7App = () => {
     }
   }, [sec]);
 
-  const handleTimer = () => {
+  // En knapp för att starta timern
+  const startTimer = () => {
+    if (interval.current) {
+      return;
+    }
+
     if (sec === "00") {
       setSec(0);
     }
@@ -37,18 +36,18 @@ const Js7App = () => {
       setSec((sec) => sec - 1);
     }, 1000);
   };
-  const startTimer = () => {
-    handleTimer();
-  };
 
+  // En knapp för att pausa timern
   const stopTimer = () => {
     clearInterval(interval.current);
+    interval.current = false;
   };
 
   const resetTimer = () => {
     clearInterval(interval.current);
     setMin(25);
     setSec("00");
+    interval.current = false;
   };
 
   return (
