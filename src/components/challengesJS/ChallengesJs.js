@@ -7,10 +7,12 @@ import Js3App from "./js3testimonialslider/Js3App";
 import Js4App2 from "./js4tipcalculator/Js4App2";
 import Js5App from "./js5agecalculator/Js5App";
 import Js6App from "./js6dicerollsimulator/Js6App";
+import Js7App from "./js7PomodoroTimer/Js7App";
 
 const ChallengesJs = () => {
   return (
     <div className="challenges_js_container">
+      <Js7App />
       <Js6App />
       <Js5App />
       <Js4App2 />

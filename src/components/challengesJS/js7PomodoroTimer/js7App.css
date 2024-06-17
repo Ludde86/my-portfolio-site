@@ -1,0 +1,44 @@
+.js7_container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.js7_container {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.js7_container-timer_container {
+  border: 1px solid black;
+  width: 50%;
+  height: 50svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.js7_container-timer_container-clock_container {
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js7_container-timer_container-clock_container p {
+  font-size: 3rem;
+}
+
+.js7_container-timer_container-buttons_container {
+  border: 1px solid black;
+}
+
+.js7_container-timer_container-buttons_container button {
+  margin: 1rem;
+  padding: 1rem;
+}
