@@ -1,5 +1,6 @@
 .js8_container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100svh;
@@ -8,12 +9,15 @@
 }
 
 .js8_container-game_container {
-  border: 1px solid black;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .js8_container-game_container-icons {
-  border: 1px solid black;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -44,4 +48,51 @@
 
 #js8_container-game_container-icons-icon-paper {
   background: green;
+}
+
+.js8_container-game_container-choice_text_container {
+  color: #ccc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js8_container-game_container-choice_text_container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.js8_container-game_container-choice_text_container-text-blue {
+  color: blue;
+  margin-right: 1rem;
+}
+.js8_container-game_container-choice_text_container-text-red {
+  color: red;
+}
+
+.js8_container-game_container-choice_text_container-text-points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .js8_container h1 {
+    font-size: 1.6rem;
+  }
+  .js8_container h3 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .js8_container-game_container-icons-icon {
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+  }
 }
