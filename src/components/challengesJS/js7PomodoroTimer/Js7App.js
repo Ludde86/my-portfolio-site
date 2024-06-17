@@ -20,6 +20,11 @@ const Js7App = () => {
       setSec(59);
       setMin((min) => min - 1);
     }
+
+    if (min < 0) {
+      resetTimer();
+      alert("DAGS FÖR EN 5MIN PAUS");
+    }
   }, [sec]);
 
   // En knapp för att starta timern
@@ -34,7 +39,7 @@ const Js7App = () => {
 
     interval.current = setInterval(() => {
       setSec((sec) => sec - 1);
-    }, 1000);
+    }, 10);
   };
 
   // En knapp för att pausa timern
@@ -50,20 +55,80 @@ const Js7App = () => {
     interval.current = false;
   };
 
+  const showMin = () => {
+    switch (min) {
+      case 0:
+        return "00";
+      case 1:
+        return "01";
+      case 2:
+        return "02";
+      case 3:
+        return "03";
+      case 4:
+        return "04";
+      case 5:
+        return "05";
+      case 6:
+        return "06";
+      case 7:
+        return "07";
+      case 8:
+        return "08";
+      case 9:
+        return "09";
+      default:
+        return min;
+    }
+  };
+
+  const showSec = () => {
+    switch (sec) {
+      case 0:
+        return "00";
+      case 1:
+        return "01";
+      case 2:
+        return "02";
+      case 3:
+        return "03";
+      case 4:
+        return "04";
+      case 5:
+        return "05";
+      case 6:
+        return "06";
+      case 7:
+        return "07";
+      case 8:
+        return "08";
+      case 9:
+        return "09";
+      default:
+        return sec;
+    }
+  };
+
   return (
     <div className="js7_container">
       <h1>#7 - Pomodoro Timer</h1>
       <div className="js7_container-timer_container">
         <div className="js7_container-timer_container-clock_container">
-          <p>{min}</p>
+          <p>{showMin()}</p>
           <p>:</p>
-          <p>{sec === 0 ? "00" : sec}</p>
+          <p>{showSec()}</p>
         </div>
 
         <div className="js7_container-timer_container-buttons_container">
-          <button onClick={startTimer}>Start</button>
-          <button onClick={stopTimer}>Stop</button>
-          <button onClick={resetTimer}>Reset</button>
+          <button id="button-start" onClick={startTimer}>
+            Start
+          </button>
+          <button id="button-stop" onClick={stopTimer}>
+            Stop
+          </button>
+          <button id="button-reset" onClick={resetTimer}>
+            Reset
+          </button>
         </div>
       </div>
     </div>

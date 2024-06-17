@@ -13,7 +13,6 @@
 }
 
 .js7_container-timer_container {
-  border: 1px solid black;
   width: 50%;
   height: 50svh;
   display: flex;
@@ -23,8 +22,6 @@
 }
 
 .js7_container-timer_container-clock_container {
-  border: 1px solid black;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +29,46 @@
 
 .js7_container-timer_container-clock_container p {
   font-size: 3rem;
+  color: #333;
 }
 
 .js7_container-timer_container-buttons_container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .js7_container-timer_container-buttons_container button {
   margin: 1rem;
-  padding: 1rem;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  opacity: 0.6;
+  cursor: pointer;
+  box-shadow: 2px 2px #fff;
+
+  transition: 0.5s;
+  min-width: 260px;
+
+  &:hover {
+    opacity: 1;
+    box-shadow: 2px 2px #aaa;
+  }
+}
+
+#button-start {
+  background: green;
+}
+#button-stop {
+  background: red;
+}
+#button-reset {
+  background: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .js7_container h1 {
+    font-size: 2rem;
+    margin: 2rem;
+  }
 }
