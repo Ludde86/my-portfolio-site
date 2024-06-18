@@ -1,7 +1,6 @@
 .app5_container {
   min-height: 100svh;
   max-height: 100svh;
-  background: #aaa;
 
   display: flex;
   flex-direction: column;

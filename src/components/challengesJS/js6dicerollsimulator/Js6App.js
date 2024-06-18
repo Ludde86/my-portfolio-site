@@ -33,7 +33,7 @@ const Js6App = () => {
 
   return (
     <div className="js6_container">
-      <h1>#6 - Dice Roll Simulator</h1>
+      <h1>Rulla tärningen</h1>
       <div className="js6_container-dice_container">
         <div
           className={[

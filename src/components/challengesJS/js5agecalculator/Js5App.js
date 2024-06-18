@@ -25,7 +25,6 @@ const Js5App = () => {
 
   return (
     <div className="app5_container">
-      <h1>#5 - Age Calculator</h1>
       <div className="app5_container-age_calc_container">
         <h1>Räkna ut din ålder</h1>
         <h3>Skriv in ditt födelsedatum</h3>

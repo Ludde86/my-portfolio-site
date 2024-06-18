@@ -77,7 +77,7 @@ const Js8App = () => {
 
   return (
     <div className="js8_container">
-      <h1>#8 - Rock Paper Scissors</h1>
+      <h1>Sten Sax Påse</h1>
       <div className="js8_container-game_container">
         <h3>Välj ditt drag:</h3>
         <div className="js8_container-game_container-icons">
