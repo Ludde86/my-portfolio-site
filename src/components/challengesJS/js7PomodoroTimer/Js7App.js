@@ -111,7 +111,7 @@ const Js7App = () => {
 
   return (
     <div className="js7_container">
-      <h1>#7 - Pomodoro Timer</h1>
+      <h1>Pomodorotekniken</h1>
       <div className="js7_container-timer_container">
         <div className="js7_container-timer_container-clock_container">
           <p>{showMin()}</p>

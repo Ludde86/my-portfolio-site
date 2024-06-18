@@ -1,0 +1,72 @@
+.js9_container {
+  min-height: 100svh;
+  max-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.js9_container-timer_container-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 50svh;
+}
+
+.js9_container-timer_container-clock p {
+  color: #fd0469;
+  text-shadow: 2px 2px 1px #f758cf;
+  font-size: 4rem;
+  font-weight: 700;
+
+  max-width: 3rem;
+  min-width: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js9_container-timer_container-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.js9_container-timer_container-buttons button {
+  all: unset;
+  background: #fd0469;
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px #777;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.5s;
+  font-size: 1.6rem;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .js9_container h1 {
+    font-size: 1.6rem;
+  }
+
+  .js9_container-timer_container-clock p {
+    font-size: 2.8rem;
+  }
+
+  .js9_container-timer_container-buttons button {
+    margin: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    font-size: 1.4rem;
+  }
+}

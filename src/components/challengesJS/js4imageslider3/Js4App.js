@@ -56,7 +56,7 @@ const Js4App = () => {
 
   return (
     <div className="js4_container">
-      <h3>#2 - Image slider #1</h3>
+      <h3>Image slider #1</h3>
       {animationNext ? (
         <img
           src={imagesData[image].url}

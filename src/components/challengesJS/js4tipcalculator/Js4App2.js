@@ -21,7 +21,6 @@ const Js4App2 = () => {
 
   return (
     <div className="app42-container">
-      <h1>#4 - Momskalkylator</h1>
       <div className="app42-container-tip_container">
         <h1>Räkna ut moms</h1>
         <p>Skriv pris utan moms för att räkna ut priset med moms.</p>

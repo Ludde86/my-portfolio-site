@@ -51,7 +51,7 @@ const Js3App = () => {
       } else {
         setSliderIndex(sliderIndex + 1);
       }
-    }, 50000);
+    }, 5000);
 
     //Clearing the interval
     return () => clearInterval(interval);
@@ -59,7 +59,7 @@ const Js3App = () => {
 
   return (
     <div className="js3-container">
-      <h1>#3 - Testimonial Slider</h1>
+      <h1>Testimonial Slider</h1>
       {sliderData.map((item, index) => {
         // console.log(index);
         if (index === sliderIndex) {

@@ -6,7 +6,7 @@ const Js1Grid = ({ handleCellClick }) => {
 
   return (
     <div className="js1-grid_container">
-      <h3>#1 - Pixel Art Generator</h3>
+      <h3>Pixel Art Generator</h3>
       <div className="js1-grid">
         {grid.map((_, index) => (
           <div
