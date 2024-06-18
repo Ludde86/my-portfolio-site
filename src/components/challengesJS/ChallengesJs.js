@@ -11,10 +11,12 @@ import Js7App from "./js7PomodoroTimer/Js7App";
 import Js8App from "./js8RockPaperScissorsGame/Js8App";
 import Js9App from "./js9SimpleStopwatch/Js9App";
 import Js10App from "./js10WeightConverter/Js10App";
+import Js11App from "./js11VideoTrailerPopup/Js11App";
 
 const ChallengesJs = () => {
   return (
     <div className="challenges_js_container">
+      <Js11App />
       <Js10App />
       <Js9App />
       <Js8App />
