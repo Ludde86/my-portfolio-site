@@ -10,10 +10,12 @@ import Js6App from "./js6dicerollsimulator/Js6App";
 import Js7App from "./js7PomodoroTimer/Js7App";
 import Js8App from "./js8RockPaperScissorsGame/Js8App";
 import Js9App from "./js9SimpleStopwatch/Js9App";
+import Js10App from "./js10WeightConverter/Js10App";
 
 const ChallengesJs = () => {
   return (
     <div className="challenges_js_container">
+      <Js10App />
       <Js9App />
       <Js8App />
       <Js7App />
