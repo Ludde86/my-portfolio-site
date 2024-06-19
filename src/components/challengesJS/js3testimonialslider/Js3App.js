@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./js3App.css";
 import Js3Slider from "./slider/Js3Slider";
-import img1 from "../../../img/green-gekko.jpg";
-import img2 from "../../../img/bridge.jpg";
-import img3 from "../../../img/nature-beginning.jpg";
-import img4 from "../../../img/round-drop.jpg";
+import img1 from "../assets/gekko.jpg";
+import img2 from "../assets/waterfall.jpg";
+import img3 from "../assets/milkyway.jpg";
+import img4 from "../assets/waterfall.jpg";
 
 /*
 Project description
