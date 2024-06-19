@@ -1,0 +1,90 @@
+.js12_app {
+  min-height: 100svh;
+  max-height: 100svh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    45deg,
+    rgba(24, 238, 156, 0.363),
+    rgba(100, 189, 192, 0.445)
+  );
+}
+
+.js12_app-converter {
+  width: 50%;
+  height: 50svh;
+  background: #ffffff48;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #00000079;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.js12_app-converter h1 {
+  color: #008080;
+}
+.js12_app-converter-input_container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.js12_app-converter-input_container span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #008080;
+}
+
+.js12_app-converter-input_container label {
+  flex: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #008080;
+}
+.js12_app-converter-input_container input {
+  flex: 1;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  border: none;
+  box-shadow: inset 0 0 0.4rem #00000077;
+}
+
+@media screen and (max-width: 600px) {
+  .js12_app-converter {
+    width: 90%;
+    height: 75svh;
+  }
+  .js12_app-converter h1 {
+    font-size: 2rem;
+  }
+  .js12_app-converter-input_container {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .js12_app-converter-input_container label {
+    font-weight: 500;
+  }
+  .js12_app-converter-input_container input {
+    font-size: 1.4rem;
+    border-radius: 0.2rem;
+  }
+  .js12_app-converter-input_container span {
+    display: none;
+  }
+}
