@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./js4App.css";
-import img1 from "../../../img/bridge.jpg";
-import img2 from "../../../img/green-gekko.jpg";
-import img3 from "../../../img/nature-beginning.jpg";
-import img4 from "../../../img/round-drop.jpg";
+import img1 from "../assets/gekko.jpg";
+import img2 from "../assets/milkyway.jpg";
+import img3 from "../assets/volcano.jpg";
+import img4 from "../assets/waterfall.jpg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const imagesData = [
