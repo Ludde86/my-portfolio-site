@@ -2,19 +2,26 @@
   min-height: 100svh;
   max-width: 100%;
   overflow: hidden;
-  background: var(--color-htk-4);
+  /* background: var(--color-htk-4);
+  background: #87ceeb; */
+  border-radius: 2rem;
 
-  display: grid;
-
-  gap: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .htk4-main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0;
   max-width: 100%;
+
+  border-radius: 2rem;
+  margin: 2rem;
+  overflow: hidden;
+  /* padding: 6rem 0; */
 
   /* filter: blur(100px); */
   /* transform: translateX(-100%); */
@@ -46,8 +53,8 @@
 }
 
 .htk4-main-content img {
-  width: 40%;
-  height: 60svh;
+  width: 50%;
+  height: 75svh;
   object-fit: cover;
   image-rendering: optimizeSpeed;
 }
@@ -89,16 +96,15 @@
 }
 
 #htk4-main-content-section_1 {
-  padding-top: 8rem;
+  background: var(--color-htk-3);
 }
 
 #htk4-main-content-section_2 {
   background: var(--color-htk-2);
-  padding: 8rem 0;
 }
 
 #htk4-main-content-section_3 {
-  padding-bottom: 8rem;
+  background: var(--color-htk-3);
 }
 
 @media screen and (max-width: 800px) {

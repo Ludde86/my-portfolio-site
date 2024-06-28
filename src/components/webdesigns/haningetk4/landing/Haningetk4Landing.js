@@ -1,9 +1,11 @@
 import React from "react";
 import "./haningetk4Landing.css";
+import Haningetk4Navbar from "../navbar/Haningetk4Navbar";
 
 const Haningetk4Landing = () => {
   return (
     <div className="haninge4_landing">
+      <Haningetk4Navbar />
       <div className="htk4_landing-grid_content">
         <div className="haninge4_landing-welcome_text">
           <h3>Välkommen till</h3>
