@@ -15,7 +15,7 @@ import Lilitha1 from "./webdesigns/lilitha1/Lilitha1";
 import Haningetk4App from "./webdesigns/haningetk4/Haningetk4App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(9);
+  const [activeTab, setActiveTab] = useState(12);
 
   const links = [
     "Haningetk3",
@@ -30,7 +30,7 @@ const Projects = () => {
     "JS",
     "Napra4",
     "Lilitha1",
-    "HAningetk4",
+    "Haningetk4",
   ];
 
   const toggleCategories = () => {

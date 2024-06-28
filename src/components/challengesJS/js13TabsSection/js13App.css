@@ -32,7 +32,6 @@
 
 .js13_app-tabs_container-tabbar {
   width: 100%;
-  background: tan;
 
   display: flex;
 }
@@ -41,7 +40,6 @@
   flex: 1;
   padding: 2rem;
   border: none;
-  background: #cf71af;
   cursor: pointer;
 
   color: #333;
@@ -66,4 +64,46 @@
 .js13_app-tabs_container-tab p {
   color: #333;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .js13_app {
+    flex-direction: column;
+
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .js13_app-image_container {
+    min-height: 25svh;
+    max-height: 25svh;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .js13_app-tabs_container {
+    min-height: 60svh;
+    max-height: 60svh;
+  }
+
+  .js13_app-tabs_container-tabbar {
+    width: 100%;
+  }
+
+  .js13_app-tabs_container-tabbar button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .js13_app-tabs_container-tab {
+    padding: 1rem;
+  }
+
+  .js13_app-tabs_container-tab h1 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
+  .js13_app-tabs_container-tab p {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
 }
