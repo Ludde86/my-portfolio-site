@@ -18,14 +18,14 @@ const Haningetk3Navbar = () => {
     >
       <div className="htk3-navbar_container-main">
         <a href="#Hem">Tennisskola</a>
-        <a href="#Hem">Medlemsskap</a>
+        <a href="#Hem">Tävling</a>
         <div
           id="htk3-navbar_container-icon"
           onClick={() => setExpandNavbar(!expandNavbar)}
         >
           {expandNavbar ? <AiOutlineClose /> : <FiAlignJustify />}
         </div>
-        <a href="#Hem">Om oss</a>
+        <a href="#Hem">Medlemsskap</a>
         <a
           id="htk3-navbar_container-blue"
           href="https://www.matchi.se/facilities/haningetk"
@@ -43,7 +43,7 @@ const Haningetk3Navbar = () => {
         <a href="#Hem">Vision och värdegrunde</a>
         <a href="#Hem">Träna och spela hos oss</a>
         <a href="#Hem">Kontrakt- och strötider</a>
-        <a href="#Hem">Tävlingar</a>
+        <a href="#Hem">Om oss</a>
         <a href="#Hem">Gruppspel</a>
         <a href="#Hem">Styrelse</a>
         <a href="#Hem">Klubbens historia</a>

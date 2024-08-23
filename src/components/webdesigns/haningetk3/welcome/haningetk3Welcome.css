@@ -59,6 +59,10 @@
   line-height: 6rem;
   /* text-shadow: 2px 2px 6px #333; */
   text-align: start;
+
+  animation: from-left 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .htk3-welcome_container-title_container h2 {
@@ -69,6 +73,30 @@
   /* text-shadow: 2px 2px 6px #333; */
 
   text-align: start;
+
+  animation: from-right 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes from-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes from-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .htk3-welcome_container-title_container-button_container {
@@ -81,27 +109,46 @@
   background: var(--color-htk);
   opacity: 0.8;
   color: #fff;
-  padding: 1rem 4rem;
+  padding: 1.6rem 4rem;
   font-size: 1.6rem;
   border: none;
   border-radius: 0.3rem;
+  text-transform: uppercase;
 
   cursor: pointer;
   transition: 0.3s;
+
+  animation: fade-in 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 
   &:hover {
     opacity: 1;
   }
 }
 
+@keyframes fade-in {
+  50% {
+    /* transform: scale(1.2); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: scale(1); */
+  }
+}
+
 #htk3-welcome_container-title_container-button_container-service-button {
   background: transparent;
   border: 2px solid var(--color-htk);
+
+  &:hover {
+    background: var(--color-htk);
+    color: #fff;
+  }
 }
 
 .htk3-welcome_container-title_container-button_container a {
   color: #fff;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 1920px) {
