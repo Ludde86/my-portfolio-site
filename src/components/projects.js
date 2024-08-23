@@ -13,9 +13,10 @@ import Haningetk3App from "./webdesigns/haningetk3/Haningetk3App";
 import Napra4 from "./webdesigns/napra4/Napra4";
 import Lilitha1 from "./webdesigns/lilitha1/Lilitha1";
 import Haningetk4App from "./webdesigns/haningetk4/Haningetk4App";
+import Haningetk5App from "./webdesigns/haningetk5/Haningetk5App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(12);
+  const [activeTab, setActiveTab] = useState(0);
 
   const links = [
     "Haningetk3",
@@ -31,6 +32,7 @@ const Projects = () => {
     "Napra4",
     "Lilitha1",
     "Haningetk4",
+    "Haningetk5",
   ];
 
   const toggleCategories = () => {
@@ -61,6 +63,8 @@ const Projects = () => {
         return <Lilitha1 />;
       case 12:
         return <Haningetk4App />;
+      case 13:
+        return <Haningetk5App />;
       default:
         return "No Tab";
     }
