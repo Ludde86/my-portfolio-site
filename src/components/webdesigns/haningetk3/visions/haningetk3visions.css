@@ -7,6 +7,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .htk3-visions_container h1 {
@@ -49,4 +50,21 @@
   color: #333;
   font-size: 1.6rem;
   padding: 0 2rem;
+}
+
+@media screen and (max-width: 560px) {
+  .htk3-visions_container {
+    min-height: 100svh;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .htk3-visions_container-vision {
+    margin: 0;
+  }
+
+  .htk3-visions_container-vision-text p {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+  }
 }

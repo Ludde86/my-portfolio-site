@@ -258,4 +258,20 @@
     padding: 1rem 2rem;
     font-size: 1.4rem;
   }
+
+  #htk3-welcome_container-title_container-button_container-service-button {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .htk3-welcome_container-video_container {
+    right: 0;
+    top: 1rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+
+    animation: fade-in 1s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+  }
 }
