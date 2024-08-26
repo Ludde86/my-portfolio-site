@@ -1,23 +1,25 @@
 .education-content {
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .education-item {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .education-year {
-	font-size: 16px;
+  font-size: 16px;
+  color: #333;
 }
 
 .education-title {
-	font-size: 22px;
+  font-size: 22px;
+  color: #333;
 }
 
-.education-description {
-	text-align: end;
-	color: #777;
-	font-weight: bold;
+.education-description p {
+  text-align: end;
+  color: #777;
+  font-weight: bold;
 }
