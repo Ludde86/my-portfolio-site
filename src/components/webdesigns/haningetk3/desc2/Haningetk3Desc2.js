@@ -1,6 +1,6 @@
 import React from "react";
 import "./haningeDesc2.css";
-import logo from "../assets/img/logga-medium_nobg.png";
+import bana1 from "../assets/img/utebana-1.jpg";
 
 const Haningetk3Desc2 = () => {
   return (
@@ -22,7 +22,7 @@ const Haningetk3Desc2 = () => {
         </a>
       </div>
       <div className="htk3-desc2_container-empty">
-        <img src={logo} alt="logo" />
+        <img src={bana1} alt="bana1" />
       </div>
     </div>
   );

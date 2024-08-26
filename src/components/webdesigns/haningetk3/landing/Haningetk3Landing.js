@@ -1,9 +1,10 @@
 import React from "react";
 import "./haningetk3Landing.css";
-import img1 from "../assets/img/landing-2.jpg";
-import img2 from "../assets/img/tennisskolan.jpg";
+import img1 from "../assets/img/trana-1.jpg";
+import img2 from "../assets/img/tennisskolan-1.jpg";
 import img3 from "../assets/img/alicja-gancarz-wvDELsJ_E20-unsplash.jpg";
 import img4 from "../assets/img/start1_notitle.jpg";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, MoveRight } from "lucide-react";
@@ -113,10 +114,6 @@ const Haningetk3Landing = () => {
                 elever. Varje elev tränar en eller flera tillfällen per vecka
                 enligt önskemål. Schemat läggs med avsikt att så långt det går
                 skapa jämna grupper efter ålder och spelerfarenhet.
-              </p>
-              <p>
-                För att anmäla dig till tennisskolan eller vuxentennis, klicka
-                då här!
               </p>
               <Link
                 className="htk3-landing_container-desc_container-desc-link"
