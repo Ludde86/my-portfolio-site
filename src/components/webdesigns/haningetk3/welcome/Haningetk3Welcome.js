@@ -1,13 +1,12 @@
 import React from "react";
 import "./haningetk3Welcome.css";
-import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
 import trana from "../assets/img/trana.mp4";
+import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
 
 const Haningetk3Welcome = () => {
   return (
     <div className="htk3-welcome_container">
       <Haningetk3Navbar />
-
       <div className="htk3-welcome_container-video_container">
         <video width="400px" autoPlay muted loop>
           <source src={trana} type="video/mp4" />

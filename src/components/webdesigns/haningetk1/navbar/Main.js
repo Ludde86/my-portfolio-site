@@ -1,15 +1,15 @@
-import React from 'react';
-import { Route, Switch } from 'react-router';
-import Haningetk1 from '../HaningeTK1';
+import React from "react";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Haningetk1 from "../HaningeTK1";
 
 const Main = () => (
-    <Switch>
-        <Route exact path="/projects" component={Haningetk1} />
-        <Route exact path="/projects/home" component={ } />
-        <Route path="/projects/services" component={ } />
-        <Route path="/projects/about" component={ } />
-        <Route path="/projects/brands" component={ } />
-    </Switch>
+  <Routes>
+    <Route exact path="/projects" Component={Haningetk1} />
+    <Route exact path="/projects/home" />
+    <Route path="/projects/services" />
+    <Route path="/projects/about" />
+    <Route path="/projects/brands" />
+  </Routes>
 );
 
 export default Main;

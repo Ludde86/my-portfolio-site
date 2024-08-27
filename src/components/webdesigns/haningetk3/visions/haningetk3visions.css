@@ -52,7 +52,7 @@
   padding: 0 2rem;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 920px) {
   .htk3-visions_container {
     min-height: 100svh;
     flex-direction: column;

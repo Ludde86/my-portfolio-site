@@ -17,7 +17,9 @@ const Haningetk3Navbar = () => {
       }}
     >
       <div className="htk3-navbar_container-main">
-        <a href="#Hem">Tennisskola</a>
+        <a href="#Tennisskola" onClick={() => htk3.setLink("Tennisskola")}>
+          Tennisskola
+        </a>
         <a href="#Hem">Tävling</a>
         <div
           id="htk3-navbar_container-icon"
