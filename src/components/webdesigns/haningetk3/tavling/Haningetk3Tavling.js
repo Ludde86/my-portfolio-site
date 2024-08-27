@@ -1,13 +1,13 @@
 import React from "react";
-import "./haningetk3tennisskola.css";
+import "./haningetk3Tavling.css";
 import { ArrowLeft } from "lucide-react";
 import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
 
-const Haningetk3Tennisskola = () => {
+const Haningetk3Tavling = () => {
   return (
-    <div className="htk3-tennisskola_container">
+    <div className="htk3-tavling_container">
       <Haningetk3Navbar />
-      <div className="htk3-tennisskola_container-desc_container">
+      <div className="htk3-tavling_container-desc_container">
         <h2>Tennisskola</h2>
         <p>
           Tennisskolan är öppen för både nybörjare och mer vana spelare av
@@ -50,11 +50,11 @@ const Haningetk3Tennisskola = () => {
           till teknikfel och nöta in det där slaget som du har svårt med.
         </p>
       </div>
-      <div className="htk3-tennisskola_container-image_container">
-        <div className="htk3-tennisskola_container-image_container-back_container">
+      <div className="htk3-tavling_container-image_container">
+        <div className="htk3-tavling_container-image_container-back_container">
           <ArrowLeft
             size={30}
-            className="htk3-tennisskola_container-image_container-back"
+            className="htk3-tavling_container-image_container-back"
           />
           <p>Tillbaka till startsida</p>
         </div>
@@ -63,4 +63,4 @@ const Haningetk3Tennisskola = () => {
   );
 };
 
-export default Haningetk3Tennisskola;
+export default Haningetk3Tavling;

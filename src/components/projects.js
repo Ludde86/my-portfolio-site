@@ -9,11 +9,11 @@ import Napra3 from "./webdesigns/napra3/Napra3";
 import Haningetk1 from "./webdesigns/haningetk1/Haningetk1";
 import Haningetk2 from "./webdesigns/haningetk2/Haningetk2";
 import ChallengesJs from "./challengesJS/ChallengesJs";
-import Haningetk3App from "./webdesigns/haningetk3/Haningetk3App";
 import Napra4 from "./webdesigns/napra4/Napra4";
 import Lilitha1 from "./webdesigns/lilitha1/Lilitha1";
 import Haningetk4App from "./webdesigns/haningetk4/Haningetk4App";
 import Haningetk5App from "./webdesigns/haningetk5/Haningetk5App";
+import Haningehtk3App from "./webdesigns/haningetk3/Haningetk3App";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -38,7 +38,7 @@ const Projects = () => {
   const toggleCategories = () => {
     switch (activeTab) {
       case 0:
-        return <Haningetk3App />;
+        return <Haningehtk3App />;
       case 1:
         return <Haningetk1 />;
       case 2:

@@ -1,11 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./haningetk3Navbar.css";
 import { FiAlignJustify } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
-import { Htk3Context } from "../Haningetk3App";
 
 const Haningetk3Navbar = () => {
-  const htk3 = useContext(Htk3Context);
   const [expandNavbar, setExpandNavbar] = useState(false);
 
   return (
@@ -17,10 +15,8 @@ const Haningetk3Navbar = () => {
       }}
     >
       <div className="htk3-navbar_container-main">
-        <a href="#Tennisskola" onClick={() => htk3.setLink("Tennisskola")}>
-          Tennisskola
-        </a>
-        <a href="#Hem">Tävling</a>
+        <a href="/projects/htk3/tennisskola">Tennisskola</a>
+        <a href="/projects/htk3/tavling">Tävling</a>
         <div
           id="htk3-navbar_container-icon"
           onClick={() => setExpandNavbar(!expandNavbar)}
