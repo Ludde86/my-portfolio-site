@@ -33,7 +33,7 @@
   justify-content: space-between;
 
   margin: 6rem;
-  padding-left: 12rem;
+  padding-left: 11rem;
   padding-bottom: 6rem;
 
   transition: 0.5s;
@@ -43,11 +43,6 @@
 .htk3-welcome_container-title_container h3 {
   color: var(--color-htk);
   margin-bottom: 2rem;
-}
-
-.htk3-welcome_container-title_container p {
-  color: #fff;
-  font-size: 1.6rem;
 }
 
 .htk3-welcome_container-title_container h1 {
@@ -107,7 +102,7 @@
 
 .htk3-welcome_container-title_container-button_container button {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   background: var(--color-htk-2);
   color: #fff;
   border: 2px solid var(--color-htk-2);
@@ -123,10 +118,11 @@
 
 #htk3-welcome_container-title_container-button_container-service-button {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   background: #fff;
   color: var(--color-htk-2);
   border: 2px solid var(--color-htk-2);
+  z-index: 5;
   &:hover {
     background: var(--color-htk-2);
     color: #fff;
@@ -139,8 +135,8 @@
 
 .htk3-welcome_container-video_container {
   position: absolute;
-  right: 8.5svw;
-  top: 30svh;
+  right: 5vw;
+  top: 27svh;
   border-radius: 0.2rem;
   overflow: hidden;
 
@@ -252,11 +248,13 @@
     line-height: 2.6rem;
   }
   .htk3-welcome_container-title_container-button_container {
+    flex-direction: column;
     justify-content: space-evenly;
   }
   .htk3-welcome_container-title_container-button_container button {
     padding: 1rem 2rem;
     font-size: 1.4rem;
+    min-width: 80%;
   }
 
   #htk3-welcome_container-title_container-button_container-service-button {

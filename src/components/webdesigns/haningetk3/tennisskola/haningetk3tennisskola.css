@@ -6,7 +6,7 @@
   display: flex;
   /* flex-direction: column; */
   justify-content: space-evenly;
-  background: #3265cc21;
+  background: linear-gradient(75deg, transparent 1041px, #3265cc21 0);
 }
 
 .htk3-tennisskola_container-desc_container {
@@ -19,6 +19,8 @@
 }
 .htk3-tennisskola_container-desc_container p {
   font-size: 1.8rem;
+  text-align: start;
+  color: #333;
 }
 
 .htk3-tennisskola_container-image_container {

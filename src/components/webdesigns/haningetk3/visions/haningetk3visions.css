@@ -48,8 +48,9 @@
 
 .htk3-visions_container-vision-text p {
   color: #333;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0 2rem;
+  line-height: 1.4rem;
 }
 
 @media screen and (max-width: 920px) {

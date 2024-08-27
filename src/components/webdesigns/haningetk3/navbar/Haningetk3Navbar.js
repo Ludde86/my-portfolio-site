@@ -23,7 +23,13 @@ const Haningetk3Navbar = () => {
         >
           {expandNavbar ? <AiOutlineClose /> : <FiAlignJustify />}
         </div>
-        <a href="#Hem">Medlemsskap</a>
+        <a
+          href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Medlemskap
+        </a>
         <a
           id="htk3-navbar_container-blue"
           href="https://www.matchi.se/facilities/haningetk"

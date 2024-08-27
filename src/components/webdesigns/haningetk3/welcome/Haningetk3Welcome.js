@@ -34,15 +34,19 @@ const Haningetk3Welcome = () => {
 
           <div className="htk3-welcome_container-title_container-button_container">
             <a
-              href="https://www.matchi.se/facilities/haningetk"
+              href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
               target="_blank"
               rel="noreferrer"
             >
-              <button>Boka Bana</button>
+              <button>Medlemskap</button>
             </a>
-            <a href="#Hem">
+            <a
+              href="https://www.matchi.se/forms/9g6MT0BuznTHBMOqbJDq"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button id="htk3-welcome_container-title_container-button_container-service-button">
-                Bli Medlem
+                hösttermin 2024
               </button>
             </a>
           </div>

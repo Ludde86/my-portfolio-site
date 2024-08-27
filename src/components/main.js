@@ -15,7 +15,12 @@ const Main = () => (
     <Route path="/projects" Component={Projects} />
     <Route path="/dictionary" Component={Dictionary} />
 
-    <Route path="/projects/htk3" Component={Haningehtk3App} />
+    {/* HaningeTK3 */}
+    <Route
+      path="/projects/htk3"
+      Component={Haningehtk3App}
+      to="/projects/htk3"
+    />
     <Route
       path="/projects/htk3/tennisskola"
       Component={Haningehtk3Tennisskola}

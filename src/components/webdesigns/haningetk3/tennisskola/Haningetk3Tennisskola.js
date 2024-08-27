@@ -1,12 +1,15 @@
 import React from "react";
 import "./haningetk3tennisskola.css";
-import { ArrowLeft } from "lucide-react";
 import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
+import logo from "../assets/img/logga-medium_nobg.png";
 
 const Haningetk3Tennisskola = () => {
   return (
     <div className="htk3-tennisskola_container">
       <Haningetk3Navbar />
+      <a href="/projects/htk3">
+        <img id="htk3-nav-logo" src={logo} alt="logo" />
+      </a>
       <div className="htk3-tennisskola_container-desc_container">
         <h2>Tennisskola</h2>
         <p>
@@ -50,15 +53,7 @@ const Haningetk3Tennisskola = () => {
           till teknikfel och nöta in det där slaget som du har svårt med.
         </p>
       </div>
-      <div className="htk3-tennisskola_container-image_container">
-        <div className="htk3-tennisskola_container-image_container-back_container">
-          <ArrowLeft
-            size={30}
-            className="htk3-tennisskola_container-image_container-back"
-          />
-          <p>Tillbaka till startsida</p>
-        </div>
-      </div>
+      <div className="htk3-tennisskola_container-image_container"></div>
     </div>
   );
 };
