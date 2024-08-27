@@ -8,7 +8,7 @@ import Footer from "./pages/footer/Footer";
 import HeroPage from "./pages/hero/HeroPage";
 import LandingPage from "./pages/landing/LandingPage";
 import { Home } from "lucide-react";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Navbar from "./pages/navbar/Navbar";
 import Tennisskolan from "./routes/tennisskolan/Tennisskolan";
 import Tavling from "./routes/tavling/Tavling";
@@ -38,11 +38,11 @@ function Haningetk5App() {
           style={{ position: "fixed", bottom: "2rem", right: "2rem" }}
         />
       </Link>
-      <Switch>
+      <Routes>
         <Route path="/" to={Haningetk5App} />
         <Route path="tennisskolan" to={"/Tennisskolan"} />
         <Route path="tavling" to={Tavling} />
-      </Switch>
+      </Routes>
     </BrowserRouter>
   );
 }

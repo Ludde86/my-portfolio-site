@@ -1,0 +1,118 @@
+.htk3-desc2_container {
+  min-height: 100svh;
+  max-height: 100svh;
+  box-sizing: border-box;
+
+  display: flex;
+  /* background: linear-gradient(75deg, #344da9 50%, transparent 50%); */
+  /* background: repeating-linear-gradient(
+    75deg,
+    #344da9,
+    #344da9 1042px,
+    transparent 0,
+    transparent 1580px
+  ); */
+
+  background: linear-gradient(75deg, transparent 1481.5px, #3265cc21 1481.5px);
+  /* background: #3265cc21; */
+}
+
+.htk3-desc2_container-empty {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.htk3-desc2_container-empty img {
+  flex: 1;
+  max-width: 75%;
+}
+.htk3-desc2_container-desc {
+  flex: 1;
+  color: #333;
+  /* margin: 0 6rem; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  /* min-height: 100svh;
+  max-height: 100svh; */
+  padding: 6rem;
+}
+
+.htk3-desc2_container-desc p {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  /* font-weight: 700; */
+  color: #fff;
+  text-align: start;
+  /* background: var(--color-htk-2); */
+  color: #333;
+}
+
+.htk3-desc2_container-desc button {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  background: var(--color-htk-2);
+  color: #fff;
+  border: 2px solid var(--color-htk-2);
+  &:hover {
+    background: #fff;
+    color: var(--color-htk-2);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .htk3-desc2_container {
+    flex-direction: column;
+
+    min-height: 88svh;
+    background: linear-gradient(75deg, #344da9 50%, transparent 50%);
+    background: repeating-linear-gradient(
+      75deg,
+      #344da9,
+      #344da9 1042px,
+      transparent 0,
+      transparent 1580px
+    );
+    margin-bottom: 0;
+    /* border-top: 1rem solid #344da9; */
+    /* border-bottom: 1rem solid #344da9; */
+  }
+
+  .htk3-desc2_container-empty {
+    flex: 0;
+    margin: 2rem 0;
+  }
+
+  .htk3-desc2_container-desc {
+    flex: 0;
+    padding: 0;
+    min-height: 58svh;
+    background: var(--color-htk-2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .htk3-desc2_container-desc p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .htk3-desc2_container-desc button {
+    width: 100%;
+    padding: 1rem 4rem;
+
+    font-size: 1rem;
+    border: 1px solid #fff;
+  }
+}

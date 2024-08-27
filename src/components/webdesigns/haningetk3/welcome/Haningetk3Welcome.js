@@ -1,11 +1,19 @@
 import React from "react";
 import "./haningetk3Welcome.css";
+import trana from "../assets/img/trana.mp4";
 import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
 
 const Haningetk3Welcome = () => {
   return (
     <div className="htk3-welcome_container">
       <Haningetk3Navbar />
+      <div className="htk3-welcome_container-video_container">
+        <video width="400px" autoPlay muted loop>
+          <source src={trana} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <div className="htk3-welcome_container-section_container">
         <div className="htk3-welcome_container-title_container">
           {/*
@@ -25,18 +33,18 @@ const Haningetk3Welcome = () => {
           */}
 
           <div className="htk3-welcome_container-title_container-button_container">
-            <button>
-              <a
-                href="https://www.matchi.se/facilities/haningetk"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Boka Bana
-              </a>
-            </button>
-            <button id="htk3-welcome_container-title_container-button_container-service-button">
-              <a href="#Hem">Bli Medlem</a>
-            </button>
+            <a
+              href="https://www.matchi.se/facilities/haningetk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>Boka Bana</button>
+            </a>
+            <a href="#Hem">
+              <button id="htk3-welcome_container-title_container-button_container-service-button">
+                Bli Medlem
+              </button>
+            </a>
           </div>
         </div>
       </div>

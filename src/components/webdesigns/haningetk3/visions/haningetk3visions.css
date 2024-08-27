@@ -1,0 +1,70 @@
+.htk3-visions_container {
+  min-height: 100svh;
+  background: #3265cc21;
+
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.htk3-visions_container h1 {
+  margin: 0;
+}
+
+.htk3-visions_container-vision {
+  /* border-radius: 4rem; */
+  background: #fff;
+  /* box-shadow: 2px 2px 2px #777; */
+
+  margin: 2rem;
+  overflow: hidden;
+  flex: 1;
+  height: 65svh;
+}
+
+.htk3-visions_container-vision-image {
+  /* border: 1px solid black; */
+}
+
+.htk3-visions_container-vision-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  /* border-radius: 2rem; */
+}
+
+.htk3-visions_container-vision-text {
+  /* border: 1px solid black; */
+}
+
+.htk3-visions_container-vision-text h1 {
+  color: #344da9;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.htk3-visions_container-vision-text p {
+  color: #333;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 920px) {
+  .htk3-visions_container {
+    min-height: 100svh;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .htk3-visions_container-vision {
+    margin: 0;
+  }
+
+  .htk3-visions_container-vision-text p {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+  }
+}
