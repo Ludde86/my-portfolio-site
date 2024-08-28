@@ -1,5 +1,20 @@
 .htk3-tennisskola_container {
   min-height: 100vh;
+  width: 100%;
+
+  background-image: url("../assets/img/img-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset -60vw 0px 100px #0000003d;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.htk3-tennisskola_container-info_container {
+  min-height: 100vh;
 
   padding: 6rem;
 
@@ -10,15 +25,20 @@
 }
 
 .htk3-tennisskola_container-desc_container {
-  padding: 6rem;
-
-  flex: 1;
+  padding: 2rem;
 }
 
-.htk3-tennisskola_container-desc_container h2 {
+.htk3-tennisskola_container-desc_container-desc {
+  margin-bottom: 2rem;
+}
+
+.htk3-tennisskola_container-desc_container h1 {
+  font-size: 2.2rem;
+  text-align: start;
+  color: var(--color-htk-2);
 }
 .htk3-tennisskola_container-desc_container p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: start;
   color: #333;
 }

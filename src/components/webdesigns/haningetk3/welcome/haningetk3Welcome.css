@@ -74,6 +74,18 @@
   opacity: 0;
 }
 
+.htk3-welcome_container-title_container p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  text-align: start;
+
+  animation: from-left 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
 @keyframes from-left {
   0% {
     transform: translateX(-100%);
