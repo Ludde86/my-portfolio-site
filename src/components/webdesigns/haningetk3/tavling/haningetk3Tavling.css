@@ -1,12 +1,17 @@
 .htk3-tavling_container {
   min-height: 100vh;
+  width: 100%;
 
-  padding: 6rem;
+  background-image: url("../assets/img/cristina-anne-costello-rank-Px49iI-unsplash.jpg");
+  background-image: url("../assets/img/tennis-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset -60vw 0px 100px #0000003d;
 
   display: flex;
-  /* flex-direction: column; */
-  justify-content: space-evenly;
-  background: #3265cc21;
+  flex-direction: column;
+  align-items: center;
 }
 
 .htk3-tavling_container-desc_container {
