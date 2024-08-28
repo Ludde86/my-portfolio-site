@@ -4,12 +4,10 @@ import "./aboutme.css";
 const About = () => {
   return (
     <div className="about-me">
-      <p className="about-title" style={{ marginTop: 32 }}>
-        Om mig:
-      </p>
+      <p className="about-title">Om mig:</p>
 
       <p className="about-text">
-        Jag är 36år och tvåbarnsfar som bor tillsammans med min fru i Vendelsö,
+        Jag är 37år och tvåbarnsfar som bor tillsammans med min fru i Vendelsö,
         ca 2mil söder om Stockholm. Jag skulle beskriva mig själv som glad,
         driven och envis. Grottar ofta in mig i sådant som jag finner
         intressant.

@@ -15,7 +15,13 @@ const Haningetk3Desc = () => {
           individen ges möjlighet till utveckling och efter sin egen
           ambitionsnivå uppnå sin högsta potential!
         </p>
-        <button>Bli medlem</button>
+        <a
+          href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button>Bli medlem</button>
+        </a>
       </div>
     </div>
   );
