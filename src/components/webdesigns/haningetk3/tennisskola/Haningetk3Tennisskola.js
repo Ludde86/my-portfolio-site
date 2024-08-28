@@ -1,7 +1,6 @@
 import React from "react";
 import "./haningetk3tennisskola.css";
 import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
-import logo from "../assets/img/logga-medium_nobg.png";
 
 const Haningetk3Tennisskola = () => {
   return (
@@ -42,9 +41,6 @@ const Haningetk3Tennisskola = () => {
         </div>
       </div>
       <div className="htk3-tennisskola_container-info_container">
-        <a href="/projects/htk3">
-          <img id="htk3-nav-logo" src={logo} alt="logo" />
-        </a>
         <div className="htk3-tennisskola_container-desc_container">
           <div className="htk3-tennisskola_container-desc_container-desc">
             <h1>Tennisskolan</h1>

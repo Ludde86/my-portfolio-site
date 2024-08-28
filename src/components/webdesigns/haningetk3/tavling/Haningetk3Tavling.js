@@ -42,9 +42,6 @@ const Haningetk3Tavling = () => {
         </div>
       </div>
       <div className="htk3-tennisskola_container-info_container">
-        <a href="/projects/htk3">
-          <img id="htk3-nav-logo" src={logo} alt="logo" />
-        </a>
         <div className="htk3-tennisskola_container-desc_container">
           <div className="htk3-tennisskola_container-desc_container-desc">
             <h1>Hur börjar man?</h1>

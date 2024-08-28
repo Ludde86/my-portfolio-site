@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./haningetk3Navbar.css";
+import logo from "../assets/img/logga-medium_nobg.png";
 import { FiAlignJustify } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -44,6 +45,9 @@ const Haningetk3Navbar = () => {
         className="htk3-navbar_container-sub"
         style={{ visibility: expandNavbar && "visible" }}
       >
+        <a href="/projects/htk3">
+          <img id="htk3-nav-logo" src={logo} alt="logo" />
+        </a>
         <a href="#Hem">Vision och värdegrunde</a>
         <a href="#Hem">Träna och spela hos oss</a>
         <a href="#Hem">Kontrakt- och strötider</a>
