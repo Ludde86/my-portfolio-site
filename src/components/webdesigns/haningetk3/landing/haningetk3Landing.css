@@ -1,33 +1,30 @@
 .htk3-landing_container {
-  min-height: 80svh;
-  max-height: 80svh;
+  min-height: 100svh;
+  max-height: 100svh;
   scroll-snap-align: start;
   background: #fff;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  /* border-top: 1rem solid var(--color-htk-2);
-  border-bottom: 1rem solid var(--color-htk-2); */
-
-  /* background: linear-gradient(75deg, #fff 1335px, #344da9 0); */
-  /* background: repeating-linear-gradient(
-    75deg,
-    #344da9,
-    #344da9 797px,
-    transparent 0,
-    transparent 1335px
-  ); */
+  padding: 4rem;
 
   background: linear-gradient(75deg, #fff 1237px, #3265cc21 0);
-  /* background: #3265cc21; */
+}
+
+.htk3-landing_container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 4rem 0;
 }
 
 .htk3-landing_container-desc_container {
-  min-height: 80svh;
-  max-height: 80svh;
-  width: 90%;
+  /* width: 90%; */
 
   display: flex;
   justify-content: center;
@@ -37,13 +34,15 @@
 }
 
 .htk3-landing_container-desc_container-desc {
-  flex: 1.2;
-  min-height: 80svh;
-  max-height: 80svh;
+  flex: 1;
+  min-height: 75svh;
+  max-height: 75svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 6rem 4rem;
+
+  margin-right: 4rem;
+
   /* background: #fff; */
 }
 
@@ -51,7 +50,6 @@
   color: var(--color-htk-2);
   font-size: 2.2rem;
   text-align: start;
-  text-decoration: underline;
 
   opacity: 0;
   transform: translateY(100%);
@@ -107,23 +105,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 75vh;
-  max-height: 75vh;
-  width: 80%;
+  /* min-height: 75vh;
+  max-height: 75vh; */
 }
 
 .htk3-landing_container-slider_wrapper-slider {
   display: flex;
   aspect-ratio: 1 / 1;
   overflow-x: auto;
-  width: 90%;
-  min-height: 80svh;
-  max-height: 80svh;
+  width: 80%;
+  min-height: 75svh;
+  max-height: 75svh;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  box-shadow: 0 0 4rem #00000071;
+  box-shadow: 0 0 2rem #00000044;
+  /* border-radius: 0.2rem; */
 }
 
 .htk3-landing_container-slider_wrapper-slider::-webkit-scrollbar {
