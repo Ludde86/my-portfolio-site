@@ -1,7 +1,7 @@
 import React from "react";
 import "./haningetk3Tavling.css";
 import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
-import logo from "../assets/img/logga-medium_nobg.png";
+import Haningetk3Footer from "../footer/Haningetk3Footer";
 
 const Haningetk3Tavling = () => {
   return (
@@ -12,7 +12,7 @@ const Haningetk3Tavling = () => {
         <div className="htk3-welcome_container-section_container">
           <div className="htk3-welcome_container-title_container">
             <div>
-              <h2>Tävling</h2>
+              <h2 id="page-title">Tävling</h2>
             </div>
 
             <p>
@@ -109,6 +109,7 @@ const Haningetk3Tavling = () => {
           </div>
         </div>
       </div>
+      <Haningetk3Footer />
     </>
   );
 };

@@ -67,34 +67,28 @@ const Haningetk3Landing = () => {
         <div className="htk3-landing_container-desc_container-desc">
           {image === img1 && (
             <>
-              <h3>Haninge Tennisklubb</h3>
+              <h3>Höstterminen 2024</h3>
               <p>
-                Haninge TK är en ideell tennisklubb belägen intill Torvalla
-                idrottsanläggning. Vi har två banor med Latex-Ite beläggning i
-                vår tennishall i Torvalla och två utebanor med grus som ligger
-                belägna i sågen, Haningevallens område.
+                Hej! Vi är glada att meddela att höstterminen är igång, och vi
+                vill varmt välkomna dig till en ny säsong fylld med spänning,
+                utveckling och glädje på tennisbanan. Oavsett om du är nybörjare
+                eller erfaren spelare, har vi något för dig.
               </p>
               <p>
-                I föreningen arbetar vi alla aktivt med vår vision och våra
-                värdegrunder. Tennis är för alla, engagemang, glädje, Gemenskap
-                och Utveckling förenar oss. Vi bedriver träningsgrupper för,
-                Mini Tennis, barn och ungdomar och vuxna. Eller om de är
-                privatträning som du eftersöker.
-              </p>
-              <p>
-                Klubben har sitt egna gruppspel för nivå nybörjare till elitnivå
-                och olika tävlingar/event under året. Som medlem hos oss får du
-                förmånligt pris på strötider och får tillgång att delta i våra
-                tävlingar och gruppspel. Har du några frågor tveka inte att höra
-                av dig till oss. Varmt välkommen till oss på Haninge
-                Tennisklubb.
+                Under höstens träningar kommer vi att fokusera på att förbättra
+                teknik, strategi och kondition i en inspirerande och kamratlig
+                miljö. Missa inte chansen att utveckla ditt spel och ha kul
+                tillsammans med andra tennisälskare. Anmäl dig idag och låt oss
+                tillsammans göra denna höst till en riktig fullträff!
               </p>
               <a
                 className="htk3-landing_container-desc_container-desc-link"
-                href="#visions"
+                href="https://www.matchi.se/forms/9g6MT0BuznTHBMOqbJDq"
+                target="_blank"
+                rel="noreferrer"
               >
                 <button>
-                  Vår vision <MoveRight />
+                  Anmäl dig <MoveRight />
                 </button>
               </a>
             </>

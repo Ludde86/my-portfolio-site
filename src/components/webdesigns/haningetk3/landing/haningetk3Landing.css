@@ -38,7 +38,8 @@
 
 .htk3-landing_container-desc_container-desc {
   flex: 1.2;
-  height: 80svh;
+  min-height: 80svh;
+  max-height: 80svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,6 +51,7 @@
   color: var(--color-htk-2);
   font-size: 2.2rem;
   text-align: start;
+  text-decoration: underline;
 
   opacity: 0;
   transform: translateY(100%);
@@ -59,7 +61,7 @@
 
 .htk3-landing_container-desc_container-desc p {
   color: var(--color-htk-3);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: start;
   line-height: 1.4rem;
 
@@ -75,7 +77,7 @@
 
   width: 100%;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   background: var(--color-htk-2);
   color: #fff;
   border: 2px solid var(--color-htk-2);
@@ -105,8 +107,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
-  max-height: 60vh;
+  min-height: 75vh;
+  max-height: 75vh;
   width: 80%;
 }
 
@@ -115,13 +117,13 @@
   aspect-ratio: 1 / 1;
   overflow-x: auto;
   width: 90%;
-  min-height: 65svh;
-  max-height: 65svh;
+  min-height: 80svh;
+  max-height: 80svh;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  box-shadow: 1rem 1rem 0.4rem #00000034;
+  box-shadow: 0 0 4rem #00000071;
 }
 
 .htk3-landing_container-slider_wrapper-slider::-webkit-scrollbar {
@@ -196,7 +198,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.4rem;
+  padding: 0.2rem;
 
   transition: 0.3s;
   color: var(--color-htk-2);
@@ -212,12 +214,12 @@
 
 @media screen and (max-width: 920px) {
   .htk3-landing_container {
-    min-height: 120svh;
-    max-height: 1000svh;
+    min-height: 150svh;
+    max-height: 150svh;
+    /* max-height: 1000svh; */
     margin-bottom: 2rem;
   }
   .htk3-landing_container-desc_container {
-    max-height: 200svh;
     width: 100%;
 
     flex-direction: column;
@@ -227,7 +229,8 @@
 
   .htk3-landing_container-desc_container-desc {
     flex: 1.2;
-    min-height: 75svh;
+    min-height: 100svh;
+    max-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -245,9 +248,14 @@
   }
 
   .htk3-landing_container-desc_container-desc button {
-    margin-top: 1rem;
     font-size: 1rem;
     padding: 1rem 2rem;
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
   }
 
   .htk3-landing_container-slider_wrapper {
@@ -267,6 +275,7 @@
 
     -ms-overflow-style: none;
     scrollbar-width: none;
+    box-shadow: none;
   }
 
   .htk3-landing_container-slider_nav-arrows {

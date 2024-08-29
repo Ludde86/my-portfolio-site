@@ -4,6 +4,12 @@
   box-sizing: border-box;
 
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4rem;
+
   /* background: linear-gradient(75deg, transparent 50%, #344da9 50%); */
   /* background: repeating-linear-gradient(
     75deg,
@@ -20,6 +26,12 @@
   /* background: #3265cc21; */
 }
 
+.htk3-desc_container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .htk3-desc_container-empty {
   flex: 1;
   display: flex;
@@ -34,7 +46,7 @@
 
 .htk3-desc_container-desc {
   flex: 1;
-  /* margin: 0 6rem; */
+  margin: 0 2rem;
 
   display: flex;
   flex-direction: column;
@@ -43,7 +55,6 @@
 
   /* min-height: 100svh;
   max-height: 100svh; */
-  padding: 6rem;
 }
 
 .htk3-desc_container-desc p {
@@ -61,7 +72,8 @@
   font-size: 1.8rem;
   background: var(--color-htk-2);
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #3265cc21;
+  margin-top: 4rem;
   &:hover {
     background: #fff;
     color: var(--color-htk-2);
@@ -78,6 +90,7 @@
   .htk3-desc_container-empty {
     flex: 0;
     padding: 2rem;
+    margin-top: 0.8rem;
   }
   .htk3-desc_container-desc {
     flex: 0;
@@ -101,9 +114,12 @@
   }
 
   .htk3-desc_container-desc button {
-    width: 70%;
     padding: 1rem 2rem;
+    border-radius: 2rem;
+    min-width: 320px;
 
     font-size: 1rem;
+    border: 2px solid #fff;
+    opacity: 1;
   }
 }

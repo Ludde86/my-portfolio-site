@@ -77,7 +77,10 @@
       transparent 0,
       transparent 1580px
     );
-    margin-bottom: 0;
+    /* padding: 1rem; */
+    /* margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden; */
     /* border-top: 1rem solid #344da9; */
     /* border-bottom: 1rem solid #344da9; */
   }
@@ -109,8 +112,9 @@
   }
 
   .htk3-desc2_container-desc button {
-    width: 100%;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    min-width: 280px;
 
     font-size: 1rem;
     border: 1px solid #fff;
