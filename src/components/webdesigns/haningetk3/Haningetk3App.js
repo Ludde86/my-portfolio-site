@@ -11,12 +11,11 @@ import AboutHtk3 from "./about/AboutHtk3";
 const Haningetk3App = () => {
   return (
     <div className="htk3-app_container">
-      <div className="htk3-app_container-start_container">
-        <Haningetk3Welcome />
-        <Haningetk3Desc />
-        <Haningetk3Landing />
-        <Haningetk3Desc2 />
-      </div>
+      <Haningetk3Welcome />
+      <Haningetk3Desc />
+      <Haningetk3Landing />
+      <Haningetk3Desc2 />
+
       <AboutHtk3 />
       <Haningetk3Visions />
       <Haningetk3Footer />

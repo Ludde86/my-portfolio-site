@@ -21,9 +21,10 @@
   /* border-top: 1rem solid #344da9; */
   /* border-bottom: 1rem solid #344da9; */
 
-  background: linear-gradient(75deg, transparent 993px, #3265cc21 0);
+  background: linear-gradient(75deg, #fff 993px, #3265cc21 0);
 
   /* background: #3265cc21; */
+  z-index: 20;
 }
 
 .htk3-desc_container-content {
@@ -83,31 +84,27 @@
 @media screen and (max-width: 560px) {
   .htk3-desc_container {
     flex-direction: column;
-    background: transparent;
-
-    min-height: 88svh;
+    min-height: 100svh;
+    max-height: 200svh;
+    padding: 2rem 0;
+  }
+  .htk3-desc_container-content {
+    flex-direction: column;
   }
   .htk3-desc_container-empty {
-    flex: 0;
     padding: 2rem;
-    margin-top: 0.8rem;
   }
   .htk3-desc_container-desc {
-    flex: 0;
-    padding: 0;
-    min-height: 68svh;
+    padding: 2rem 0;
     background: var(--color-htk-2);
+    border-radius: 2rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
   }
 
   .htk3-desc_container-desc p {
     font-size: 1.4rem;
     line-height: 1.6rem;
-    font-weight: 500;
     color: #fff;
     padding: 0 2rem;
     text-align: center;
@@ -116,7 +113,7 @@
   .htk3-desc_container-desc button {
     padding: 1rem 2rem;
     border-radius: 2rem;
-    min-width: 320px;
+    min-width: 240px;
 
     font-size: 1rem;
     border: 2px solid #fff;

@@ -234,6 +234,13 @@
   .htk3-welcome_container-title_container-button_container {
     gap: 4rem;
   }
+  .htk3-welcome_container-video_container {
+    position: static;
+    height: 100svh;
+    width: 100%;
+
+    background: tan;
+  }
 }
 
 @media screen and (max-width: 460px) {

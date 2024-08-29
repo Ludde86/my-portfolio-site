@@ -89,6 +89,13 @@
     padding: 0;
   }
 
+  .htk3-visions_container-content {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 4rem;
+  }
+
   .htk3-visions_container-vision {
     margin: 0;
     margin: 1rem;

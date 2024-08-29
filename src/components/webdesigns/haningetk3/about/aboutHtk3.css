@@ -3,7 +3,7 @@
   max-height: 100svh;
   box-sizing: border-box;
 
-  background: linear-gradient(75deg, transparent 1725.5px, #3265cc21 1481.5px);
+  background: linear-gradient(75deg, #fff 1725.5px, #3265cc21 1481.5px);
   /* background: #3265cc21; */
 
   display: flex;
@@ -67,7 +67,7 @@
   .htk3-about_container {
     flex-direction: column;
 
-    min-height: 88svh;
+    min-height: 140svh;
     background: linear-gradient(75deg, #344da9 50%, transparent 50%);
     background: repeating-linear-gradient(
       75deg,
@@ -76,11 +76,52 @@
       transparent 0,
       transparent 1580px
     );
-    /* padding: 1rem; */
-    /* margin: 1rem;
-    border-radius: 2rem;
-    overflow: hidden; */
-    /* border-top: 1rem solid #344da9; */
-    /* border-bottom: 1rem solid #344da9; */
+
+    padding: 0;
+  }
+
+  .htk3-about_container-content {
+    min-height: 80svh;
+    max-height: 80svh;
+    display: flex;
+    flex-direction: column;
+
+    position: static;
+  }
+
+  .htk3-about_container-content-text {
+    height: 60svh;
+    width: 100%;
+
+    position: static;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 0;
+  }
+
+  .htk3-about_container-content-text p {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #fff;
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    padding: 1rem 2rem;
+
+    background: #344da9bb;
+    /* border-radius: 2rem; */
+  }
+
+  .htk3-about_container-content-image {
+    position: static;
+
+    height: 60svh;
+    width: 100%;
+  }
+
+  .htk3-about_container-content-image img {
+    padding: 0;
   }
 }
