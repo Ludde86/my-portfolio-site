@@ -84,16 +84,6 @@ const Haningetk3Landing = () => {
                   ha kul tillsammans med andra tennisälskare. Anmäl dig idag och
                   låt oss tillsammans göra denna höst till en riktig fullträff!
                 </p>
-                <a
-                  className="htk3-landing_container-desc_container-desc-link"
-                  href="https://www.matchi.se/forms/9g6MT0BuznTHBMOqbJDq"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>
-                    Anmäl dig <MoveRight />
-                  </button>
-                </a>
               </>
             )}
 
@@ -112,15 +102,6 @@ const Haningetk3Landing = () => {
                   vecka enligt önskemål. Schemat läggs med avsikt att så långt
                   det går skapa jämna grupper efter ålder och spelerfarenhet.
                 </p>
-                <Link
-                  className="htk3-landing_container-desc_container-desc-link"
-                  to={"tennisskolan"}
-                >
-                  <button>
-                    Läs mer om tennisskolan
-                    <MoveRight />
-                  </button>
-                </Link>
               </>
             )}
 
@@ -134,9 +115,6 @@ const Haningetk3Landing = () => {
                   ett välkänt evenemang som är välbesökt kan du få stor
                   synlighet.
                 </p>
-                <button>
-                  Vill ni vara med? <MoveRight />
-                </button>
               </>
             )}
 
@@ -151,14 +129,6 @@ const Haningetk3Landing = () => {
                   fram till man fyllt 18 år. Det finns ett stort utbud tävlingar
                   för alla åldrar och kategorier.
                 </p>
-                <Link
-                  className="htk3-landing_container-desc_container-desc-link"
-                  to={"tavling"}
-                >
-                  <button>
-                    Läs mer om våra tävlingar <MoveRight />
-                  </button>
-                </Link>
               </>
             )}
           </div>
@@ -171,29 +141,83 @@ const Haningetk3Landing = () => {
                 className={animated ? "animation" : undefined}
               />
             </div>
+
+            <div className="htk3-landing_container-slider_nav-button">
+              {image === img1 && (
+                <>
+                  <a
+                    className="htk3-landing_container-slider_nav-button-link"
+                    href="https://www.matchi.se/forms/9g6MT0BuznTHBMOqbJDq"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Anmäl dig</button>
+                  </a>
+                </>
+              )}
+
+              {image === img2 && (
+                <>
+                  <Link
+                    className="htk3-landing_container-slider_nav-button-link"
+                    to={"tennisskolan"}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Läs mer om tennisskolan</button>
+                  </Link>
+                </>
+              )}
+
+              {image === img3 && (
+                <>
+                  <a
+                    className="htk3-landing_container-slider_nav-button-link"
+                    href="https://www.matchi.se/forms/9g6MT0BuznTHBMOqbJDq"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Vill ni vara med?</button>
+                  </a>
+                </>
+              )}
+
+              {image === img4 && (
+                <>
+                  <Link
+                    className="htk3-landing_container-slider_nav-button-link"
+                    to={"tavling"}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button>Läs mer om våra tävlingar</button>
+                  </Link>
+                </>
+              )}
+            </div>
+
             <div className="htk3-landing_container-slider_nav">
               <span onClick={handlePrevImage}>
-                <ChevronLeft />
+                <ChevronLeft size={32} />
               </span>
               <a
-                style={{ background: image === img1 && "#1560bd" }}
+                style={{ background: image === img1 && "#333" }}
                 onClick={() => handleSetImage(img1)}
               ></a>
               <a
-                style={{ background: image === img2 && "#1560bd" }}
+                style={{ background: image === img2 && "#333" }}
                 onClick={() => handleSetImage(img2)}
               ></a>
               <a
-                style={{ background: image === img3 && "#1560bd" }}
+                style={{ background: image === img3 && "#333" }}
                 onClick={() => handleSetImage(img3)}
               ></a>
               <a
-                style={{ background: image === img4 && "#1560bd" }}
+                style={{ background: image === img4 && "#333" }}
                 onClick={() => handleSetImage(img4)}
               ></a>
-
               <span onClick={handleNextImage}>
-                <ChevronRight />
+                <ChevronRight size={32} />
               </span>
             </div>
           </div>
