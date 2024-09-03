@@ -4,10 +4,18 @@ import bana1 from "../assets/img/utebana-1.jpg";
 import PageHeaderHtk3 from "../components/pageHeader/PageHeaderHtk3";
 
 const Haningetk3Desc2 = () => {
+  var screenWidth = window.screen.width;
+
   return (
     <div className="htk3-desc2_container">
-      <PageHeaderHtk3 header={"Våra banor"} color="#fff" />
+      <PageHeaderHtk3
+        header={"Våra banor"}
+        color={screenWidth < 560 ? "#fff" : undefined}
+      />
       <div className="htk3-desc2_container-content">
+        <div className="htk3-desc2_container-empty">
+          <img src={bana1} alt="bana1" />
+        </div>
         <div className="htk3-desc2_container-desc">
           <p>
             Haninge TK är en ideell tennisklubb belägen intill Torvalla
@@ -23,9 +31,6 @@ const Haningetk3Desc2 = () => {
               Boka bana
             </button>
           </a>
-        </div>
-        <div className="htk3-desc2_container-empty">
-          <img src={bana1} alt="bana1" />
         </div>
       </div>
       <div></div>

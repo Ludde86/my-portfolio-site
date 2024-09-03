@@ -78,8 +78,9 @@
   .htk3-desc2_container {
     flex-direction: column;
     min-height: 100svh;
-    max-height: 200svh;
+    max-height: 100%;
     padding: 0;
+    padding-bottom: 1rem;
     background: var(--color-htk-2);
   }
   .htk3-desc2_container-content {

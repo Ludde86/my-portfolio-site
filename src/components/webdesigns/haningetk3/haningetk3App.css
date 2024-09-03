@@ -4,3 +4,8 @@
   max-width: 100%;
   min-height: 100vh;
 }
+
+.htk3-app_container button {
+  border-radius: 100px;
+  opacity: 1;
+}

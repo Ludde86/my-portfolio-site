@@ -165,7 +165,11 @@ const Haningetk3Landing = () => {
 
           <div className="htk3-landing_container-slider_wrapper">
             <div className="htk3-landing_container-slider_wrapper-slider">
-              <img src={image} alt="img" className={animated && "animation"} />
+              <img
+                src={image}
+                alt="img"
+                className={animated ? "animation" : undefined}
+              />
             </div>
             <div className="htk3-landing_container-slider_nav">
               <span onClick={handlePrevImage}>

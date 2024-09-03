@@ -31,13 +31,6 @@
   overflow: hidden;
   flex: 1;
   height: 65svh;
-
-  transition: 0.5s;
-
-  &:hover {
-    text-shadow: 0 0 3rem #fff;
-    /* box-shadow: 0 0 4rem #fff; */
-  }
 }
 
 .htk3-visions_container-vision-image {
@@ -93,7 +86,7 @@
     display: flex;
     flex-direction: column;
 
-    padding-top: 4rem;
+    padding-top: 0;
   }
 
   .htk3-visions_container-vision {
@@ -101,11 +94,6 @@
     margin: 1rem;
 
     transition: 1s;
-    box-shadow: 0 0 1rem #fff;
-
-    &:hover {
-      text-shadow: 0 0 2rem #fff;
-    }
   }
 
   .htk3-visions_container-vision-text h1 {

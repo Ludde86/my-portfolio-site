@@ -64,6 +64,7 @@
   color: #fff;
   border: 2px solid #3265cc21;
   margin-top: 4rem;
+  opacity: 1;
   &:hover {
     background: #fff;
     color: var(--color-htk-2);
@@ -74,7 +75,7 @@
   .htk3-desc_container {
     flex-direction: column;
     min-height: 100svh;
-    max-height: 100svh;
+    max-height: 100%;
     padding: 2rem 0;
   }
   .htk3-desc_container-content {
@@ -101,7 +102,7 @@
   }
 
   .htk3-desc_container-desc button {
-    margin-top: 2rem;
+    margin: 0;
     padding: 1rem 2rem;
     border-radius: 2rem;
     min-width: 240px;

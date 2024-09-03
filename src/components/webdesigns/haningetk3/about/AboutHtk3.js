@@ -11,12 +11,6 @@ const AboutHtk3 = () => {
       <div className="htk3-about_container-content">
         <div className="htk3-about_container-content-text">
           <p>
-            Haninge TK är en ideell tennisklubb belägen intill Torvalla
-            idrottsanläggning. Vi har två banor med Latex-Ite beläggning i vår
-            tennishall i Torvalla och två utebanor med grus som ligger belägna i
-            sågen, Haningevallens område.
-          </p>
-          <p>
             I föreningen arbetar vi alla aktivt med vår vision och våra
             värdegrunder. Tennis är för alla, engagemang, glädje, Gemenskap och
             Utveckling förenar oss. Vi bedriver träningsgrupper för, Mini

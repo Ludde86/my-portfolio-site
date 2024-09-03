@@ -8,7 +8,7 @@
 
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 2rem 4rem;
 }
 
 .htk3-about_container-content {
@@ -20,6 +20,7 @@
 }
 
 .htk3-about_container-content-text {
+  background: #344da9bb;
   height: 60svh;
   width: 60%;
 
@@ -31,19 +32,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
-  padding: 6rem;
 }
 
 .htk3-about_container-content-text p {
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   color: #fff;
   text-align: start;
   /* margin-bottom: 2rem; */
   padding: 2rem;
+  text-align: center;
 
-  background: #344da9bb;
   /* border-radius: 2rem; */
 }
 
@@ -54,28 +53,30 @@
 
   height: 60svh;
   width: 60%;
+  /* padding: 2rem;
+  margin: 4rem; */
 }
 
 .htk3-about_container-content-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 0 8rem;
 }
 
 @media screen and (max-width: 560px) {
   .htk3-about_container {
     flex-direction: column;
 
-    min-height: 130svh;
+    min-height: 100svh;
+    max-height: 100%;
     background: #fff;
 
     padding: 0;
   }
 
   .htk3-about_container-content {
-    min-height: 80svh;
-    max-height: 80svh;
+    min-height: 100svh;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -83,8 +84,11 @@
   }
 
   .htk3-about_container-content-text {
-    height: 60svh;
+    background: #fff;
+    /* height: 60svh; */
     width: 100%;
+    min-height: 100svh;
+    max-height: 100%;
 
     position: static;
 
@@ -96,21 +100,20 @@
   }
 
   .htk3-about_container-content-text p {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
     color: #333;
     text-align: center;
     /* margin-bottom: 2rem; */
     padding: 1rem 2rem;
 
-    background: #fff;
     /* border-radius: 2rem; */
   }
 
   .htk3-about_container-content-image {
     position: static;
 
-    height: 60svh;
+    height: 50svh;
     width: 100%;
   }
 

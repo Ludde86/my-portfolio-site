@@ -294,9 +294,10 @@
     position: absolute;
     right: 0;
     left: 0;
-    top: 8svh;
+    top: 0;
+    margin-top: 8svh;
 
-    border-radius: 0.2rem;
+    border-radius: 0;
     overflow: hidden;
 
     animation: fade-in 1s forwards;
@@ -304,15 +305,16 @@
     opacity: 0;
   }
 
-  .htk3-welcome_container-video_container {
+  /* .htk3-welcome_container-video_container {
     position: absolute;
     right: 0;
-    left: 0;
-    top: 8svh;
-  }
+    left: 10vw;
+    top: 27svh;
+  } */
 
   .htk3-welcome_container-video_container video {
-    height: 100svh;
+    min-height: 100svh;
+    max-width: 100%;
     border-radius: 0;
   }
 }

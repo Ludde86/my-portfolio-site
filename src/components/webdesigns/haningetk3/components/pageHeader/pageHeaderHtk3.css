@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin: 2rem 0;
 }
 
 .htk3-page_header-header {
@@ -24,7 +25,6 @@
   .htk3-page_header {
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
   }
   .htk3-page_header-header {
     color: var(--color-htk-2);
