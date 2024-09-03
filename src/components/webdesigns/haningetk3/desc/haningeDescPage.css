@@ -10,17 +10,6 @@
 
   padding: 4rem;
 
-  /* background: linear-gradient(75deg, transparent 50%, #344da9 50%); */
-  /* background: repeating-linear-gradient(
-    75deg,
-    #344da9,
-    #344da9 503px,
-    transparent 0,
-    transparent 1042px
-  ); */
-  /* border-top: 1rem solid #344da9; */
-  /* border-bottom: 1rem solid #344da9; */
-
   background: linear-gradient(75deg, #fff 993px, #3265cc21 0);
 
   /* background: #3265cc21; */
@@ -85,7 +74,7 @@
   .htk3-desc_container {
     flex-direction: column;
     min-height: 100svh;
-    max-height: 200svh;
+    max-height: 100svh;
     padding: 2rem 0;
   }
   .htk3-desc_container-content {
@@ -100,17 +89,19 @@
     border-radius: 2rem;
 
     align-items: center;
+    max-height: 75svh;
   }
 
   .htk3-desc_container-desc p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.6rem;
     color: #fff;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
   }
 
   .htk3-desc_container-desc button {
+    margin-top: 2rem;
     padding: 1rem 2rem;
     border-radius: 2rem;
     min-width: 240px;

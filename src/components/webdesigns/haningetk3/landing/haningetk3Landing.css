@@ -322,7 +322,7 @@
   .htk3-landing_container-content {
     flex-direction: column;
 
-    padding: 2rem;
+    padding: 2rem 0;
     width: 100%;
   }
 
@@ -331,7 +331,7 @@
   }
 
   .htk3-landing_container-desc_container-desc {
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   .htk3-landing_container-desc_container-desc h3 {
@@ -341,8 +341,9 @@
   .htk3-landing_container-desc_container-desc p {
     text-align: center;
     color: var(--color-htk-3);
-    font-size: 1.2rem;
-    line-height: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin: 0;
   }
 
   .htk3-landing_container-desc_container-desc button {
@@ -362,9 +363,6 @@
     display: flex;
     aspect-ratio: 1 / 1;
     overflow-x: auto;
-    min-width: 100%;
-    min-height: 50svh;
-    max-height: 50svh;
 
     box-shadow: none;
     margin: 0;
@@ -372,7 +370,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.4rem;
+    border-radius: 2rem;
   }
 
   .htk3-landing_container-slider_wrapper-slider::-webkit-scrollbar {

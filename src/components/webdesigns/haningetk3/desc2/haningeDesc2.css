@@ -79,14 +79,18 @@
     flex-direction: column;
     min-height: 100svh;
     max-height: 200svh;
-    padding: 2rem 0;
+    padding: 0;
     background: var(--color-htk-2);
   }
   .htk3-desc2_container-content {
     flex-direction: column;
   }
   .htk3-desc2_container-empty {
-    padding: 2rem;
+    padding: 0;
+  }
+  .htk3-desc2_container-empty img {
+    border-radius: 2rem;
+    min-width: 320px;
   }
   .htk3-desc2_container-desc {
     padding: 2rem 0;

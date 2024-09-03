@@ -6,7 +6,7 @@ import PageHeaderHtk3 from "../components/pageHeader/PageHeaderHtk3";
 const Haningetk3Desc2 = () => {
   return (
     <div className="htk3-desc2_container">
-      <PageHeaderHtk3 header={"Våra banor"} />
+      <PageHeaderHtk3 header={"Våra banor"} color="#fff" />
       <div className="htk3-desc2_container-content">
         <div className="htk3-desc2_container-desc">
           <p>
