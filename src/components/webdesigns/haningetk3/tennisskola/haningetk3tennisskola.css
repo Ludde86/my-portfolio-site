@@ -37,6 +37,12 @@
   text-align: start;
   color: var(--color-htk-2);
 }
+
+#page-title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .htk3-tennisskola_container-desc_container p {
   font-size: 1.6rem;
   text-align: start;

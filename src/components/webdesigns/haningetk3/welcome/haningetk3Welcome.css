@@ -109,7 +109,7 @@
 .htk3-welcome_container-title_container-button_container {
   display: flex;
   gap: 10rem;
-  margin-top: 2rem;
+  margin-top: 6.6rem;
 }
 
 .htk3-welcome_container-title_container-button_container button {
@@ -147,14 +147,21 @@
 
 .htk3-welcome_container-video_container {
   position: absolute;
-  right: 5vw;
-  top: 27svh;
-  border-radius: 0.2rem;
+  right: 2vw;
+  top: 26svh;
   overflow: hidden;
 
   animation: fade-in 3s forwards;
   animation-delay: 1.5s;
   opacity: 0;
+}
+
+.htk3-welcome_container-video_container video {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  width: 512px;
+  border-radius: 100%;
 }
 
 @keyframes fade-in {
@@ -234,6 +241,11 @@
   .htk3-welcome_container-title_container-button_container {
     gap: 4rem;
   }
+  .htk3-welcome_container-video_container {
+    position: static;
+    height: 100svh;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -256,8 +268,11 @@
 
   .htk3-welcome_container-title_container h1 {
     font-size: 2.6rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.6rem;
     line-height: 2.6rem;
+  }
+  .htk3-welcome_container-title_container p {
+    font-size: 1.2rem;
   }
   .htk3-welcome_container-title_container-button_container {
     flex-direction: column;
@@ -267,6 +282,7 @@
     padding: 1rem 2rem;
     font-size: 1.4rem;
     min-width: 80%;
+    border-radius: 2rem;
   }
 
   #htk3-welcome_container-title_container-button_container-service-button {
@@ -275,13 +291,30 @@
   }
 
   .htk3-welcome_container-video_container {
+    position: absolute;
     right: 0;
-    top: 1rem;
-    border-radius: 0.2rem;
+    left: 0;
+    top: 0;
+    margin-top: 8svh;
+
+    border-radius: 0;
     overflow: hidden;
 
     animation: fade-in 1s forwards;
     animation-delay: 1.5s;
     opacity: 0;
+  }
+
+  /* .htk3-welcome_container-video_container {
+    position: absolute;
+    right: 0;
+    left: 10vw;
+    top: 27svh;
+  } */
+
+  .htk3-welcome_container-video_container video {
+    min-height: 100svh;
+    max-width: 100%;
+    border-radius: 0;
   }
 }

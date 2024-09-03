@@ -1,6 +1,7 @@
 import React from "react";
 import "./haningetk3tennisskola.css";
 import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
+import Haningetk3Footer from "../footer/Haningetk3Footer";
 
 const Haningetk3Tennisskola = () => {
   return (
@@ -11,7 +12,7 @@ const Haningetk3Tennisskola = () => {
         <div className="htk3-welcome_container-section_container">
           <div className="htk3-welcome_container-title_container">
             <div>
-              <h2>Tennisskolan</h2>
+              <h2 id="page-title">Tennisskolan</h2>
             </div>
 
             <p>
@@ -198,6 +199,7 @@ const Haningetk3Tennisskola = () => {
           </div>
         </div>
       </div>
+      <Haningetk3Footer />
     </>
   );
 };

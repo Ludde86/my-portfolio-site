@@ -4,20 +4,22 @@
   box-sizing: border-box;
 
   display: flex;
-  /* background: linear-gradient(75deg, transparent 50%, #344da9 50%); */
-  /* background: repeating-linear-gradient(
-    75deg,
-    #344da9,
-    #344da9 503px,
-    transparent 0,
-    transparent 1042px
-  ); */
-  /* border-top: 1rem solid #344da9; */
-  /* border-bottom: 1rem solid #344da9; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-  background: linear-gradient(75deg, transparent 1041px, #3265cc21 0);
+  padding: 4rem;
+
+  background: linear-gradient(75deg, #fff 993px, #3265cc21 0);
 
   /* background: #3265cc21; */
+  z-index: 20;
+}
+
+.htk3-desc_container-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .htk3-desc_container-empty {
@@ -34,7 +36,7 @@
 
 .htk3-desc_container-desc {
   flex: 1;
-  /* margin: 0 6rem; */
+  margin: 0 2rem;
 
   display: flex;
   flex-direction: column;
@@ -43,7 +45,6 @@
 
   /* min-height: 100svh;
   max-height: 100svh; */
-  padding: 6rem;
 }
 
 .htk3-desc_container-desc p {
@@ -61,7 +62,9 @@
   font-size: 1.8rem;
   background: var(--color-htk-2);
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #3265cc21;
+  margin-top: 4rem;
+  opacity: 1;
   &:hover {
     background: #fff;
     color: var(--color-htk-2);
@@ -71,39 +74,41 @@
 @media screen and (max-width: 560px) {
   .htk3-desc_container {
     flex-direction: column;
-    background: transparent;
-
-    min-height: 88svh;
+    min-height: 100svh;
+    max-height: 100%;
+    padding: 2rem 0;
+  }
+  .htk3-desc_container-content {
+    flex-direction: column;
   }
   .htk3-desc_container-empty {
-    flex: 0;
     padding: 2rem;
   }
   .htk3-desc_container-desc {
-    flex: 0;
-    padding: 0;
-    min-height: 68svh;
+    padding: 2rem 0;
     background: var(--color-htk-2);
+    border-radius: 2rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    max-height: 75svh;
   }
 
   .htk3-desc_container-desc p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.6rem;
-    font-weight: 500;
     color: #fff;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
   }
 
   .htk3-desc_container-desc button {
-    width: 70%;
+    margin: 0;
     padding: 1rem 2rem;
+    border-radius: 2rem;
+    min-width: 240px;
 
     font-size: 1rem;
+    border: 2px solid #fff;
+    opacity: 1;
   }
 }
