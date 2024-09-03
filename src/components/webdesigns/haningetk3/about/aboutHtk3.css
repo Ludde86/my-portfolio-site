@@ -67,15 +67,8 @@
   .htk3-about_container {
     flex-direction: column;
 
-    min-height: 140svh;
-    background: linear-gradient(75deg, #344da9 50%, transparent 50%);
-    background: repeating-linear-gradient(
-      75deg,
-      #344da9,
-      #344da9 1042px,
-      transparent 0,
-      transparent 1580px
-    );
+    min-height: 130svh;
+    background: #fff;
 
     padding: 0;
   }
@@ -105,12 +98,12 @@
   .htk3-about_container-content-text p {
     font-size: 1rem;
     line-height: 1rem;
-    color: #fff;
+    color: #333;
     text-align: center;
     /* margin-bottom: 2rem; */
     padding: 1rem 2rem;
 
-    background: #344da9bb;
+    background: #fff;
     /* border-radius: 2rem; */
   }
 

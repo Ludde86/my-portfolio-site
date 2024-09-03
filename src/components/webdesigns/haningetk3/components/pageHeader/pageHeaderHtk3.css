@@ -33,4 +33,7 @@
     text-align: center;
     text-transform: uppercase;
   }
+  .htk3-page_header-underline {
+    margin-left: 0;
+  }
 }

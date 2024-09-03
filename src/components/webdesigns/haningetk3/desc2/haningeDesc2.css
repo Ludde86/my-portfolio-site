@@ -77,45 +77,28 @@
 @media screen and (max-width: 560px) {
   .htk3-desc2_container {
     flex-direction: column;
-
-    min-height: 88svh;
-    background: linear-gradient(75deg, #344da9 50%, transparent 50%);
-    background: repeating-linear-gradient(
-      75deg,
-      #344da9,
-      #344da9 1042px,
-      transparent 0,
-      transparent 1580px
-    );
-    /* padding: 1rem; */
-    /* margin: 1rem;
-    border-radius: 2rem;
-    overflow: hidden; */
-    /* border-top: 1rem solid #344da9; */
-    /* border-bottom: 1rem solid #344da9; */
-  }
-
-  .htk3-desc2_container-empty {
-    flex: 0;
-    margin: 2rem 0;
-  }
-
-  .htk3-desc2_container-desc {
-    flex: 0;
-    padding: 0;
-    min-height: 58svh;
+    min-height: 100svh;
+    max-height: 200svh;
+    padding: 2rem 0;
     background: var(--color-htk-2);
-
-    display: flex;
+  }
+  .htk3-desc2_container-content {
     flex-direction: column;
-    justify-content: space-around;
+  }
+  .htk3-desc2_container-empty {
+    padding: 2rem;
+  }
+  .htk3-desc2_container-desc {
+    padding: 2rem 0;
+
+    border-radius: 2rem;
+
     align-items: center;
   }
 
   .htk3-desc2_container-desc p {
     font-size: 1.4rem;
     line-height: 1.6rem;
-    font-weight: 500;
     color: #fff;
     padding: 0 2rem;
     text-align: center;
@@ -124,9 +107,11 @@
   .htk3-desc2_container-desc button {
     padding: 1rem 2rem;
     border-radius: 2rem;
-    min-width: 280px;
+    min-width: 240px;
 
     font-size: 1rem;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+    opacity: 1;
+    margin-top: 2rem;
   }
 }
