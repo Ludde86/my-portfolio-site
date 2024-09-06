@@ -73,16 +73,29 @@ const Haningetk3Landing = () => {
                 <h3>Höstterminen 2024</h3>
                 <p>
                   Hej! Vi är glada att meddela att höstterminen är igång, och vi
-                  vill varmt välkomna dig till en ny säsong fylld med spänning,
-                  utveckling och glädje på tennisbanan. Oavsett om du är
-                  nybörjare eller erfaren spelare, har vi något för dig.
+                  vill varmt välkomna alla medlemmar, nya som gamla, tillbaka
+                  efter sommaren. Framför oss har vi en ny säsong fylld med
+                  spänning, utveckling och med massor av glädje på
+                  tennisbanorna.
                 </p>
                 <p>
-                  Under höstens träningar kommer vi att fokusera på att
-                  förbättra teknik, strategi och kondition i en inspirerande och
-                  kamratlig miljö. Missa inte chansen att utveckla ditt spel och
-                  ha kul tillsammans med andra tennisälskare. Anmäl dig idag och
-                  låt oss tillsammans göra denna höst till en riktig fullträff!
+                  Under kommande hösttermin är det fortsatt mycket träning på
+                  banorna eftermiddag och kvällstid.
+                </p>
+                <p>
+                  Under höstlovet kommer det finnas möjlighet till en plats på
+                  heldagsläger så håll utsikt efter uppsatt lapp i hallen och på
+                  mailen. Begränsade platser!
+                </p>
+                <p>
+                  Under v44 är det åter dags igen för vårt årliga
+                  klubbmästerskap där det ska spelas om nya pokaler och vinnare
+                  som ska försöka försvar sina titlar.
+                </p>
+                <p>
+                  Det är en spännande höst som ligger framför oss och
+                  tillsammans kommer vi också få väldigt roligt! Sen ska våra
+                  pojkar 15 börja spela seriespel, vi är så stolta!
                 </p>
               </>
             )}
@@ -95,12 +108,19 @@ const Haningetk3Landing = () => {
                   av varierande åldrar - allt från minitennis till vuxengrupper.
                 </p>
                 <p>
+                  Vi kan stolt säga att vi är en av de billigaste
+                  tennisklubbarna i Stockholmsområdet då de är viktigt för oss
+                  att ge möjligheten för alla barn och ungdomar som vill utöva
+                  tennis att dem skall få göra detta. Tennis är väldens
+                  roligaste sport!
+                </p>
+                <p>
                   Tennisskolan löper terminsvis och pågår alla dagar i veckan,
                   dock med uppehåll för skollov. Träningen pågår i regel under
-                  en timme per gång och standarduppsättningen är en tränare och
-                  4-6 elever. Varje elev tränar en eller flera tillfällen per
-                  vecka enligt önskemål. Schemat läggs med avsikt att så långt
-                  det går skapa jämna grupper efter ålder och spelerfarenhet.
+                  en timme per gång. Varje elev tränar en eller flera tillfällen
+                  per vecka enligt önskemål. Schemat läggs med avsikt att så
+                  långt det går skapa jämna grupper efter ålder och
+                  spelerfarenhet.
                 </p>
               </>
             )}
@@ -158,14 +178,14 @@ const Haningetk3Landing = () => {
 
               {image === img2 && (
                 <>
-                  <Link
+                  <a
                     className="htk3-landing_container-slider_nav-button-link"
-                    to={"tennisskolan"}
+                    href="/projects/htk3/tennisskola"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <button>Läs mer om tennisskolan</button>
-                  </Link>
+                  </a>
                 </>
               )}
 

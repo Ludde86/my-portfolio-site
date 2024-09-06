@@ -4,12 +4,10 @@ import "./haningetk3visions.css";
 import vision1 from "../assets/img/gladje.jpg";
 import vision2 from "../assets/img/gemenskap.jpg";
 import vision3 from "../assets/img/utveckling.jpg";
-import PageHeaderHtk3 from "../components/pageHeader/PageHeaderHtk3";
 
 const Haningetk3Visions = () => {
   return (
     <div className="htk3-visions_container">
-      <PageHeaderHtk3 header="Vision och värdegrund" />
       <div className="htk3-visions_container-content">
         <div className="htk3-visions_container-vision">
           <div className="htk3-visions_container-vision-image">

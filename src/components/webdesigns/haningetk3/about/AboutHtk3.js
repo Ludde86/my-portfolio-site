@@ -1,13 +1,11 @@
 import React from "react";
 import "./aboutHtk3.css";
 
-import PageHeaderHtk3 from "../components/pageHeader/PageHeaderHtk3";
 import aboutImg from "../assets/img/utveckling-2.jpg";
 
 const AboutHtk3 = () => {
   return (
     <div className="htk3-about_container">
-      <PageHeaderHtk3 header="Haninge Tennisklubb" />
       <div className="htk3-about_container-content">
         <div className="htk3-about_container-content-text">
           <p>
@@ -18,11 +16,15 @@ const AboutHtk3 = () => {
             som du eftersöker.
           </p>
           <p>
-            Klubben har sitt egna gruppspel för nivå nybörjare till elitnivå och
-            olika tävlingar/event under året. Som medlem hos oss får du
-            förmånligt pris på strötider och får tillgång att delta i våra
-            tävlingar och gruppspel. Har du några frågor tveka inte att höra av
-            dig till oss. Varmt välkommen till oss på Haninge Tennisklubb.
+            Mål HTK ska bedriva breddtennis med Haninge kommun som huvudsakligt
+            upptagningsområde. Verksamheten ska i huvudsak omfatta:
+            <ul className="htk3-about_container-content-text-ul">
+              <li>Träning</li>
+              <li>Kontrakt- och strötidsspel</li>
+              <li>Gruppspel</li>
+              <li>Tävlingar</li>
+              <li>Trivselaktiviteter</li>
+            </ul>
           </p>
         </div>
         <div className="htk3-about_container-content-image">

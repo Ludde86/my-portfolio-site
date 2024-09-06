@@ -17,7 +17,7 @@ const Haningetk3Navbar = () => {
     >
       <div className="htk3-navbar_container-main">
         <a href="/projects/htk3/tennisskola">Tennisskola</a>
-        <a href="/projects/htk3/tavling">Tävling</a>
+        <a href="/projects/htk3/tavling">Medlemskap</a>
         <div
           id="htk3-navbar_container-icon"
           onClick={() => setExpandNavbar(!expandNavbar)}
@@ -29,7 +29,7 @@ const Haningetk3Navbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Medlemskap
+          Om oss
         </a>
         <a
           id="htk3-navbar_container-blue"
@@ -48,14 +48,11 @@ const Haningetk3Navbar = () => {
         <a href="/projects/htk3">
           <img id="htk3-nav-logo" src={logo} alt="logo" />
         </a>
-        <a href="#Hem">Vision och värdegrunde</a>
-        <a href="#Hem">Träna och spela hos oss</a>
-        <a href="#Hem">Kontrakt- och strötider</a>
-        <a href="#Hem">Om oss</a>
-        <a href="#Hem">Gruppspel</a>
-        <a href="#Hem">Styrelse</a>
-        <a href="#Hem">Klubbens historia</a>
+        <a href="#Hem">Vision och värdegrund</a>
+        <a href="#Hem">Spela och träna</a>
+        <a href="/projects/htk3/tavling">Tävla</a>
         <a href="#Hem">Kontakt</a>
+        <a href="#Hem">Klubbens historia</a>
       </div>
     </div>
   );

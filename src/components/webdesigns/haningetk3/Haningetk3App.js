@@ -14,6 +14,7 @@ const Haningetk3App = () => {
       <Haningetk3Welcome />
       <Haningetk3Desc />
       <Haningetk3Landing />
+
       <Haningetk3Desc2 />
 
       <AboutHtk3 />

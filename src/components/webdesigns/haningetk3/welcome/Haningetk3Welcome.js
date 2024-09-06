@@ -40,13 +40,10 @@ const Haningetk3Welcome = () => {
             >
               <button>Medlemskap</button>
             </a>
-            <a
-              href="https://www.matchi.se/forms/9g6MT0BuznTHBMOqbJDq"
-              target="_blank"
-              rel="noreferrer"
-            >
+
+            <a href="/projects/htk3/varabanor">
               <button id="htk3-welcome_container-title_container-button_container-service-button">
-                hösttermin 2024
+                Våra banor
               </button>
             </a>
           </div>

@@ -31,6 +31,8 @@
   align-items: center;
 
   position: relative;
+
+  gap: 4rem;
 }
 
 .htk3-landing_container-desc_container-desc {
@@ -40,7 +42,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 2rem;
 
   /* background: #fff; */
 }
@@ -58,9 +59,9 @@
 
 .htk3-landing_container-desc_container-desc p {
   color: var(--color-htk-3);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: start;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   padding-top: 2rem;
 
   opacity: 0;
@@ -102,12 +103,13 @@
 .htk3-landing_container-slider_wrapper {
   position: relative; /* for the absolute position for the slider-nav */
 
-  flex: 1;
+  flex: 1.5;
   display: flex;
   justify-content: center;
   align-items: center;
   /* min-height: 75vh;
   max-height: 75vh; */
+  /* background: #00000009; */
 }
 
 .htk3-landing_container-slider_wrapper-slider {
@@ -115,8 +117,8 @@
   aspect-ratio: 1 / 1;
   overflow-x: auto;
   /* width: 100%; */
-  min-width: 680px;
-  max-width: 680px;
+  min-width: 100%;
+  max-width: 100%;
   min-height: 620px;
   max-height: 620px;
   background-color: #fff;
@@ -124,7 +126,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 
-  /* box-shadow: 0 0 2rem #00000044; */
+  box-shadow: 0 0 1rem #0000002a;
   margin: 0 2rem;
 }
 
@@ -136,7 +138,7 @@
   flex: 1 0 100%;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 2rem;
+  border-radius: 0.02rem;
 }
 
 @keyframes fade-in-slider {
@@ -405,7 +407,7 @@
     font-size: 1.3rem;
     line-height: 1.6rem;
     margin: 0;
-    margin-bottom: 1rem;
+    padding: 1rem 0;
   }
 
   .htk3-landing_container-desc_container-desc button {

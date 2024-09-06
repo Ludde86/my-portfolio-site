@@ -1,6 +1,6 @@
 import React from "react";
 import "./haningeDesc2.css";
-import bana1 from "../assets/img/utebana-1.jpg";
+import vision1 from "../assets/img/barn-tennis.png";
 import PageHeaderHtk3 from "../components/pageHeader/PageHeaderHtk3";
 
 const Haningetk3Desc2 = () => {
@@ -9,16 +9,17 @@ const Haningetk3Desc2 = () => {
   return (
     <div className="htk3-desc2_container">
       <PageHeaderHtk3
-        header={"Våra banor"}
+        header={"Vision och värdegrund"}
         color={screenWidth < 560 ? "#fff" : undefined}
       />
       {screenWidth < 560 ? (
         <div className="htk3-desc2_container-content">
           <div className="htk3-desc2_container-desc">
             <p>
-              Haninge TK är en ideell tennisklubb belägen intill Torvalla
-              idrottsanläggning. Vi har två nymålade banor med Plexipave
-              beläggning. Dessutom har vi två grusbanor vid Sågen i Vendelsö.
+              Haninge Tennisklubb ska vara den personliga tennisklubben där alla
+              ska känna sig lika välkomna, engagemang och delaktighet
+              uppmuntras, individen ges möjlighet till utveckling och efter sin
+              egen ambitionsnivå uppnå sin högsta potential.
             </p>
             <a
               target="_blank"
@@ -26,25 +27,26 @@ const Haningetk3Desc2 = () => {
               href="https://www.matchi.se/facilities/haningetk"
             >
               <button className="hero_container-button-act_button">
-                Boka bana
+                Bli medlem
               </button>
             </a>
           </div>
           <div className="htk3-desc2_container-empty">
-            <img src={bana1} alt="bana1" />
+            <img src={vision1} alt="vision1" />
           </div>
         </div>
       ) : (
         <>
           <div className="htk3-desc2_container-content">
             <div className="htk3-desc2_container-empty">
-              <img src={bana1} alt="bana1" />
+              <img src={vision1} alt="vision1" />
             </div>
             <div className="htk3-desc2_container-desc">
               <p>
-                Haninge TK är en ideell tennisklubb belägen intill Torvalla
-                idrottsanläggning. Vi har två nymålade banor med Plexipave
-                beläggning. Dessutom har vi två grusbanor vid Sågen i Vendelsö.
+                Haninge Tennisklubb ska vara den personliga tennisklubben där
+                alla ska känna sig lika välkomna, engagemang och delaktighet
+                uppmuntras, individen ges möjlighet till utveckling och efter
+                sin egen ambitionsnivå uppnå sin högsta potential.
               </p>
               <a
                 target="_blank"
@@ -52,7 +54,7 @@ const Haningetk3Desc2 = () => {
                 href="https://www.matchi.se/facilities/haningetk"
               >
                 <button className="hero_container-button-act_button">
-                  Boka bana
+                  Bli medlem
                 </button>
               </a>
             </div>
