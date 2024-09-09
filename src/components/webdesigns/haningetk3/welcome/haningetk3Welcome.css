@@ -1,72 +1,31 @@
 .htk3-welcome_container {
-  /* border: 1px solid black; */
-
-  min-height: 100vh;
-  width: 100%;
+  box-shadow: inset 0px 90vh 20px #00000031;
 
   background-image: url("../assets/img/img-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: inset -60vw 0px 100px #0000003d;
+  min-height: 100svh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 4rem;
 }
-
-.htk3-welcome_container-section_container {
-  width: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
 .htk3-welcome_container-title_container {
-  /* border: 1px solid white; */
-  width: 50%;
-  height: 55vh;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
-  margin: 6rem;
-  padding-left: 11rem;
-  padding-bottom: 6rem;
-
-  transition: 0.5s;
-  /* background: #0000004b; */
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 0 2rem;
 }
-
-.htk3-welcome_container-title_container h3 {
-  color: var(--color-htk);
-  margin-bottom: 2rem;
-}
-
-.htk3-welcome_container-title_container h1 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 6rem;
-  font-weight: 700;
-  letter-spacing: 1.2rem;
-  line-height: 6rem;
-  /* text-shadow: 2px 2px 6px #333; */
-  text-align: start;
-
-  animation: from-left 1s forwards;
-  animation-delay: 1s;
-  opacity: 0;
-}
-
 .htk3-welcome_container-title_container h2 {
-  color: #bbb;
-  font-size: 4.2rem;
-  font-weight: 700;
-  letter-spacing: 0.6rem;
-  /* text-shadow: 2px 2px 6px #333; */
-
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  color: #ccc;
   text-align: start;
 
   animation: from-right 1s forwards;
@@ -74,16 +33,67 @@
   opacity: 0;
 }
 
-.htk3-welcome_container-title_container p {
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 500;
-
+.htk3-welcome_container-title_container h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.4rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
   text-align: start;
 
   animation: from-left 1s forwards;
   animation-delay: 1s;
   opacity: 0;
+}
+
+.htk3-welcome_container-button_container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 2rem;
+
+  opacity: 0.9;
+}
+.htk3-welcome_container-button_container button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+
+  background: var(--color-htk-2);
+
+  animation: fade-in 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+#htk3-welcome_container-service-button {
+  background: #fff;
+  color: var(--color-htk-2);
+  border: 2px solid var(--color-htk-2);
+}
+
+.htk3-welcome_container-video_container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-top: 8svh;
+
+  border-radius: 0;
+  overflow: hidden;
+
+  animation: fade-in 1s forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.htk3-welcome_container-video_container video {
+  min-height: 100svh;
+  max-width: 100%;
+  border-radius: 0;
 }
 
 @keyframes from-left {
@@ -106,215 +116,152 @@
   }
 }
 
-.htk3-welcome_container-title_container-button_container {
-  display: flex;
-  gap: 10rem;
-  margin-top: 6.6rem;
-}
-
-.htk3-welcome_container-title_container-button_container button {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  background: var(--color-htk-2);
-  color: #fff;
-  border: 2px solid var(--color-htk-2);
-  &:hover {
-    background: #fff;
-    color: var(--color-htk-2);
-  }
-
-  animation: fade-in 2s forwards;
-  animation-delay: 1s;
-  opacity: 0;
-}
-
-#htk3-welcome_container-title_container-button_container-service-button {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  background: #fff;
-  color: var(--color-htk-2);
-  border: 2px solid var(--color-htk-2);
-  z-index: 5;
-  &:hover {
-    background: var(--color-htk-2);
-    color: #fff;
-  }
-}
-
-.htk3-welcome_container-title_container-button_container a {
-  color: #fff;
-}
-
-.htk3-welcome_container-video_container {
-  position: absolute;
-  right: 2vw;
-  top: 26svh;
-  overflow: hidden;
-
-  animation: fade-in 3s forwards;
-  animation-delay: 1.5s;
-  opacity: 0;
-}
-
-.htk3-welcome_container-video_container video {
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-
-  width: 512px;
-  border-radius: 100%;
-}
-
 @keyframes fade-in {
-  50% {
-    /* transform: scale(1.2); */
-  }
   100% {
     opacity: 1;
-    /* transform: scale(1); */
   }
 }
 
-@media screen and (max-width: 1920px) {
-  .htk3-welcome_container-title_container {
-    top: 6vh;
-  }
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 }
 
-@media screen and (max-width: 1620px) {
-  .htk3-welcome_container-title_container {
-    transform: scale(0.9);
-    padding-left: 10rem;
-  }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 }
 
-@media screen and (max-width: 1520px) {
-  .htk3-welcome_container-title_container {
-    transform: scale(0.8);
-    padding-left: 8rem;
-  }
-}
-
-@media screen and (max-width: 1420px) {
-  .htk3-welcome_container-title_container {
-    transform: scale(0.7);
-    padding-left: 7rem;
-  }
-}
-
-@media screen and (max-width: 1320px) {
-  .htk3-welcome_container-title_container {
-    transform: scale(0.6);
-    padding-left: 2rem;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .htk3-welcome_container-title_container h2 {
-    font-size: 1.4rem;
-  }
-
-  .htk3-welcome_container-title_container h1 {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .htk3-welcome_container-section_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .htk3-welcome_container-title_container {
-    padding: 0;
-    margin: 0;
-    transform: scale(0.8);
-    width: 100%;
-  }
-  .htk3-welcome_container-title_container h2 {
-    font-size: 1.8rem;
-  }
-
-  .htk3-welcome_container-title_container h1 {
-    font-size: 2.2rem;
-  }
-  .htk3-welcome_container-title_container-button_container {
-    gap: 4rem;
-  }
-  .htk3-welcome_container-video_container {
-    position: static;
-    height: 100svh;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 460px) {
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
   .htk3-welcome_container {
-    box-shadow: inset 0px 90vh 20px #00000031;
+    /* border: 1px solid black; */
+
+    min-height: 100svh;
+    width: 100%;
+
+    box-shadow: inset -60vw 0px 100px #0000003d;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .htk3-welcome_container-section_container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
   .htk3-welcome_container-title_container {
-    transform: scale(0.9);
+    /* border: 1px solid white; */
+    width: 50%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 6rem;
+    padding-left: 11rem;
+    padding-bottom: 6rem;
+
+    transition: 0.5s;
+    /* background: #0000004b; */
   }
+
   .htk3-welcome_container-title_container h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0rem;
-    font-weight: 700;
-  }
-  .htk3-welcome_container-title_container h2 {
-    font-size: 1.6rem;
-    margin-bottom: 0;
-    letter-spacing: 0.4rem;
+    color: var(--color-htk);
+    margin-bottom: 2rem;
   }
 
   .htk3-welcome_container-title_container h1 {
-    font-size: 2.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1.2rem;
+    line-height: 6rem;
+    /* text-shadow: 2px 2px 6px #333; */
+    text-align: start;
+  }
+
+  .htk3-welcome_container-title_container h2 {
+    color: #bbb;
+    font-size: 4.2rem;
+    font-weight: 700;
     letter-spacing: 0.6rem;
-    line-height: 2.6rem;
+    /* text-shadow: 2px 2px 6px #333; */
+
+    text-align: start;
   }
+
   .htk3-welcome_container-title_container p {
-    font-size: 1.2rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    text-align: start;
+
+    animation: from-left 1s forwards;
+    animation-delay: 1s;
+    opacity: 0;
   }
+
   .htk3-welcome_container-title_container-button_container {
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: flex;
+    gap: 10rem;
+    margin-top: 6.6rem;
   }
+
   .htk3-welcome_container-title_container-button_container button {
-    padding: 1rem 2rem;
+    text-transform: uppercase;
     font-size: 1.4rem;
-    min-width: 80%;
-    border-radius: 2rem;
+    background: var(--color-htk-2);
+    color: #fff;
+    border: 2px solid var(--color-htk-2);
+    &:hover {
+      background: #fff;
+      color: var(--color-htk-2);
+    }
   }
 
   #htk3-welcome_container-title_container-button_container-service-button {
-    padding: 1rem 2rem;
+    text-transform: uppercase;
     font-size: 1.4rem;
+    background: #fff;
+    color: var(--color-htk-2);
+    border: 2px solid var(--color-htk-2);
+    z-index: 5;
+    &:hover {
+      background: var(--color-htk-2);
+      color: #fff;
+    }
+  }
+
+  .htk3-welcome_container-title_container-button_container a {
+    color: #fff;
   }
 
   .htk3-welcome_container-video_container {
     position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin-top: 8svh;
-
-    border-radius: 0;
+    right: 2vw;
+    top: 26svh;
     overflow: hidden;
 
-    animation: fade-in 1s forwards;
+    animation: fade-in 3s forwards;
     animation-delay: 1.5s;
     opacity: 0;
   }
 
-  /* .htk3-welcome_container-video_container {
-    position: absolute;
-    right: 0;
-    left: 10vw;
-    top: 27svh;
-  } */
-
   .htk3-welcome_container-video_container video {
-    min-height: 100svh;
-    max-width: 100%;
-    border-radius: 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    width: 512px;
+    border-radius: 100%;
   }
 }

@@ -7,6 +7,7 @@ const Haningetk3Welcome = () => {
   return (
     <div className="htk3-welcome_container">
       <Haningetk3Navbar />
+
       <div className="htk3-welcome_container-video_container">
         <video width="400px" autoPlay muted loop>
           <source src={trana} type="video/mp4" />
@@ -14,40 +15,22 @@ const Haningetk3Welcome = () => {
         </video>
       </div>
 
-      <div className="htk3-welcome_container-section_container">
-        <div className="htk3-welcome_container-title_container">
-          {/*
-          <h3>Tennisskola Tävlingar Inomhusbanor Utomhusbanor </h3>
-          */}
+      <div className="htk3-welcome_container-title_container">
+        <h2>Välkommen till</h2>
+        <h1>Haninge tennisklubb</h1>
+      </div>
+      <div className="htk3-welcome_container-button_container">
+        <a
+          href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button>Medlemskap</button>
+        </a>
 
-          <div>
-            <h2>Välkommen till</h2>
-            <h1>Haninge tennisklubb</h1>
-          </div>
-
-          {/*
-          <p>
-            Vi har träningsgrupper för både ungdomar och vuxna samt
-            privatträningar. Vi har även ett gruppspel som är öppen för alla!
-          </p>
-          */}
-
-          <div className="htk3-welcome_container-title_container-button_container">
-            <a
-              href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button>Medlemskap</button>
-            </a>
-
-            <a href="/projects/htk3/varabanor">
-              <button id="htk3-welcome_container-title_container-button_container-service-button">
-                Våra banor
-              </button>
-            </a>
-          </div>
-        </div>
+        <a href="/projects/htk3/varabanor">
+          <button id="htk3-welcome_container-service-button">Våra banor</button>
+        </a>
       </div>
     </div>
   );
