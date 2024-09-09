@@ -34,7 +34,7 @@ const Haningetk3Tennisskola = () => {
                 rel="noreferrer"
               >
                 <button id="htk3-welcome_container-title_container-button_container-service-button">
-                  hösttermin 2024
+                  Anmäl dig
                 </button>
               </a>
             </div>
@@ -48,22 +48,64 @@ const Haningetk3Tennisskola = () => {
             <p>
               Tennisskolan löper terminsvis och pågår alla dagar i veckan, dock
               med uppehåll för skollov. Träningen pågår i regel under en timme
-              per gång och standarduppsättningen är en tränare och 4-6 elever.
-              Varje elev tränar en eller flera tillfällen per vecka enligt
-              önskemål. Schemat läggs med avsikt att så långt det går skapa
-              jämna grupper efter ålder och spelerfarenhet. För att anmäla dig
-              till tennisskolan eller vuxentennis, klicka då här!
+              per gång. Varje elev tränar en eller flera tillfällen per vecka
+              enligt önskemål. Schemat läggs med avsikt att så långt det går
+              skapa jämna grupper efter ålder och spelerfarenhet.
             </p>
           </div>
 
           <div className="htk3-tennisskola_container-desc_container-desc">
-            <h1>Prislista</h1>
+            <h1>Åldrar</h1>
             <p>
-              Terminsavgifter för tennisskolan för juniorer omfattar ca 15
-              tillfällen, gäller från HT 2019.
+              <strong>3-6 år Bollskola</strong>
             </p>
             <p>
-              <strong>Tennisskola</strong>
+              Här lägger vi fokus på bollvana, racketvana, motorik och
+              koordinationsträning. De är här vi introducerar barnen till
+              tennisen genom enkla lekar och övningar. Här använder vi
+              skumgummibollar och röda tennisbollar.
+            </p>
+            <p>
+              <strong>6-9 år Minitennis</strong>
+            </p>
+            <p>
+              Nu spelar man bara med Röda bollar och fokus i träningen är
+              motorik, koordination och slagteknik i olika lekformer. Vi
+              anpassar banan och övningar efter spelarens spelnivå.
+            </p>
+
+            <p>
+              <strong>7+ Orange</strong>
+            </p>
+            <p>
+              Orange bollnivå och vi tränar nu på lite större banyta. Vi
+              fördjupar oss ännu mer i slagteknik, taktik och rörelsemönster.
+            </p>
+
+            <p>
+              <strong>9-18år Tennisskola</strong>
+            </p>
+            <p>
+              Tennisträningen anpassad till olika nivå och ålder. Grön bollnivå.
+              Vi läger djupare fokus på teknik, taktik & spelarens
+              rörelseförmåga. Den mentala och fysiska delen tar nu också större
+              utrymme av träningen. Tränaren är den som nu efter utveckling
+              bestämmer när du som spelare är redo för den gula och sista
+              bollen.
+            </p>
+
+            <h1>Prislista</h1>
+            <p>Terminsavgift gäller från HT 2019.</p>
+            <p>
+              <strong>Bollskola/Minitennis (15 tillfällen)</strong>
+            </p>
+            <p>
+              3-9 åringar, max 12 spelare på bana. I avgiften ingår ett racket.
+              Grundkursen är 2 terminer, höst/vår.
+            </p>
+            <p>1300kr per/termin.</p>
+            <p>
+              <strong>Tennisskola (15 tillfällen)</strong>
             </p>
             <p>1 träningstimme/vecka 1725kr</p>
             <p>2 träningstimmar/vecka 2975kr</p>
@@ -72,6 +114,12 @@ const Haningetk3Tennisskola = () => {
             <p>5 träningstimmar/vecka 5125kr</p>
             <p>6 träningstimmar/vecka 5875kr</p>
             <p>
+              <strong>
+                Vill du som vuxen börja spela hos oss erbjuder vi gruppträning
+                eller om du hellre vill träna privat men någon av våra tränare.
+              </strong>
+            </p>
+            <p>
               <strong>Vuxengrupp (15 tillfällen)</strong>
             </p>
             <p>Träningstid antal personer/grupp</p>
@@ -79,37 +127,82 @@ const Haningetk3Tennisskola = () => {
             <p>2 personer 3295kr/1h</p>
             <p>1 personer 6495kr/1h</p>
             <p>
-              <strong>Minitennis (15 tillfällen)</strong>
+              <strong>
+                Bollar, tränare och omklädningsrum med duschar ingår i priset.
+              </strong>
+            </p>
+          </div>
+
+          <div className="htk3-tennisskola_container-desc_container-desc">
+            <h1>Privatträning</h1>
+            <p>
+              Privatträning är öppen för både nybörjare och mer vana spelare av
+              varierande åldrar.
             </p>
             <p>
-              <i>Grundkurs</i>
+              Att då och då anlita en privattränare kan göra mycket för att
+              rätta till teknikfel och nöta in det där slaget som du har svårt
+              med.
+            </p>
+            <p>Ta kontakt med respektive tränare för att boka en tid.</p>
+            <p>
+              <strong>Nenad Markovic nenad@haningetk.se 073-734 40 60</strong>
             </p>
             <p>
-              3-5 åringar, max 12 spelare på bana, 1300kr per/termin. I avgiften
-              ingår inför hösten ett racket och inför våren en ryggsäck. Båda
-              från Babolat. I grundkursen är målet att barnen under lekande
-              former ska lära sig den grundläggande slagtekniken. Grundkursen är
-              2 terminer, höst/vår.
+              <strong>
+                Ludvig Ekelund ludvigekelundhtk@gmail.com 076-164 42 14
+              </strong>
+            </p>
+          </div>
+          <div className="htk3-tennisskola_container-desc_container-desc">
+            <h1>Videoanalys</h1>
+            <p>
+              Förbättra tekniken på dina slag! HTK erbjuder videoanalys av
+              individuell spelare: förbättra tekniken och få en grundlig
+              genomgång av dina slag som kommer hjälpa dig till att bli ännu
+              bättre tennisspelare.
             </p>
             <p>
-              T-skolans höst- och vårtermin omfattar c a 15 veckor vardera
-              (bollar, tränare och omklädningsrum med duschar ingår i priset)
+              Avgift: 1000 kr, ingår; videoutrustning, banhyra, bollar,
+              redigering av video, teori, förslag till förbättrningar och tips
+              att tänka på framöver. Om detta känns intressant kontakta Nenad
+              för mer information.
             </p>
           </div>
 
           <div className="htk3-tennisskola_container-desc_container-desc">
             <h1>Tränarna</h1>
             <p>
-              Nenad Markovic nenad.markovic@skandiamaklarna.se 073-734 40 60
+              <strong>
+                Ludvig Ekelund - Huvudansvarig för all träningsverksamhet -
+                ludvigekelundhtk@gmail.com 076-164 42 14
+              </strong>
             </p>
-            <p>Slobodan Antic 070-293 78 73</p>
-            <p>Gabriel Gliori 073-096 07 25</p>
-            <p>Ludvig Ekelund ludvigekelundhtk@gmail.com 076-164 42 14</p>
-          </div>
+            <p>
+              <strong>
+                Nenad Markovic - Ungdom och vuxenträning -
+                nenad.markovic@skandiamaklarna.se 073-734 40 60
+              </strong>
+            </p>
+            <p>
+              <strong>
+                Philip B Paluchiewicz - Undom och vuxenträning -
+                paluchiewicz@gmail.com 076-255 45 21
+              </strong>
+            </p>
 
-          <div className="htk3-tennisskola_container-desc_container-desc">
-            <h1>Ungdomssektion</h1>
-            <p>Philip B Paluchiewicz paluchiewicz@gmail.com 076-255 45 21</p>
+            <p>
+              <strong>Dante - Boll/minitennis och Tennisskola</strong>
+            </p>
+            <p>
+              <strong>Charlie/Scott - Hjälptränare</strong>
+            </p>
+            <p>
+              <strong>Slobodan Antic - Vuxenträning - 070-293 78 73</strong>
+            </p>
+            <p>
+              <strong>Gabriel Gliori - Vuxenträning - 073-096 07 25</strong>
+            </p>
           </div>
 
           <div className="htk3-tennisskola_container-desc_container-desc">
@@ -157,44 +250,6 @@ const Haningetk3Tennisskola = () => {
                 av att hoppa in i passande grupp i slutet av terminen. Detta
                 sker dock endast i mån av plats.
               </strong>
-            </p>
-          </div>
-
-          <div className="htk3-tennisskola_container-desc_container-desc">
-            <h1>Privatträning</h1>
-            <p>
-              Privatträning är öppen för både nybörjare och mer vana spelare av
-              varierande åldrar.
-            </p>
-            <p>Tränare som ger privattimmar i HTK.</p>
-            <p>
-              Att då och då anlita en privattränare kan göra mycket för att
-              rätta till teknikfel och nöta in det där slaget som du har svårt
-              med.
-            </p>
-            <p>Ta kontakt med respektive tränare för att boka en tid.</p>
-            <p>
-              <strong>Nenad Markovic nenad@haningetk.se 073-734 40 60</strong>
-            </p>
-            <p>
-              <strong>
-                Ludvig Ekelund ludvigekelundhtk@gmail.com 076-164 42 14
-              </strong>
-            </p>
-          </div>
-          <div className="htk3-tennisskola_container-desc_container-desc">
-            <h1>Videoanalys</h1>
-            <p>
-              Förbättra tekniken på dina slag! HTK erbjuder videoanalys av
-              individuell spelare: förbättra tekniken och få en grundlig
-              genomgång av dina slag som kommer hjälpa dig till att bli ännu
-              bättre tennisspelare.
-            </p>
-            <p>
-              Avgift: 1000 kr, ingår; videoutrustning, banhyra, bollar,
-              redigering av video, teori, förslag till förbättrningar och tips
-              att tänka på framöver. Om detta känns intressant kontakta Nenad
-              för mer information.
             </p>
           </div>
         </div>

@@ -7,6 +7,7 @@ import Dictionary from "./dictionary/dictionary";
 import Haningehtk3App from "./webdesigns/haningetk3/Haningetk3App";
 import Haningehtk3Tennisskola from "./webdesigns/haningetk3/tennisskola/Haningetk3Tennisskola";
 import Haningehtk3Tavling from "./webdesigns/haningetk3/tavling/Haningetk3Tavling";
+import Haningehtk3Varabanor from "./webdesigns/haningetk3/varabanor/Haningetk3Varabanor";
 
 const Main = () => (
   <Routes>
@@ -25,6 +26,7 @@ const Main = () => (
       path="/projects/htk3/tennisskola"
       Component={Haningehtk3Tennisskola}
     />
+    <Route path="/projects/htk3/varabanor" Component={Haningehtk3Varabanor} />
     <Route path="/projects/htk3/tavling" Component={Haningehtk3Tavling} />
   </Routes>
 );
