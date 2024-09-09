@@ -17,7 +17,8 @@ const Haningetk3Welcome = () => {
 
       <div className="htk3-welcome_container-title_container">
         <h2>Välkommen till</h2>
-        <h1>Haninge tennisklubb</h1>
+        <h1>Haninge</h1>
+        <h1>tennisklubb</h1>
       </div>
       <div className="htk3-welcome_container-button_container">
         <a
