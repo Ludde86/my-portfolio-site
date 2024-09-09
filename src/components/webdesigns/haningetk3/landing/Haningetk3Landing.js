@@ -88,14 +88,14 @@ const Haningetk3Landing = () => {
                   mailen. Begränsade platser!
                 </p>
                 <p>
-                  Under v44 är det åter dags igen för vårt årliga
-                  klubbmästerskap där det ska spelas om nya pokaler och vinnare
-                  som ska försöka försvar sina titlar.
-                </p>
-                <p>
                   Det är en spännande höst som ligger framför oss och
                   tillsammans kommer vi också få väldigt roligt! Sen ska våra
                   pojkar 15 börja spela seriespel, vi är så stolta!
+                </p>
+                <p>
+                  Under v44 är det åter dags igen för vårt årliga
+                  klubbmästerskap där det ska spelas om nya pokaler och vinnare
+                  som ska försöka försvar sina titlar.
                 </p>
               </>
             )}

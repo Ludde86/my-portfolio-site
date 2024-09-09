@@ -59,10 +59,10 @@
 
 .htk3-landing_container-desc_container-desc p {
   color: var(--color-htk-3);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: start;
-  line-height: 1.6rem;
-  padding-top: 2rem;
+  line-height: 1.4rem;
+  padding-top: 1rem;
 
   opacity: 0;
   transform: translateY(100%);
@@ -70,7 +70,7 @@
   animation-delay: 0.6s;
 }
 
-.htk3-landing_container-desc_container-desc button {
+/* .htk3-landing_container-desc_container-desc button {
   display: flex;
   justify-content: space-evenly;
 
@@ -85,7 +85,7 @@
     background: #fff;
     color: var(--color-htk-2);
   }
-}
+} */
 
 .htk3-landing_container-desc_container-desc-link {
   font-size: 1.2rem;
@@ -167,12 +167,16 @@
   min-width: 500px;
 
   background: var(--color-htk-2);
+  background: transparent;
+  border: 2px solid #fff;
+
   cursor: pointer;
   transition: 0.5s;
 
   &:hover {
-    background: #fff;
-    color: var(--color-htk-2);
+    background: var(--color-htk-2);
+    border: 2px solid var(--color-htk-2);
+    color: #fff;
   }
 }
 
@@ -188,6 +192,10 @@
   all: unset;
   font-size: 1.4rem;
   text-transform: uppercase;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 .htk3-landing_container-slider_nav-button span {

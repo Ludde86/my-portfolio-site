@@ -17,7 +17,7 @@ const Haningetk3Navbar = () => {
     >
       <div className="htk3-navbar_container-main">
         <a href="/projects/htk3/tennisskola">Tennisskola</a>
-        <a href="/projects/htk3/tavling">Medlemskap</a>
+        <a href="/projects/htk3/tavling">Om oss</a>
         <div
           id="htk3-navbar_container-icon"
           onClick={() => setExpandNavbar(!expandNavbar)}
@@ -29,7 +29,7 @@ const Haningetk3Navbar = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Om oss
+          Medlemskap
         </a>
         <a
           id="htk3-navbar_container-blue"

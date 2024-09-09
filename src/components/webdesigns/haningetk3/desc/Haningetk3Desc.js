@@ -13,22 +13,6 @@ const Haningetk3Desc = () => {
           <img src={logo} alt="logo" />
           <div className="htk3-desc_container-left-desc">
             <p>
-              Välkommen till vår tennisklubb! Här hos oss är alla välkomna,
-              oavsett ålder eller erfarenhetsnivå. Vi erbjuder en varm och
-              inkluderande miljö där både nybörjare och erfarna spelare kan
-              utvecklas och ha kul. Oavsett om du vill finslipa dina
-              färdigheter, träffa nya vänner eller bara njuta av spelet, har vi
-              något för dig.
-            </p>
-            <p>
-              Kom och bli en del av vår gemenskap, där glädjen för tennis
-              förenar oss alla!
-            </p>
-          </div>
-        </div>
-        <div className="htk3-desc_container-right">
-          <div className="htk3-desc_container-right-desc">
-            <p>
               Haninge TK är en ideell tennisklubb belägen intill Torvalla
               idrottsanläggning. Vi har två banor med Latex-Ite beläggning i vår
               tennishall i Torvalla och två utebanor med grus som ligger belägna
@@ -44,6 +28,22 @@ const Haningetk3Desc = () => {
               frågor tveka inte på att höra av dig till oss.
             </p>
             <p>Varmt välkommen till oss på Haninge Tennisklubb.</p>
+          </div>
+        </div>
+        <div className="htk3-desc_container-right">
+          <div className="htk3-desc_container-right-desc">
+            <p>
+              Välkommen till vår tennisklubb! Här hos oss är alla välkomna,
+              oavsett ålder eller erfarenhetsnivå. Vi erbjuder en varm och
+              inkluderande miljö där både nybörjare och erfarna spelare kan
+              utvecklas och ha kul. Oavsett om du vill finslipa dina
+              färdigheter, träffa nya vänner eller bara njuta av spelet, har vi
+              något för dig.
+            </p>
+            <p>
+              Kom och bli en del av vår gemenskap, där glädjen för tennis
+              förenar oss alla!
+            </p>
           </div>
           <img src={tennisboll} alt="tennisboll" />
           {/*
