@@ -1,7 +1,7 @@
 import React from "react";
 import "./haningeDescPage.css";
 import logo from "../assets/img/logga-medium_nobg.png";
-import tennisboll from "../assets/img/tennisboll-2.jpg";
+import welcome from "../assets/vid/valkommen-1.mp4";
 import PageHeaderHtk3 from "../components/pageHeader/PageHeaderHtk3";
 
 const Haningetk3Desc = () => {
@@ -9,9 +9,9 @@ const Haningetk3Desc = () => {
     <div id="desc" className="htk3-desc_container">
       <PageHeaderHtk3 header={"Haninge Tennisklubb"} />
       <div className="htk3-desc_container-content">
-        <div className="htk3-desc_container-left">
+        <div className="htk3-desc_container-first">
           <img src={logo} alt="logo" />
-          <div className="htk3-desc_container-left-desc">
+          <div className="htk3-desc_container-first-desc">
             <p>
               Haninge TK är en ideell tennisklubb belägen intill Torvalla
               idrottsanläggning. Vi har två banor med Latex-Ite beläggning i vår
@@ -19,8 +19,8 @@ const Haningetk3Desc = () => {
               i sågen, Haningevallens område
             </p>
             <p>
-              Vi bedriver träningsgrupper för, Mini Tennis, barn och ungdomar
-              och vuxna. Eller om det är privatträning som du eftersöker.
+              Vi bedriver träningsgrupper för minitennis, barn, ungdomar och
+              vuxna. Eller om det är privatträning som du eftersöker.
             </p>
             <p>
               Som medlem hos oss får du förmånligt pris på strötider och får
@@ -30,8 +30,12 @@ const Haningetk3Desc = () => {
             <p>Varmt välkommen till oss på Haninge Tennisklubb.</p>
           </div>
         </div>
-        <div className="htk3-desc_container-right">
-          <div className="htk3-desc_container-right-desc">
+        <div className="htk3-desc_container-second">
+          <div className="htk3-desc_container-second-desc">
+            <video width="400px" autoPlay muted loop>
+              <source src={welcome} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <p>
               Välkommen till vår tennisklubb! Här hos oss är alla välkomna,
               oavsett ålder eller erfarenhetsnivå. Vi erbjuder en varm och
@@ -45,7 +49,7 @@ const Haningetk3Desc = () => {
               förenar oss alla!
             </p>
           </div>
-          <img src={tennisboll} alt="tennisboll" />
+
           {/*
           <a
             href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
