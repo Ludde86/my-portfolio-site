@@ -1,9 +1,9 @@
 import React from "react";
 import "./pageHeaderHtk3.css";
 
-const PageHeaderHtk3 = ({ header, color }) => {
+const PageHeaderHtk3 = ({ header, color, background }) => {
   return (
-    <div className="htk3-page_header">
+    <div style={{ background: background }} className="htk3-page_header">
       <h1 style={{ color: color }} className="htk3-page_header-header">
         {header}
       </h1>

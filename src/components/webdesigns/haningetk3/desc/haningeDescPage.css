@@ -1,54 +1,55 @@
 .htk3-desc_container {
 }
 .htk3-desc_container-content {
-  flex-direction: column;
 }
 .htk3-desc_container-first {
   background: #fff;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .htk3-desc_container-first img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
   width: 100%;
-  object-fit: cover;
-  margin-bottom: 2rem;
+  border-radius: 0.2rem;
 }
 
 .htk3-desc_container-first p {
   font-size: 1.3rem;
   line-height: 1.6rem;
-  color: #333;
+  color: var(--color-htk-3);
   padding: 1rem 0;
   text-align: center;
 }
 .htk3-desc_container-second {
   background: var(--color-htk-2);
-  padding: 2rem;
 }
 
 .htk3-desc_container-second p {
   font-size: 1.3rem;
   line-height: 1.6rem;
   color: #fff;
-  padding: 1rem 0;
+  padding: 2rem;
   text-align: center;
 }
 
 .htk3-desc_container-second video {
-  width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 2rem;
+  width: 100%;
+  border-radius: 0.2rem;
 }
 
 .htk3-desc_container-second button {
-  margin: 0;
+  margin-bottom: 2rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
   min-width: 240px;
 
   font-size: 1rem;
+  text-transform: uppercase;
+  background: transparent;
   border: 2px solid #fff;
-  opacity: 1;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -65,23 +66,12 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .htk3-desc_container {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
     padding: 4rem;
-
     background: linear-gradient(75deg, #fff 993px, #3265cc21 0);
-
-    /* background: #3265cc21; */
-    z-index: 20;
   }
 
   .htk3-desc_container-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .htk3-desc_container-first {
@@ -90,8 +80,8 @@
 
   .htk3-desc_container-first img {
     width: 50%;
-    margin: 4rem 0;
-    margin-bottom: 8rem;
+    aspect-ratio: 2/1;
+    margin: 8rem 0;
   }
 
   .htk3-desc_container-first-desc {
@@ -110,8 +100,8 @@
 
   .htk3-desc_container-second video {
     width: 50%;
-    margin: 4rem 0;
-    margin-bottom: 8rem;
+    aspect-ratio: 2/1;
+    margin: 8rem 0;
   }
 
   .htk3-desc_container-second-desc {

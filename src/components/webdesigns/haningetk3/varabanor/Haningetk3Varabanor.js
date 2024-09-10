@@ -2,17 +2,20 @@ import React from "react";
 import "./haningetk3Varabanor.css";
 import Haningetk3Navbar from "../navbar/Haningetk3Navbar";
 import Haningetk3Footer from "../footer/Haningetk3Footer";
+import bana1 from "../assets/img/varbana-1.jpg";
+import bana2 from "../assets/img/varbana-2.jpg";
+import bana3 from "../assets/img/utebana-1.jpg";
 
 const Haningetk3Varabanor = () => {
   return (
     <>
-      <div className="htk3-tavling_container">
+      <div className="htk3-varabanor_container">
         <Haningetk3Navbar />
 
-        <div className="htk3-welcome_container-section_container">
-          <div className="htk3-welcome_container-title_container">
+        <div className="htk3-varabanor_container-section_container">
+          <div className="htk3-varabanor_container-title_container">
             <div>
-              <h2 id="page-title">Våra banor</h2>
+              <h2>Våra banor</h2>
             </div>
 
             <p>
@@ -21,7 +24,7 @@ const Haningetk3Varabanor = () => {
               beläggning. Dessutom har vi två grusbanor vid Sågen i Vendelsö.
             </p>
 
-            <div className="htk3-welcome_container-title_container-button_container">
+            <div className="htk3-welcome_container-button_container">
               <a
                 href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
                 target="_blank"
@@ -34,7 +37,7 @@ const Haningetk3Varabanor = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button id="htk3-welcome_container-title_container-button_container-service-button">
+                <button id="htk3-welcome_container-service-button">
                   Boka bana
                 </button>
               </a>
@@ -42,41 +45,39 @@ const Haningetk3Varabanor = () => {
           </div>
         </div>
       </div>
-      <div className="htk3-tennisskola_container-info_container">
-        <div className="htk3-tennisskola_container-desc_container">
-          <div className="htk3-tennisskola_container-desc_container-desc">
-            <h1>Spela hos oss!</h1>
-            <p>
-              Av våra ungefär 400 medlemmar är lite mer hälften Juniorer som
-              spelar i vår mycket populära tennisskola, vi erbjuder även
-              vuxenkurser samt gruppspel för dem som gillar att spela matcher.
-              Medlemmar spelar till väldigt förmånliga priser så passa på att
-              teckna ett medlemsskap redan idag!
-            </p>
-            <p>
-              Hallen är bemannad dagligen mellan 15.30-19.30 på vardagar. Övriga
-              tider kommer man in med kod som erhålls i samband med bokning av
-              bana.
-            </p>
-            <p>Välkomna att boka!</p>
-          </div>
-
-          <div className="htk3-tennisskola_container-desc_container-desc">
+      <div className="htk3-varabanor_container-info_container">
+        <div className="htk3-varabanor_container-desc_container">
+          <div className="htk3-varabanor_container-desc_container-desc">
             <h1>Våra banor</h1>
             <p>
-              <strong>Innomhus - Torvalla</strong>
+              Haninge Tennis Klubben är ägare av två tennisbanor som ligger
+              belägna i en hall på Torvalla IP och klubben har också två
+              utomhusbanor av grus i Haningevallen, belägna i sågen området.
             </p>
-            <p>2 banor hardcourt</p>
+            <p>Våra två inomhus banorna är gjorda i Latex-Ite beläggning.</p>
             <p>
-              <strong>Utomhus - Sågen, Haningevallen</strong>
+              I hallen har du som spelare också tillgång till omklädningsrum,
+              toalett och dusch.
             </p>
-            <p>2 banor grus</p>
           </div>
 
-          <div className="htk3-tennisskola_container-desc_container-desc">
-            <h1>Prislista</h1>
+          <div className="htk3-varabanor_container-desc_container-img">
+            <img src={bana1} alt="bana1"></img>
+            <img src={bana2} alt="bana2"></img>
+          </div>
+
+          <div className="htk3-varabanor_container-desc_container-desc">
+            <h1>Priser för spel på inomhusbanorna</h1>
             <p>
-              <strong>10-klippet: </strong> 10 speltimmar på valfri tid
+              Kontrakts och strötider är uppdelade i tre kategorier, A-, B- och
+              C-tider.
+            </p>
+            <p>
+              Kategorierna är prissatta enligt nedan. Nya priserna på strötider
+              gäller från 2015-03-01 tillsvidare.
+            </p>
+            <p>
+              <strong>10-klippet A-tider: </strong> 10 speltimmar på valfri tid
               Medlemspris: 1700kr
             </p>
             <p>
@@ -94,6 +95,26 @@ const Haningetk3Varabanor = () => {
               speltimmar, med följande begränsningar: * endast vardagar innan
               15:30 Medlemspris: 800kr
             </p>
+          </div>
+          <div className="htk3-varabanor_container-desc_container-desc">
+            <h1>Våra utomhusbanor</h1>
+            <p>
+              Våra två utomhusbanor är gjorda av grus - Säsong Maj till
+              September.
+            </p>
+            <p>
+              Vid våra utebanor finns ingen tillgång till omklädningsrum,
+              toalett eller dusch.
+            </p>
+            <p>Dricksvatten finns att tillgå.</p>
+          </div>
+          <div className="htk3-varabanor_container-desc_container-img">
+            <img src={bana3} alt="bana3"></img>
+            <img src={bana3} alt="bana3"></img>
+          </div>
+          <div className="htk3-varabanor_container-desc_container-desc">
+            <h1>Priser för spel på utomhusbanorna</h1>
+            <p>Priser kommer</p>
           </div>
         </div>
       </div>

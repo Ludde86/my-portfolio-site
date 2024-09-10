@@ -56,9 +56,9 @@ const Haningetk3Desc = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button>Bli medlem</button>
+            <button>Våra banor</button>
           </a>
-           */}
+ */}
         </div>
       </div>
     </div>
