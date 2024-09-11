@@ -155,20 +155,24 @@
 @media (min-width: 1200px) {
   .htk3-landing_container {
     padding: 4rem;
-    background: linear-gradient(75deg, #fff 1310px, #3265cc21 0);
+    background: linear-gradient(75deg, #fff 1360px, #3265cc21 0);
+    min-height: 140svh;
+    max-height: 140svh;
   }
 
   .htk3-landing_container-content {
-    /* border: 2px solid black; */
     width: 100%;
   }
 
   .htk3-landing_container-desc_container {
     background: transparent;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: #00000010;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.4rem#00000059;
+    margin: 8rem;
   }
 
   .htk3-landing_container-desc_container-desc {
@@ -188,10 +192,10 @@
 
   .htk3-landing_container-desc_container-desc p {
     color: var(--color-htk-3);
-    font-size: 1.5rem;
-    line-height: 1.4rem;
-    padding: 0.24em;
-    /* font-weight: 700; */
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #333;
+    text-align: start;
 
     transform: translateY(100%);
     animation: drop-down 1s forwards;
@@ -210,14 +214,15 @@
   }
 
   .htk3-landing_container-slider_wrapper-slider img {
-    width: 50%;
-    aspect-ratio: 3/2;
+    width: 60%;
+    aspect-ratio: 16/9;
     margin: 4rem 0;
+    margin-bottom: 2rem;
   }
 
   .htk3-landing_container-slider_nav-button {
     width: 25%;
-    /* top: 56%; */
+    top: 55%;
     cursor: pointer;
     transition: 0.5s;
     opacity: 0.8;
@@ -272,10 +277,8 @@
   }
 
   .htk3-landing_container-slider_nav {
-    width: 70%;
-    /* top: 50%;
-
-    transform: translateX(-50%); */
+    width: 80%;
+    top: 55%;
   }
 
   .htk3-landing_container-slider_nav a {
@@ -299,9 +302,12 @@
     color: #333;
 
     cursor: pointer;
+    background: #fff;
+    border-radius: 100rem;
+    transform: scale(1.2);
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.4);
     }
   }
 }

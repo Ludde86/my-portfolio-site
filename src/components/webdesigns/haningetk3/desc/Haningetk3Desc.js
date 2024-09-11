@@ -27,24 +27,25 @@ const Haningetk3Desc = () => {
               tillgång att delta i våra tävlingar och gruppspel. Har du några
               frågor tveka inte på att höra av dig till oss.
             </p>
-            <p>Varmt välkommen till oss på Haninge Tennisklubb.</p>
+            <p id="htk3-desc_container-highlight">
+              Varmt välkommen till oss på Haninge Tennisklubb.
+            </p>
           </div>
         </div>
         <div className="htk3-desc_container-second">
+          <video width="400px" autoPlay muted loop>
+            <source src={welcome} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className="htk3-desc_container-second-desc">
-            <video width="400px" autoPlay muted loop>
-              <source src={welcome} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
             <p>
-              Välkommen till vår tennisklubb! Här hos oss är alla välkomna,
-              oavsett ålder eller erfarenhetsnivå. Vi erbjuder en varm och
-              inkluderande miljö där både nybörjare och erfarna spelare kan
-              utvecklas och ha kul. Oavsett om du vill finslipa dina
-              färdigheter, träffa nya vänner eller bara njuta av spelet, har vi
-              något för dig.
+              Här hos oss är alla välkomna, oavsett ålder eller erfarenhetsnivå.
+              Vi erbjuder en varm och inkluderande miljö där både nybörjare och
+              erfarna spelare kan utvecklas och ha kul. Oavsett om du vill
+              finslipa dina färdigheter, träffa nya vänner eller bara njuta av
+              spelet, har vi något för dig.
             </p>
-            <p>
+            <p id="htk3-desc_container-highlight">
               Kom och bli en del av vår gemenskap, där glädjen för tennis
               förenar oss alla!
             </p>

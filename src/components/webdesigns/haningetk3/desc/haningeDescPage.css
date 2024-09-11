@@ -68,50 +68,64 @@
   .htk3-desc_container {
     flex-direction: column;
     padding: 4rem;
-    background: linear-gradient(75deg, #fff 993px, #3265cc21 0);
+    background: linear-gradient(75deg, #fff 1017px, #3265cc21 0);
   }
 
   .htk3-desc_container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .htk3-desc_container-first {
     background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60svh;
+    border-radius: 100rem;
+    padding-top: 4rem;
   }
 
   .htk3-desc_container-first img {
     width: 50%;
     aspect-ratio: 2/1;
-    margin: 8rem 0;
+    padding: 4rem 0;
   }
 
   .htk3-desc_container-first-desc {
   }
 
   .htk3-desc_container-first-desc p {
-    color: var(--color-htk-3);
-    font-size: 1.8rem;
-    line-height: 1.6rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #333;
+    text-align: start;
   }
 
   .htk3-desc_container-second {
     background: transparent;
+    width: 50%;
   }
 
   .htk3-desc_container-second video {
-    width: 50%;
     aspect-ratio: 2/1;
     margin: 8rem 0;
+    margin-bottom: 0rem;
   }
 
   .htk3-desc_container-second-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .htk3-desc_container-second-desc p {
-    color: var(--color-htk-3);
-    font-size: 1.8rem;
-    line-height: 1.6rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #333;
   }
 
   .htk3-desc_container-second button {
@@ -126,5 +140,10 @@
       background: #fff;
       color: var(--color-htk-2);
     }
+  }
+
+  #htk3-desc_container-highlight {
+    font-weight: 700;
+    color: var(--color-htk-2);
   }
 }

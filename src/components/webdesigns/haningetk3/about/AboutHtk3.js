@@ -18,14 +18,14 @@ const AboutHtk3 = () => {
           <p>
             Mål HTK ska bedriva breddtennis med Haninge kommun som huvudsakligt
             upptagningsområde. Verksamheten ska i huvudsak omfatta:
-            <ul className="htk3-about_container-content-text-ul">
-              <li>Träning</li>
-              <li>Kontrakt- och strötidsspel</li>
-              <li>Gruppspel</li>
-              <li>Tävlingar</li>
-              <li>Trivselaktiviteter</li>
-            </ul>
           </p>
+          <ul className="htk3-about_container-content-text-ul">
+            <li>Träning</li>
+            <li>Kontrakt- och strötidsspel</li>
+            <li>Gruppspel</li>
+            <li>Tävlingar</li>
+            <li>Trivselaktiviteter</li>
+          </ul>
         </div>
         <div className="htk3-about_container-content-image">
           <img src={aboutImg} alt="about-img" />

@@ -12,7 +12,7 @@
     transparent 1580px
   ); */
 
-  background: linear-gradient(75deg, #fff 1554px, #3265cc21 1481.5px);
+  background: linear-gradient(75deg, transparent 1604px, #3265cc21 1481.5px);
   /* background: #3265cc21; */
   padding: 6rem;
 
@@ -59,7 +59,7 @@
   line-height: 3rem;
   /* font-weight: 700; */
   color: #fff;
-  text-align: end;
+  text-align: start;
   /* background: var(--color-htk-2); */
   color: #333;
 }
