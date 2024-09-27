@@ -48,6 +48,7 @@ const Haningetk3Navbar = () => {
         <a href="/projects/htk3">
           <img id="htk3-nav-logo" src={logo} alt="logo" />
         </a>
+        <a href="/projects/htk3/varabanor">Våra banor</a>
         <a href="#Hem">Vision och värdegrund</a>
         <a href="#Hem">Spela och träna</a>
         <a href="/projects/htk3/tavling">Tävla</a>

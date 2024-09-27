@@ -10,7 +10,7 @@ const Haningetk3Tennisskola = () => {
         <Haningetk3Navbar />
 
         <div className="htk3-welcome_container-section_container">
-          <div className="htk3-welcome_container-title_container">
+          <div className="htk3-tennisskola_container-title_container">
             <div>
               <h2 id="page-title">Tennisskolan</h2>
             </div>
@@ -20,7 +20,7 @@ const Haningetk3Tennisskola = () => {
               varierande åldrar - allt från minitennis till vuxengrupper.
             </p>
 
-            <div className="htk3-welcome_container-title_container-button_container">
+            <div className="htk3-welcome_container-button_container">
               <a
                 href="https://www.matchi.se/forms/Jt3uUWLmTZWytQ0IJe0r"
                 target="_blank"
@@ -33,7 +33,7 @@ const Haningetk3Tennisskola = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button id="htk3-welcome_container-title_container-button_container-service-button">
+                <button id="htk3-welcome_container-service-button">
                   Anmäl dig
                 </button>
               </a>

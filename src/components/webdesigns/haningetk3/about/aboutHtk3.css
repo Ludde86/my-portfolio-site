@@ -47,7 +47,12 @@
 }
 
 .htk3-about_container-content-text li {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
   width: 100%;
+  color: #fff;
+  font-size: 1.6rem;
 }
 
 .htk3-about_container-content-image {
@@ -131,11 +136,11 @@
   }
 
   .htk3-about_container-content-text li {
-    margin-top: 1rem;
     width: 100%;
-    list-style: none;
-    text-align: center;
-    text-transform: uppercase;
+    color: #000;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+
     /* font-weight: 700; */
   }
 }

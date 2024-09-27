@@ -1,32 +1,87 @@
-.htk3-tavling_container {
+.htk3-varabanor_container {
+  background-image: url("../assets/img/varabanor-1.jpg");
   min-height: 100vh;
   width: 100%;
 
-  background-image: url("../assets/img/utebana-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: inset -60vw 0px 100px #0000003d;
 
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+}
+
+.htk3-varabanor_container-title_container {
+  height: 50svh;
+
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.htk3-tavling_container-desc_container {
+.htk3-varabanor_container-title_container h2 {
+  font-size: 3.2rem;
+  letter-spacing: 0.4rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 4rem;
+
+  animation: from-left 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.htk3-varabanor_container-title_container p {
+  width: 50%;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  color: #eee;
+
+  margin: 4rem;
+
+  animation: from-right 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.htk3-varabanor_container-desc_container {
   padding: 6rem;
 
   flex: 1;
 }
 
-.htk3-tavling_container-desc_container h2 {
-}
-.htk3-tavling_container-desc_container p {
-  font-size: 1.8rem;
+.htk3-varabanor_container-desc_container-img {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  padding: 2rem 4rem;
 }
 
-.htk3-tavling_container-image_container {
-  background-image: url("../assets/img/avatar-female.jpg");
+.htk3-varabanor_container-desc_container-img img {
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  width: 50%;
+  border-radius: 0.2rem;
+}
+
+.htk3-varabanor_container-desc_container h1 {
+  color: var(--color-htk-2);
+  text-align: start;
+}
+.htk3-varabanor_container-desc_container p {
+  font-size: 1.8rem;
+  color: var(--color-htk-3);
+  text-align: start;
+}
+
+.htk3-varabanor_container-image_container {
+  background-image: url("../assets/img/cristina-anne-costello-rank-Px49iI-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -40,12 +95,12 @@
   margin-top: 2rem;
 }
 
-.htk3-tavling_container-image_container-back_container {
+.htk3-varabanor_container-image_container-back_container {
   display: flex;
   align-items: flex-start;
 }
 
-.htk3-tavling_container-image_container-back {
+.htk3-varabanor_container-image_container-back {
   /* background: tan; */
   margin-right: 2rem;
   cursor: pointer;
@@ -58,14 +113,14 @@
   }
 }
 
-.htk3-tavling_container-image_container p {
+.htk3-varabanor_container-image_container p {
   padding-top: 0.3rem;
   margin: 0;
   font-size: 2rem;
 }
 
 @media screen and (max-width: 720px) {
-  .htk3-tavling_container {
+  .htk3-varabanor_container {
     min-height: 100vh;
 
     padding: 0rem;
@@ -75,20 +130,52 @@
     justify-content: space-evenly;
   }
 
-  .htk3-tavling_container-desc_container {
+  .htk3-varabanor_container-title_container h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.4rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0.22rem;
+
+    animation: from-left 1s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+  .htk3-varabanor_container-title_container p {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.2rem;
+    color: #eee;
+
+    margin: 0;
+    padding: 1rem 2rem;
+
+    animation: from-right 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  .htk3-varabanor_container-info_container {
+    padding: 0.2rem;
+  }
+
+  .htk3-varabanor_container-desc_container {
     padding: 2rem;
   }
 
-  .htk3-tavling_container-desc_container h2 {
-    font-size: 2rem;
-    line-height: 1.8rem;
+  .htk3-varabanor_container-desc_container h1 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding-top: 2rem;
   }
-  .htk3-tavling_container-desc_container p {
+  .htk3-varabanor_container-desc_container p {
     font-size: 1.2rem;
     line-height: 1.3rem;
   }
 
-  .htk3-tavling_container-image_container {
+  .htk3-varabanor_container-image_container {
     padding: 1rem;
     min-height: 50vh;
 
@@ -97,7 +184,23 @@
     /* padding-top: 2rem; */
   }
 
-  .htk3-tavling_container-image_container-back_container {
+  .htk3-varabanor_container-image_container-back_container {
     margin-top: 2rem;
+  }
+
+  .htk3-varabanor_container-desc_container-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .htk3-varabanor_container-desc_container-img img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0.2rem;
   }
 }
