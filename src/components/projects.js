@@ -21,21 +21,15 @@ const Projects = () => {
 
   const links = [
     "ByggRenovering",
-
-    "Haningetk1",
-    "Haningetk2",
+    "Lilitha1",
+    "Haningetk3",
     "Napra3",
-    "Napra2",
-    "Napra1",
+    "Napra4",
+    "Haningetk4",
     "HTProject",
     "React",
     "CSS",
     "JS",
-    "Napra4",
-    "Lilitha1",
-    "Haningetk4",
-    "Haningetk5",
-    "Haningetk3",
   ];
 
   const toggleCategories = () => {
@@ -43,15 +37,15 @@ const Projects = () => {
       case 0:
         return <ByggRenoveringApp1 />;
       case 1:
-        return <Haningetk1 />;
+        return <Lilitha1 />;
       case 2:
-        return <Haningetk2 />;
+        return <Haningehtk3App />;
       case 3:
         return <Napra3 />;
       case 4:
-        return <NaprapatRehab2 />;
+        return <Napra4 />;
       case 5:
-        return <Naprapatrehab />;
+        return <Haningetk4App />;
       case 6:
         return <Htproject />;
       case 7:
@@ -60,16 +54,6 @@ const Projects = () => {
         return <Challenge1 />;
       case 9:
         return <ChallengesJs />;
-      case 10:
-        return <Napra4 />;
-      case 11:
-        return <Lilitha1 />;
-      case 12:
-        return <Haningetk4App />;
-      case 13:
-        return <Haningetk5App />;
-      case 14:
-        return <Haningehtk3App />;
       default:
         return "No Tab";
     }
