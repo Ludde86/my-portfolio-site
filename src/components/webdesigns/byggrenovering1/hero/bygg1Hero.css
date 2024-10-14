@@ -51,7 +51,7 @@
 }
 
 .bygg1hero-action {
-  padding-left: 30rem;
+  padding-left: 28rem;
 }
 
 .bygg1hero-action button {
@@ -71,12 +71,16 @@
   /* transform: scale(2); */
   /* gap: 10rem; */
   /* background: #ffffff80; */
-  gap: 8rem;
+  gap: 4rem;
   padding-right: 15rem;
 }
 
 .bygg1hero-icon {
-  /* margin-right: 11rem; */
+  background: #2c515ede;
+  border-radius: 100rem;
+  padding: 1.4rem;
+  width: 80px;
+  height: 80px;
 }
 
 .bygg1hero-wave {
