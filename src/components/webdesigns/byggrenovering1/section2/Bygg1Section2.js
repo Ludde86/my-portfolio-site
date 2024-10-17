@@ -2,6 +2,8 @@ import React from "react";
 import "./bygg1Section2.css";
 
 const Bygg1Section2 = () => {
+  const screenWidth = window.matchMedia("( max-width: 560px )").matches;
+
   return (
     <div className="bygg1section2">
       <h1>Våra produkter och tjänster</h1>
@@ -25,27 +27,49 @@ const Bygg1Section2 = () => {
           <button>Priser</button>
         </div>
       </div>
+      {screenWidth ? (
+        <div className="bygg1section2-content">
+          <div
+            className="bygg1section2-content-image"
+            id="bygg1section2-content-2"
+          ></div>
+          <div className="bygg1section2-content-text">
+            <h1>Med direktlarm</h1>
+            <p>
+              Med ProVakt Säkerhets kameraövervakning får du inte bara full
+              kontroll, utan även ett system som reagerar blixtsnabbt. Vid
+              misstänkt aktivitet skickas ett omedelbart larm direkt till våra
+              operatörer, som snabbt kan vidta åtgärder och säkerställa att rätt
+              hjälp når fram. Detta ger dig tryggheten att veta att varje
+              situation hanteras snabbt och effektivt, oavsett tid på dygnet.
+              Med oss vid din sida är din säkerhet alltid under uppsikt.
+            </p>
 
-      <div className="bygg1section2-content">
-        <div className="bygg1section2-content-text">
-          <h1>Med direktlarm</h1>
-          <p>
-            Med ProVakt Säkerhets kameraövervakning får du inte bara full
-            kontroll, utan även ett system som reagerar blixtsnabbt. Vid
-            misstänkt aktivitet skickas ett omedelbart larm direkt till våra
-            operatörer, som snabbt kan vidta åtgärder och säkerställa att rätt
-            hjälp når fram. Detta ger dig tryggheten att veta att varje
-            situation hanteras snabbt och effektivt, oavsett tid på dygnet. Med
-            oss vid din sida är din säkerhet alltid under uppsikt.
-          </p>
-
-          <button>Priser</button>
+            <button>Priser</button>
+          </div>
         </div>
-        <div
-          className="bygg1section2-content-image"
-          id="bygg1section2-content-2"
-        ></div>
-      </div>
+      ) : (
+        <div className="bygg1section2-content">
+          <div className="bygg1section2-content-text">
+            <h1>Med direktlarm</h1>
+            <p>
+              Med ProVakt Säkerhets kameraövervakning får du inte bara full
+              kontroll, utan även ett system som reagerar blixtsnabbt. Vid
+              misstänkt aktivitet skickas ett omedelbart larm direkt till våra
+              operatörer, som snabbt kan vidta åtgärder och säkerställa att rätt
+              hjälp når fram. Detta ger dig tryggheten att veta att varje
+              situation hanteras snabbt och effektivt, oavsett tid på dygnet.
+              Med oss vid din sida är din säkerhet alltid under uppsikt.
+            </p>
+
+            <button>Priser</button>
+          </div>
+          <div
+            className="bygg1section2-content-image"
+            id="bygg1section2-content-2"
+          ></div>
+        </div>
+      )}
 
       <div className="bygg1section2-content">
         <div

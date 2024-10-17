@@ -46,3 +46,24 @@
   background: #2c515e;
   transition: 0.3s;
 }
+
+@media screen and (max-width: 560px) {
+  .bygg1nav {
+    height: 6rem;
+  }
+
+  .bygg1nav-img img {
+    width: 100%;
+  }
+  .bygg1nav ul {
+    flex: 3;
+  }
+  .bygg1nav-link li {
+    font-size: 0.8rem;
+    letter-spacing: 0rem;
+  }
+
+  .hover-underline {
+    height: 1px;
+  }
+}
