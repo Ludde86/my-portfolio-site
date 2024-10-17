@@ -1,0 +1,130 @@
+.bygg1section2 {
+  min-height: 100svh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 0 12rem;
+
+  /* border: 2px solid red; */
+  padding-top: 12rem;
+}
+
+.bygg1section2-content {
+  display: flex;
+
+  background: #2c515e;
+}
+
+.bygg1section2 h1 {
+  color: #2c515e;
+  font-weight: 500;
+}
+
+.bygg1section2-content-image {
+  min-height: 75svh;
+  max-height: 75svh;
+  flex: 2;
+}
+
+.bygg1section2-content-text {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 2rem;
+}
+.bygg1section2-content-text h1 {
+  color: #fff;
+  text-align: start;
+  font-size: 2.2rem;
+}
+.bygg1section2-content-text p {
+  color: #fff;
+  text-align: start;
+  font-size: 1.4rem;
+}
+
+.bygg1section2-content-text button {
+  color: #2c515e;
+  background: #fff;
+  border-radius: 100rem;
+  margin-top: 4rem;
+}
+
+#bygg1section2-content-1 {
+  background-image: url("../../assets/images/camera-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#bygg1section2-content-2 {
+  background-image: url("../../assets/images/emergency-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#bygg1section2-content-3 {
+  background-image: url("../../assets/images/house-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 560px) {
+  .bygg1section2 {
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  .bygg1section2-content {
+    flex-direction: column;
+  }
+
+  .bygg1section2 h1 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+  }
+
+  .bygg1section2-content-image {
+    min-height: 75svh;
+    max-height: 75svh;
+    flex: 2;
+  }
+
+  .bygg1section2-content-text {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 1rem;
+  }
+  .bygg1section2-content-text h1 {
+    color: #fff;
+    text-align: start;
+    font-size: 1.6rem;
+  }
+  .bygg1section2-content-text p {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  .bygg1section2-content-text button {
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}

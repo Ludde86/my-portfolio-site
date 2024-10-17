@@ -1,0 +1,140 @@
+.bygg1section {
+  min-height: 100svh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 0 12rem;
+
+  /* border: 2px solid red; */
+  padding-top: 12rem;
+}
+
+.bygg1section-text {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.bygg1section-text h1 {
+  color: #2c515e;
+  text-align: start;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+.bygg1section-text p {
+  text-align: start;
+  font-size: 1.6rem;
+}
+.bygg1section-text h3 {
+  color: #2c515e;
+  text-align: start;
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.bygg1section-text ul {
+  list-style: none;
+}
+.bygg1section-text li {
+  text-align: start;
+  font-size: 1.4rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-top: 1rem;
+}
+.bygg1section-text button {
+  background: #2c515e;
+  border-radius: 100rem;
+  margin-top: 4rem;
+
+  &:hover {
+    color: #fff;
+  }
+}
+.bygg1section-text-icon {
+  color: #fff;
+  background: #2c515e;
+  border-radius: 100rem;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0.6rem;
+  margin-right: 2rem;
+}
+.bygg1section-image {
+  flex: 1;
+}
+
+.bygg1section-image img {
+  width: 100%;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+  border-radius: 4rem;
+}
+
+@media screen and (max-width: 560px) {
+  .bygg1section {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 0;
+  }
+
+  .bygg1section-text {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bygg1section-text h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+  }
+  .bygg1section-text p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .bygg1section-text h3 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .bygg1section-text ul {
+    padding: 1rem;
+  }
+  .bygg1section-text li {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .bygg1section-text button {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 1rem 4rem;
+  }
+  .bygg1section-text-icon {
+    color: #fff;
+    background: #2c515e;
+    border-radius: 100rem;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0.6rem;
+    margin-right: 2rem;
+  }
+  .bygg1section-image {
+    flex: 1;
+  }
+
+  .bygg1section-image img {
+    aspect-ratio: 1/1;
+    border-radius: 0;
+  }
+}
