@@ -15,12 +15,14 @@ import Haningetk4App from "./webdesigns/haningetk4/Haningetk4App";
 import Haningetk5App from "./webdesigns/haningetk5/Haningetk5App";
 import Haningehtk3App from "./webdesigns/haningetk3/Haningetk3App";
 import ByggRenoveringApp1 from "./webdesigns/byggrenovering1/ByggRenoveringApp1";
+import ByggRenoveringApp2 from "./webdesigns/byggrenovering2/ByggRenoveringApp2";
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const links = [
     "ByggRenovering",
+    "Sakerhet",
     "Lilitha1",
     "Haningetk3",
     "Napra3",
@@ -35,24 +37,26 @@ const Projects = () => {
   const toggleCategories = () => {
     switch (activeTab) {
       case 0:
-        return <ByggRenoveringApp1 />;
+        return <ByggRenoveringApp2 />;
       case 1:
-        return <Lilitha1 />;
+        return <ByggRenoveringApp1 />;
       case 2:
-        return <Haningehtk3App />;
+        return <Lilitha1 />;
       case 3:
-        return <Napra3 />;
+        return <Haningehtk3App />;
       case 4:
-        return <Napra4 />;
+        return <Napra3 />;
       case 5:
-        return <Haningetk4App />;
+        return <Napra4 />;
       case 6:
-        return <Htproject />;
+        return <Haningetk4App />;
       case 7:
-        return <Webdesign1 />;
+        return <Htproject />;
       case 8:
-        return <Challenge1 />;
+        return <Webdesign1 />;
       case 9:
+        return <Challenge1 />;
+      case 10:
         return <ChallengesJs />;
       default:
         return "No Tab";

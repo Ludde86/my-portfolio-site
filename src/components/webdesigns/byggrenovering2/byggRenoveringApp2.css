@@ -1,0 +1,22 @@
+.byggRenoveringApp2 {
+  position: relative;
+  min-height: 100svh;
+  /* background: #333; */
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#byggRenoveringApp2-content-brighter {
+  background: #ffffff80;
+}
+#byggRenoveringApp2-content-darker {
+  background: #00000080;
+}
+
+/* .byggRenoveringApp2 h1 {
+  font-family: "Source Code Pro", monospace;
+} */
