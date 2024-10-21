@@ -1,0 +1,106 @@
+.energi1section4 {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  padding-bottom: 6rem;
+  box-shadow: inset 0 100rem 100rem #ffffffbb;
+}
+
+.energi1section4-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  flex: 1;
+  padding: 0 4rem;
+}
+
+.energi1section4-text h1 {
+  color: #f87104;
+  text-align: start;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.energi1section4-text-faq h1 {
+  color: #f87104;
+  text-align: start;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.energi1section4-text-faq p {
+  color: #333;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.energi1section4-logo {
+  flex: 1;
+  background-image: url("../../assets/images/bygg-logga.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* width: 100%; */
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 560px) {
+  .energi1section4 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 6rem;
+    box-shadow: inset 0 100rem 100rem #ffffffbb;
+  }
+
+  .energi1section4-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+    padding: 0;
+  }
+
+  .energi1section4-text h1 {
+    color: #2c515e;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem;
+  }
+
+  .energi1section4-text-faq h1 {
+    color: #2c515e;
+
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .energi1section4-text-faq p {
+    color: #2c515e;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .energi1section4-logo {
+    flex: 1;
+    background-image: url("../../assets/images/hus-logga.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 100%; */
+    aspect-ratio: 1/1;
+  }
+}

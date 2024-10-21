@@ -1,0 +1,216 @@
+.energi1hero {
+  position: relative;
+  min-height: 100svh;
+  max-height: 100svh;
+  width: 100%;
+  background-image: url("../../assets/images/vind-2.jpg");
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: inset 0 100rem 100rem #00000040;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* padding: 8rem 0; */
+
+  border: 1px solid red;
+}
+
+.energi1hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  width: 75%;
+}
+
+.energi1hero-text h1 {
+  color: #ffffffd5;
+  font-size: 6rem;
+  font-weight: 600;
+  padding-top: 4rem;
+  text-align: start;
+  line-height: 6rem;
+
+  opacity: 0;
+  animation: 2s fade forwards;
+}
+
+.energi1hero-text-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 8rem;
+}
+
+.energi1hero-text p {
+  color: #ffffffd5;
+  text-align: start;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 4rem;
+
+  opacity: 0;
+  animation: 2s fade forwards;
+  animation-delay: 1s;
+
+  flex: 4;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    /* transform: translateX(-100%); */
+  }
+  to {
+    opacity: 1;
+    /* transform: translateX(0); */
+  }
+}
+
+.energi1hero-text-button button {
+  flex: 1;
+  border-radius: 10rem;
+  height: 8rem;
+  background: #ffffff42;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.6rem #ffffffa4;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #0c0f27;
+    background: #ffffff9f;
+    box-shadow: 0 0 0.8rem #ffab11a4;
+  }
+}
+
+.energi1hero-icons {
+  display: flex;
+  color: #fff;
+
+  /* transform: scale(2); */
+  /* gap: 10rem; */
+  /* background: #ffffff80; */
+  gap: 4rem;
+}
+
+.energi1hero-cards {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  width: 100%;
+  padding: 4rem;
+}
+
+.energi1hero-card {
+}
+
+.energi1hero-icon {
+  color: #fff;
+  background: #ffffff42;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.6rem #ffffffa4;
+  border-radius: 100rem;
+  padding: 2.6rem;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #0c0f27;
+    background: #ffffff9f;
+    box-shadow: 0 0 0.8rem #ffab11a4;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .energi1hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0;
+  }
+
+  .energi1hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-top: 6rem;
+
+    flex: 1;
+
+    width: 90%;
+  }
+
+  .energi1hero-text h1 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 0;
+  }
+  .energi1hero-text p {
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .energi1hero-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 4rem; */
+
+    z-index: 1;
+  }
+
+  .energi1hero-action {
+    padding-left: 0;
+  }
+
+  .energi1hero-action button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .energi1hero-icons {
+    display: flex;
+    color: #fff;
+
+    /* transform: scale(2); */
+    /* gap: 10rem; */
+    /* background: #ffffff80; */
+    gap: 3rem;
+    padding-right: 0;
+  }
+
+  .energi1hero-icon {
+    background: #2c515ede;
+    border-radius: 100rem;
+    padding: 1rem;
+    width: 60px;
+    height: 60px;
+  }
+
+  .energi1hero-cards {
+    display: none;
+  }
+}

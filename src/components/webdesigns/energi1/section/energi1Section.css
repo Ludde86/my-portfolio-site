@@ -1,0 +1,175 @@
+.energi1section {
+  min-height: 100svh;
+  /* background: #000000c0; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* border: 2px solid red; */
+
+  padding-top: 20%;
+}
+
+.energi1section-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4rem;
+  padding: 16rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.energi1section-content h1 {
+  color: #f87104;
+  color: #333;
+  font-size: 2.6rem;
+  font-weight: 300;
+  text-align: start;
+
+  animation: fade-in-text;
+  animation-timeline: view();
+}
+
+.energi1section-content-text {
+  margin-top: -15%;
+  width: 50%;
+  background: #333;
+  min-height: 40svh;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  animation: fade-in-text;
+  animation-timeline: view();
+}
+.energi1section-content-text h1 {
+  color: #fff;
+  text-align: start;
+  font-size: 2.6rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.energi1section-content-text p {
+  color: #fff;
+  text-align: start;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-top: 2rem;
+}
+
+@keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.energi1section-content-text-underline {
+  width: 100%;
+  height: 3px;
+  background: #f87104;
+}
+
+.energi1section-content-image {
+  flex: 1;
+}
+
+.energi1section-content-image img {
+  width: 100%;
+  height: 75svh;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 560px) {
+  .energi1section {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 0;
+  }
+
+  .energi1section-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0rem;
+    padding: 0;
+  }
+
+  .energi1section-content h1 {
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .energi1section-content-text {
+    position: absolute;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .energi1section-content-text h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    color: #fff;
+  }
+  .energi1section-content-text p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2 1rem;
+    padding-bottom: 2rem;
+  }
+  .energi1section-content-text h3 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .energi1section-text button {
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 1rem 4rem;
+  }
+  .energi1section-text-icon {
+    color: #fff;
+    background: #2c515e;
+    border-radius: 100rem;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0.6rem;
+    margin-right: 2rem;
+  }
+  .energi1section-content-image {
+    flex: 1;
+
+    display: flex;
+    padding: 1rem;
+  }
+
+  .energi1section-content-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+  }
+}
