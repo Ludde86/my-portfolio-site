@@ -132,7 +132,7 @@ const Bygg2section2 = () => {
         <div className="bygg2section2-content">
           <div
             className="bygg2section2-content-image"
-            id="bygg2section2-content-2 "
+            id="bygg2section2-content-4"
           ></div>
           <div
             className="bygg2section2-content-text"

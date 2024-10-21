@@ -8,7 +8,6 @@ const Bygg2section = () => {
   return (
     <div className="bygg2section">
       <div className="bygg2section-content">
-        <h1>Tre saker vi är riktigt bra på:</h1>
         <div className="bygg2section-content-image">
           <img src={bygg1} alt="house" />
         </div>
