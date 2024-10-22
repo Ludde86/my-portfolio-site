@@ -5,60 +5,56 @@ const Energi1section4 = () => {
   return (
     <div className="energi1section4">
       <div className="energi1section4-text">
-        <h1>FAQ – Vanliga frågor om våra byggtjänster</h1>
+        <h1>Vanliga frågor (FAQ)</h1>
 
         <div className="energi1section4-text-faq">
-          <h1>Vilka typer av projekt arbetar ni med?</h1>
+          <h1>Vad är fördelarna med att använda förnybar energi?</h1>
           <p>
-            Vi på ByggVision hanterar allt från små renoveringar och
-            ombyggnationer till större nybyggnationer och kommersiella projekt.
-            Vi anpassar oss efter ditt behov och arbetar med både privata och
-            företagskunder.
+            Förnybar energi, som sol- och vindkraft, är miljövänlig och bidrar
+            till att minska koldioxidutsläppen. Dessutom är den tillgänglig i
+            obegränsade mängder och minskar vårt beroende av fossila bränslen.
           </p>
         </div>
 
         <div className="energi1section4-text-faq">
-          <h1>Erbjuder ni kostnadsfria konsultationer?</h1>
+          <h1>Hur lång livslängd har era solpaneler och vindturbiner?</h1>
           <p>
-            Ja, vi erbjuder en kostnadsfri konsultation där vi diskuterar dina
-            idéer, går igenom förutsättningarna och ger dig en uppskattning av
-            kostnad och tidplan.
+            Våra solpaneler och vindturbiner har en livslängd på cirka 25–30 år,
+            beroende på underhåll och lokala förhållanden. Vi erbjuder också
+            support och service för att förlänga deras effektivitet och
+            hållbarhet.
           </p>
         </div>
 
         <div className="energi1section4-text-faq">
-          <h1>Hur lång tid tar ett genomsnittligt byggprojekt?</h1>
+          <h1>
+            Är det möjligt att installera både solpaneler och vindturbiner på
+            min fastighet?
+          </h1>
           <p>
-            Tidsramen för ett projekt varierar beroende på omfattningen. Vi
-            arbetar alltid med tydliga tidsplaner och informerar dig om beräknad
-            tid för just ditt projekt under planeringsfasen.
+            Ja! Vi erbjuder skräddarsydda lösningar för att kombinera både sol-
+            och vindkraft på en och samma fastighet, vilket maximerar din
+            energiproduktion och minimerar dina energikostnader.
           </p>
         </div>
 
         <div className="energi1section4-text-faq">
-          <h1>Vilka garantier ger ni på ert arbete?</h1>
+          <h1>Hur mycket underhåll kräver era system?</h1>
           <p>
-            Vi erbjuder garantier på både arbete och material, beroende på
-            projektets natur. Det säkerställer att du som kund kan känna dig
-            trygg med hållbara och långsiktiga resultat.
+            Våra system är designade för att kräva minimalt underhåll.
+            Regelbundna inspektioner och rengöring rekommenderas för att
+            säkerställa optimal prestanda, men vi erbjuder även serviceavtal för
+            att underlätta skötseln.
           </p>
         </div>
 
         <div className="energi1section4-text-faq">
-          <h1>Kan ni hjälpa till med bygglov och andra tillstånd?</h1>
+          <h1>Hur mycket kan jag spara genom att använda förnybar energi?</h1>
           <p>
-            Absolut, vi hjälper gärna till med bygglovshandlingar och ser till
-            att alla nödvändiga tillstånd finns på plats innan vi påbörjar
-            projektet.
-          </p>
-        </div>
-
-        <div className="energi1section4-text-faq">
-          <h1>Arbetar ni med miljövänliga och energieffektiva lösningar?</h1>
-          <p>
-            Ja, vi strävar alltid efter att använda hållbara material och
-            energieffektiva lösningar som minskar klimatpåverkan och ger dig
-            långsiktiga besparingar i ditt hem eller fastighet.
+            Hur mycket du sparar beror på storleken på ditt system och din
+            nuvarande energiförbrukning. Många kunder ser en betydande minskning
+            av sina elräkningar och bidrar samtidigt till en mer hållbar
+            framtid.
           </p>
         </div>
       </div>

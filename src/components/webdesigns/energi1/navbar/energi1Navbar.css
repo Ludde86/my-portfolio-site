@@ -73,20 +73,37 @@
 @media screen and (max-width: 560px) {
   .energi1nav {
     height: 6rem;
+    padding: 0 1rem;
   }
 
   .energi1nav-img img {
-    width: 100%;
+    width: 80%;
   }
   .energi1nav ul {
     flex: 3;
   }
+  .energi1nav-link {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
   .energi1nav-link li {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     letter-spacing: 0rem;
+
+    padding-top: 4px;
   }
 
   .hover-underline {
     height: 1px;
+  }
+
+  .energi1nav-link-icon-active {
+    display: none;
+  }
+
+  .energi1nav-link-icon {
+    display: none;
   }
 }

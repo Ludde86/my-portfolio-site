@@ -6,11 +6,10 @@ const Energi1section3 = () => {
     <div className="energi1section3">
       <h1>Kontakta oss idag!</h1>
       <p>
-        Är du redo att påbörja ditt nästa bygg- eller renoveringsprojekt?
-        Oavsett om det handlar om en omfattande renovering, markarbete för en
-        nybyggnation, takrenovering eller att lägga nya golv, finns vi här för
-        att hjälpa dig. Hör av dig till oss för en kostnadsfri konsultation, där
-        vi kan diskutera dina idéer och behov.
+        Har du frågor om våra lösningar inom förnybar energi eller vill veta mer
+        om hur vi kan hjälpa dig övergå till sol- eller vindkraft? Tveka inte
+        att höra av dig! Vårt team finns här för att guida dig mot en grönare
+        framtid.
       </p>
 
       <button>Kontakta oss</button>

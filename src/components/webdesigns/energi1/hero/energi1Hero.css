@@ -13,10 +13,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
-  /* padding: 8rem 0; */
-
-  border: 1px solid red;
 }
 
 .energi1hero-text {
@@ -138,8 +134,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
-    padding: 0;
   }
 
   .energi1hero-text {
@@ -148,47 +142,48 @@
     justify-content: space-evenly;
     align-items: center;
 
-    padding-top: 6rem;
-
-    flex: 1;
-
-    width: 90%;
+    width: 100%;
+    height: 75svh;
   }
 
   .energi1hero-text h1 {
-    color: #fff;
+    color: #ffffffd5;
     font-size: 1.6rem;
-    font-weight: 300;
-    padding: 0;
-  }
-  .energi1hero-text p {
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 300;
-    padding-bottom: 0;
+    font-weight: 500;
+    padding-top: 6rem;
     text-align: center;
+    line-height: 2rem;
+
+    opacity: 0;
+    animation: 2s fade forwards;
   }
 
-  .energi1hero-actions {
-    width: 100%;
+  .energi1hero-text-button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 4rem; */
 
-    z-index: 1;
+    gap: 0rem;
   }
 
-  .energi1hero-action {
-    padding-left: 0;
-  }
-
-  .energi1hero-action button {
+  .energi1hero-text p {
+    color: #ffffffd5;
+    text-align: center;
     font-size: 1rem;
-    padding: 1rem 2rem;
-    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 0rem 1rem;
+
+    flex: 4;
+  }
+
+  .energi1hero-text-button button {
+    max-height: 4rem;
+    font-size: 1rem;
+
+    margin-top: 2rem;
   }
 
   .energi1hero-icons {
@@ -198,19 +193,38 @@
     /* transform: scale(2); */
     /* gap: 10rem; */
     /* background: #ffffff80; */
-    gap: 3rem;
-    padding-right: 0;
-  }
-
-  .energi1hero-icon {
-    background: #2c515ede;
-    border-radius: 100rem;
-    padding: 1rem;
-    width: 60px;
-    height: 60px;
+    gap: 4rem;
   }
 
   .energi1hero-cards {
-    display: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    padding: 0rem;
+
+    transform: scale(0.4);
+  }
+
+  .energi1hero-card {
+  }
+
+  .energi1hero-icon {
+    color: #fff;
+    background: #ffffff42;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0.6rem #ffffffa4;
+    border-radius: 100rem;
+    padding: 2.6rem;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      color: #0c0f27;
+      background: #ffffff9f;
+      box-shadow: 0 0 0.8rem #ffab11a4;
+    }
   }
 }

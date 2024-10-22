@@ -10,7 +10,7 @@ import Bygg2Footer from "./footer/Energi1Footer";
 
 const EnergiApp1 = () => {
   return (
-    <div className="byggRenoveringApp2">
+    <div className="energiApp1">
       <Bygg2Navbar />
       <Bygg2Hero />
       <Bygg2Section />

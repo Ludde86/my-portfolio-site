@@ -2,7 +2,8 @@
   position: relative;
   min-height: 100svh;
   /* background: #333; */
-  background: #fff;
+  /* background: #fff; */
+  background: #8369532f;
 
   display: flex;
   flex-direction: column;

@@ -1,63 +1,104 @@
 import React from "react";
 import "./energi1Section.css";
-import bygg1 from "../../assets/images/bygg-3.jpg";
-import bygg2 from "../../assets/images/bygg-1.jpg";
-import bygg3 from "../../assets/images/bygg-4.jpg";
+import kraft1 from "../../assets/images/vind-4.jpg";
+import kraft2 from "../../assets/images/sol-3.jpg";
+import kraft3 from "../../assets/images/rok-1.jpg";
 
 const Energi1section = () => {
+  const screenWidth = window.matchMedia("( max-width: 560px )").matches;
+
   return (
     <div className="energi1section">
       <div className="energi1section-content">
-        <div className="energi1section-content-image">
-          <img src={bygg1} alt="house" />
-        </div>
-        <div
-          className="energi1section-content-text"
-          id="byggRenoveringApp2-content-darker"
-        >
-          <h1>Skräddarsydda Lösningar</h1>
+        <div className="energi1section-content-text">
+          <h1>Vi driver framtidens vindkraft</h1>
           <div className="energi1section-content-text-underline"></div>
           <p>
-            Vi är experter på att lyssna på våra kunders behov och skapa unika
-            lösningar som passar deras visioner och önskemål. Varje projekt är
-            anpassat för att överträffa förväntningarna.
+            Vi är specialister på att omvandla vindens kraft till ren, förnybar
+            energi. Genom att placera vindkraftverk i strategiska områden
+            maximerar vi effektiviteten och minimerar vårt klimatavtryck. Vi
+            strävar efter att leverera pålitlig och hållbar el till både
+            privatpersoner och företag, och bidra till en global
+            energiomställning som skyddar vår planet.
           </p>
+          <h3>
+            Att driva en hållbar framtid genom vindkraft och förse samhället med
+            förnybar energi, så vi tillsammans kan minska beroendet av fossila
+            bränslen och bygga en grönare värld.
+          </h3>
+        </div>
+        <div className="energi1section-content-image">
+          <img src={kraft1} alt="kraft1" />
         </div>
       </div>
 
-      <div className="energi1section-content">
-        <div className="energi1section-content-image">
-          <img src={bygg2} alt="house" />
+      {screenWidth ? (
+        <div className="energi1section-content">
+          <div className="energi1section-content-text">
+            <h1>Vi omvandlar solens energi till en hållbar framtid</h1>
+            <div className="energi1section-content-text-underline"></div>
+            <p>
+              Vi är dedikerade till att utnyttja solens kraft för att leverera
+              ren, förnybar energi. Genom våra solkraftverk skapar vi effektiva
+              och miljövänliga energilösningar som minskar koldioxidutsläppen
+              och skyddar vår planet. Vårt mål är att göra solenergi tillgänglig
+              för alla, från hushåll till stora företag, och samtidigt bidra
+              till en mer hållbar energiförsörjning.
+            </p>
+            <h3>
+              Att tillhandahålla förnybar energi från solkraft, minska beroendet
+              av fossila bränslen och bygga ett mer hållbart samhälle för
+              kommande generationer.
+            </h3>
+          </div>
+          <div className="energi1section-content-image">
+            <img src={kraft2} alt="kraft2" />
+          </div>
         </div>
-        <div
-          className="energi1section-content-text"
-          id="byggRenoveringApp2-content-darker"
-        >
-          <h1>Effektiv Projektledning</h1>
-          <div className="energi1section-content-text-underline"></div>
-          <p>
-            Vår starka projektledning säkerställer att alla byggfaser går
-            smidigt, med noggrann planering och tidskontroll. Vi levererar i
-            tid, utan att kompromissa med kvaliteten.
-          </p>
+      ) : (
+        <div className="energi1section-content-reversed">
+          <div className="energi1section-content-image">
+            <img src={kraft2} alt="kraft2" />
+          </div>
+          <div className="energi1section-content-text-reversed">
+            <h1>Vi omvandlar solens energi till en hållbar framtid</h1>
+            <div className="energi1section-content-text-underline"></div>
+            <p>
+              Vi är dedikerade till att utnyttja solens kraft för att leverera
+              ren, förnybar energi. Genom våra solkraftverk skapar vi effektiva
+              och miljövänliga energilösningar som minskar koldioxidutsläppen
+              och skyddar vår planet. Vårt mål är att göra solenergi tillgänglig
+              för alla, från hushåll till stora företag, och samtidigt bidra
+              till en mer hållbar energiförsörjning.
+            </p>
+            <h3>
+              Att tillhandahålla förnybar energi från solkraft, minska beroendet
+              av fossila bränslen och bygga ett mer hållbart samhälle för
+              kommande generationer.
+            </h3>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="energi1section-content">
-        <div className="energi1section-content-image">
-          <img src={bygg3} alt="house" />
-        </div>
-        <div
-          className="energi1section-content-text"
-          id="byggRenoveringApp2-content-darker"
-        >
-          <h1>Detaljprecision</h1>
+        <div className="energi1section-content-text">
+          <h1>Vi leder omställningen bort från fossila bränslen</h1>
           <div className="energi1section-content-text-underline"></div>
           <p>
-            Vi är kända för vår noggrannhet i varje liten detalj, från
-            grundläggning till slutlig finish. Perfektion och hög standard i
-            varje del av arbetet är vårt kännetecken.
+            Vi är fast beslutna att minska världens beroende av fossila
+            bränslen. Genom våra lösningar inom förnybar energi, såsom sol- och
+            vindkraft, erbjuder vi effektiva alternativ som drastiskt minskar
+            utsläppen av växthusgaser. Vårt mål är att bidra till en grönare
+            framtid där ren energi är normen, inte undantaget.
           </p>
+          <h3>
+            Att minska användningen av fossila bränslen genom att leverera
+            pålitlig och förnybar energi, vilket bidrar till att skydda klimatet
+            och skapa en hållbar framtid för alla.
+          </h3>
+        </div>
+        <div className="energi1section-content-image">
+          <img src={kraft3} alt="house" />
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ const Energi1Footer = () => {
         <div className="energi1Footer-social-content">
           <div className="energi1Footer-social-content-item">
             <h1>Adress</h1>
-            <p>Bygg och vision AB</p>
+            <p>EcoPower Nordic AB</p>
             <p>Storgatan 12</p>
             <p>111 22 Stockholm</p>
           </div>
@@ -32,11 +32,11 @@ const Energi1Footer = () => {
           </div>
           <div className="energi1Footer-social-content-item">
             <h1>E-post</h1>
-            <p>kontakt@byggvision.se</p>
+            <p>kontakt@ecopowernordic.se</p>
           </div>
         </div>
       </div>
-      <p id="energi1Footer-social-copy"> &#169; Bygg & Vision 2024</p>
+      <p id="energi1Footer-social-copy"> &#169; EcoPower Nordic 2024</p>
     </div>
   );
 };
