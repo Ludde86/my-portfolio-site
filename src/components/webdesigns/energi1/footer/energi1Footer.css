@@ -1,0 +1,254 @@
+.energi1Footer {
+  position: relative;
+  width: 100%;
+  background: #836953;
+  color: #fff;
+
+  display: flex;
+
+  color: #333;
+}
+
+#energi1Footer-contact-form-header {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 300;
+  text-align: start;
+  padding-bottom: 4rem;
+
+  animation: fade-in-text;
+  animation-timeline: view();
+}
+
+.energi1Footer-contact {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+
+.energi1Footer-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 12rem;
+}
+
+.energi1Footer-contact-form label {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  padding: 0.6rem 0;
+}
+
+.energi1Footer-contact-form input {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10rem;
+  border: none;
+  width: 100%;
+
+  background: #ffffff42;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.6rem #ffffffa4;
+  font-size: 1.6rem;
+}
+
+.energi1Footer-contact-form textarea {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  border: none;
+  width: 100%;
+
+  background: #ffffff42;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.6rem #ffffffa4;
+  font-size: 1.6rem;
+}
+
+.energi1Footer-contact button {
+  border-radius: 10rem;
+  height: 6rem;
+  background: #ffffff42;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.6rem #ffffffa4;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+
+  &:hover {
+    color: #0c0f27;
+    background: #ffffff9f;
+    box-shadow: 0 0 0.8rem #ffab11a4;
+  }
+}
+
+.energi1Footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.energi1Footer-social-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.energi1Footer-social-content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.energi1Footer-social-content-item h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.energi1Footer-social-content-item p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+#energi1Footer-social-copy {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  color: #fff;
+
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 560px) {
+  .energi1Footer {
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
+
+  #energi1Footer-contact-form-header {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .energi1Footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .energi1Footer-contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .energi1Footer-contact-form label {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+  }
+
+  .energi1Footer-contact-form input {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .energi1Footer-contact-form textarea {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    padding: 0.6rem;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem;
+  }
+
+  .energi1Footer-contact button {
+    font-size: 1rem;
+    padding: 1rem;
+    height: 4rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .energi1Footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .energi1Footer-social-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .energi1Footer-social-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .energi1Footer-social-content-item h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .energi1Footer-social-content-item p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  #energi1Footer-social-copy {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    color: #fff;
+
+    transform: translateX(-50%);
+  }
+}
