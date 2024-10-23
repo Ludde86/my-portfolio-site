@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./aboutme";
 import Contact from "./contact";
+import Whatis from "./whatis";
 import "./landingpage.css";
 
 import reactLogo from "../img/react-icon.png";
@@ -15,60 +16,71 @@ import avatar from "../img/avatar-1.png";
 
 const Landing = () => {
   return (
-    <div className="landing-container-grid">
-      <div className="landing-container-grid-container landing-container-grid-row-span-2">
-        <img src={avatar} alt="avatar" />
-      </div>
-      <div className="landing-container-grid-container landing-container-grid-col-span-2">
-        <div id="landing-container-grid-col-span-2-text">
-          <p>Ludvig Björn</p>
-          <p>Webbutvecklare- och designer</p>
+    <div className="landing-container">
+      <div className="landing-container-grid">
+        <div className="landing-container-grid-container landing-container-grid-row-span-2">
+          <a href="/resume">
+            <img src={avatar} alt="avatar" />
+          </a>
         </div>
-        <div id="landing-container-grid-col-span-2-text-underline"></div>
-      </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <div id="landing-container-grid-col-span-2-text">
+            <p>Ludvig Björn</p>
+            <p>Webbutvecklare- och designer</p>
+          </div>
+          <div id="landing-container-grid-col-span-2-text-underline"></div>
+        </div>
 
-      <div
-        className="landing-container-grid-container"
-        id="landing-container-grid-container-col-1"
-      >
-        <img src={reactLogo} alt="react-logo" />
-      </div>
-      <div
-        className="landing-container-grid-container "
-        id="landing-container-grid-container-col-1"
-      >
-        <img src={javascriptLogo} alt="javascrip-logo" />
-      </div>
-      <div
-        className="landing-container-grid-container"
-        id="landing-container-grid-container-col-1"
-      >
-        <img src={htmlLogo} alt="html-logo" />
-      </div>
-      <div
-        className="landing-container-grid-container"
-        id="landing-container-grid-container-col-1"
-      >
-        <img src={cssLogo} alt="css-logo" />
-      </div>
+        <div
+          className="landing-container-grid-container"
+          id="landing-container-grid-container-col-1"
+        >
+          <a href="#goto-react">
+            <img src={reactLogo} alt="react-logo" />
+          </a>
+        </div>
+        <div
+          className="landing-container-grid-container "
+          id="landing-container-grid-container-col-1"
+        >
+          <a href="#goto-javascript">
+            <img src={javascriptLogo} alt="javascrip-logo" />
+          </a>
+        </div>
+        <div
+          className="landing-container-grid-container"
+          id="landing-container-grid-container-col-1"
+        >
+          <a href="#goto-html">
+            <img src={htmlLogo} alt="html-logo" />
+          </a>
+        </div>
+        <div
+          className="landing-container-grid-container"
+          id="landing-container-grid-container-col-1"
+        >
+          <a href="#goto-css">
+            <img src={cssLogo} alt="css-logo" />
+          </a>
+        </div>
 
-      <div className="landing-container-grid-container landing-container-grid-col-span-2">
-        <a href="/projects">
-          <img src={energiScreen} alt="energi-screen" />
-        </a>
-      </div>
-      <div className="landing-container-grid-container landing-container-grid-col-span-2">
-        <a href="/projects">
-          <img src={byggScreen} alt="bygg-screen" />
-        </a>
-      </div>
-      <div className="landing-container-grid-container landing-container-grid-col-span-2">
-        <a href="/projects">
-          <img src={sakerhetScreen} alt="sakerhet-screen" />
-        </a>
-      </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="/projects">
+            <img src={energiScreen} alt="energi-screen" />
+          </a>
+        </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="/projects">
+            <img src={byggScreen} alt="bygg-screen" />
+          </a>
+        </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="/projects">
+            <img src={sakerhetScreen} alt="sakerhet-screen" />
+          </a>
+        </div>
 
-      {/*
+        {/*
       <div className="landing-container-about">
         <About />
         <Contact />
@@ -79,6 +91,8 @@ const Landing = () => {
         </text>
       </div>
           */}
+      </div>
+      <Whatis />
     </div>
   );
 };
