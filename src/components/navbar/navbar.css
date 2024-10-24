@@ -167,7 +167,7 @@ nav {
   }
 
   .link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.2em;
     margin: 0;
   }
@@ -274,13 +274,13 @@ nav {
     justify-content: center;
     align-items: center;
     color: #333;
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
 
-    animation: move-hori 1.1s infinite ease-in-out;
+    /* animation: move-hori 1.1s infinite ease-in-out; */
 
-    padding-left: 60px;
-    padding-top: 2px;
+    padding-left: 46px;
+    padding-top: 3px;
   }
 
   .menu-button-icon {

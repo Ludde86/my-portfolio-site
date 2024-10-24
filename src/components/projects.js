@@ -31,8 +31,6 @@ const Projects = () => {
     "Napra4",
     "Haningetk4",
     "HTProject",
-    "React",
-    "CSS",
     "JS",
   ];
 
@@ -57,11 +55,14 @@ const Projects = () => {
       case 8:
         return <Htproject />;
       case 9:
-        return <Webdesign1 />;
-      case 10:
-        return <Challenge1 />;
-      case 11:
         return <ChallengesJs />;
+
+      /*
+          case 9:
+            return <Webdesign1 />;
+            case 10:
+              return <Challenge1 />;
+              */
       default:
         return "No Tab";
     }
@@ -93,13 +94,7 @@ const Projects = () => {
             <span className="third-line"></span>
           </div>
           <div>
-            <span id="menu-button-text">
-              <i
-                className="fa fa-angle-double-left fa-lg menu-button-icon"
-                aria-hidden="true"
-              />
-              PROJEKT
-            </span>
+            <span id="menu-button-text">Fler projekt</span>
           </div>
         </div>
       </header>
