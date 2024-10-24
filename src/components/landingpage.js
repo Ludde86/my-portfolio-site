@@ -13,6 +13,7 @@ import byggScreen from "../img/bygg-screen.png";
 import sakerhetScreen from "../img/sakerhet-screen.png";
 
 import avatar from "../img/avatar-1.png";
+import { ArrowDownRight } from "lucide-react";
 
 const Landing = () => {
   return (
@@ -28,7 +29,7 @@ const Landing = () => {
             <p>Ludvig Björn</p>
             <p>Webbutvecklare- och designer</p>
           </div>
-          <div id="landing-container-grid-col-span-2-text-underline"></div>
+          <div className="landing-container-grid-col-span-2-text-underline"></div>
         </div>
 
         <div
@@ -61,6 +62,25 @@ const Landing = () => {
         >
           <a href="#goto-css">
             <img src={cssLogo} alt="css-logo" />
+          </a>
+        </div>
+
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <div id="landing-container-grid-col-span-2-text">
+            <p id="green">Din hemsida kan se ut så här</p>
+          </div>
+          <div
+            className="landing-container-grid-col-span-2-text-underline"
+            id="green-underline"
+          ></div>
+          <a
+            href="/projects"
+            className="landing-container-grid-col-span-2-text-icon"
+          >
+            <ArrowDownRight
+              size={40}
+              id="landing-container-grid-col-span-2-text-icon-icon"
+            />
           </a>
         </div>
 

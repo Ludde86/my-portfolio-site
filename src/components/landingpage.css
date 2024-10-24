@@ -50,7 +50,7 @@
   align-items: center;
 }
 
-#landing-container-grid-col-span-2-text-underline {
+.landing-container-grid-col-span-2-text-underline {
   width: 0;
   height: 3px;
   background: #4682b4;
@@ -59,10 +59,38 @@
   transition: 0.3s ease-in-out;
 }
 
+.landing-container-grid-col-span-2 a {
+  color: #fff;
+}
+
+.landing-container-grid-col-span-2-text-icon {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c515e;
+  opacity: 0.8;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  transform: translateY(50%);
+  transition: 0.3s ease-out;
+
+  outline: 0.2rem solid #daa52000;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    color: #fff;
+
+    outline: 0.2rem solid #daa520;
+  }
+}
+
 .landing-container-grid-container p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #4682b4;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 600;
 
   opacity: 0.8;
@@ -80,7 +108,7 @@
 .landing-container-grid-col-span-2 {
   grid-column: span 2;
 
-  &:hover > #landing-container-grid-col-span-2-text-underline {
+  &:hover > .landing-container-grid-col-span-2-text-underline {
     width: 80%;
     opacity: 1;
   }
@@ -88,6 +116,12 @@
   &:hover > #landing-container-grid-col-span-2-text p {
     /* font-weight: 500; */
     opacity: 1;
+  }
+
+  &:hover > .landing-container-grid-col-span-2-text-icon {
+    opacity: 1;
+    /* width: 120px;
+    height: 120px; */
   }
 }
 
@@ -99,11 +133,12 @@
 
 .landing-container-grid-col-span-2 img {
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease-in;
+
+  outline: 0.4rem solid #4683b400;
 
   &:hover {
-    border: 1px solid #333;
-    box-shadow: 0.6rem 0.6rem 2px #aaa;
+    outline: 0.4rem solid #4682b4;
   }
 }
 
@@ -113,14 +148,24 @@
   height: auto;
   object-position: top;
   transition: 0.75s;
-  border: 1px solid #fff;
+  outline: 0.6rem solid #daa52000;
+  /* margin: -1.2rem; */
   margin-top: 4rem;
+  border-radius: 2rem;
 
   &:hover {
     border-radius: 100%;
 
-    border: 0.6rem solid #daa520;
+    outline: 0.6rem solid #daa520;
   }
+}
+
+#green {
+  color: #2c515e;
+}
+
+#green-underline {
+  background: #2c515e;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -182,6 +227,13 @@
 
   .landing-container-grid-row-span-2 img {
     margin-top: 0;
+  }
+
+  .landing-container-grid-col-span-2-text-icon {
+    width: 60px;
+    height: 60px;
+    transform: translateY(25%);
+    margin-bottom: 1rem;
   }
 
   #landing-container-grid-container-col-1 img {

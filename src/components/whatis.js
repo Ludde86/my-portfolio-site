@@ -45,7 +45,6 @@ const Whatis = () => {
             bilder, länkar, och knappar.
           </p>
           <p>
-            $
             {`HTML använder taggar för att definiera olika element på sidan. Till
         exempel används <h1>
         -taggen för en rubrik, <p> för ett stycke text, och <img> för att
