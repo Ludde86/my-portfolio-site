@@ -94,13 +94,7 @@ const Projects = () => {
             <span className="third-line"></span>
           </div>
           <div>
-            <span id="menu-button-text">
-              <i
-                className="fa fa-angle-double-left fa-lg menu-button-icon"
-                aria-hidden="true"
-              />
-              PROJEKT
-            </span>
+            <span id="menu-button-text">Fler projekt</span>
           </div>
         </div>
       </header>
