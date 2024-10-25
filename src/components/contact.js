@@ -1,71 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
-import myAvatar from "../img/avatar-contact-small.png";
+
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
 
 const Contact = () => {
+  const { register, reset, handleSubmit } = useForm();
+
+  const [from, setFrom] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [result, setResult] = useState(null);
+  // const [result, setResult] = useState("Ditt meddelande har skickats!");
+
+  const handleSetFrom = (e) => {
+    setFrom(e.target.value);
+  };
+
+  const accessKey = process.env.REACT_APP_ACCESS_KEY;
+
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: accessKey,
+    settings: {
+      from_name: from,
+      subject: "Nytt kontaktmeddelande från din webbplats",
+      // ... other settings
+    },
+    onSuccess: (msg, data) => {
+      setIsSuccess(true);
+      setResult("Ditt meddelande har skickats!");
+      reset();
+    },
+    onError: (msg, data) => {
+      setIsSuccess(false);
+      setResult(
+        "Det gick tyvärr inte att skicka ditt meddelande just nu. Försök igen om en liten stund!"
+      );
+    },
+  });
+
   return (
-    <div className="contact-info">
-      <div className="contact-info-item">
-        <i
-          className="fa fa-phone-square"
-          aria-hidden="true"
-          style={{ color: "#333" }}
-        />
-        <text className="info-text">0704608611</text>
-      </div>
-      <div className="contact-info-item">
-        <i
-          className="fa fa-envelope-square"
-          aria-hidden="true"
-          style={{ color: "#333" }}
-        />
-        <text className="info-text">bslbjorn@gmail.com</text>
-      </div>
-      <div className="contact-info-item">
-        <a
-          href="https://www.linkedin.com/in/ludvig-bj%C3%B6rn-4b582417b/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: "none" }}
-        >
-          <i
-            className="fa fa-linkedin-square"
-            aria-hidden="true"
-            style={{ color: "#333" }}
+    <div className="contact-container">
+      <form
+        className="contact-container-form-grid"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <div className="contact-container-form-grid-container">
+          <input
+            type="text"
+            placeholder="Namn"
+            onInvalid={(e) => e.target.setCustomValidity("Ange ditt namn")}
+            {...register("name", { required: true })}
+            onChange={handleSetFrom}
+            required
           />
-          <text className="info-text">ludvigbjorn</text>
-        </a>
-      </div>
-      <div className="contact-info-item">
-        <i
-          className="fa fa-facebook-square"
-          aria-hidden="true"
-          style={{ color: "#333" }}
-        />
-        <a
-          href="https://www.facebook.com/ludvig.bjorn"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: "none" }}
-        >
-          <text className="info-text">Ludvig Björn via Messenger</text>
-        </a>
-      </div>
-      <div className="contact-info-item">
-        <a
-          href="https://github.com/Ludde86"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ textDecoration: "none" }}
-        >
-          <i
-            className="fa fa-github-square"
-            aria-hidden="true"
-            style={{ color: "#333" }}
+        </div>
+
+        <div className="contact-container-form-grid-container">
+          <input
+            type="email"
+            placeholder="E-post"
+            onInvalid={(e) => e.target.setCustomValidity("Ange din e-post")}
+            {...register("email", { required: true })}
+            required
           />
-          <text className="info-text">Ludde86</text>
-        </a>
-      </div>
+        </div>
+
+        <div></div>
+
+        <div className="contact-container-form-grid-container-col-3">
+          <textarea
+            type="text"
+            placeholder="Meddelande"
+            onInvalid={(e) =>
+              e.target.setCustomValidity("Skriv ett meddelande")
+            }
+            {...register("message", { required: true })}
+            required
+          />
+
+          <button>Skicka meddelande</button>
+        </div>
+
+        <div className="contact-container-form-grid-container-col-3">
+          <p>{result}</p>
+        </div>
+      </form>
     </div>
   );
 };

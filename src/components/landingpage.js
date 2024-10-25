@@ -112,6 +112,7 @@ const Landing = () => {
       </div>
           */}
       </div>
+      <Contact />
       <Whatis />
     </div>
   );
