@@ -67,12 +67,8 @@ const Landing = () => {
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <div id="landing-container-grid-col-span-2-text">
-            <p id="green">Din hemsida kan se ut så här</p>
+            <p id="green">Mina projekt</p>
           </div>
-          <div
-            className="landing-container-grid-col-span-2-text-underline"
-            id="green-underline"
-          ></div>
           <a
             href="/projects"
             className="landing-container-grid-col-span-2-text-icon"
@@ -82,6 +78,13 @@ const Landing = () => {
               id="landing-container-grid-col-span-2-text-icon-icon"
             />
           </a>
+          <div id="landing-container-grid-col-span-2-text">
+            <p id="green">Din hemsida kan se ut så här</p>
+          </div>
+          <div
+            className="landing-container-grid-col-span-2-text-underline"
+            id="green-underline"
+          ></div>
         </div>
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
@@ -112,6 +115,7 @@ const Landing = () => {
       </div>
           */}
       </div>
+      <About />
       <Contact />
       <Whatis />
     </div>

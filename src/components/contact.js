@@ -3,6 +3,7 @@ import "./contact.css";
 
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
+import { Send } from "lucide-react";
 
 const Contact = () => {
   const { register, reset, handleSubmit } = useForm();
@@ -44,6 +45,13 @@ const Contact = () => {
         className="contact-container-form-grid"
         onSubmit={handleSubmit(onSubmit)}
       >
+        <div className="contact-container-form-grid-col-span-1-text">
+          <p id="white">Kontakta mig</p>
+          <div
+            className="contact-container-grid-col-span-1-text-underline"
+            id="white-underline"
+          ></div>
+        </div>
         <div className="contact-container-form-grid-container">
           <input
             type="text"
@@ -64,8 +72,6 @@ const Contact = () => {
             required
           />
         </div>
-
-        <div></div>
 
         <div className="contact-container-form-grid-container-col-3">
           <textarea
