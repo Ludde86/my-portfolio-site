@@ -1,0 +1,171 @@
+.samhalle2Section {
+  position: relative;
+  min-height: 100svh;
+  background: #f9f6ea;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* border: 2px solid red; */
+}
+
+.samhalle2Section-first {
+  flex: 1;
+
+  background: #304251d0;
+  height: 100svh;
+}
+
+.samhalle2Section-first-text {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 4rem;
+
+  top: 10rem;
+  left: 14rem;
+  right: 40%;
+
+  background: #f9f6ea;
+  height: 50svh;
+}
+
+.samhalle2Section-first-text h3 {
+  color: #fbc86b;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: 0.2rem;
+}
+
+.samhalle2Section-first-text h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #304251;
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+  text-align: start;
+  padding-top: 1rem;
+}
+
+.samhalle2Section-first-text p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #304251;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  text-align: start;
+  padding: 2rem 0;
+}
+
+.samhalle2Section-first-text button {
+  border: 1px solid #fbc86b;
+  border-radius: 10rem;
+  background: transparent;
+  color: #304251;
+
+  text-transform: uppercase;
+  transition: 0.3s;
+
+  &:hover {
+    background: #fbc86b;
+  }
+}
+
+.samhalle2Section-second {
+  flex: 1;
+
+  background-image: url("../../assets/images/samhalle-8.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100svh;
+}
+
+@media screen and (max-width: 560px) {
+  .samhalle2Section {
+    min-height: auto;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .samhalle2Section-first {
+    flex: 1;
+
+    background: #304251d0;
+    height: auto;
+  }
+
+  .samhalle2Section-first-text {
+    position: static;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2rem;
+
+    background: #f9f6ea;
+    height: auto;
+  }
+
+  .samhalle2Section-first-text h3 {
+    color: #fbc86b;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: 0.2rem;
+  }
+
+  .samhalle2Section-first-text h1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    text-align: start;
+    padding-top: 1rem;
+  }
+
+  .samhalle2Section-first-text p {
+    color: #304251;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    text-align: start;
+    padding: 2rem 0;
+  }
+
+  .samhalle2Section-first-text button {
+    border: 1px solid #fbc86b;
+    border-radius: 10rem;
+    background: transparent;
+    color: #304251;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    margin: 1rem 0;
+
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    &:hover {
+      background: #fbc86b;
+    }
+  }
+
+  .samhalle2Section-second {
+    flex: 1;
+
+    background-image: url("../../assets/images/samhalle-8.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100svh;
+  }
+}

@@ -11,6 +11,8 @@ import javascriptLogo from "../img/java-script-icon.jpg";
 import energiScreen from "../img/energi-screen.png";
 import byggScreen from "../img/bygg-screen.png";
 import sakerhetScreen from "../img/sakerhet-screen.png";
+import samhalleScreen from "../img/samhalle-screen.png";
+import tennisScreen from "../img/tennis-screen.png";
 
 import avatar from "../img/avatar-1.png";
 import { ArrowDownRight } from "lucide-react";
@@ -67,12 +69,8 @@ const Landing = () => {
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <div id="landing-container-grid-col-span-2-text">
-            <p id="green">Din hemsida kan se ut så här</p>
+            <p id="green">Mina projekt</p>
           </div>
-          <div
-            className="landing-container-grid-col-span-2-text-underline"
-            id="green-underline"
-          ></div>
           <a
             href="/projects"
             className="landing-container-grid-col-span-2-text-icon"
@@ -82,6 +80,13 @@ const Landing = () => {
               id="landing-container-grid-col-span-2-text-icon-icon"
             />
           </a>
+          <div id="landing-container-grid-col-span-2-text">
+            <p id="green">Din hemsida kan se ut så här</p>
+          </div>
+          <div
+            className="landing-container-grid-col-span-2-text-underline"
+            id="green-underline"
+          ></div>
         </div>
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
@@ -99,6 +104,16 @@ const Landing = () => {
             <img src={sakerhetScreen} alt="sakerhet-screen" />
           </a>
         </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="/projects">
+            <img src={samhalleScreen} alt="sakerhet-screen" />
+          </a>
+        </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="/projects">
+            <img src={tennisScreen} alt="sakerhet-screen" />
+          </a>
+        </div>
 
         {/*
       <div className="landing-container-about">
@@ -112,6 +127,8 @@ const Landing = () => {
       </div>
           */}
       </div>
+      <About />
+      <Contact />
       <Whatis />
     </div>
   );
