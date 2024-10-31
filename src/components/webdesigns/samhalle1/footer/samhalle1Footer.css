@@ -1,0 +1,135 @@
+.samhalle1footer {
+  position: relative;
+  width: 100%;
+  background: #304251d0;
+  color: #fff;
+
+  display: flex;
+
+  color: #333;
+  height: 50svh;
+
+  background-image: url("../../assets/images/samhalle-14.jpg");
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: inset 100vw 0 #00000050;
+}
+
+.samhalle1footer-social-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.samhalle1footer-social-content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.samhalle1footer-social-content-item h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.samhalle1footer-social-content-item p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+#samhalle1footer-social-copy {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  color: #fff;
+
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 560px) {
+  .samhalle1footer {
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    height: 75svh;
+  }
+
+  #samhalle1footer-contact-form-header {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .samhalle1footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .samhalle1footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .samhalle1footer-social-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .samhalle1footer-social-content-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .samhalle1footer-social-content-item h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .samhalle1footer-social-content-item p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  #samhalle1footer-social-copy {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    color: #fff;
+
+    transform: translateX(0);
+  }
+}

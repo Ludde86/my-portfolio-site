@@ -1,12 +1,23 @@
 .samhalle1-navbar {
   min-height: 10svh;
-  background: #f9f6ea;
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* background: #f9f6ea; */
+  background: transparent;
 
   display: flex;
-  padding: 0 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-bottom: 1px solid #ffffffad;
+
+  /* box-shadow: inset 100vw 0 #00000060; */
 }
 
 .samhalle1-navbar img {
+  width: 100px;
+  opacity: 0.6;
 }
 
 .samhalle1-navbar-links {
@@ -18,7 +29,83 @@
 }
 
 .samhalle1-navbar-links li {
-  color: #333;
+  cursor: pointer;
+  color: #ccc;
   text-transform: uppercase;
   font-size: 1.6rem;
+
+  transition: 0.3s ease-in;
+  &:hover {
+    color: #fff;
+  }
+}
+
+#samhalle1-navbar-links-button {
+  background: #30425180;
+  border-radius: 10rem;
+  padding: 0.4rem 2rem;
+
+  &:hover {
+    background: #304251c5;
+  }
+}
+
+#samhalle1-navbar-links-menu {
+  cursor: pointer;
+  color: #ccc;
+  text-transform: uppercase;
+  scale: 1.6;
+
+  transition: 0.3s ease-in;
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .samhalle1-navbar {
+    min-height: 10svh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 2rem;
+  }
+
+  .samhalle1-navbar img {
+    width: 60px;
+  }
+
+  .samhalle1-navbar-links {
+    display: none;
+  }
+
+  /* när small responsive är aktiv 
+  .samhalle1-navbar-links li {
+    cursor: pointer;
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+
+    transition: 0.3s ease-in;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  #samhalle1-navbar-links-button {
+    background: #30425180;
+    border-radius: 10rem;
+    padding: 0.4rem 2rem;
+
+    &:hover {
+      background: #304251c5;
+    }
+  }
+
+  */
+
+  #samhalle1-navbar-links-menu {
+    scale: 1;
+  }
 }

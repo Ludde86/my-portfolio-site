@@ -1,6 +1,7 @@
 import React from "react";
 import "./samhalle1Navbar.css";
-import logo from "../../assets/images/samhalle-logo.png";
+import logo from "../../assets/images/samhalle-logo-no-bg.png";
+import { AlignJustify } from "lucide-react";
 
 const Samhalle1Navbar = () => {
   return (
@@ -8,9 +9,11 @@ const Samhalle1Navbar = () => {
       <img src={logo} alt="logo" />
       <ul className="samhalle1-navbar-links">
         <li>Hem</li>
-        <li>Upplev</li>
-        <li>Jobb</li>
+        <li>Aktuellt</li>
+        <li>Upptäck</li>
+        <li id="samhalle1-navbar-links-button">Kontakt</li>
       </ul>
+      <AlignJustify id="samhalle1-navbar-links-menu" />
     </div>
   );
 };
