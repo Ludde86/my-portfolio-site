@@ -1,6 +1,5 @@
 .napra4_home {
   /* min-height: 100svh; */
-  margin: 2rem;
 }
 
 .napra4_home-wrapper {
@@ -9,7 +8,6 @@
 
   padding: 2rem;
   gap: 4rem;
-  border-radius: 2rem;
 }
 
 .napra4_home-hero {
@@ -26,7 +24,6 @@
   overflow: hidden;
 }
 .napra4_home-desc {
-  color: #fff;
   background: linear-gradient(to right, #00000000, #0000008e);
   padding: 2rem;
   border-radius: 0.2rem;
@@ -47,16 +44,21 @@
 
 .napra4_home-desc h2 {
   /* text-shadow: 0 0 4px #000; */
+  color: #fff;
+  font-size: 1.6rem;
 }
 
 .napra4_home-desc h1 {
   /* text-shadow: 0 0 4px #000; */
+  color: #fff;
   text-align: center;
+  font-size: 2.2rem;
 }
 
 .napra4_home-desc p {
   font-size: 1.6rem;
   text-align: center;
+  color: #fff;
 }
 
 .napra4_home-desc-buttons button {

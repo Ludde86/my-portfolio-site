@@ -20,19 +20,17 @@ import EnergiApp1 from "./webdesigns/energi1/EnergiApp1";
 import Samhalle1App from "./webdesigns/samhalle1/Samhalle1App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(6);
 
   const links = [
-    "Plats-1",
-    "Energi-1",
+    "Plats",
+    "Energi",
     "Renovering",
     "Sakerhet",
-    "Lilitha1",
-    "Haningetk3",
-    "Napra3",
-    "Napra4",
-    "Haningetk4",
-    "HTProject",
+    "Lilitha",
+    "Tennis",
+    "Naprapat",
+    "Bygg",
     "JS",
   ];
 
@@ -53,12 +51,8 @@ const Projects = () => {
       case 6:
         return <Napra3 />;
       case 7:
-        return <Napra4 />;
-      case 8:
-        return <Haningetk4App />;
-      case 9:
         return <Htproject />;
-      case 10:
+      case 8:
         return <ChallengesJs />;
 
       /*

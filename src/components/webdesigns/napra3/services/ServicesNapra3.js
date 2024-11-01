@@ -9,49 +9,47 @@ const ServicesNapra3 = () => {
       <div className="napra3-services-container_desc-container">
         <div className="napra3-services-container_service-container">
           <div className="napra3-services-container_service-container_title-container">
-            <h4>Naprapatbehandling Nybesök/återbesök 750:-</h4>
+            <h3>Naprapatbehandling Nybesök/återbesök 750:-</h3>
             <p>Tid: 30-40min</p>
           </div>
         </div>
 
         <div className="napra3-services-container_service-container">
           <div className="napra3-services-container_service-container_title-container">
-            <h4>Naprapatbehandling Pensionär/student 700:-</h4>
+            <h3>Naprapatbehandling Pensionär/student 700:-</h3>
             <p>Tid: 30-40min</p>
           </div>
         </div>
 
         <div className="napra3-services-container_service-container">
           <div className="napra3-services-container_service-container_title-container">
-            <h4>Massage 730:-</h4>
+            <h3>Massage 730:-</h3>
             <p>Tid: 30min</p>
           </div>
         </div>
 
         <div className="napra3-services-container_service-container">
           <div className="napra3-services-container_service-container_title-container">
-            <h4>MammaMageträning Nybesök 600:-</h4>
+            <h3>MammaMageträning Nybesök 600:-</h3>
             <p>Tid: 50min</p>
           </div>
         </div>
 
         <div className="napra3-services-container_service-container">
           <div className="napra3-services-container_service-container_title-container">
-            <h4>MammaMageträning Återbesök 550:-</h4>
+            <h3>MammaMageträning Återbesök 550:-</h3>
             <p>Tid: 40min</p>
           </div>
         </div>
 
-        <div className="napra3-landing-container_button-container">
-          <button>
-            <a
-              href="https://www.bokadirekt.se/places/naprapat-rehabcenter-haninge-10747"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Mer info om våra Tjänster
-            </a>
-          </button>
+        <div className="napra3-services-container_button-container">
+          <a
+            href="https://www.bokadirekt.se/places/naprapat-rehabcenter-haninge-10747"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>Mer info om våra Tjänster</button>
+          </a>
         </div>
       </div>
 

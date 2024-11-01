@@ -5,8 +5,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: hue(1);
 
-  box-shadow: inset -50vw 0px 100px #00000079;
+  box-shadow: inset -100vw 0px 100px #00000079;
 }
 
 @media screen and (max-width: 800px) {

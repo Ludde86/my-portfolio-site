@@ -3,16 +3,21 @@
   justify-content: space-between;
 
   width: 100%;
-  padding: 6rem 12rem;
+  padding: 6rem 8rem;
 }
 
 .napra3-services-container_service-container {
-  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .napra3-services-container_desc-container {
-  padding-right: 6rem;
-  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .napra3-services-container_logo-container {
@@ -22,28 +27,64 @@
   width: 50%;
 }
 
-.napra3-services-container_service-container_title-container h4 {
-  font-size: 2rem;
-  margin: 0;
+.napra3-services-container_service-container_title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.napra3-services-container_service-container_title-container h3 {
+  color: #333;
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-align: start;
 }
 
 .napra3-services-container_service-container_title-container p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: start;
 }
 
 .napra3-services-container_service-container_desc-container p {
   font-size: 1.4rem;
 }
 
+.napra3-services-container_button-container {
+  display: flex;
+}
+
+.napra3-services-container_button-container a {
+  all: unset;
+}
+
+.napra3-services-container_button-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--color-napra);
+  color: #fff;
+  text-transform: uppercase;
+
+  &:hover {
+    border: 1px solid var(--color-napra);
+    background: #fff;
+    color: var(--color-napra);
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .napra3-services-container {
     flex-direction: column;
     width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
 
   .napra3-services-container_desc-container {
-    padding: 1rem;
+    padding: 0;
+    gap: 0;
   }
 
   .napra3-services-container_logo-container {
@@ -56,10 +97,11 @@
     width: 25vw;
   }
 
-  .napra3-services-container_service-container_title-container h4 {
+  .napra3-services-container_service-container_title-container h3 {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0;
+    padding-top: 1rem;
   }
 
   .napra3-services-container_service-container_title-container p {
@@ -69,5 +111,18 @@
   .napra3-services-container_service-container_desc-container p {
     font-size: 1.2rem;
     line-height: 1.1rem;
+  }
+
+  .napra3-services-container_button-container {
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+
+    padding-top: 1rem;
+  }
+
+  .napra3-services-container_button-container button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
   }
 }

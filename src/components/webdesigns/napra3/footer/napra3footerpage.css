@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  box-shadow: inset -100vw 0px 100px #00000079;
 }
 
 .napra3-footer-container_info-container {
@@ -21,6 +22,9 @@
   /* border: 1px solid black; */
   text-align: center;
   width: 100%;
+}
+.napra3-footer-container_info-container_contact-us-container p {
+  color: #fff;
 }
 
 .napra3-footer-container_info-container_contact-us-container i {
@@ -39,9 +43,14 @@
 .napra3-footer-container_info-container_contact-us-container_contact-container_title {
   font-weight: 700;
   font-size: 1.4rem;
+  color: #fff;
 }
 
-.napra3-footer-container_copyright {
+.icon_container-title {
+  color: #fff;
+}
+
+.napra3-footer-container_copyright p {
   padding-top: 2rem;
   text-align: center;
   color: #fff;
