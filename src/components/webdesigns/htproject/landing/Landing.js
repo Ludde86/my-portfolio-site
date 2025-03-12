@@ -6,27 +6,8 @@ import { BiDownArrowAlt } from "react-icons/bi";
 const Landing = () => {
   return (
     <div className="landing">
-      <div className="landing__content">
-        {/*
-			<div className="landing__about">
-			<p>
-			<span className="landing__title">Hedström & Taube</span> erbjuder alla typer av projektledning
-			inom bygg och anläggning, oavsett vilken typ av entreprenad ni valt. Det är grunden, men inte
-			vad som gör oss unika. Det som särskiljer oss är vår passion.
-			</p>
-			<p>
-			För oss är varje nybyggnation eller renovering en spännande utmaning som vi vill vara med och
-			genomföra, så smart och effektivt som möjligt. Har du också ett spännande bygge på gång?
-			</p>
-			<p>Välkommen att kontakta oss och ta del av vår arbetslust och vårt engagemang.</p>
-			</div>
-		*/}
-        {/*
-		<div className="landing__logo">
-		<img src={logo} alt="logo" />
-		</div>
-	*/}
-      </div>
+      <div className="landing-image"></div>
+      <div className="landing__content"></div>
 
       <div className="landing__content-buttons">
         <a

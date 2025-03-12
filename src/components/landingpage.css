@@ -3,11 +3,119 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Anpassa efter behov */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Lägg videon bakom overlay */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.9); /* Svart filter med 0.9 opacity */
+  z-index: 2; /* Lägg overlay över videon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-and-text {
+  display: flex;
+  align-items: center;
+  max-width: 75%;
+}
+
+.overlay-image {
+  max-width: 60%; /* Justera storlek efter behov */
+  height: 60vh; /* Tar 50% av höjden */
+  object-fit: cover;
+  margin-right: 20px; /* Justera avståndet mellan bild och text */
+  border-radius: 4rem;
+}
+
+.text-content {
+  color: white; /* Anpassa textfärg efter behov */
+  text-align: start;
+}
+
+.text-content h1 {
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 0.6rem;
+}
+
+.text-content-background {
+  background: #fff;
+  color: #333 !important;
+  padding-top: 0.4rem;
+}
+
+.text-content p {
+  color: #fff;
+  margin-top: 1rem;
+  padding-left: 0.6rem;
+  font-size: 1.6rem;
+}
+
+.text-content button {
+  margin-top: 2rem;
+}
+
+.landing-container-grid-hero {
+  border: 2px solid red;
+  position: relative;
+
+  z-index: 1;
+
+  width: 100%;
+  height: 90svh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-container-video-filter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  z-index: 10;
+  background: #fff;
+}
+
+.landing-container-grid-hero-avatar {
+  width: 100%;
+}
+
+.landing-container-grid-hero-avatar img {
+  width: 50%;
 }
 
 .landing-container-grid {
   background: #fafafa;
-  margin-top: 32px;
+  /* margin-top: 32px; */
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -16,6 +124,8 @@
   padding: 1.5rem;
   /* border: 1px solid black; */
   /* max-height: 100svh; */
+  background: #111111f1;
+  z-index: 10;
 }
 
 .landing-container-grid-container {
@@ -31,6 +141,7 @@
   object-fit: cover;
   object-position: center;
   aspect-ratio: 2/1;
+  border-radius: 1rem;
 }
 
 #landing-container-grid-container-col-1 img {
@@ -89,7 +200,7 @@
 }
 
 .landing-container-grid-container p {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
   color: #4682b4;
   font-size: 2.2rem;
   font-weight: 600;
