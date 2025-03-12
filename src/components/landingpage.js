@@ -51,28 +51,7 @@ const Landing = () => {
         </div>
       </div>
 
-      {/*
-      <div className="landing-container-grid-hero">
-        <div className="landing-container-grid-hero-avatar">
-          <a href="/resume">
-            <img src={avatar} alt="avatar" />
-          </a>
-        </div>
-        <div>
-          <div id="landing-container-grid-col-span-2-text">
-            <p>Ludvig Björn</p>
-            <p>Webbutvecklare- och designer</p>
-          </div>
-          <div className="landing-container-grid-col-span-2-text-underline"></div>
-        </div>
-        <video src={vid} autoPlay muted loop>
-          <div className="landing-container-video-filter"></div>
-        </video>
-      </div>
-          */}
-
       <div className="landing-container-grid">
-        {/*
         <div
           className="landing-container-grid-container"
           id="landing-container-grid-container-col-1"
@@ -105,7 +84,6 @@ const Landing = () => {
             <img src={cssLogo} alt="css-logo" />
           </a>
         </div>
-        */}
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <div id="landing-container-grid-col-span-2-text">
@@ -175,6 +153,11 @@ const Landing = () => {
       <About />
       <Contact />
       <Whatis />
+      <footer className="footer">
+        <p>Kontakt: bslbjorn@gmail.com</p>
+        <p>Ludvig Björn &copy; 2025</p>
+        <p>Orgnummer: 123456-7890</p>
+      </footer>
     </div>
   );
 };
