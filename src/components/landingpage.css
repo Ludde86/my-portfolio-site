@@ -37,18 +37,19 @@
   align-items: center;
 }
 
-.image-and-text {
-  display: flex;
-  align-items: center;
-  max-width: 75%;
-}
-
 .overlay-image {
   max-width: 60%; /* Justera storlek efter behov */
   height: 60vh; /* Tar 50% av höjden */
   object-fit: cover;
   margin-right: 20px; /* Justera avståndet mellan bild och text */
   border-radius: 4rem;
+  box-shadow: 0rem 0rem 6rem #00000075;
+}
+
+.image-and-text {
+  display: flex;
+  align-items: center;
+  max-width: 75%;
 }
 
 .text-content {
@@ -77,10 +78,18 @@
 
 .text-content button {
   margin-top: 2rem;
-  background: #4683b4cb;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+
+  color: #fff;
+  background: transparent;
+  border: 2px solid #4683b4cb;
 
   &:hover {
-    color: #4683b4cb;
+    color: #fff;
+    background: #4683b4cb;
+    border: 2px solid transparent;
   }
 }
 
@@ -296,6 +305,68 @@
     /* background: tan; */
   }
 
+  .overlay-image {
+    max-width: 90%; /* Justera storlek efter behov */
+    height: 40vh; /* Tar 50% av höjden */
+    object-fit: cover;
+    margin-right: 0; /* Justera avståndet mellan bild och text */
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 6rem #00000075;
+    margin-bottom: 2rem;
+  }
+
+  .image-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  .text-content {
+    color: white; /* Anpassa textfärg efter behov */
+    text-align: start;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-content h1 {
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 0.6rem;
+    font-size: 1.6rem;
+  }
+
+  .text-content-background {
+    background: #fff;
+    color: #333 !important;
+    padding-top: 0.4rem;
+  }
+
+  .text-content p {
+    color: #fff;
+    margin-top: 1rem;
+    padding-left: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .text-content button {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    color: #fff;
+    background: transparent;
+    border: 2px solid #4683b4cb;
+
+    &:hover {
+      color: #fff;
+      background: #4683b4cb;
+      border: 2px solid transparent;
+    }
+  }
+
   .landing-container-grid-container p {
     font-size: 1rem;
     font-weight: 600;
@@ -350,5 +421,21 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  .footer {
+    background: #4683b4cb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .footer p {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0.2rem 0;
   }
 }

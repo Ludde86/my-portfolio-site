@@ -37,12 +37,12 @@ nav {
 .link {
   position: relative;
   color: #ddd;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
   font-weight: 400;
 
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 6px;
   cursor: pointer;
 
   &:hover {

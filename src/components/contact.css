@@ -135,8 +135,8 @@
     padding: 2rem 1rem;
     margin: 1.5rem 0;
 
-    border-left: 1.5rem solid #fff;
-    border-right: 1.5rem solid #fff;
+    /* border-left: 1.5rem solid #fff;
+    border-right: 1.5rem solid #fff; */
   }
 
   .contact-container-form-grid {

@@ -14,6 +14,8 @@ import sakerhetScreen from "../img/sakerhet-screen.png";
 import samhalleScreen from "../img/samhalle-screen.png";
 import tennisScreen from "../img/tennis-screen.png";
 import napraScreen from "../img/naprapat-screen.png";
+import elScreen from "../img/elcomfort-1.png";
+import napraScreen2 from "../img/napra-1.png";
 
 import avatar from "../img/Ludvig-bw-3.jpg";
 import vid from "../videos/coding-hero.mp4";
@@ -107,6 +109,20 @@ const Landing = () => {
           ></div>
         </div>
 
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="https://www.napracura.se/" target="_blank" rel="noreferrer">
+            <img src={napraScreen2} alt="energi-screen" />
+          </a>
+        </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a
+            href="https://elcomfort-2.surge.sh/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={elScreen} alt="energi-screen" />
+          </a>
+        </div>
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <a href="/projects">
             <img src={energiScreen} alt="energi-screen" />
