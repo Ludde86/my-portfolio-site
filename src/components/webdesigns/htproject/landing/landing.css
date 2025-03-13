@@ -3,6 +3,69 @@
   background: var(--color-theme);
   height: 100svh;
   overflow: hidden;
+
+  background: #fff;
+  background: #aaa;
+}
+
+.landing__content {
+  height: 100svh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__content h1 {
+  color: #fff;
+  font-size: 5.2rem;
+  z-index: 1;
+
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.landing__content p {
+  color: #fff !important;
+  font-size: 1.8rem !important;
+  z-index: 1;
+  font-weight: 400 !important;
+  padding: 4rem;
+  width: 75%;
+
+  /* font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; */
+}
+
+.landing__content-button {
+  width: 33%;
+  border-radius: 10rem;
+  padding: 0.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+
+  box-shadow: 0 0 0.1rem #ffffff;
+}
+
+.landing__content-button input {
+  all: unset;
+  font-size: 1.6rem;
+}
+
+.landing__content-button button {
+  border-radius: 10rem;
+  background: var(--color-theme);
+  z-index: 1;
+
+  &:hover {
+    color: var(--color-theme);
+  }
 }
 
 .landing-image {
@@ -16,10 +79,26 @@
 
   transform: rotate(-25deg);
 
-  background-image: url("../assets/förstasidan-altlow1200x600.jpg");
+  background-image: url("../assets/bygg-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+
+  /* border: 1px solid black; */
+}
+
+.landing__content-buttons {
+  position: absolute;
+  bottom: 24rem;
+}
+
+.project-button {
+  width: 200px;
+  height: 200px;
+}
+
+.project-button span {
+  font-size: 1.2rem;
 }
 
 .landing__content {

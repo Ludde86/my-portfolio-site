@@ -7,38 +7,16 @@ const Landing = () => {
   return (
     <div className="landing">
       <div className="landing-image"></div>
-      <div className="landing__content"></div>
-
-      <div className="landing__content-buttons">
-        <a
-          className="project-button"
-          style={{ background: "#ea7f04" }}
-          href="#news"
-        >
-          <span>Nyheter</span>
-          <div className="project-button_arrow">
-            <BiDownArrowAlt size={26} color="#fff" />
-          </div>
-        </a>
-
-        <a className="project-button" href="#about">
-          <span>OM OSS</span>
-          <div className="project-button_arrow">
-            <BiDownArrowAlt size={26} color="#fff" />
-          </div>
-        </a>
-
-        <a
-          className="project-button"
-          style={{ background: "#cf09ac" }}
-          href="#projects"
-        >
-          <span>AKTUELLA</span>
-          <span>PROJEKT</span>
-          <div className="project-button_arrow">
-            <BiDownArrowAlt size={26} color="#fff" />
-          </div>
-        </a>
+      <div className="landing__content">
+        <h1>Vi älskar byggprojekt.</h1>
+        <p>
+          Byggprojekt är vår passion och vårt hjärta klappar för varje idé som
+          förverkligas.
+        </p>
+        <div className="landing__content-button">
+          <input type="mail" placeholder="Ange e-mail" />
+          <button>Kontakta oss</button>
+        </div>
       </div>
     </div>
   );
