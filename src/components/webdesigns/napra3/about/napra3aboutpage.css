@@ -1,9 +1,9 @@
 .napra3-about-container {
   /* border: 1px solid black; */
   background: #fff;
-  border-top: 2px solid #999;
+  /* border-top: 2px solid #999; */
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   display: flex;
   flex-direction: column;
@@ -12,29 +12,73 @@
   /* margin-top: 6rem; */
 }
 
+.napra3-about-container-desc {
+  padding: 0 8rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.napra3-about-container-desc h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: start;
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.napra3-about-container-desc p {
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: start;
+  letter-spacing: 0.2rem;
+  flex: 2;
+}
+
+.napra3-about-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 8rem;
+}
+.napra3-about-header h1 {
+  min-width: 400px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+  padding-top: 5px;
+}
+.napra3-about-header-line {
+  height: 16px;
+  width: 100%;
+  background: var(--color-napra);
+}
+
 .napra3-about-container_services-container {
   /* border: 1px solid black; */
   width: 100%;
-  min-height: 100vh;
+
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 8rem;
 }
 
 .napra3-about-container_services-container_service-card-container {
   /* border: 1px solid #333; */
 
   display: flex;
-  justify-content: center;
-  margin: 6rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* border: 1px solid black; */
+  flex: 1;
 }
 
 .napra3-about-container_services-container_service-card {
-  min-width: 40vw;
-  max-width: 40vw;
-  min-height: 20vw;
-  max-height: 20vw;
-
-  border-radius: 1rem;
-
-  /* box-shadow: 0px 0px 2px #000; */
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
 }
 
 #napra3-about-container_services-container_service-card-1 {
@@ -48,54 +92,37 @@
   background-position: bottom;
 }
 #napra3-about-container_services-container_service-card-3 {
-  background-image: url("../../naprapatrehab/naprapatrehab_img/cre8you-certifierad-mammamage-tranare.jpeg");
-  background-size: 50%;
+  background-image: url("../../naprapatrehab/naprapatrehab_img/DSC06368.jpeg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.napra3-about-container_services-container_service-card_shade {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: none;
-  min-width: 22vw;
-  min-height: 22vw;
-  border-top-left-radius: 6rem;
-  border-bottom-right-radius: 6rem;
-  padding: 2rem;
-
-  /* transition: 0.3s; */
-  /* background: #00000048; */
-}
-
-.napra3-about-container_services-container_service-card_shade:hover {
-  /* background: none; */
-  /* transform: scale(1.1); */
-  /* cursor: pointer; */
-}
-
 .napra3-about-container_services-container_service-card_desc-container {
-  /* background: #ffa6000c; */
+  background: var(--color-napra);
   width: 100%;
-  padding: 6rem;
+  height: 100%;
+  padding: 2.8rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .napra3-about-container_services-container_service-card_desc-container h3 {
-  font-size: 2.8rem;
-  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: start;
+  padding-bottom: 1rem;
 }
 
 .napra3-about-container_services-container_service-card_desc-container p {
+  color: #fff;
   font-size: 1.8rem;
-  text-align: center;
+  font-weight: 300;
+  text-align: start;
 }
 
 .napra3-about-container_services-container_service-card h3 {
@@ -116,7 +143,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 6rem;
+  /* margin: 6rem; */
 
   /* background: #fff; */
   border-radius: 6rem;
@@ -125,7 +152,13 @@
 .napra3-about-container_desc-container {
   /* border: 1px solid black; */
   width: 50vw;
-  padding: 4rem;
+  /* padding: 4rem; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .napra3-about-container_desc-container_title {
@@ -133,10 +166,13 @@
     "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
   /* color: orange; */
   color: var(--color-napra);
+  font-weight: 500;
 }
 
 .napra3-about-container_desc-container_text {
   font-size: 1.8rem;
+  font-weight: 300;
+  text-align: start;
 }
 
 .napra3-about-container_carousel-container {
@@ -151,44 +187,127 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .napra3-about-container_services-container {
+  .napra3-about-container {
+    display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    /* background: tan; */
-  }
-
-  .napra3-about-container_services-container_service-card-container {
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 1rem;
     padding: 1rem;
   }
 
-  .napra3-about-container_services-container_service-card_desc-container {
+  .napra3-about-container-desc {
     padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .napra3-about-container_services-container_service-card_desc-container h3 {
-    font-size: 2rem;
+  .napra3-about-container-desc h3 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-right: 0;
+    padding-top: 1rem;
   }
 
-  .napra3-about-container_services-container_service-card_desc-container p {
+  .napra3-about-container-desc p {
+    /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
     font-size: 1.2rem;
-    line-height: 1.2rem;
-    text-align: start;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    padding-bottom: 2rem;
+  }
+
+  .napra3-about-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .napra3-about-header h1 {
+    min-width: 200px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    padding-top: 5px;
+  }
+  .napra3-about-header-line {
+    height: 16px;
+    width: 100%;
+    background: var(--color-napra);
+  }
+
+  .napra3-about-container_services-container {
+    /* border: 1px solid black; */
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .napra3-about-container_services-container_service-card-container {
+    /* border: 1px solid #333; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 1px solid black; */
+    flex: 1;
+    border-radius: 0.2rem;
+    overflow: hidden;
   }
 
   .napra3-about-container_services-container_service-card {
-    min-width: 80vw;
-    max-width: 80vw;
-    min-height: 80vw;
-    max-height: 80vw;
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+  }
 
-    border-radius: 0rem;
+  #napra3-about-container_services-container_service-card-1 {
+    background-image: url("../../naprapatrehab/naprapatrehab_img/DSC06469.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  #napra3-about-container_services-container_service-card-2 {
+    background-image: url("../../naprapatrehab/naprapatrehab_img/DSC06359___serialized1.jpeg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  #napra3-about-container_services-container_service-card-3 {
+    background-image: url("../../naprapatrehab/naprapatrehab_img/DSC06368.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    /* box-shadow: 0px 0px 2px #000; */
+  .napra3-about-container_services-container_service-card_desc-container {
+    background: var(--color-napra);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .napra3-about-container_services-container_service-card_desc-container h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: start;
+    padding-bottom: 1rem;
+  }
+
+  .napra3-about-container_services-container_service-card_desc-container p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: start;
   }
 
   .napra3-about-container_services-container_service-card h3 {
@@ -196,11 +315,10 @@
       "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
     color: #fff;
     text-shadow: 0px 0px 2px #000;
-    font-size: 2rem;
   }
   .napra3-about-container_services-container_service-card p {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #fff;
     text-shadow: 0px 0px 2px #000;
@@ -211,33 +329,45 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    background: #fff;
-    margin: 0;
-    border-radius: 0.2rem;
-  }
-
-  .napra3-about-container_carousel-container {
-    width: 300px;
-    margin: 0rem;
+    width: 100%;
   }
 
   .napra3-about-container_desc-container {
-    /* border: 1px solid black; */
-    width: 100vw;
-    padding: 2rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .napra3-about-container_desc-container_title {
     font-family: "League Spartan", "sans-serif", "Lucida Sans",
       "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
-    color: orange;
-    font-size: 2rem;
+    /* color: orange; */
+    color: var(--color-napra);
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: start;
   }
 
   .napra3-about-container_desc-container_text {
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    font-weight: 300;
+    text-align: start;
+  }
+
+  .napra3-about-container_carousel-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .napra3-about-container_carousel-container_img {
+    /* border-radius: 6rem; */
+
+    max-height: 330px;
   }
 }
 

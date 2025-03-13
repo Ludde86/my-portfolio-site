@@ -13,27 +13,47 @@ import byggScreen from "../img/bygg-screen.png";
 import sakerhetScreen from "../img/sakerhet-screen.png";
 import samhalleScreen from "../img/samhalle-screen.png";
 import tennisScreen from "../img/tennis-screen.png";
+import napraScreen from "../img/naprapat-screen.png";
+import elScreen from "../img/elcomfort-1.png";
+import napraScreen2 from "../img/napra-1.png";
 
-import avatar from "../img/avatar-1.png";
+import avatar from "../img/Ludvig-bw-3.jpg";
+import vid from "../videos/coding-hero.mp4";
 import { ArrowDownRight } from "lucide-react";
 
 const Landing = () => {
   return (
     <div className="landing-container">
-      <div className="landing-container-grid">
-        <div className="landing-container-grid-container landing-container-grid-row-span-2">
-          <a href="/resume">
-            <img src={avatar} alt="avatar" />
-          </a>
-        </div>
-        <div className="landing-container-grid-container landing-container-grid-col-span-2">
-          <div id="landing-container-grid-col-span-2-text">
-            <p>Ludvig Björn</p>
-            <p>Webbutvecklare- och designer</p>
+      <div className="container">
+        <video
+          className="background-video"
+          type="video/mp4"
+          autoPlay
+          playsInline
+          loop
+          muted
+          preload="metadata"
+        >
+          <source src={vid} type="video/mp4" />
+        </video>
+        <div className="overlay">
+          <div className="image-and-text">
+            <img src={avatar} alt="Example" className="overlay-image" />
+            <div className="text-content">
+              <h1>Ludvig Björn</h1>
+              <h1 className="text-content-background">Webbutvecklare</h1>
+              <p>
+                Modern, lättnavigerad design skräddarsydd efter dina behov.
+                Färdig hemsida inom två veckor. Kontakta mig idag för att
+                modernisera din hemsida.
+              </p>
+              <button>Kontakta mig</button>
+            </div>
           </div>
-          <div className="landing-container-grid-col-span-2-text-underline"></div>
         </div>
+      </div>
 
+      <div className="landing-container-grid">
         <div
           className="landing-container-grid-container"
           id="landing-container-grid-container-col-1"
@@ -90,6 +110,20 @@ const Landing = () => {
         </div>
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="https://www.napracura.se/" target="_blank" rel="noreferrer">
+            <img src={napraScreen2} alt="energi-screen" />
+          </a>
+        </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a
+            href="https://elcomfort-2.surge.sh/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={elScreen} alt="energi-screen" />
+          </a>
+        </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <a href="/projects">
             <img src={energiScreen} alt="energi-screen" />
           </a>
@@ -111,7 +145,12 @@ const Landing = () => {
         </div>
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <a href="/projects">
-            <img src={tennisScreen} alt="sakerhet-screen" />
+            <img src={tennisScreen} alt="tennis-screen" />
+          </a>
+        </div>
+        <div className="landing-container-grid-container landing-container-grid-col-span-2">
+          <a href="/projects">
+            <img src={napraScreen} alt="napra-screen" />
           </a>
         </div>
 
@@ -130,6 +169,11 @@ const Landing = () => {
       <About />
       <Contact />
       <Whatis />
+      <footer className="footer">
+        <p>Kontakt: bslbjorn@gmail.com</p>
+        <p>Ludvig Björn &copy; 2025</p>
+        <p>Orgnummer: 123456-7890</p>
+      </footer>
     </div>
   );
 };

@@ -2,24 +2,22 @@
   position: absolute;
   width: 100%;
 
-  max-height: 6vh;
-  /* border-bottom: 1px solid #333; */
-
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 64px;
+  justify-content: space-evenly;
 
-  /* background: linear-gradient(to bottom, #00000093, #00000000); */
-  background: #eeeeee1a;
+  background: #00000044;
   backdrop-filter: blur(5px);
 }
 
 .napra3-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .napra3-logo-container img {
   width: 160px;
+  padding-top: 6px;
 }
 
 .napra3-links-container {
@@ -28,13 +26,39 @@
   justify-content: space-evenly;
 }
 
-.napra3-links-container a {
+.napra3-links-container-link {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   color: #fff;
   text-decoration: none;
-  font-size: 1.6rem;
-  text-shadow: 0px 0px 1px #000;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
 
   transition: 0.3s;
+
+  &:hover > .napra3-links-container-link-underline {
+    height: 4px;
+  }
+
+  &:hover > .napra3-links-container-link-overline {
+    height: 4px;
+  }
+}
+
+.napra3-links-container-link-underline {
+  height: 0;
+  background: var(--color-napra);
+  transition: 0.5s;
+}
+
+.napra3-links-container-link-overline {
+  height: 0;
+  background: transparent;
+  transition: 0.5s;
 }
 
 .napra3-links-container a:hover {

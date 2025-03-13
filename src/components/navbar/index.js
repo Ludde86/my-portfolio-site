@@ -8,14 +8,16 @@ const Navbar = () => {
       <header>
         <nav>
           <div className="links-container">
-            <a className="link" href="/">
-              Hem
-            </a>
+            {/* 
             <a className="link" href="/resume">
               CV
             </a>
+            */}
           </div>
           <div className="links-container">
+            <a className="link" href="/">
+              Hem
+            </a>
             <a className="link" href="/projects">
               Projekt
             </a>

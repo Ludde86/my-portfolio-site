@@ -11,6 +11,23 @@ import ServicesNapra3 from "../services/ServicesNapra3";
 const Napra3AboutPage = () => {
   return (
     <div className="napra3-about-container">
+      <div className="napra3-about-header">
+        <div className="napra3-about-header-line"></div>
+        <h1>VÅRA TJÄNSTER</h1>
+      </div>
+      <div className="napra3-about-container-desc">
+        <h3>
+          Vi erbjuder ett brett utbud av behandlingar för att stödja din hälsa
+          och ditt välbefinnande
+        </h3>
+        <p>
+          Hos oss hittar du naprapatbehandling, massage och akupunktur – alla
+          utformade för att lindra smärta, öka rörlighet och främja
+          återhämtning. Vårt mål är att ge dig en personlig och professionell
+          behandling som hjälper dig att må bra och leva ett aktivt liv utan
+          begränsningar
+        </p>
+      </div>
       <div id="Tjänster" className="napra3-about-container_services-container">
         <div className="napra3-about-container_services-container_service-card-container">
           <div
@@ -20,14 +37,9 @@ const Napra3AboutPage = () => {
           <div className="napra3-about-container_services-container_service-card_desc-container">
             <h3>Naprapatbehandling</h3>
             <p>
-              Naprapati är en manuell terapiform där du vid ett besök får
-              diagnostisering, behandling och rehabilitering av smärttillstånd
-              och funktionella besvär i skelett, muskler och leder.
-              Naprapatbehandlingen syftar till att återställa kroppens normala
-              rörlighet och funktion samt minska smärtan. För att uppnå detta
-              tillämpas olika behandlingsmetoder och tekniker som ex.
-              ledmanipulation och mobilisering, mjukdelsbehandling som massage,
-              stretching, men även TENS och dry needling.
+              Naprapatbehandling är en metod för att lindra smärta och stelhet i
+              muskler och leder genom en kombination av manuella tekniker som
+              massage, stretching och justering.
             </p>
           </div>
         </div>
@@ -40,10 +52,9 @@ const Napra3AboutPage = () => {
           <div className="napra3-about-container_services-container_service-card_desc-container">
             <h3>Massage</h3>
             <p>
-              Denna tjänst är till för dig som inte söker för några specifika
-              besvär utan önskar enklare mjukdelsbehandling i form av massage,
-              triggerpunktsbehandling och stretch. Vi lägger lite extra fokus på
-              de områden i kroppen där du har mer muskulära spänningar.
+              Massage är en avslappnande och behandlande teknik som hjälper till
+              att minska muskelspänningar, förbättra blodcirkulationen och
+              lindra stress.
             </p>
           </div>
         </div>
@@ -54,21 +65,11 @@ const Napra3AboutPage = () => {
             className="napra3-about-container_services-container_service-card"
           ></div>
           <div className="napra3-about-container_services-container_service-card_desc-container">
-            <h3>MammaMageträning</h3>
+            <h3>Akupunktur</h3>
             <p>
-              Som certifierad MammaMagetränare kan jag ge dig konsultationer
-              kring magen, diasatser och dynfunktioner för att sedan tillsammans
-              med dig hitta ett mer optimalt muskelengagemang.
-            </p>
-            <p>
-              Första besöket innebär ofta mycket prat, inhämtning av information
-              (anamnes), inspektion och muskelfunktionstest av aktuell
-              muskulatur ofta djup bäckenmuskulatur och bålkontroll. Då kommer
-              vi att testa muskulaturen i olika positioner för att hitta en
-              eller flera positioner där du känner att du har kontroll och där
-              jag kan se att du kan rekrytera muskulaturen på ett bra sätt.
-              Därefter kommer du att få 1-3 hemövningar som du får med dig hem
-              att göra till nästa gång vi ses.
+              Akupunktur är en behandlingsmetod som stimulerar kroppens egen
+              läkningsprocess genom att använda tunna nålar på specifika
+              punkter.
             </p>
           </div>
         </div>
