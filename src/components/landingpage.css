@@ -163,7 +163,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #2c515e;
+  /* background: #2c515e; */
+  background: #4683b4cb;
   opacity: 0.8;
   width: 80px;
   height: 80px;
@@ -262,6 +263,14 @@
 
 #green-underline {
   background: #2c515e;
+}
+
+#blue {
+  color: #4683b4cb;
+}
+
+#blue-underline {
+  background: #4683b4cb;
 }
 
 .footer {

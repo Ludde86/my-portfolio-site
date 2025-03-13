@@ -17,9 +17,9 @@
 }
 
 .landing__content h1 {
+  z-index: 1;
   color: #fff;
   font-size: 5.2rem;
-  z-index: 1;
 
   font-family: "Lora", serif;
   font-optical-sizing: auto;

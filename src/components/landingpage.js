@@ -89,7 +89,7 @@ const Landing = () => {
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <div id="landing-container-grid-col-span-2-text">
-            <p id="green">Mina projekt</p>
+            <p id="blue">Mina senaste projekt</p>
           </div>
           <a
             href="/projects"
@@ -101,11 +101,11 @@ const Landing = () => {
             />
           </a>
           <div id="landing-container-grid-col-span-2-text">
-            <p id="green">Din hemsida kan se ut så här</p>
+            <p id="blue">Din hemsida kan se ut så här</p>
           </div>
           <div
             className="landing-container-grid-col-span-2-text-underline"
-            id="green-underline"
+            id="blue-underline"
           ></div>
         </div>
 
