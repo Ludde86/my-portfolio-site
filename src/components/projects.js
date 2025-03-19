@@ -20,10 +20,10 @@ import EnergiApp1 from "./webdesigns/energi1/EnergiApp1";
 import Samhalle1App from "./webdesigns/samhalle1/Samhalle1App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(7);
+  const [activeTab, setActiveTab] = useState(0);
 
   const links = [
-    "Plats",
+    "Omrade",
     "Energi",
     "Renovering",
     "Sakerhet",
