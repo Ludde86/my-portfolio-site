@@ -172,7 +172,7 @@ const Landing = () => {
       <footer className="footer">
         <p>Kontakt: bslbjorn@gmail.com</p>
         <p>Ludvig Björn &copy; 2025</p>
-        <p>Orgnummer: 123456-7890</p>
+        <p>Orgnummer: 198608050673</p>
       </footer>
     </div>
   );
