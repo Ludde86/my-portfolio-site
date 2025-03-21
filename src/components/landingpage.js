@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import About from "./aboutme";
 import Contact from "./contact";
 import Whatis from "./whatis";
+import Imagesection from "./imagesection";
 import "./landingpage.css";
 
 import reactLogo from "../img/react-icon.png";
@@ -17,23 +18,10 @@ import napraScreen from "../img/naprapat-screen.png";
 import elScreen from "../img/elcomfort-1.png";
 import napraScreen2 from "../img/napra-1.png";
 
-import avatar from "../img/Ludvig-bw-3.jpg";
 import vid from "../videos/coding-hero.mp4";
 import { ArrowDownRight } from "lucide-react";
-import { useState } from "react";
 
 const Landing = () => {
-  const [imageSrcs, setImageSrcs] = useState([
-    energiScreen,
-    byggScreen,
-    sakerhetScreen,
-    samhalleScreen,
-    tennisScreen,
-    napraScreen,
-    elScreen,
-    napraScreen2,
-  ]);
-
   return (
     <div className="landing-container">
       <div className="container">
@@ -61,44 +49,16 @@ const Landing = () => {
               hemsida inom två veckor.
             </p>
           </div>
-          <div className="image-section">
-            <div className="image-container">
-              <img
-                className="overlay-image large"
-                src={imageSrcs[7]}
-                alt="Stor Bild"
-              />
-              <img
-                className="overlay-image small top-left"
-                src={imageSrcs[1]}
-                alt="Bild 1"
-              />
-              <img
-                className="overlay-image small top-right"
-                src={imageSrcs[2]}
-                alt="Bild 2"
-              />
-              <img
-                className="overlay-image small bottom-left"
-                src={imageSrcs[4]}
-                alt="Bild 3"
-              />
-              <img
-                className="overlay-image small bottom-right"
-                src={imageSrcs[3]}
-                alt="Bild 4"
-              />
-              <img
-                className="overlay-image small middle-left"
-                src={imageSrcs[0]}
-                alt="Bild 5"
-              />
-            </div>
+          <Imagesection />
+          <div className="landing_container-button_section">
+            <input type="mail" placeholder="Ange e-mail" />
+            <button>Kontakta mig</button>
           </div>
         </div>
       </div>
 
       <div className="landing-container-grid">
+        {/* 
         <div
           className="landing-container-grid-container"
           id="landing-container-grid-container-col-1"
@@ -131,6 +91,7 @@ const Landing = () => {
             <img src={cssLogo} alt="css-logo" />
           </a>
         </div>
+        */}
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <div id="landing-container-grid-col-span-2-text">
@@ -211,9 +172,11 @@ const Landing = () => {
       </div>
           */}
       </div>
-      <About />
       <Contact />
+      <About />
+      {/*
       <Whatis />
+       */}
       <footer className="footer">
         <p>Kontakt: bslbjorn@gmail.com</p>
         <p>Ludvig Björn &copy; 2025</p>
