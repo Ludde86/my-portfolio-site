@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh; /* Anpassa efter behov */
+  max-height: 100vh; /* Anpassa efter behov */
   overflow: hidden;
 }
 
@@ -29,9 +30,12 @@
 }
 
 .aboutpage-container-overlay-image {
-  max-width: 60%; /* Justera storlek efter behov */
-  height: 60vh; /* Tar 50% av höjden */
+  min-width: 50%; /* Justera storlek efter behov */
+  max-width: 50%; /* Justera storlek efter behov */
+  min-height: 75vh; /* Tar 50% av höjden */
+  max-height: 75vh; /* Tar 50% av höjden */
   object-fit: cover;
+  aspect-ratio: 1/1;
   margin-right: 20px; /* Justera avståndet mellan bild och text */
   border-radius: 4rem;
   box-shadow: 0rem 0rem 6rem #00000075;
