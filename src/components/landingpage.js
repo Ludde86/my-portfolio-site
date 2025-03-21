@@ -50,6 +50,14 @@ const Landing = () => {
             </p>
           </div>
           <Imagesection />
+          <div className="text-section">
+            <p>
+              Kontakta mig för att komma igång! Skicka ett e-postmeddelande så
+              återkommer jag till dig. Som en bonus får du en kostnadsfri mall
+              eller landningssida för att visa vad vi kan skapa för att imponera
+              på era besökare.
+            </p>
+          </div>
           <div className="landing_container-button_section">
             <input type="mail" placeholder="Ange e-mail" />
             <button>Kontakta mig</button>
