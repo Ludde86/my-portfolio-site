@@ -8,11 +8,13 @@ import Haningehtk3App from "./webdesigns/haningetk3/Haningetk3App";
 import Haningehtk3Tennisskola from "./webdesigns/haningetk3/tennisskola/Haningetk3Tennisskola";
 import Haningehtk3Tavling from "./webdesigns/haningetk3/tavling/Haningetk3Tavling";
 import Haningehtk3Varabanor from "./webdesigns/haningetk3/varabanor/Haningetk3Varabanor";
+import aboutpage from "./aboutpage";
 
 const Main = () => (
   <Routes>
     <Route exact path="/" Component={Landing} />
     <Route path="/resume" Component={Resume} />
+    <Route path="/om-mig" Component={aboutpage} />
     <Route path="/projects" Component={Projects} />
     <Route path="/dictionary" Component={Dictionary} />
 

@@ -18,6 +18,9 @@ const Navbar = () => {
             <a className="link" href="/">
               Hem
             </a>
+            <a className="link" href="/om-mig">
+              Om mig
+            </a>
             <a className="link" href="/projects">
               Projekt
             </a>

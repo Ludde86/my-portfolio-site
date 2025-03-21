@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import About from "./aboutme";
 import Contact from "./contact";
 import Whatis from "./whatis";
@@ -20,8 +20,20 @@ import napraScreen2 from "../img/napra-1.png";
 import avatar from "../img/Ludvig-bw-3.jpg";
 import vid from "../videos/coding-hero.mp4";
 import { ArrowDownRight } from "lucide-react";
+import { useState } from "react";
 
 const Landing = () => {
+  const [imageSrcs, setImageSrcs] = useState([
+    energiScreen,
+    byggScreen,
+    sakerhetScreen,
+    samhalleScreen,
+    tennisScreen,
+    napraScreen,
+    elScreen,
+    napraScreen2,
+  ]);
+
   return (
     <div className="landing-container">
       <div className="container">
@@ -37,17 +49,50 @@ const Landing = () => {
           <source src={vid} type="video/mp4" />
         </video>
         <div className="overlay">
-          <div className="image-and-text">
-            <img src={avatar} alt="Example" className="overlay-image" />
-            <div className="text-content">
-              <h1>Ludvig Björn</h1>
-              <h1 className="text-content-background">Webbutvecklare</h1>
-              <p>
-                Modern, lättnavigerad design skräddarsydd efter dina behov.
-                Färdig hemsida inom två veckor. Kontakta mig idag för att
-                modernisera din hemsida.
-              </p>
-              <button>Kontakta mig</button>
+          <div className="text-section">
+            {/*
+            <h1>
+              Låt oss skapa en webbplats som gör er till det självklara valet
+            </h1>
+              */}
+            <h1>Låt oss skapa en webbplats som imponerar på era besökare.</h1>
+            <p>
+              Modern, lättnavigerad design skräddarsydd efter era behov. Färdig
+              hemsida inom två veckor.
+            </p>
+          </div>
+          <div className="image-section">
+            <div className="image-container">
+              <img
+                className="overlay-image large"
+                src={imageSrcs[7]}
+                alt="Stor Bild"
+              />
+              <img
+                className="overlay-image small top-left"
+                src={imageSrcs[1]}
+                alt="Bild 1"
+              />
+              <img
+                className="overlay-image small top-right"
+                src={imageSrcs[2]}
+                alt="Bild 2"
+              />
+              <img
+                className="overlay-image small bottom-left"
+                src={imageSrcs[4]}
+                alt="Bild 3"
+              />
+              <img
+                className="overlay-image small bottom-right"
+                src={imageSrcs[3]}
+                alt="Bild 4"
+              />
+              <img
+                className="overlay-image small middle-left"
+                src={imageSrcs[0]}
+                alt="Bild 5"
+              />
             </div>
           </div>
         </div>
