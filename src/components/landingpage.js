@@ -52,10 +52,10 @@ const Landing = () => {
           <Imagesection />
           <div className="text-section">
             <p>
-              Kontakta mig för att komma igång! Skicka ett e-postmeddelande så
-              återkommer jag till dig. Som en bonus får du en kostnadsfri mall
-              eller landningssida för att visa vad vi kan skapa för att imponera
-              på era besökare.
+              Kontakta mig för att komma igång! Som en bonus får ni en
+              kostnadsfri mall eller landningssida på er hemsida för att visa
+              vad vi kan skapa för att imponera på era besökare. Allt ni behöver
+              göra är att skicka ett e-postmeddelande så återkommer jag till er.
             </p>
           </div>
           <div className="landing_container-button_section">
