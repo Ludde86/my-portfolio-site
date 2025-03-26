@@ -1,3 +1,14 @@
+body {
+  background-color: black; /* Svart bakgrund */
+  opacity: 1; /* Full synlighet */
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Smidig övergång */
+}
+
+body.fade-out {
+  opacity: 0; /* Gör sidan osynlig */
+  background-color: black; /* Bibehåll svart när opaciteten minskar */
+}
+
 .app-container {
   background: white;
   display: flex;

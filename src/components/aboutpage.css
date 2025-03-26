@@ -1,9 +1,17 @@
 .aboutpage-container {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Anpassa efter behov */
-  max-height: 100vh; /* Anpassa efter behov */
+  min-height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
+
+  opacity: 0; /* Börja osynlig */
+  background-color: black; /* Svart bakgrund */
+  transition: opacity 2s ease-in-out; /* Justera till 0.5s för snabbare testning */
+}
+
+.aboutpage-container.fade-in {
+  opacity: 1; /* Gör komponenten synlig */
 }
 
 .aboutpage-container-background-video {

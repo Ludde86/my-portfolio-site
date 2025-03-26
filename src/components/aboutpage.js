@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./aboutpage.css";
 import avatar from "../img/Ludvig-bw-3.jpg";
 import vid from "../videos/coding-hero.mp4";
 
-const aboutpage = () => {
+const Aboutpage = () => {
+  const aboutPageContainerRef = useRef(null); // Skapa en ref
+
+  useEffect(() => {
+    console.log("Aboutpage useEffect triggas");
+    const aboutPageContainer = document.querySelector(".aboutpage-container");
+    if (aboutPageContainer) {
+      console.log("Element hittades:", aboutPageContainer);
+      aboutPageContainer.classList.add("fade-in");
+    } else {
+      console.log("Elementet hittades inte");
+    }
+  }, []);
+
   return (
-    <div className="aboutpage-container">
+    <div ref={aboutPageContainerRef} className="aboutpage-container">
       <video
         className="aboutpage-container-background-video"
         type="video/mp4"
@@ -42,4 +55,4 @@ const aboutpage = () => {
   );
 };
 
-export default aboutpage;
+export default Aboutpage;

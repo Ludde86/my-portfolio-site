@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import About from "./aboutme";
 import Contact from "./contact";
 import Whatis from "./whatis";
@@ -19,12 +19,26 @@ import elScreen from "../img/elcomfort-1.png";
 import napraScreen2 from "../img/napra-1.png";
 
 import vid from "../videos/coding-hero.mp4";
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDown, ArrowDownRight } from "lucide-react";
 
-const Landing = () => {
+const Landing = ({ isFading }) => {
+  const landingPageContainerRef = useRef(null); // Skapa en ref
+
+  useEffect(() => {
+    console.log("Aboutpage useEffect triggas");
+    const landingPageContainerRef =
+      document.querySelector(".landing-container");
+    if (landingPageContainerRef) {
+      console.log("Element hittades:", landingPageContainerRef);
+      landingPageContainerRef.classList.add("fade-in");
+    } else {
+      console.log("Elementet hittades inte");
+    }
+  }, []);
+
   return (
-    <div className="landing-container">
-      <div className="container">
+    <div ref={landingPageContainerRef} className="landing-container">
+      <div className={`hero-container ${isFading ? "fade-out" : ""}`}>
         <video
           className="background-video"
           type="video/mp4"
@@ -52,15 +66,24 @@ const Landing = () => {
           <Imagesection />
           <div className="text-section">
             <p>
-              Kontakta mig för att komma igång! Som en bonus får ni en
-              kostnadsfri mall eller landningssida på er hemsida för att visa
-              vad vi kan skapa för att imponera på era besökare. Allt ni behöver
-              göra är att skicka ett e-postmeddelande så återkommer jag till er.
+              Vill du se vad jag kan göra för dig? Ta del av mina senaste
+              projekt där jag har hjälpt företag och föreningar att förverkliga
+              sin digitala vision. Skicka ett e-postmeddelande, så återkommer
+              jag personligen. Som en introduktion får du en kostnadsfri mall
+              eller landningssida som visar potentialen för din framtida
+              webbplats.
             </p>
           </div>
           <div className="landing_container-button_section">
             <input type="mail" placeholder="Ange e-mail" />
             <button>Kontakta mig</button>
+          </div>
+          <div className="landing_container-text-section">
+            <h1>Mina senaste projekt</h1>
+
+            <a href="/projects" className="landing_container-text-section-icon">
+              <ArrowDown size={40} id="landing-container-icon" />
+            </a>
           </div>
         </div>
       </div>
@@ -102,9 +125,7 @@ const Landing = () => {
         */}
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
-          <div id="landing-container-grid-col-span-2-text">
-            <p id="blue">Mina senaste projekt</p>
-          </div>
+          {/*
           <a
             href="/projects"
             className="landing-container-grid-col-span-2-text-icon"
@@ -121,6 +142,7 @@ const Landing = () => {
             className="landing-container-grid-col-span-2-text-underline"
             id="blue-underline"
           ></div>
+            */}
         </div>
 
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
