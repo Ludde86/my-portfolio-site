@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import About from "./aboutme";
 import Contact from "./contact";
 import Whatis from "./whatis";
@@ -21,8 +21,44 @@ import napraScreen2 from "../img/napra-1.png";
 import vid from "../videos/coding-hero.mp4";
 import { ArrowDown, ArrowDownRight } from "lucide-react";
 
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
+
 const Landing = ({ isFading }) => {
+  const { register, reset, handleSubmit } = useForm();
+
+  const [from, setFrom] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [result, setResult] = useState(null);
+  // const [result, setResult] = useState("Ditt meddelande har skickats!");
+
   const landingPageContainerRef = useRef(null); // Skapa en ref
+
+  const handleSetFrom = (e) => {
+    setFrom(e.target.value);
+  };
+
+  const accessKey = process.env.REACT_APP_ACCESS_KEY;
+
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: accessKey,
+    settings: {
+      from_name: from,
+      subject: "Nytt kontaktmeddelande från din webbplats",
+      // ... other settings
+    },
+    onSuccess: (msg, data) => {
+      setIsSuccess(true);
+      setResult("Ditt meddelande har skickats!");
+      reset();
+    },
+    onError: (msg, data) => {
+      setIsSuccess(false);
+      setResult(
+        "Det gick tyvärr inte att skicka ditt meddelande just nu. Försök igen om en liten stund!"
+      );
+    },
+  });
 
   useEffect(() => {
     console.log("Aboutpage useEffect triggas");
@@ -68,16 +104,30 @@ const Landing = ({ isFading }) => {
             <p>
               Vill du se vad jag kan göra för dig? Ta del av mina senaste
               projekt där jag har hjälpt företag och föreningar att förverkliga
-              sin digitala vision. Skicka ett e-postmeddelande, så återkommer
-              jag personligen. Som en introduktion får du en kostnadsfri mall
-              eller landningssida som visar potentialen för din framtida
-              webbplats.
+              sin digitala vision. Skicka er e-post, så återkommer jag
+              personligen. Som en introduktion får du en kostnadsfri mall eller
+              landningssida som visar potentialen för din framtida webbplats.
             </p>
           </div>
-          <div className="landing_container-button_section">
-            <input type="mail" placeholder="Ange e-mail" />
-            <button>Kontakta mig</button>
+
+          <div className="mail-section">
+            <form
+              className="landing_container-button_section"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <input
+                type="email"
+                placeholder="Ange E-post"
+                onInvalid={(e) => e.target.setCustomValidity("Ange din e-post")}
+                {...register("email", { required: true })}
+                required
+              />
+              <button>Skicka</button>
+            </form>
+
+            <p>{result}</p>
           </div>
+
           <div className="landing_container-text-section">
             <h1>Mina senaste projekt och mallar</h1>
 
