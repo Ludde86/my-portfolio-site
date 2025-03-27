@@ -43,11 +43,22 @@ const Aboutpage = () => {
               Webbutvecklare
             </h1>
             <p>
-              Modern, lättnavigerad design skräddarsydd efter dina behov. Färdig
-              hemsida inom två veckor. Kontakta mig idag för att modernisera din
-              hemsida.
+              Letar du efter en modern, lättnavigerad och stilren webbplats? Jag
+              hjälper företag, föreningar och privatpersoner att skapa snygga
+              och funktionella hemsidor.
             </p>
-            <button>Kontakta mig</button>
+            <p>
+              Behöver du modernisera en befintlig webbplats? Med fem års
+              erfarenhet inom webbutveckling kan jag hjälpa till att ge din
+              hemsida ett fräscht och uppdaterat utseende.
+            </p>
+            <p>
+              Tveka inte att höra av dig om du har frågor eller vill diskutera
+              ditt projekt.
+            </p>
+            <button>
+              <a href="mailto:bslbjorn@gmail.com">Kontakta mig</a>
+            </button>
           </div>
         </div>
       </div>

@@ -79,6 +79,10 @@
   font-size: 1.6rem;
 }
 
+.aboutpage-container-text-content a {
+  all: unset;
+}
+
 .aboutpage-container-text-content button {
   margin-top: 2rem;
   font-size: 1.2rem;
@@ -93,5 +97,110 @@
     color: #fff;
     background: #4683b4cb;
     border: 2px solid transparent;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .aboutpage-container {
+    position: relative;
+    width: 100%;
+    min-height: 175vh;
+    max-height: auto;
+    overflow: visible;
+
+    opacity: 0; /* Börja osynlig */
+    background-color: black; /* Svart bakgrund */
+    transition: opacity 2s ease-in-out; /* Justera till 0.5s för snabbare testning */
+  }
+
+  .aboutpage-container.fade-in {
+    opacity: 1; /* Gör komponenten synlig */
+  }
+
+  .aboutpage-container-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Lägg videon bakom overlay */
+  }
+
+  .aboutpage-container-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.9); /* Svart filter med 0.9 opacity */
+    z-index: 2; /* Lägg overlay över videon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutpage-container-overlay-image {
+    min-width: 100%; /* Justera storlek efter behov */
+    max-width: 100%; /* Justera storlek efter behov */
+    min-height: 50vh; /* Tar 50% av höjden */
+    max-height: 50vh; /* Tar 50% av höjden */
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 1/1;
+    margin-right: 0;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 6rem #00000075;
+
+    margin-bottom: 2rem;
+    /* padding-top: 4rem; */
+  }
+
+  .aboutpage-container-image-and-text {
+    max-width: 75%;
+
+    flex-direction: column;
+  }
+
+  .aboutpage-container-text-content {
+    color: white; /* Anpassa textfärg efter behov */
+    text-align: start;
+  }
+
+  .aboutpage-container-text-content h1 {
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 0.6rem;
+    font-size: 1.6rem;
+  }
+
+  .aboutpage-container-text-content-background {
+    background: #fff;
+    color: #333 !important;
+    padding-top: 0.4rem;
+  }
+
+  .aboutpage-container-text-content p {
+    color: #fff;
+    margin-top: 1rem;
+    padding-left: 0.6rem;
+    font-size: 1.2rem;
+  }
+
+  .aboutpage-container-text-content button {
+    margin: 2rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+
+    color: #fff;
+    background: transparent;
+    border: 2px solid #4683b4cb;
+
+    &:hover {
+      color: #fff;
+      background: #4683b4cb;
+      border: 2px solid transparent;
+    }
   }
 }

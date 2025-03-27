@@ -79,7 +79,7 @@ const Landing = ({ isFading }) => {
             <button>Kontakta mig</button>
           </div>
           <div className="landing_container-text-section">
-            <h1>Mina senaste projekt</h1>
+            <h1>Mina senaste projekt och mallar</h1>
 
             <a href="/projects" className="landing_container-text-section-icon">
               <ArrowDown size={40} id="landing-container-icon" />
@@ -207,7 +207,7 @@ const Landing = ({ isFading }) => {
       {/*
       <Whatis />
        */}
-      <footer className="footer">
+      <footer className="main-footer">
         <p>Kontakt: bslbjorn@gmail.com</p>
         <p>Ludvig Björn &copy; 2025</p>
         <p>Orgnummer: 198608050673</p>
