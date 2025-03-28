@@ -1,10 +1,11 @@
 .whatis-container {
-  padding: 15rem 0;
+  padding: 20%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 
-  width: 65%;
+  width: 100%;
   gap: 10rem;
 }
 .whatis-container-content {
@@ -52,6 +53,8 @@
 
     width: 100%;
     gap: 4rem;
+
+    margin-top: 80svh;
   }
 
   .whatis-container-content h1 {
@@ -61,7 +64,6 @@
   }
   .whatis-container-content p {
     text-align: center;
-    color: #333;
     font-size: 1rem;
     padding-top: 1.5rem;
   }

@@ -1,14 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import About from "./aboutme";
 import Contact from "./contact";
-import Whatis from "./whatis";
+
 import Imagesection from "./imagesection";
 import "./landingpage.css";
 
-import reactLogo from "../img/react-icon.png";
-import htmlLogo from "../img/html-icon.jpg";
-import cssLogo from "../img/css-icon.png";
-import javascriptLogo from "../img/java-script-icon.jpg";
 import energiScreen from "../img/energi-screen.png";
 import byggScreen from "../img/bygg-screen.png";
 import sakerhetScreen from "../img/sakerhet-screen.png";
@@ -19,7 +15,7 @@ import elScreen from "../img/elcomfort-1.png";
 import napraScreen2 from "../img/napra-1.png";
 
 import vid from "../videos/coding-hero.mp4";
-import { ArrowDown, ArrowDownRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
@@ -30,9 +26,8 @@ const Landing = ({ isFading }) => {
   const [from, setFrom] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
   const [result, setResult] = useState(null);
-  // const [result, setResult] = useState("Ditt meddelande har skickats!");
 
-  const landingPageContainerRef = useRef(null); // Skapa en ref
+  const [fadeIn, setFadeIn] = useState(false); // Hantera fade-in som state
 
   const handleSetFrom = (e) => {
     setFrom(e.target.value);
@@ -61,19 +56,12 @@ const Landing = ({ isFading }) => {
   });
 
   useEffect(() => {
-    console.log("Aboutpage useEffect triggas");
-    const landingPageContainerRef =
-      document.querySelector(".landing-container");
-    if (landingPageContainerRef) {
-      console.log("Element hittades:", landingPageContainerRef);
-      landingPageContainerRef.classList.add("fade-in");
-    } else {
-      console.log("Elementet hittades inte");
-    }
+    console.log("Landingpage useEffect triggas");
+    setFadeIn(true); // Uppdatera state när komponenten mountas
   }, []);
 
   return (
-    <div ref={landingPageContainerRef} className="landing-container">
+    <div className={`landing-container ${fadeIn ? "fade-in" : ""}`}>
       <div className={`hero-container ${isFading ? "fade-out" : ""}`}>
         <video
           className="background-video"
@@ -88,11 +76,6 @@ const Landing = ({ isFading }) => {
         </video>
         <div className="overlay">
           <div className="text-section">
-            {/*
-            <h1>
-              Låt oss skapa en webbplats som gör er till det självklara valet
-            </h1>
-              */}
             <h1>Låt oss skapa en webbplats som imponerar på era besökare.</h1>
             <p>
               Modern, lättnavigerad design skräddarsydd efter era behov. Färdig
@@ -121,6 +104,7 @@ const Landing = ({ isFading }) => {
                 onInvalid={(e) => e.target.setCustomValidity("Ange din e-post")}
                 {...register("email", { required: true })}
                 required
+                onChange={handleSetFrom}
               />
               <button>Skicka</button>
             </form>
@@ -139,62 +123,6 @@ const Landing = ({ isFading }) => {
       </div>
 
       <div className="landing-container-grid">
-        {/* 
-        <div
-          className="landing-container-grid-container"
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-react">
-            <img src={reactLogo} alt="react-logo" />
-          </a>
-        </div>
-        <div
-          className="landing-container-grid-container "
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-javascript">
-            <img src={javascriptLogo} alt="javascrip-logo" />
-          </a>
-        </div>
-        <div
-          className="landing-container-grid-container"
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-html">
-            <img src={htmlLogo} alt="html-logo" />
-          </a>
-        </div>
-        <div
-          className="landing-container-grid-container"
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-css">
-            <img src={cssLogo} alt="css-logo" />
-          </a>
-        </div>
-        */}
-
-        <div className="landing-container-grid-container landing-container-grid-col-span-2">
-          {/*
-          <a
-            href="/projects"
-            className="landing-container-grid-col-span-2-text-icon"
-          >
-            <ArrowDownRight
-              size={40}
-              id="landing-container-grid-col-span-2-text-icon-icon"
-            />
-          </a>
-          <div id="landing-container-grid-col-span-2-text">
-            <p id="blue">Din hemsida kan se ut så här</p>
-          </div>
-          <div
-            className="landing-container-grid-col-span-2-text-underline"
-            id="blue-underline"
-          ></div>
-            */}
-        </div>
-
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <a href="https://www.napracura.se/" target="_blank" rel="noreferrer">
             <img src={napraScreen2} alt="energi-screen" />
@@ -248,23 +176,10 @@ const Landing = ({ isFading }) => {
             skapa en hemsida som passar just era behov.
           </p>
         </div>
-        {/*
-      <div className="landing-container-about">
-        <About />
-        <Contact />
-      </div>
-      <div className="skills-container">
-        <text className="skills-text">
-          React | React Native | JavaScript | HTML | CSS | Java
-        </text>
-      </div>
-          */}
       </div>
       <Contact />
       <About />
-      {/*
-      <Whatis />
-       */}
+
       <footer className="main-footer">
         <p>Kontakt: bslbjorn@gmail.com</p>
         <p>Ludvig Björn &copy; 2025</p>
