@@ -240,6 +240,14 @@ const Landing = ({ isFading }) => {
           </a>
         </div>
 
+        <div className="text-section">
+          <p>
+            Glöm inte att ta del av min kostnadsfria mall! Det är ett perfekt
+            sätt att få en förtitt på vad vi kan skapa tillsammans. Hör av dig
+            via e-post, så skickar jag mallen direkt och diskuterar hur vi kan
+            skapa en hemsida som passar just era behov.
+          </p>
+        </div>
         {/*
       <div className="landing-container-about">
         <About />
