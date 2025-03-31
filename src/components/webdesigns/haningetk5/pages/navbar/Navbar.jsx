@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { useState } from "react";
-import logo from "../../assets/images/logga-medium_nobg.png";
+import logo from "../../assets/images/thk-logga.png";
 import Secbar from "../secbar/Secbar";
 import React from "react";
 
@@ -10,36 +10,44 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <div className="navbar_container">
-      <Link className="navbar_container-link" to={"/"}>
+    <div className="htk5-navbar_container">
+      <Link className="htk5-navbar_container-link" to={"/"}>
         <img src={logo} alt="logo" />
       </Link>
-      <Link className="navbar_container-link" to={"tennisskolan"}>
-        Tennisskola
+      <Link className="htk5-navbar_container-link" to={"tennisskolan"}>
+        Spelschema
       </Link>
-      <Link className="navbar_container-link" to={"tavling"}>
+      <Link className="htk5-navbar_container-link" to={"tavling"}>
         Tävling
       </Link>
 
-      <Link className="navbar_container-link" to={"/"}>
-        Medlemsskap
-      </Link>
       <a
-        className="navbar_container-link"
+        className="htk5-navbar_container-link"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.matchi.se/facilities/haningetk"
+        href=""
       >
         Boka bana
       </a>
 
+      <Link
+        className="htk5-navbar_container-link htk5-navbar_container-link-button"
+        to={"/"}
+      >
+        Medlemsskap
+      </Link>
+
       {!navOpen ? (
-        <Menu onClick={() => setNavOpen(true)} className="menu-btn" size={40} />
+        <Menu
+          onClick={() => setNavOpen(true)}
+          className="htk5-menu-btn"
+          size={40}
+        />
       ) : (
         <>
           <X
             onClick={() => setNavOpen(false)}
-            className="menu-btn"
+            className="htk5-menu-btn"
             size={40}
             color="#fff"
           />

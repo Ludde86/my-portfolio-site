@@ -20,7 +20,7 @@ import EnergiApp1 from "./webdesigns/energi1/EnergiApp1";
 import Samhalle1App from "./webdesigns/samhalle1/Samhalle1App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(5);
 
   const links = [
     "Omrade",
@@ -47,7 +47,7 @@ const Projects = () => {
       case 4:
         return <Lilitha1 />;
       case 5:
-        return <Haningehtk3App />;
+        return <Haningetk5App />;
       case 6:
         return <Napra3 />;
       case 7:

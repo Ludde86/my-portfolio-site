@@ -1,4 +1,4 @@
-.navbar_container {
+.htk5-navbar_container {
   position: absolute;
   left: 0;
   right: 0;
@@ -14,22 +14,42 @@
   align-items: center;
 }
 
-.navbar_container-submenu {
+.htk5-navbar_container-submenu {
   display: flex;
   transition: 0.5s;
   margin-bottom: 1rem;
 }
 
-.navbar_container-link {
+.htk5-navbar_container-link {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
 }
 
-.navbar_container-link img {
+.htk5-navbar_container-link-button {
+  background: #10752b;
+  color: #fff;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  border: 1px solid #10752b;
+
+  transition: 0.5s;
+
+  &:hover {
+    background: #fff;
+    color: #10752b;
+  }
+}
+
+.htk5-navbar_container-link img {
   width: 6rem;
   object-fit: cover;
 }
 
-.menu-btn {
+.htk5-menu-btn {
   z-index: 20;
   color: #333;
   cursor: pointer;
@@ -38,21 +58,21 @@
   transition: all 0.3s ease-in-out;
 }
 
-.open {
+.htk5-open {
   height: 32svh;
 }
 
 @media screen and (max-width: 1020px) {
-  .navbar_container {
+  .htk5-navbar_container {
     width: 90%;
     padding: 0.8em;
   }
 
-  .navbar_container a {
+  .htk5-navbar_container a {
     font-size: 0.8em;
   }
 
-  .menu-btn {
+  .htk5-menu-btn {
     transform: scale(0.9);
     &:hover {
       transform: scale(1);
@@ -61,11 +81,11 @@
 }
 
 @media screen and (max-width: 560px) {
-  .navbar_container a {
+  .htk5-navbar_container a {
     font-size: 0.6em;
   }
 
-  .menu-btn {
+  .htk5-menu-btn {
     transform: scale(0.6);
     &:hover {
       transform: scale(0.7);
