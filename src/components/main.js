@@ -10,9 +10,9 @@ import Haningehtk3Tavling from "./webdesigns/haningetk3/tavling/Haningetk3Tavlin
 import Haningehtk3Varabanor from "./webdesigns/haningetk3/varabanor/Haningetk3Varabanor";
 import aboutpage from "./aboutpage";
 
-const Main = () => (
+const Main = ({ isFading }) => (
   <Routes>
-    <Route exact path="/" Component={Landing} />
+    <Route exact path="/" element={<Landing isFading={isFading} />} />
     <Route path="/resume" Component={Resume} />
     <Route path="/om-mig" Component={aboutpage} />
     <Route path="/projects" Component={Projects} />

@@ -42,50 +42,6 @@
   font-weight: 500;
 }
 
-#about-me-content-1 {
-  opacity: 0;
-  animation: from-left forwards;
-  animation-timeline: view(y 75% 25%);
-}
-#about-me-content-2 {
-  opacity: 0;
-  animation: about-fade-in forwards;
-  animation-timeline: view(y 50% 0);
-}
-#about-me-content-3 {
-  opacity: 0;
-  animation: from-right forwards;
-  animation-timeline: view(y 75% 25%);
-}
-#about-me-content-4 {
-  opacity: 0;
-  animation: from-left forwards;
-  animation-timeline: view(y 100% 0);
-}
-#about-me-content-5 {
-  opacity: 0;
-  animation: from-right forwards;
-  animation-timeline: view(y 100% 0);
-}
-
-@keyframes from-left {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes from-right {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes about-fade-in {
-  to {
-    opacity: 1;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .about-me {
     width: 100svw;

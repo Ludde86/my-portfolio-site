@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import About from "./aboutme";
 import Contact from "./contact";
-import Whatis from "./whatis";
+
+import Imagesection from "./imagesection";
 import "./landingpage.css";
 
-import reactLogo from "../img/react-icon.png";
-import htmlLogo from "../img/html-icon.jpg";
-import cssLogo from "../img/css-icon.png";
-import javascriptLogo from "../img/java-script-icon.jpg";
 import energiScreen from "../img/energi-screen.png";
 import byggScreen from "../img/bygg-screen.png";
 import sakerhetScreen from "../img/sakerhet-screen.png";
@@ -17,26 +14,55 @@ import napraScreen from "../img/naprapat-screen.png";
 import elScreen from "../img/elcomfort-1.png";
 import napraScreen2 from "../img/napra-1.png";
 
-import avatar from "../img/Ludvig-bw-3.jpg";
 import vid from "../videos/coding-hero.mp4";
-import { ArrowDownRight } from "lucide-react";
-import { useState } from "react";
+import { ArrowDown } from "lucide-react";
 
-const Landing = () => {
-  const [imageSrcs, setImageSrcs] = useState([
-    energiScreen,
-    byggScreen,
-    sakerhetScreen,
-    samhalleScreen,
-    tennisScreen,
-    napraScreen,
-    elScreen,
-    napraScreen2,
-  ]);
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
+
+const Landing = ({ isFading }) => {
+  const { register, reset, handleSubmit } = useForm();
+
+  const [from, setFrom] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [result, setResult] = useState(null);
+
+  const [fadeIn, setFadeIn] = useState(false); // Hantera fade-in som state
+
+  const handleSetFrom = (e) => {
+    setFrom(e.target.value);
+  };
+
+  const accessKey = process.env.REACT_APP_ACCESS_KEY;
+
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: accessKey,
+    settings: {
+      from_name: from,
+      subject: "Nytt kontaktmeddelande från din webbplats",
+      // ... other settings
+    },
+    onSuccess: (msg, data) => {
+      setIsSuccess(true);
+      setResult("Ditt meddelande har skickats!");
+      reset();
+    },
+    onError: (msg, data) => {
+      setIsSuccess(false);
+      setResult(
+        "Det gick tyvärr inte att skicka ditt meddelande just nu. Försök igen om en liten stund!"
+      );
+    },
+  });
+
+  useEffect(() => {
+    console.log("Landingpage useEffect triggas");
+    setFadeIn(true); // Uppdatera state när komponenten mountas
+  }, []);
 
   return (
-    <div className="landing-container">
-      <div className="container">
+    <div className={`landing-container ${fadeIn ? "fade-in" : ""}`}>
+      <div className={`hero-container ${isFading ? "fade-out" : ""}`}>
         <video
           className="background-video"
           type="video/mp4"
@@ -50,110 +76,53 @@ const Landing = () => {
         </video>
         <div className="overlay">
           <div className="text-section">
-            {/*
-            <h1>
-              Låt oss skapa en webbplats som gör er till det självklara valet
-            </h1>
-              */}
             <h1>Låt oss skapa en webbplats som imponerar på era besökare.</h1>
             <p>
               Modern, lättnavigerad design skräddarsydd efter era behov. Färdig
               hemsida inom två veckor.
             </p>
           </div>
-          <div className="image-section">
-            <div className="image-container">
-              <img
-                className="overlay-image large"
-                src={imageSrcs[7]}
-                alt="Stor Bild"
+          <Imagesection />
+          <div className="text-section">
+            <p>
+              Vill du se vad jag kan göra för dig? Ta del av mina senaste
+              projekt där jag har hjälpt företag och föreningar att förverkliga
+              sin digitala vision. Skicka er e-post, så återkommer jag
+              personligen. Som en introduktion får du en kostnadsfri mall eller
+              landningssida som visar potentialen för din framtida webbplats.
+            </p>
+          </div>
+
+          <div className="mail-section">
+            <form
+              className="landing_container-button_section"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <input
+                type="email"
+                placeholder="Ange E-post"
+                onInvalid={(e) => e.target.setCustomValidity("Ange din e-post")}
+                {...register("email", { required: true })}
+                required
+                onChange={handleSetFrom}
               />
-              <img
-                className="overlay-image small top-left"
-                src={imageSrcs[1]}
-                alt="Bild 1"
-              />
-              <img
-                className="overlay-image small top-right"
-                src={imageSrcs[2]}
-                alt="Bild 2"
-              />
-              <img
-                className="overlay-image small bottom-left"
-                src={imageSrcs[4]}
-                alt="Bild 3"
-              />
-              <img
-                className="overlay-image small bottom-right"
-                src={imageSrcs[3]}
-                alt="Bild 4"
-              />
-              <img
-                className="overlay-image small middle-left"
-                src={imageSrcs[0]}
-                alt="Bild 5"
-              />
-            </div>
+              <button>Skicka</button>
+            </form>
+
+            <p>{result}</p>
+          </div>
+
+          <div className="landing_container-text-section">
+            <h1>Mina senaste projekt och mallar</h1>
+
+            <a href="/projects" className="landing_container-text-section-icon">
+              <ArrowDown size={40} id="landing-container-icon" />
+            </a>
           </div>
         </div>
       </div>
 
       <div className="landing-container-grid">
-        <div
-          className="landing-container-grid-container"
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-react">
-            <img src={reactLogo} alt="react-logo" />
-          </a>
-        </div>
-        <div
-          className="landing-container-grid-container "
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-javascript">
-            <img src={javascriptLogo} alt="javascrip-logo" />
-          </a>
-        </div>
-        <div
-          className="landing-container-grid-container"
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-html">
-            <img src={htmlLogo} alt="html-logo" />
-          </a>
-        </div>
-        <div
-          className="landing-container-grid-container"
-          id="landing-container-grid-container-col-1"
-        >
-          <a href="#goto-css">
-            <img src={cssLogo} alt="css-logo" />
-          </a>
-        </div>
-
-        <div className="landing-container-grid-container landing-container-grid-col-span-2">
-          <div id="landing-container-grid-col-span-2-text">
-            <p id="blue">Mina senaste projekt</p>
-          </div>
-          <a
-            href="/projects"
-            className="landing-container-grid-col-span-2-text-icon"
-          >
-            <ArrowDownRight
-              size={40}
-              id="landing-container-grid-col-span-2-text-icon-icon"
-            />
-          </a>
-          <div id="landing-container-grid-col-span-2-text">
-            <p id="blue">Din hemsida kan se ut så här</p>
-          </div>
-          <div
-            className="landing-container-grid-col-span-2-text-underline"
-            id="blue-underline"
-          ></div>
-        </div>
-
         <div className="landing-container-grid-container landing-container-grid-col-span-2">
           <a href="https://www.napracura.se/" target="_blank" rel="noreferrer">
             <img src={napraScreen2} alt="energi-screen" />
@@ -199,22 +168,19 @@ const Landing = () => {
           </a>
         </div>
 
-        {/*
-      <div className="landing-container-about">
-        <About />
-        <Contact />
+        <div className="text-section">
+          <p>
+            Glöm inte att ta del av min kostnadsfria mall! Det är ett perfekt
+            sätt att få en förtitt på vad vi kan skapa tillsammans. Hör av dig
+            via e-post, så skickar jag mallen direkt och diskuterar hur vi kan
+            skapa en hemsida som passar just era behov.
+          </p>
+        </div>
       </div>
-      <div className="skills-container">
-        <text className="skills-text">
-          React | React Native | JavaScript | HTML | CSS | Java
-        </text>
-      </div>
-          */}
-      </div>
-      <About />
       <Contact />
-      <Whatis />
-      <footer className="footer">
+      <About />
+
+      <footer className="main-footer">
         <p>Kontakt: bslbjorn@gmail.com</p>
         <p>Ludvig Björn &copy; 2025</p>
         <p>Orgnummer: 198608050673</p>
