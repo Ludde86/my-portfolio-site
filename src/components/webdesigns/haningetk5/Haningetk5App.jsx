@@ -18,8 +18,6 @@ function Haningetk5App() {
     <>
       <Navbar />
 
-      <BackgroundLogo />
-
       <HeroPage />
       <DescPage />
       <LandingPage />

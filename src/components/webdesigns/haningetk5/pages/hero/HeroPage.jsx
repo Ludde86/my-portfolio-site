@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import React from "react";
 
 const HeroPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <div className="hero_container">
       <div className="hero_container-text">
