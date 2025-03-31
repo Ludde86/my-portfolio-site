@@ -1,6 +1,6 @@
 .desc_container {
-  min-height: 50svh;
-  max-height: 50svh;
+  min-height: 75svh;
+  max-height: 75svh;
   box-sizing: border-box;
 
   display: flex;

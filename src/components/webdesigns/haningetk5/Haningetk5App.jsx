@@ -12,14 +12,18 @@ import { Link, Route, Routes } from "react-router-dom";
 import Navbar from "./pages/navbar/Navbar";
 import Tennisskolan from "./routes/tennisskolan/Tennisskolan";
 import Tavling from "./routes/tavling/Tavling";
+import NewsSection from "./pages/news/NewsSection";
 
 function Haningetk5App() {
   return (
-    <>
+    <div className="htk5-app-container">
       <Navbar />
 
       <HeroPage />
       <DescPage />
+      {/*
+      <NewsSection />
+       */}
       <LandingPage />
       <Desc2Page />
       <CardsPage />
@@ -41,7 +45,7 @@ function Haningetk5App() {
         <Route path="tennisskolan" to={Tennisskolan} />
         <Route path="tavling" to={Tavling} />
       </Routes>
-    </>
+    </div>
   );
 }
 

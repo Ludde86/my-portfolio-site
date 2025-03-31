@@ -15,6 +15,7 @@ const HeroPage = () => {
           <h1>TYRESÖ </h1>
           <h1>TENNISKLUBB</h1>
         </div>
+        <p>Den anrika tennisklubben på Brevikshalvön</p>
       </div>
 
       <div className="hero_container-button">

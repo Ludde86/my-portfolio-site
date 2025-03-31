@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.htk5-app-container {
+  background: #f7f7f7;
+}
+
 a {
   font-weight: 500;
   font-size: 1.2em;
