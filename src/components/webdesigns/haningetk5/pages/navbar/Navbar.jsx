@@ -30,10 +30,7 @@ const Navbar = () => {
         Boka bana
       </a>
 
-      <Link
-        className="htk5-navbar_container-link htk5-navbar_container-link-button"
-        to={"/"}
-      >
+      <Link className="htk5-navbar_container-link htk5-navbar_container-link-button">
         Medlemsskap
       </Link>
 

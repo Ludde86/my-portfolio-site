@@ -27,6 +27,10 @@
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
+
+  &:hover {
+    color: #10752b;
+  }
 }
 
 .htk5-navbar_container-link-button {
@@ -37,6 +41,7 @@
   border: 1px solid #10752b;
 
   transition: 0.5s;
+  max-width: 200px;
 
   &:hover {
     background: #fff;
@@ -51,11 +56,23 @@
 
 .htk5-menu-btn {
   z-index: 20;
-  color: #333;
+  color: #fff;
   cursor: pointer;
-  width: 6vw;
+  width: 66px;
+  height: 66px;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  padding: 0.8rem;
+  border: 2px solid #333;
+  background: #333;
+  border-radius: 1rem;
 
   transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #fff;
+    color: #333;
+  }
 }
 
 .htk5-open {
