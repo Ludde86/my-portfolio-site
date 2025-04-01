@@ -46,7 +46,6 @@ const Navbar = () => {
             onClick={() => setNavOpen(false)}
             className="htk5-menu-btn"
             size={40}
-            color="#fff"
           />
         </>
       )}

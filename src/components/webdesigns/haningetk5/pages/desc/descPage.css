@@ -19,7 +19,7 @@ span {
   color: #333;
 
   font-family: "Quicksand", sans-serif;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .desc_container p {

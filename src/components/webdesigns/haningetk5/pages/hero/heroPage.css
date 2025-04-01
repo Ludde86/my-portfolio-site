@@ -4,13 +4,6 @@
 
   padding-top: 12svh;
 
-  background-image: url("../../assets/images/thk-hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  box-shadow: inset 0 100rem 1000rem #00000060;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +12,43 @@
   scroll-snap-align: start;
 
   filter: grayscale(0.4);
+  box-shadow: inset 0 100rem 1000rem #00000060;
+  margin: 1rem;
+
+  background-image: url("../../assets/images/thk-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero_container-left_background {
+  flex: 1;
+
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  bottom: 2rem;
+
+  width: 45%;
+  max-height: 100svh;
+}
+.hero_container-right_background {
+  background-image: url("../../assets/images/1945.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  flex: 1;
+
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+
+  width: 50%;
+  max-height: 100svh;
+
+  box-shadow: inset 0 100rem 1000rem #00000060;
 }
 
 .hero_container-text {
@@ -34,7 +64,7 @@
   color: #f7f7f7;
   margin-bottom: 1em;
 
-  animation: from-left 1s forwards;
+  animation: hero-from-left 2s forwards;
   animation-delay: 0.5s;
   opacity: 0;
   font-family: "Lato", sans-serif;
@@ -45,12 +75,12 @@
   display: flex;
   gap: 2rem;
   opacity: 0;
-  animation: from-right 1.4s forwards;
-  animation-delay: 1s;
+  animation: hero-from-right 2.4s forwards;
+  animation-delay: 1.4s;
 }
 
 .hero_container-text-h1 h1 {
-  font-size: 7.2rem;
+  font-size: 6.8rem;
   letter-spacing: 8px;
   color: #f7f7f7;
 
@@ -65,7 +95,7 @@
   color: #f7f7f7;
   margin-bottom: 1em;
 
-  animation: fade-in 2s forwards;
+  animation: fade-in 3s forwards;
   animation-delay: 2s;
   opacity: 0;
   font-family: "Lato", sans-serif;
@@ -102,9 +132,9 @@
   color: #555;
   border-radius: 1rem;
 
-  animation: fade-in 2s forwards;
-  animation-delay: 1s;
-  opacity: 0;
+  /* animation: fade-in 2s forwards;
+  animation-delay: 4s;
+  opacity: 0; */
 
   margin-right: 6rem;
 
@@ -155,9 +185,9 @@
   }
 }
 
-@keyframes from-left {
+@keyframes hero-from-left {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
   100% {
     transform: translateX(0);
@@ -165,9 +195,9 @@
   }
 }
 
-@keyframes from-right {
+@keyframes hero-from-right {
   0% {
-    transform: translateX(100%);
+    transform: translateX(25%);
   }
   100% {
     transform: translateX(0);

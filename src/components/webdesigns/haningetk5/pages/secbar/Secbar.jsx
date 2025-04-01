@@ -1,15 +1,14 @@
 import "./secbar.css";
-import logo from "../../assets/images/logga-medium_nobg.png";
+import logo from "../../assets/images/thk-logga.png";
 import { Link } from "react-router-dom";
 import React from "react";
 
 const Secbar = ({ navOpen }) => {
   const links = [
+    "Spelschema",
+    "Tävling",
     "Kontakta oss",
     "Vision & Värdegrund",
-    "kontrakt/strötider",
-    "Utebanor",
-    "Hitta hit",
   ];
   return (
     <div className={"secbar " + (navOpen && "secbar-openSec")}>

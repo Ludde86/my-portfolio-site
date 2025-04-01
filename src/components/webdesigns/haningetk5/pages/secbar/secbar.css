@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(75deg, #ffffff 50%, #344da9f3 50%);
+  background: linear-gradient(75deg, #ffffff 50%, #10752bf3 50%);
 
   opacity: 0;
   transform: translate(100%, -100%);
@@ -12,7 +12,7 @@
   overflow: hidden;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -22,9 +22,10 @@
 }
 
 .secbar-img_container {
+  flex: 1;
 }
 .secbar-img_container img {
-  width: 50%;
+  width: 300px;
   object-fit: cover;
 }
 .secbar-link_container {

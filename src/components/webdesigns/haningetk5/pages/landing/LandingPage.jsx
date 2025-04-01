@@ -1,8 +1,8 @@
 import "./landingPage.css";
 import logo from "../../assets/images/thk-logga.png";
-import img1 from "../../assets/images/landing-2.jpg";
-import img2 from "../../assets/images/tennisskolan.jpg";
-import img3 from "../../assets/images/logga1-medium.jpg";
+import img1 from "../../assets/images/facebook.jpg";
+import img2 from "../../assets/images/john-fornander-4R9CcBdQTEg-unsplash.jpg";
+import img3 from "../../assets/images/ben-hershey-K9HgyI3qmqA-unsplash.jpg";
 
 import { ArrowRight } from "lucide-react";
 import React from "react";
