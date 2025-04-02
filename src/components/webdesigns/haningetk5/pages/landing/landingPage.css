@@ -114,5 +114,121 @@
   transition: 0.8s;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 720px) {
+  .htk5_landing_container {
+    min-height: 75svh;
+    max-height: 75svh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;
+  }
+
+  .htk5_landing_container-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .htk5_landing_container-header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+  }
+  .htk5_landing_container-header-left img {
+    width: 50px;
+  }
+  .htk5_landing_container-header-left p {
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  .htk5_landing_container-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+
+    cursor: pointer;
+
+    &:hover .htk5_landing_container-header-right-par {
+      text-decoration: underline;
+    }
+
+    &:hover .htk5_landing_container-header-right-arrow_right {
+      transform: translateX(0.8rem);
+    }
+  }
+  .htk5_landing_container-header-right p {
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .htk5_landing_container-header-right-arrow_right {
+    color: #333;
+    scale: 1.1;
+    transition: 0.3s;
+  }
+
+  .htk5_landing_container-news {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .htk5_landing_container-news-event {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    cursor: pointer;
+
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &:hover .htk5_landing_container-news-event-img {
+      scale: 1.1;
+    }
+
+    &:hover .htk5_landing_container-news-event-title {
+      color: #000;
+    }
+  }
+  .htk5_landing_container-news-event-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+
+    transition: 0.5s ease-out;
+  }
+  .htk5_landing_container-news-event p {
+    font-family: "Lato", sans-serif;
+    color: #333;
+    text-align: start;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+  .htk5_landing_container-news-event-title {
+    font-family: "Lato", sans-serif;
+    color: #555;
+    text-align: start;
+    font-size: 1.6rem;
+    transition: 0.8s;
+  }
 }

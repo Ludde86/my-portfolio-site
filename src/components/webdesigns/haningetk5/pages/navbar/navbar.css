@@ -10,7 +10,7 @@
   padding: 1.2em;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -27,11 +27,22 @@
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
-  /* font-weight: 500; */
+  /* font-weight: 700; */
+  letter-spacing: 0.2px;
 
   &:hover {
     color: #10752b;
   }
+}
+
+.htk5-navbar_container-link-logo {
+  width: 280px;
+}
+
+.htk5-navbar_container-link-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
 }
 
 .htk5-navbar_container-link-button {
@@ -98,15 +109,116 @@
   }
 }
 
-@media screen and (max-width: 560px) {
-  .htk5-navbar_container a {
-    font-size: 0.6em;
+@media screen and (max-width: 720px) {
+  .htk5-navbar_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    z-index: 10;
+
+    height: 12svh;
+    background: #fff;
+    padding: 1.2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .htk5-navbar_container-submenu {
+    display: flex;
+    transition: 0.5s;
+    margin-bottom: 1rem;
+  }
+
+  .htk5-navbar_container-link {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4rem;
+    /* font-weight: 700; */
+    letter-spacing: 0.2px;
+
+    &:hover {
+      color: #10752b;
+    }
+  }
+
+  .htk5-navbar_container-link-logo {
+    width: 60px;
+  }
+
+  .htk5-navbar_container-link-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .htk5-navbar_container-link-button {
+    background: #10752b;
+    color: #fff;
+    padding: 0;
+    border-radius: 0.4rem;
+    border: 1px solid #10752b;
+
+    transition: 0.5s;
+    min-width: 140px;
+    max-width: 140px;
+    height: 40px;
+    font-size: 1.4rem;
+
+    &:hover {
+      background: #fff;
+      color: #10752b;
+    }
+  }
+
+  .htk5-navbar_container-link img {
+    width: 3rem;
+    object-fit: cover;
   }
 
   .htk5-menu-btn {
+    z-index: 20;
+    color: #333;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    border: none;
+    background: #fff;
+    border-radius: 1rem;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: #fff;
+      color: #333;
+    }
+  }
+
+  .htk5-open {
+    height: 32svh;
+  }
+  .htk5-navbar_container a {
+    font-size: 1em;
+  }
+
+  /* .htk5-menu-btn {
     transform: scale(0.6);
     &:hover {
       transform: scale(0.7);
     }
+  } */
+
+  #htk5-hide-link {
+    display: none;
   }
 }

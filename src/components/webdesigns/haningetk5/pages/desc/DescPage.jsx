@@ -1,5 +1,6 @@
 import "./descPage.css";
 import React from "react";
+
 const DescPage = () => {
   return (
     <div className="desc_container">

@@ -11,44 +11,50 @@ const Navbar = () => {
 
   return (
     <div className="htk5-navbar_container">
-      <Link className="htk5-navbar_container-link" to={"/"}>
-        <img src={logo} alt="logo" />
-      </Link>
+      <div className="htk5-navbar_container-link-logo">
+        <Link className="htk5-navbar_container-link" to={"/"}>
+          <img src={logo} alt="logo" />
+        </Link>
+      </div>
+      {/*
       <Link className="htk5-navbar_container-link" to={"tennisskolan"}>
         Spelschema
       </Link>
       <Link className="htk5-navbar_container-link" to={"tavling"}>
         Tävling
       </Link>
+       */}
+      <div className="htk5-navbar_container-link-links">
+        <a
+          className="htk5-navbar_container-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href=""
+          id="htk5-hide-link"
+        >
+          Boka bana
+        </a>
 
-      <a
-        className="htk5-navbar_container-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        href=""
-      >
-        Boka bana
-      </a>
+        <Link className="htk5-navbar_container-link htk5-navbar_container-link-button">
+          Medlemsskap
+        </Link>
 
-      <Link className="htk5-navbar_container-link htk5-navbar_container-link-button">
-        Medlemsskap
-      </Link>
-
-      {!navOpen ? (
-        <Menu
-          onClick={() => setNavOpen(true)}
-          className="htk5-menu-btn"
-          size={40}
-        />
-      ) : (
-        <>
-          <X
-            onClick={() => setNavOpen(false)}
+        {!navOpen ? (
+          <Menu
+            onClick={() => setNavOpen(true)}
             className="htk5-menu-btn"
             size={40}
           />
-        </>
-      )}
+        ) : (
+          <>
+            <X
+              onClick={() => setNavOpen(false)}
+              className="htk5-menu-btn"
+              size={40}
+            />
+          </>
+        )}
+      </div>
       <Secbar navOpen={navOpen} />
     </div>
   );
