@@ -41,8 +41,8 @@ textarea {
   min-height: 60px;
 }
 
-input::placeholder,
-textarea::placeholder {
+.htk_cards_container-form input::placeholder,
+.htk_cards_container-form textarea::placeholder {
   color: #eee;
   font-size: 1.6rem;
   padding: 1rem 0;
@@ -138,7 +138,7 @@ textarea::placeholder {
   .htk_cards_container {
     display: flex;
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     background: #10752b;
     margin: 1rem;
     border-radius: 2rem;
@@ -153,13 +153,14 @@ textarea::placeholder {
     font-size: 2rem;
     line-height: 2rem;
     text-transform: uppercase;
+    font-size: 1.6rem;
   }
   .htk_cards_container-text p {
     font-family: "Lato", sans-serif;
     text-align: start;
     width: 100%;
     margin-top: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
   }
   .htk_cards_container-form {
@@ -173,19 +174,19 @@ textarea::placeholder {
   }
 
   .htk_cards_container-form input,
-  textarea {
+  .htk_cards_container-form textarea {
     all: unset;
     border-bottom: 1px solid #fff;
     color: #fff;
     text-align: start;
     min-height: 60px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
-  input::placeholder,
-  textarea::placeholder {
+  .htk_cards_container-form input::placeholder,
+  .htk_cards_container-form textarea::placeholder {
     color: #eee;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 1rem 0;
     min-height: 60px;
     font-family: "Lato", sans-serif;

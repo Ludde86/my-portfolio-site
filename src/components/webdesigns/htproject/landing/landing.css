@@ -56,6 +56,12 @@
 .landing__content-button input {
   all: unset;
   font-size: 1.6rem;
+  color: #555;
+}
+
+.landing__content-button input::placeholder {
+  color: #555;
+  font-size: 1.4rem;
 }
 
 .landing__content-button button {

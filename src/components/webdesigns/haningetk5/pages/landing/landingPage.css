@@ -115,7 +115,7 @@
 }
 
 .htk5-show {
-  display: block;
+  display: flex;
 }
 .htk5-hidden {
   display: none;
@@ -168,6 +168,8 @@
     gap: 1rem;
 
     cursor: pointer;
+
+    border: 1px solid black;
 
     &:hover .htk5_landing_container-header-right-par {
       text-decoration: underline;
