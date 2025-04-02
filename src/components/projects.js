@@ -20,7 +20,7 @@ import EnergiApp1 from "./webdesigns/energi1/EnergiApp1";
 import Samhalle1App from "./webdesigns/samhalle1/Samhalle1App";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(7);
 
   const links = [
     "Omrade",
@@ -28,10 +28,9 @@ const Projects = () => {
     "Renovering",
     "Sakerhet",
     "Lilitha",
-    "Tennis",
     "Naprapat",
     "Bygg",
-    "JS",
+    "Tennis",
   ];
 
   const toggleCategories = () => {
@@ -47,13 +46,11 @@ const Projects = () => {
       case 4:
         return <Lilitha1 />;
       case 5:
-        return <Haningehtk3App />;
-      case 6:
         return <Napra3 />;
-      case 7:
+      case 6:
         return <Htproject />;
-      case 8:
-        return <ChallengesJs />;
+      case 7:
+        return <Haningetk5App />;
 
       /*
           case 9:

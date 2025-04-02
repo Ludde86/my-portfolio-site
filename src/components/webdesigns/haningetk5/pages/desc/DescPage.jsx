@@ -1,18 +1,17 @@
 import "./descPage.css";
 import React from "react";
+
 const DescPage = () => {
   return (
     <div className="desc_container">
-      <div className="desc_container-empty"></div>
-      <div className="desc_container-desc">
-        <p>
-          Haninge Tennisklubb är den personliga tennisklubben där alla ska känna
-          sig lika välkomna, här uppmuntras engagemang och delaktighet,
-          individen ges möjlighet till utveckling och efter sin egen
-          ambitionsnivå uppnå sin högsta potential!
-        </p>
-        <button>Bli medlem</button>
-      </div>
+      <h1>
+        Tyresö Tennisklubb har funnits på Tyresöhalvön{" "}
+        <span id="color-green">sedan</span> <span id="color-green">1945</span>
+      </h1>
+      <p>
+        Nu som förr spelas det på klassiskt rött grus. Banan ligger på
+        Tegelbruksvägen 24. Klubben är aktiv under sommarhalvåret.
+      </p>
     </div>
   );
 };

@@ -4,18 +4,18 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="htk3-footer_container">
-      <div className="htk3-footer_container-contact_container">
+    <div className="htk5-footer_container">
+      <div className="htk5-footer_container-contact_container">
         <p>Öppettider</p>
         <p>06.30 - 23.30</p>
-        <div className="htk3-footer_container-contact_container-linebreak"></div>
-        <p>Torvallavägen 14 13644 Handen</p>
-        <div className="htk3-footer_container-contact_container-linebreak"></div>
-        <p>kansliet@haningetk.se</p>
-        <div className="htk3-footer_container-contact_container-linebreak"></div>
+        <div className="htk5-footer_container-contact_container-linebreak"></div>
+        <p>Tegelbruksvägen 24</p>
+        <div className="htk5-footer_container-contact_container-linebreak"></div>
+        <p>kansliet@tyresotk.se</p>
+        <div className="htk5-footer_container-contact_container-linebreak"></div>
         <p>0700000000</p>
       </div>
-      <div className="htk3-footer_container-social">
+      <div className="htk5-footer_container-social">
         <a>
           <FaInstagram />
         </a>
@@ -23,7 +23,7 @@ const Footer = () => {
           <FaFacebookSquare />
         </a>
       </div>
-      <p>© Haninge Tennisklubb 2024</p>
+      <p>© Tyresö Tennisklubb 2025</p>
     </div>
   );
 };

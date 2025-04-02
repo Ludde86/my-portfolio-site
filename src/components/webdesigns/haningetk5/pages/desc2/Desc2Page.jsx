@@ -1,25 +1,34 @@
 import "./desc2Page.css";
 import React from "react";
+import vid from "../../assets/videos/take-tennis.mp4";
+
 const Desc2Page = () => {
   return (
     <div className="desc2_container">
-      <div className="desc2_container-desc">
+      <video
+        className="desc2_container-video"
+        type="video/mp4"
+        autoPlay
+        playsInline
+        loop
+        muted
+        preload="metadata"
+      >
+        <source src={vid} type="video/mp4" />
+      </video>
+      <div className="desc2_container-text">
+        <h1>Medlemskap, Priser & Spelschema</h1>
         <p>
-          Haninge TK är en ideell tennisklubb belägen intill Torvalla
-          idrottsanläggning. Vi har två nymålade banor med Plexipave beläggning.
-          Dessutom har vi två grusbanor vid Sågen i Vendelsö.
+          Vid önskan om medlemskap kontakta Christian Hellevik. e-post:
+          christian.hellevik@opusett.se
         </p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.matchi.se/facilities/haningetk"
-        >
-          <button className="hero_container-button-act_button">
-            Boka bana
-          </button>
-        </a>
+        <p>
+          Medlemsavgiften är 350 kr för medlem och 50 kr för familjemedlem som
+          bor hemma.
+        </p>
+        <p>Våra öppettider under säsong är kl. 08-20. </p>
+        <button>Boka bana</button>
       </div>
-      <div className="desc2_container-empty"></div>
     </div>
   );
 };
