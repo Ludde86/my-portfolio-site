@@ -324,14 +324,15 @@
 
   .hero_container-text-h1 {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 0;
     opacity: 0;
     animation: hero-from-right 2.4s forwards;
     animation-delay: 1.4s;
   }
 
   .hero_container-text-h1 h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     letter-spacing: 4px;
     color: #f7f7f7;
 
@@ -341,7 +342,7 @@
   }
 
   .hero_container-text p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     letter-spacing: 4px;
     color: #f7f7f7;
     margin-bottom: 1em;
@@ -351,6 +352,7 @@
     opacity: 0;
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    padding: 1rem;
   }
 
   .hero_container-button {
@@ -359,7 +361,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 14em;
   }
@@ -371,9 +373,7 @@
   }
 
   .hero_container-button-sub_button {
-    position: absolute;
-    bottom: 4rem;
-    right: 1rem;
+    position: static;
 
     display: flex;
     align-items: center;
@@ -387,7 +387,8 @@
     animation-delay: 4s;
     opacity: 0; */
 
-    margin-right: 6rem;
+    margin-right: 0;
+    font-size: 1rem;
 
     &:hover {
       background: #10752b;

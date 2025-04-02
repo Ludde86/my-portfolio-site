@@ -33,13 +33,13 @@ function Haningetk5App() {
         style={{ position: "fixed", bottom: "2rem", left: "2rem" }}
         type="color"
       />
-     */}
       <Link to={"/tavling"}>
         <Home
           size={40}
           style={{ position: "fixed", bottom: "2rem", right: "2rem" }}
         />
       </Link>
+     */}
       <Routes>
         <Route exact path="/projects" to={Haningetk5App} />
         <Route path="tennisskolan" to={Tennisskolan} />

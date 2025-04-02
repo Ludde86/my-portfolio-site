@@ -3,7 +3,7 @@ import logo from "../../assets/images/thk-logga.png";
 import { Link } from "react-router-dom";
 import React from "react";
 
-const Secbar = ({ navOpen }) => {
+const htk5_secbar = ({ navOpen }) => {
   const links = [
     "Spelschema",
     "Tävling",
@@ -11,11 +11,11 @@ const Secbar = ({ navOpen }) => {
     "Vision & Värdegrund",
   ];
   return (
-    <div className={"secbar " + (navOpen && "secbar-openSec")}>
-      <div className="secbar-img_container">
+    <div className={"htk5_secbar " + (navOpen && "htk5_secbar-openSec")}>
+      <div className="htk5_secbar-img_container">
         <img src={logo} alt="logo" />
       </div>
-      <div className="secbar-link_container">
+      <div className="htk5_secbar-link_container">
         {links.map((item, index) => (
           <Link key={index}>
             <p>{item}</p>
@@ -26,4 +26,4 @@ const Secbar = ({ navOpen }) => {
   );
 };
 
-export default Secbar;
+export default htk5_secbar;
