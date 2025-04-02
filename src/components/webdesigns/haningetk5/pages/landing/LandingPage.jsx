@@ -15,7 +15,7 @@ const LandingPage = () => {
           <img src={logo} alt="logo" />
           <p>Senaste Nyheter</p>
         </div>
-        <div className="htk5_landing_container-header-right">
+        <div className="htk5_landing_container-header-right htk5-show">
           <p className="htk5_landing_container-header-right-par">
             Alla Nyheter
           </p>
@@ -56,6 +56,7 @@ const LandingPage = () => {
             Info från styrelsen
           </h3>
         </div>
+        <div className="htk5_landing_container-header-right htk5-hidden"></div>
       </div>
     </div>
   );
