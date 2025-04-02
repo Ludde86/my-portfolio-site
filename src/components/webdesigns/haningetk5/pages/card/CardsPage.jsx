@@ -16,7 +16,7 @@ const CardsPage = () => {
       </div>
       <form className="htk_cards_container-form">
         <input placeholder="Epost" type="email" />
-        <textarea placeholder="Meddelande" cols="30" rows="10" />
+        <textarea placeholder="Meddelande" cols="30" rows="5" />
         <button>Skicka</button>
       </form>
     </div>

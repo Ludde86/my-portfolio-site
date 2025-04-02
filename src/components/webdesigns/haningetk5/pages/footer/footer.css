@@ -91,9 +91,10 @@
     width: 80%;
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 460px) {
+  .htk5-footer_container p {
+    font-size: 1rem;
+  }
   .htk5-footer_container-contact_container p {
     font-size: 1rem;
     font-weight: 500;
@@ -101,7 +102,7 @@
   }
   .htk5-footer_container-social {
     justify-content: center;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
   }
   .htk5-footer_container-contact_container-linebreak {
     display: none;

@@ -56,7 +56,12 @@ const LandingPage = () => {
             Info från styrelsen
           </h3>
         </div>
-        <div className="htk5_landing_container-header-right htk5-hidden"></div>
+        <div className="htk5_landing_container-header-right htk5-hidden">
+          <p className="htk5_landing_container-header-right-par">
+            Alla Nyheter
+          </p>
+          <ArrowRight className="htk5_landing_container-header-right-arrow_right" />
+        </div>
       </div>
     </div>
   );
