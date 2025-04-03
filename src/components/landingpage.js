@@ -76,7 +76,7 @@ const Landing = ({ isFading }) => {
         </video>
         <div className="overlay">
           <div className="text-section">
-            <h1>Låt oss skapa en webbplats som imponerar på era besökare.</h1>
+            <h1>Låt oss skapa en webbplats som imponerar på era besökare</h1>
             <p>
               Modern, lättnavigerad design skräddarsydd efter era behov. Färdig
               hemsida inom två veckor.

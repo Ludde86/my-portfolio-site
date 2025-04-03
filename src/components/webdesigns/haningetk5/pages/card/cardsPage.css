@@ -33,7 +33,7 @@
 }
 
 .htk_cards_container-form input,
-textarea {
+.htk_cards_container-form textarea {
   all: unset;
   border-bottom: 1px solid #fff;
   color: #fff;

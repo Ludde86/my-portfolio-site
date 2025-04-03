@@ -5,8 +5,8 @@ const CardsPage = () => {
   return (
     <div className="htk_cards_container">
       <div className="htk_cards_container-text">
-        <h1>Håll dig</h1>
-        <h1>uppdaterad</h1>
+        <h1>Kontakta</h1>
+        <h1>Oss</h1>
         <p>
           Vill du veta mer om vår tennisklubb och hur vi arbetar för att främja
           sporten? Kontakta oss direkt för frågor, information om vår verksamhet
